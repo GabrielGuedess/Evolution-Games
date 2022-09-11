@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#06092B",
-  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
+  "description": "A melhor loja de jogos do mundo",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#06092B"
