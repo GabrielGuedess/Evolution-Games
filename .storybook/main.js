@@ -1,8 +1,8 @@
 module.exports = {
   stories: ['../src/components/**/stories.tsx'],
   addons: [
-    '@storybook/addon-interactions',
     '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
     '@storybook/addon-viewport',
     '@storybook/addon-toolbars',
     '@storybook/addon-links',
@@ -12,6 +12,7 @@ module.exports = {
     'storybook-addon-next',
     'storybook-dark-mode',
   ],
+  staticDirs: ['../public'],
   core: {
     builder: 'webpack5',
   },
