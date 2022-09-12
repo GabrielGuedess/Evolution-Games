@@ -15,6 +15,19 @@ export const parameters = {
     dark: { ...themes.dark, appBg: '#2F2F2F' },
     light: { ...themes.normal, appBg: '#FFFFFF' },
   },
+  backgrounds: {
+    default: 'Evolution-dark',
+    values: [
+      {
+        name: 'Evolution-light',
+        value: theme.colors.white,
+      },
+      {
+        name: 'Evolution-dark',
+        value: theme.colors.mainBg,
+      },
+    ],
+  },
 };
 
 export const decorators = [
