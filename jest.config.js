@@ -11,7 +11,7 @@ const customJestConfig = {
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
-    '!src/**/stories.tsx',
+    '!src/**/*.stories.ts(x)?',
     '!src/pages/**/*.tsx',
     '!src/styles/**/*.ts',
     '!src/utils/tests/*.ts(x)?',
