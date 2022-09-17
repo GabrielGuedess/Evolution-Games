@@ -41,6 +41,19 @@ const GlobalStyles = createGlobalStyle`
       color: ${theme.colors.whiteText};
     `}
   }
+
+  button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    font-size: 1.2rem;
+  }
 `;
 
 export default GlobalStyles;

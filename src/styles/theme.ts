@@ -31,8 +31,9 @@ export default {
     },
   },
   colors: {
-    primary: '#764AF1',
-    secondary: '#9772FB',
+    primary: '#855aff',
+    primaryForWhite: '#6200EE',
+    secondary: '#717B8A',
     mainBg: '#04040C',
     white: '#FFFFFF',
     whiteText: '#F4F4F5',
@@ -59,5 +60,9 @@ export default {
     overlay: 30,
     modal: 40,
     alwaysOnTop: 50,
+  },
+  shadows: {
+    text: '0 0.8rem 1rem rgba(118, 74, 241, 0.5)',
+    box: '0 0.8rem 2.8rem rgba(118, 74, 241, 0.5)',
   },
 } as const;
