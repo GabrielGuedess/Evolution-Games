@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import { Logo, LogoProps } from './Logo';
+import { Logo } from './Logo';
 
 export default {
   title: 'Atoms/Logo',
@@ -16,6 +16,6 @@ export default {
       allowFullscreen: true,
     },
   },
-} as Meta<LogoProps>;
+} as Meta;
 
-export const Default: Story<LogoProps> = args => <Logo {...args} />;
+export const Default: Story = args => <Logo {...args} />;
