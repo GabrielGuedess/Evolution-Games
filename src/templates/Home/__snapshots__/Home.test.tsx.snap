@@ -1,15 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports['<Home /> should render the heading 1'] = `
+.c2 {
+  width: 8.6rem;
+  height: 2rem;
+  color: #FFFFFF;
+}
+
+.c3 {
+  display: none;
+}
+
+.c12 {
+  display: none;
+}
+
+.c11 {
+  cursor: pointer;
+}
+
+.c9 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c9:is(:hover,:focus) {
+  cursor: pointer;
+  color: #855aff;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #6200EE;
+  box-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  border-radius: 1rem;
+  padding: 0.3rem 0.6rem;
+  position: absolute;
+  top: -0.4rem;
+  right: -0.4rem;
+  cursor: pointer;
+}
+
 .c0 {
   max-width: 165.6rem;
   margin: 0 1.6rem;
 }
 
 .c1 {
-  width: 8.6rem;
-  height: 2rem;
-  color: #FFFFFF;
+  position: relative;
+  padding: 1.4rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  z-index: 10;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6.4rem;
+}
+
+.c5 {
+  list-style: none;
+}
+
+.c6 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+  color: #F4F4F5;
+}
+
+.c6:is(:hover,:focus) {
+  color: #855aff;
+  text-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.c8 {
+  color: #F4F4F5;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c8:is(:hover,:focus) {
+  cursor: pointer;
+  color: #855aff;
+}
+
+@media (max-width:768px) {
+  .c2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 13.7rem;
+    height: 3.2rem;
+    color: #855aff;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+  .c12 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width:768px) {
+
 }
 
 @media (min-width:1170px) {
@@ -33,20 +196,27 @@ exports['<Home /> should render the heading 1'] = `
 
 @media (min-width:768px) {
   .c1 {
-    width: 13.7rem;
-    height: 3.2rem;
-    color: #764AF1;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 3.6rem 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    gap: 3rem;
   }
 }
 
 <main
   class=""
 >
-  <div
-    class="c0"
+  <menu
+    class="c0 c1"
   >
     <div
-      class="c1"
+      class="c2"
     >
       <svg
         aria-label="Evolution"
@@ -65,6 +235,216 @@ exports['<Home /> should render the heading 1'] = `
         />
       </svg>
     </div>
-  </div>
+    <div
+      class="c3"
+    >
+      <nav
+        aria-label="Main"
+        data-orientation="horizontal"
+        dir="ltr"
+      >
+        <div
+          style="position: relative;"
+        >
+          <ul
+            class="c4"
+            data-orientation="horizontal"
+            dir="ltr"
+          >
+            <li
+              class="c5"
+            >
+              <a
+                class="c6"
+                data-radix-collection-item=""
+                href="/"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="c5"
+            >
+              <a
+                class="c6"
+                data-radix-collection-item=""
+                href="/games"
+              >
+                Explorer
+              </a>
+            </li>
+            <li
+              class="c5"
+            >
+              <a
+                class="c6"
+                data-radix-collection-item=""
+                href="/games"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="c7"
+    >
+      <a
+        aria-label="Link Favorites"
+        class="c8"
+        href="/favorites"
+      >
+        <svg
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 256 256"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="256"
+            width="256"
+          />
+          <path
+            d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          />
+        </svg>
+      </a>
+      <div
+        class=""
+      >
+        <button
+          aria-controls="radix-:r4:"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          data-state="closed"
+          type="button"
+        >
+          <div
+            class="c9"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="Cart Icon"
+              fill="currentColor"
+              focusable="false"
+              height="24"
+              viewBox="0 0 256 256"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <path
+                d="M208.8,72H47.2a8.1,8.1,0,0,0-8,7.1L25,207.1a8,8,0,0,0,7.9,8.9H223.1a8,8,0,0,0,7.9-8.9l-14.2-128A8.1,8.1,0,0,0,208.8,72Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+              <path
+                d="M88,72a40,40,0,0,1,80,0"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+            </svg>
+            <span
+              style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+            >
+              Shopping Bag
+            </span>
+            <span
+              aria-label="Cart Items"
+              class="c10"
+              role="img"
+            >
+              3
+            </span>
+          </div>
+        </button>
+        <div />
+      </div>
+      <div
+        class="c3"
+      >
+        <div
+          class=""
+        >
+          <button
+            aria-controls="radix-:r5:"
+            aria-expanded="false"
+            aria-haspopup="dialog"
+            aria-label="User Photo Button"
+            class="c11"
+            data-state="closed"
+            type="button"
+          >
+            <span>
+              <span />
+            </span>
+          </button>
+          <div />
+        </div>
+      </div>
+    </div>
+    <div
+      class="c12"
+    >
+      <button
+        aria-controls="radix-:r6:"
+        aria-expanded="false"
+        aria-haspopup="dialog"
+        data-state="closed"
+        type="button"
+      >
+        <div
+          aria-expanded="false"
+          aria-label="Show menu"
+          class="hamburger-react"
+          role="button"
+          style="cursor: pointer; height: 48px; position: relative; transition: 0.5s cubic-bezier(0, 0, 0, 1); user-select: none; width: 48px; outline: none;"
+          tabindex="0"
+        >
+          <div
+            style="transition: 0.25s cubic-bezier(0, 0, 0, 1) 0.25s; transform: none;"
+          >
+            <div
+              style="background: currentColor; height: 2px; left: 13px; position: absolute; width: 23px; top: 16px; transition: 0.25s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"
+            />
+          </div>
+          <div
+            style="transition: 0.25s cubic-bezier(0, 0, 0, 1); opacity: 1;"
+          >
+            <div
+              style="background: currentColor; height: 2px; left: 13px; position: absolute; width: 23px; top: 23px; transition: 0.25s cubic-bezier(0, 0, 0, 1);"
+            />
+          </div>
+          <div
+            style="transition: 0.25s cubic-bezier(0, 0, 0, 1) 0.25s; transform: none;"
+          >
+            <div
+              style="background: currentColor; height: 2px; left: 13px; position: absolute; width: 23px; top: 30px; transition: 0.25s cubic-bezier(0, 0, 0, 1) 0s; transform: none;"
+            />
+          </div>
+        </div>
+      </button>
+      <div />
+    </div>
+  </menu>
 </main>
 `;

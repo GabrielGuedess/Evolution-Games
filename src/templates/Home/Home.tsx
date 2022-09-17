@@ -1,12 +1,10 @@
-import { Container } from 'components/atoms/Container/Container';
-import { Logo } from 'components/atoms/Logo/Logo';
+import { Navbar } from 'components/organisms/Navbar/Navbar';
 
 import * as S from './Home.styles';
+import { userInfo } from './mock';
 
 export const Home = () => (
   <S.Wrapper>
-    <Container>
-      <Logo />
-    </Container>
+    <Navbar {...userInfo} />
   </S.Wrapper>
 );
