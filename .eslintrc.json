@@ -39,6 +39,10 @@
   "rules": {
     "prettier/prettier": "error",
     "space-before-function-paren": "off",
+    "no-extra-boolean-cast": "off",
+    "no-irregular-whitespace": "off",
+    "object-curly-newline": "off",
+    "react/jsx-one-expression-per-line": "off",
     "arrow-parens": "off",
     "react/prop-types": "off",
     "react/require-default-props": "off",
@@ -74,11 +78,12 @@
         "groups": [
           "/^next/",
           "/^react/",
+          "module",
           "/^@testing-library/",
+          "/^templates/",
           "/^components/",
           "/^styled-components/",
           "/^styles/",
-          "module",
           ["parent", "sibling", "index"]
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }

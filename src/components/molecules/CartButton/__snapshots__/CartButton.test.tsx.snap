@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<CartButton /> should render others components correctly 1'] = `
+<div
+  class=""
+>
+  <button
+    aria-controls="radix-:r0:"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    data-state="closed"
+    type="button"
+  >
+    <div
+      data-testid="Mock CartIcon"
+    />
+  </button>
+  <div />
+</div>
+`;

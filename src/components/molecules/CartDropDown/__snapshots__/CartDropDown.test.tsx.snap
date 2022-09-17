@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<CartDropDown /> should render the GameCartDrop 1'] = `
+.c1 {
+  color: #855aff;
+  padding: 0.5rem;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0.5rem;
+  left: 2.1rem;
+}
+
+.c1 svg {
+  cursor: pointer;
+}
+
+.c0 {
+  width: calc(100vw - (1.6rem * 2));
+  padding: 2rem 1.2rem;
+  border-radius: 1rem;
+  background: #010914;
+}
+
+.c2 {
+  padding: 1rem 0rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #F4F4F5;
+}
+
+.c3 {
+  color: #F4F4F5;
+  font-size: 1.4rem;
+}
+
+.c4 {
+  color: #855aff;
+  font-size: 1.2rem;
+  padding: 1rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.c5 strong {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #F4F4F5;
+}
+
+.c5 h2 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #F4F4F5;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    left: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 45rem;
+    position: relative;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 strong {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 h2 {
+    font-size: 1.8rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <button
+    aria-label="Close Action"
+    class="c1"
+    type="button"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 256 256"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        fill="none"
+        height="256"
+        width="256"
+      />
+      <line
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+        x1="200"
+        x2="56"
+        y1="56"
+        y2="200"
+      />
+      <line
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+        x1="200"
+        x2="56"
+        y1="200"
+        y2="56"
+      />
+    </svg>
+  </button>
+  <div
+    class="c2"
+  >
+    <h1
+      class="c3"
+    >
+      My Cart (
+      3
+      )
+    </h1>
+    <a
+      class="c4"
+      href="/cart"
+    >
+      View all
+    </a>
+  </div>
+  <div
+    data-testid="Mock GameCartDrop"
+  />
+  <div
+    data-testid="Mock GameCartDrop"
+  />
+  <div
+    data-testid="Mock GameCartDrop"
+  />
+  <div
+    class="c5"
+  >
+    <strong>
+      Total
+    </strong>
+    <h2>
+      R$ 300,00
+    </h2>
+  </div>
+</div>
+`;

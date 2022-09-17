@@ -10,4 +10,7 @@ module.exports = withPWA({
   compiler: {
     styledComponents: true,
   },
+  images: {
+    domains: ['images.unsplash.com'],
+  },
 });
