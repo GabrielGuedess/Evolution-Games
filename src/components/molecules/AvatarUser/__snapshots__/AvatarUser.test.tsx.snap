@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<AvatarUser /> should render the photo user 1'] = `
+.c0 {
+  cursor: pointer;
+}
+
+<div
+  class=""
+>
+  <button
+    aria-controls="radix-:r0:"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    aria-label="User Photo Button"
+    class="c0"
+    data-state="closed"
+    type="button"
+  >
+    <span>
+      <span />
+    </span>
+  </button>
+  <div />
+</div>
+`;
