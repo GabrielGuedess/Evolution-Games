@@ -5,7 +5,7 @@ exports['<CartButton /> should render others components correctly 1'] = `
   class=""
 >
   <button
-    aria-controls="radix-:r1:"
+    aria-controls="radix-:r0:"
     aria-expanded="false"
     aria-haspopup="dialog"
     data-state="closed"
