@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { useState } from 'react';
+
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import * as Popover from '@radix-ui/react-popover';
 import { Squash as Hamburger } from 'hamburger-react';
@@ -24,6 +26,7 @@ export type MenuProps = {
 
 export const Navbar = ({ loading = false, ...props }: MenuProps) => {
   const { asPath } = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <S.Wrapper>
@@ -78,9 +81,15 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
           </S.WrapperIcons>
 
           <MediaMatch lessThan="medium">
-            <Popover.Root>
+            <Popover.Root open={isOpen} onOpenChange={setIsOpen}>
               <Popover.Trigger>
-                <Hamburger size={23} duration={0.5} label="Show menu" />
+                <Hamburger
+                  size={23}
+                  duration={0.5}
+                  label="Show menu"
+                  toggled={isOpen}
+                  toggle={setIsOpen}
+                />
               </Popover.Trigger>
               <Popover.Anchor />
               <MenuMobile path={asPath} {...props} />
