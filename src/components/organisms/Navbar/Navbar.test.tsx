@@ -1,16 +1,18 @@
 import { renderWithTheme } from 'utils/tests/helpers';
 
+import { screen } from '@testing-library/react';
+
+import theme from 'styles/theme';
+
 import { Navbar } from './Navbar';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const useRouter = jest.spyOn(require('next/router'), 'useRouter');
 
-const push = jest.fn();
-
 useRouter.mockImplementation(() => ({
-  push,
+  push: jest.fn(),
   query: '',
-  asPath: '',
+  asPath: '/',
   route: '/',
 }));
 
@@ -20,6 +22,10 @@ describe('<Navbar />', () => {
     const { container } = renderWithTheme(<Navbar />);
 
     // Assert
+    expect(screen.getByText('Home')).toHaveStyle({
+      color: theme.colors.primary,
+    });
+
     expect(container.firstChild).toMatchSnapshot();
   });
 });

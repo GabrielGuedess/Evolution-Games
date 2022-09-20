@@ -11,26 +11,26 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   display: none;
 }
 
-.c13 {
+.c14 {
   display: none;
 }
 
-.c11 {
+.c12 {
   cursor: pointer;
 }
 
-.c12 {
+.c13 {
   cursor: pointer;
   color: #F4F4F5;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
-.c12:is(:hover,:focus) {
+.c13:is(:hover,:focus) {
   color: #855aff;
 }
 
-.c9 {
+.c10 {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -39,12 +39,12 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   transition: color 0.3s linear;
 }
 
-.c9:is(:hover,:focus) {
+.c10:is(:hover,:focus) {
   cursor: pointer;
   color: #855aff;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -76,7 +76,8 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 }
 
 .c1 {
-  position: relative;
+  position: absolute;
+  inset: 0 0 auto 0;
   padding: 1.4rem 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -85,7 +86,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  z-index: 10;
+  z-index: 20;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -114,7 +115,8 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   text-transform: uppercase;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
-  color: #F4F4F5;
+  color: #855aff;
+  text-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
 }
 
 .c6:is(:hover,:focus) {
@@ -123,6 +125,24 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 }
 
 .c7 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+  color: #F4F4F5;
+}
+
+.c7:is(:hover,:focus) {
+  color: #855aff;
+  text-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
+}
+
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -134,13 +154,13 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   gap: 1.5rem;
 }
 
-.c8 {
+.c9 {
   color: #F4F4F5;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
-.c8:is(:hover,:focus) {
+.c9:is(:hover,:focus) {
   cursor: pointer;
   color: #855aff;
 }
@@ -171,13 +191,13 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 }
 
 @media (max-width:768px) {
-  .c13 {
+  .c14 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c11 {
     font-size: 0.8rem;
   }
 }
@@ -215,7 +235,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     gap: 3rem;
   }
 }
@@ -263,7 +283,9 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
             class="c5"
           >
             <a
+              aria-current="page"
               class="c6"
+              data-active=""
               data-radix-collection-item=""
               href="/"
             >
@@ -274,7 +296,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
             class="c5"
           >
             <a
-              class="c6"
+              class="c7"
               data-radix-collection-item=""
               href="/games"
             >
@@ -285,7 +307,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
             class="c5"
           >
             <a
-              class="c6"
+              class="c7"
               data-radix-collection-item=""
               href="/games"
             >
@@ -297,11 +319,11 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
     </nav>
   </div>
   <div
-    class="c7"
+    class="c8"
   >
     <a
       aria-label="Link Favorites"
-      class="c8"
+      class="c9"
       href="/favorites"
     >
       <svg
@@ -337,7 +359,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
         type="button"
       >
         <div
-          class="c9"
+          class="c10"
         >
           <svg
             aria-hidden="true"
@@ -378,7 +400,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
           </span>
           <span
             aria-label="Cart Items"
-            class="c10"
+            class="c11"
             role="img"
           >
             3
@@ -398,13 +420,13 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="User Photo Button"
-          class="c11"
+          class="c12"
           data-state="closed"
           type="button"
         >
           <a
             aria-label="Link for Login"
-            class="c12"
+            class="c13"
             href="/sign-in"
           >
             <svg
@@ -444,7 +466,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
     </div>
   </div>
   <div
-    class="c13"
+    class="c14"
   >
     <button
       aria-controls="radix-:r6:"
