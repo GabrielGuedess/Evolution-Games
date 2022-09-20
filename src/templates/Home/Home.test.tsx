@@ -1,22 +1,31 @@
 import { renderWithTheme } from 'utils/tests/helpers';
 
+import { screen } from '@testing-library/react';
+
 import { Home } from './Home';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const useRouter = jest.spyOn(require('next/router'), 'useRouter');
+jest.mock('components/organisms/Navbar/Navbar', () => ({
+  __esModule: true,
+  Navbar: function Mock({ children }: { children: React.ReactNode }) {
+    return <div data-testid="Navbar">{children}</div>;
+  },
+}));
 
-const push = jest.fn();
-
-useRouter.mockImplementation(() => ({
-  push,
-  query: '',
-  asPath: '',
-  route: '/',
+jest.mock('components/organisms/Slider/Slider', () => ({
+  __esModule: true,
+  Slider: function Mock({ children }: { children: React.ReactNode }) {
+    return <div data-testid="Slider">{children}</div>;
+  },
 }));
 
 describe('<Home />', () => {
-  it('should render the heading', () => {
+  it('should render the Home correctly', () => {
+    // Arrange
     const { container } = renderWithTheme(<Home />);
+
+    // Assert
+    expect(screen.getByTestId('Navbar')).toBeInTheDocument();
+    expect(screen.getByTestId('Slider')).toBeInTheDocument();
 
     expect(container.firstChild).toMatchSnapshot();
   });
