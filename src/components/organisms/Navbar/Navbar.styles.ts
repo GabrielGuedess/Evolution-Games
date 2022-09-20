@@ -7,11 +7,12 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled(Container).attrs({ as: 'menu' })`
   ${({ theme }) => css`
-    position: relative;
+    position: absolute;
+    inset: 0 0 auto 0;
     padding: 1.4rem 0;
     display: flex;
     flex-direction: row;
-    z-index: ${theme.layers.base};
+    z-index: ${theme.layers.menu};
     justify-content: space-between;
 
     ${media.greaterThan('medium')`
