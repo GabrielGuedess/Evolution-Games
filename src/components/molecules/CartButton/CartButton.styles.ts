@@ -11,6 +11,9 @@ export const Arrow = styled(Popover.Arrow)`
 `;
 
 export const Content = styled(Popover.Content)`
-  width: 100%;
-  margin: 0 1.6rem;
+  ${({ theme }) => css`
+    width: 100%;
+    margin: 0 1.6rem;
+    z-index: ${theme.layers.modal};
+  `}
 `;
