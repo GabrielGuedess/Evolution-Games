@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<ScrollDown /> should render the ScrollDown 1'] = `
+.c0 {
+  position: absolute;
+  -webkit-inset: auto auto 3rem 3rem;
+  -ms-inset: auto auto 3rem 3rem;
+  inset: auto auto 3rem 3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.c0 div {
+  position: relative;
+  width: 2rem;
+  height: 4rem;
+  border: 0.2rem solid #FFFFFF;
+  border-radius: 5rem;
+}
+
+.c0 div:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0.6rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-left: -0.3rem;
+  background-color: #FFFFFF;
+  border-radius: 100%;
+  -webkit-animation: bPWYhV 2s infinite;
+  animation: bPWYhV 2s infinite;
+}
+
+<button
+  aria-label="Scroll Button"
+  class="c0"
+>
+  <div />
+</button>
+`;
