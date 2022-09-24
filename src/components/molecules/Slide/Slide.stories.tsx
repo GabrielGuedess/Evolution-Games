@@ -6,7 +6,7 @@ export default {
   title: 'Molecules/Slide',
   component: Slide,
   args: {
-    srcSlideImage: '/img/games/theLastOfUs.png',
+    srcSlideImage: '/img/games/theLastOfUs.jpg',
     altSlideImage: 'The Last Of Us',
     srcHighlightImage: '/img/games/highlightName/nameTheLastOfUs.png',
     altHighlightImage: 'The Last Of Us Highlight',

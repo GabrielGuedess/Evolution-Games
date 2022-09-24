@@ -5,7 +5,7 @@ import { screen } from '@testing-library/react';
 import { Slide, SlideProps } from './Slide';
 
 const props: SlideProps = {
-  srcSlideImage: '/img/games/theLastOfUs.png',
+  srcSlideImage: '/img/games/theLastOfUs.jpg',
   altSlideImage: 'The Last Of Us',
   srcHighlightImage: '/img/games/highlightName/nameTheLastOfUs.png',
   altHighlightImage: 'The Last Of Us Highlight',
