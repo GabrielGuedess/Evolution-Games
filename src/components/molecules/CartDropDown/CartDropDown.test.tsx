@@ -3,7 +3,7 @@ import { renderWithTheme } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
-import { CartItems } from 'components/organisms/Navbar/mock';
+import { cartItems } from 'components/organisms/Navbar/mock';
 
 import { CartDropDown } from './CartDropDown';
 
@@ -19,13 +19,13 @@ describe('<CartDropDown />', () => {
     // Arrange
     const { container } = renderWithTheme(
       <Popover.Root>
-        <CartDropDown items={CartItems} />
+        <CartDropDown items={cartItems} />
       </Popover.Root>,
     );
 
     // Assert
     expect(screen.getAllByTestId('Mock GameCartDrop')).toHaveLength(
-      CartItems.length,
+      cartItems.length,
     );
 
     expect(container.firstChild).toMatchSnapshot();

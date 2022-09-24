@@ -1,6 +1,6 @@
 import { GameCartDropProps } from 'components/molecules/GameCartDrop/GameCartDrop';
 
-export const CartItems: GameCartDropProps[] = [
+export const cartItems: GameCartDropProps[] = [
   {
     src: 'https://images.unsplash.com/photo-1662414590066-91c548626702?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNjIxMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjMyOTQxNjQ&ixlib=rb-1.2.1&q=80&w=1080',
     genre: 'Action',

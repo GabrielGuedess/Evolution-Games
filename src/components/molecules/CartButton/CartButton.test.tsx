@@ -1,10 +1,16 @@
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import { screen } from '@testing-library/react';
+import { fireEvent, screen } from '@testing-library/react';
 
-import { CartItems } from 'components/organisms/Navbar/mock';
+import { cartItems } from 'components/organisms/Navbar/mock';
 
 import { CartButton } from './CartButton';
+
+global.ResizeObserver = jest.fn().mockImplementation(() => ({
+  observe: jest.fn(),
+  unobserve: jest.fn(),
+  disconnect: jest.fn(),
+}));
 
 jest.mock('components/atoms/CartIcon/CartIcon', () => ({
   __esModule: true,
@@ -16,7 +22,10 @@ jest.mock('components/atoms/CartIcon/CartIcon', () => ({
 describe('<CartButton />', () => {
   it('should render others components correctly', () => {
     // Arrange
-    const { container } = renderWithTheme(<CartButton items={CartItems} />);
+    const { container } = renderWithTheme(<CartButton items={cartItems} />);
+
+    // Act
+    fireEvent.click(screen.getByTestId('Mock CartIcon'));
 
     // Assert
     expect(screen.getByTestId('Mock CartIcon')).toBeInTheDocument();

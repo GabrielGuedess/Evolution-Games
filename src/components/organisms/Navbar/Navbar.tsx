@@ -17,7 +17,7 @@ import {
 import { CartButton } from 'components/molecules/CartButton/CartButton';
 import { MenuMobile } from 'components/molecules/MenuMobile/MenuMobile';
 
-import { CartItems } from './mock';
+import { cartItems } from './mock';
 import * as S from './Navbar.styles';
 
 export type MenuProps = {
@@ -73,7 +73,7 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
               </S.HeartLink>
             </Link>
 
-            <CartButton items={CartItems} />
+            <CartButton items={cartItems} />
 
             <MediaMatch greaterThan="medium">
               <AvatarUser {...props} />

@@ -12,7 +12,8 @@ export const Wrapper = styled(Popover.Content)`
     justify-content: center;
     padding: 4rem 1.2rem;
     margin: 0 1.6rem;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(4, 4, 12, 0.8);
+    backdrop-filter: blur(0.3rem);
     border-radius: ${theme.border.radius.regular};
 
     ${media.greaterThan('medium')`
