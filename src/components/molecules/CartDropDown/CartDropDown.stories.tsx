@@ -1,7 +1,7 @@
 import * as Popover from '@radix-ui/react-popover';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import { CartItems } from 'components/organisms/Navbar/mock';
+import { cartItems } from 'components/organisms/Navbar/mock';
 
 import { CartDropDownProps, CartDropDown } from './CartDropDown';
 
@@ -9,7 +9,7 @@ export default {
   title: 'Molecules/CartDropDown',
   component: CartDropDown,
   args: {
-    items: CartItems,
+    items: cartItems,
   },
 } as Meta<CartDropDownProps>;
 
