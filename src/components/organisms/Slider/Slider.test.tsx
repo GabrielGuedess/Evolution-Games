@@ -2,7 +2,7 @@ import { renderWithTheme } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
-import { SliderMock } from './mock';
+import sliderMock from './mock';
 import { Slider } from './Slider';
 
 jest.mock('swiper/css', jest.fn());
@@ -36,13 +36,13 @@ jest.mock('swiper/react', () => ({
 describe('<Slider />', () => {
   it('should render the Swiper correctly', () => {
     // Arrange
-    const { container } = renderWithTheme(<Slider slides={SliderMock} />);
+    const { container } = renderWithTheme(<Slider slides={sliderMock} />);
 
     // Assert
     expect(screen.getByTestId('Swiper')).toBeInTheDocument();
 
     expect(screen.getAllByTestId('Swiper-Slide')).toHaveLength(
-      SliderMock.length + 1,
+      sliderMock.length + 1,
     );
 
     expect(container.firstChild).toMatchSnapshot();

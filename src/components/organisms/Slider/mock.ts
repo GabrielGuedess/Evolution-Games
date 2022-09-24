@@ -1,6 +1,6 @@
 import { SlideProps } from 'components/molecules/Slide/Slide';
 
-export const SliderMock: SlideProps[] = [
+const sliderMock: SlideProps[] = [
   {
     srcSlideImage: '/img/games/theLastOfUs.jpg',
     altSlideImage: 'The Last Of Us',
@@ -26,3 +26,5 @@ export const SliderMock: SlideProps[] = [
     altHighlightImage: 'Star Wars Highlight',
   },
 ];
+
+export default sliderMock;

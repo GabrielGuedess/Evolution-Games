@@ -1,13 +1,13 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import { SliderMock } from './mock';
+import sliderMock from './mock';
 import { Slider, SliderProps } from './Slider';
 
 export default {
   title: 'Organisms/Slider',
   component: Slider,
   args: {
-    slides: SliderMock,
+    slides: sliderMock,
   },
 } as Meta<SliderProps>;
 
