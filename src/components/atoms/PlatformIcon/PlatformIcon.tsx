@@ -18,7 +18,7 @@ export const PlatformIcon = ({
   isActive = false,
 }: PlatformIconProps) => {
   const platformTitle = {
-    playstation: 'Playstation',
+    playstation: 'PlayStation',
     xbox: 'Xbox',
     pc: 'Personal computer',
     all: 'All platforms',
@@ -32,7 +32,7 @@ export const PlatformIcon = ({
           role="figure"
           platform={platform}
           viewBox="0 0 28 22"
-          aria-label="Playstation Icon"
+          aria-label="PlayStation Icon"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -80,7 +80,7 @@ export const PlatformIcon = ({
           role="figure"
           platform={platform}
           viewBox="0 0 20 20"
-          aria-label="All platforms Icon"
+          aria-label="All Platforms Icon"
           xmlns="http://www.w3.org/2000/svg"
         >
           <g fill="currentColor" clipPath="url(#a)">

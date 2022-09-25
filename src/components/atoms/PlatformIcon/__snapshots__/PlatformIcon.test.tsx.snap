@@ -103,7 +103,7 @@ exports['<PlatformIcon /> should render selected playstation icon 1'] = `
   color="white"
 >
   <svg
-    aria-label="Playstation Icon"
+    aria-label="PlayStation Icon"
     class="c1"
     fill="none"
     role="figure"
@@ -116,10 +116,10 @@ exports['<PlatformIcon /> should render selected playstation icon 1'] = `
     />
   </svg>
   <span
-    aria-label="Playstation"
+    aria-label="PlayStation"
     class="c2"
   >
-    Playstation
+    PlayStation
   </span>
 </div>
 `;
@@ -158,7 +158,7 @@ exports['<PlatformIcon /> should render the playstation icon 1'] = `
   color="white"
 >
   <svg
-    aria-label="Playstation Icon"
+    aria-label="PlayStation Icon"
     class="c1"
     fill="none"
     role="figure"

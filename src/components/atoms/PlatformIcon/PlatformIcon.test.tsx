@@ -13,7 +13,7 @@ describe('<PlatformIcon />', () => {
     );
 
     // Arrange
-    const icon = screen.getByLabelText('Playstation Icon');
+    const icon = screen.getByLabelText('PlayStation Icon');
 
     // Assert
     expect(icon).toBeInTheDocument();
@@ -28,8 +28,8 @@ describe('<PlatformIcon />', () => {
     );
 
     // Arrange
-    const icon = screen.getByLabelText('Playstation Icon');
-    const label = screen.getByLabelText('Playstation');
+    const icon = screen.getByLabelText('PlayStation Icon');
+    const label = screen.getByLabelText('PlayStation');
 
     // Assert
     expect(label.parentElement).toHaveStyle({
