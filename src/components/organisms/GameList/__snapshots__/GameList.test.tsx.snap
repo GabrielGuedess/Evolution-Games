@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['<GameList /> should render the heading 1'] = `
+exports['<GameList /> should render the <GameList /> 1'] = `
 .c17 {
   min-width: 6.4rem;
 }
@@ -592,7 +592,7 @@ exports['<GameList /> should render the heading 1'] = `
               color="secondary"
             >
               <svg
-                aria-label="All platforms Icon"
+                aria-label="All Platforms Icon"
                 class="c8"
                 fill="none"
                 role="figure"
@@ -620,7 +620,7 @@ exports['<GameList /> should render the heading 1'] = `
               color="secondary"
             >
               <svg
-                aria-label="Playstation Icon"
+                aria-label="PlayStation Icon"
                 class="c11"
                 fill="none"
                 role="figure"
@@ -633,10 +633,10 @@ exports['<GameList /> should render the heading 1'] = `
                 />
               </svg>
               <span
-                aria-label="Playstation"
+                aria-label="PlayStation"
                 class="c9"
               >
-                Playstation
+                PlayStation
               </span>
             </div>
             <div
@@ -859,7 +859,7 @@ exports['<GameList /> should render the heading 1'] = `
                   color="white"
                 >
                   <svg
-                    aria-label="Playstation Icon"
+                    aria-label="PlayStation Icon"
                     class="c11"
                     fill="none"
                     role="figure"
@@ -972,7 +972,7 @@ exports['<GameList /> should render the heading 1'] = `
                   color="white"
                 >
                   <svg
-                    aria-label="Playstation Icon"
+                    aria-label="PlayStation Icon"
                     class="c11"
                     fill="none"
                     role="figure"
@@ -1121,7 +1121,7 @@ exports['<GameList /> should render the heading 1'] = `
                   color="white"
                 >
                   <svg
-                    aria-label="Playstation Icon"
+                    aria-label="PlayStation Icon"
                     class="c11"
                     fill="none"
                     role="figure"
@@ -1270,7 +1270,7 @@ exports['<GameList /> should render the heading 1'] = `
                   color="white"
                 >
                   <svg
-                    aria-label="Playstation Icon"
+                    aria-label="PlayStation Icon"
                     class="c11"
                     fill="none"
                     role="figure"
@@ -1383,7 +1383,7 @@ exports['<GameList /> should render the heading 1'] = `
                   color="white"
                 >
                   <svg
-                    aria-label="Playstation Icon"
+                    aria-label="PlayStation Icon"
                     class="c11"
                     fill="none"
                     role="figure"
@@ -1496,7 +1496,7 @@ exports['<GameList /> should render the heading 1'] = `
                   color="white"
                 >
                   <svg
-                    aria-label="Playstation Icon"
+                    aria-label="PlayStation Icon"
                     class="c11"
                     fill="none"
                     role="figure"
@@ -1609,7 +1609,7 @@ exports['<GameList /> should render the heading 1'] = `
                   color="white"
                 >
                   <svg
-                    aria-label="Playstation Icon"
+                    aria-label="PlayStation Icon"
                     class="c11"
                     fill="none"
                     role="figure"
@@ -1740,7 +1740,7 @@ exports['<GameList /> should render the heading 1'] = `
                   color="white"
                 >
                   <svg
-                    aria-label="Playstation Icon"
+                    aria-label="PlayStation Icon"
                     class="c11"
                     fill="none"
                     role="figure"

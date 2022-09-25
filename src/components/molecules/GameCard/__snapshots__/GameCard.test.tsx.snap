@@ -299,7 +299,7 @@ exports['<GameCard /> should render the heading 1'] = `
           color="white"
         >
           <svg
-            aria-label="Playstation Icon"
+            aria-label="PlayStation Icon"
             class="c14"
             fill="none"
             role="figure"
