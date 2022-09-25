@@ -14,10 +14,6 @@ import { Slide, SlideProps } from 'components/molecules/Slide/Slide';
 
 import * as S from './Slider.styles';
 
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
-
 export type SliderProps = {
   slides: SlideProps[];
 };

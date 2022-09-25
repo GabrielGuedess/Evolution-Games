@@ -9,6 +9,11 @@ import theme from 'styles/theme';
 
 import SEO from '../../next-seo.config';
 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
+
 function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
