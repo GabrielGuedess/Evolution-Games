@@ -1,4 +1,5 @@
 import { AvatarUserProps } from 'components/molecules/AvatarUser/AvatarUser';
+import gameCardItemsMock from 'components/organisms/GameList/mock';
 import sliderDefaultMock from 'components/organisms/Slider/mock';
 
 export const userInfo: AvatarUserProps = {
@@ -9,3 +10,5 @@ export const userInfo: AvatarUserProps = {
 };
 
 export const sliderMock = sliderDefaultMock;
+
+export const gameCardItems = gameCardItemsMock;
