@@ -11,10 +11,6 @@ const props: SlideProps = {
   altHighlightImage: 'The Last Of Us Highlight',
 };
 
-jest.mock('swiper/css', jest.fn());
-jest.mock('swiper/css/effect-fade', jest.fn());
-jest.mock('swiper/css/pagination', jest.fn());
-
 describe('<Slide />', () => {
   it('should render the Image background and highlight name', () => {
     // Arrange

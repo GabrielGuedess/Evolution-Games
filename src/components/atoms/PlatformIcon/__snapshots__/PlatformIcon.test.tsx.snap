@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<PlatformIcon /> should render pc icon in secondary color 1'] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #717B8A;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c0:hover {
+  cursor: pointer;
+  color: #855aff;
+}
+
+.c1 {
+  width: 3.2rem;
+  height: 1.7rem;
+}
+
+.c2 {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 1.6rem;
+}
+
+<div
+  class="c0"
+  color="secondary"
+>
+  <svg
+    aria-label="PC Icon"
+    class="c1"
+    fill="none"
+    role="figure"
+    viewBox="0 0 34 19"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M.426 18 3.324.545h6.886c1.318 0 2.4.253 3.247.759.853.5 1.45 1.196 1.79 2.088.347.886.426 1.91.239 3.068-.193 1.165-.614 2.19-1.262 3.077a6.556 6.556 0 0 1-2.505 2.062c-1.029.495-2.216.742-3.563.742H3.767l.486-2.957h3.792c.716 0 1.327-.123 1.833-.367.511-.25.918-.594 1.219-1.031.3-.443.497-.952.588-1.526.096-.585.065-1.094-.094-1.525a1.87 1.87 0 0 0-.878-1.006c-.42-.244-.986-.366-1.696-.366H6.528L4.116 18H.426ZM33.232 6.656H29.55c.012-.488-.05-.92-.187-1.295a2.533 2.533 0 0 0-.614-.972 2.576 2.576 0 0 0-.98-.605 3.76 3.76 0 0 0-1.304-.213c-.932 0-1.787.233-2.565.699-.779.466-1.435 1.142-1.969 2.028-.534.881-.903 1.946-1.108 3.196-.199 1.205-.187 2.213.034 3.026.222.812.614 1.426 1.176 1.84.569.41 1.276.614 2.122.614a5.56 5.56 0 0 0 1.492-.196c.472-.136.9-.33 1.287-.58a4.309 4.309 0 0 0 1.023-.928c.295-.364.525-.776.69-1.236h3.707a8.442 8.442 0 0 1-1.09 2.318 8.73 8.73 0 0 1-1.816 1.995 8.76 8.76 0 0 1-2.463 1.38c-.92.341-1.929.512-3.026.512-1.585 0-2.945-.364-4.082-1.091-1.13-.727-1.946-1.776-2.446-3.145-.5-1.37-.594-3.02-.281-4.952.312-1.87.923-3.454 1.832-4.756.915-1.306 2.026-2.298 3.333-2.974a9.063 9.063 0 0 1 4.21-1.014c1.04 0 1.98.142 2.82.426.842.284 1.558.699 2.149 1.244a5.098 5.098 0 0 1 1.346 1.986c.301.784.432 1.682.392 2.693Z"
+      fill="currentColor"
+    />
+  </svg>
+  <span
+    aria-label="Personal computer"
+    class="c2"
+  >
+    Personal computer
+  </span>
+</div>
+`;
+
+exports['<PlatformIcon /> should render selected playstation icon 1'] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #855aff;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c0:hover {
+  cursor: pointer;
+  color: #855aff;
+}
+
+.c1 {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.c2 {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 1.6rem;
+}
+
+<div
+  class="c0"
+  color="white"
+>
+  <svg
+    aria-label="PlayStation Icon"
+    class="c1"
+    fill="none"
+    role="figure"
+    viewBox="0 0 28 22"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+      fill="currentColor"
+    />
+  </svg>
+  <span
+    aria-label="PlayStation"
+    class="c2"
+  >
+    PlayStation
+  </span>
+</div>
+`;
+
+exports['<PlatformIcon /> should render the playstation icon 1'] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c0:hover {
+  cursor: pointer;
+  color: #855aff;
+}
+
+.c1 {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+<div
+  class="c0"
+  color="white"
+>
+  <svg
+    aria-label="PlayStation Icon"
+    class="c1"
+    fill="none"
+    role="figure"
+    viewBox="0 0 28 22"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+      fill="currentColor"
+    />
+  </svg>
+</div>
+`;

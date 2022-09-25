@@ -16,6 +16,15 @@ export default {
         options: ['small', 'medium', 'large'],
       },
     },
+    variant: {
+      control: {
+        type: 'select',
+        options: ['solid', 'outline'],
+      },
+    },
+  },
+  args: {
+    variant: 'solid',
   },
 } as Meta<ButtonProps>;
 
@@ -38,7 +47,6 @@ fullWidth.args = {
   children: 'Buy now',
   fullWidth: true,
 };
-
 export const withIcon: Story<ButtonProps> = args => <Button {...args} />;
 
 withIcon.args = {

@@ -1,0 +1,1800 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<GameList /> should render the <GameList /> 1'] = `
+.c17 {
+  min-width: 6.4rem;
+}
+
+.c18 {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid #717B8A;
+  color: #717B8A;
+  -webkit-transition: color 0.3s linear,border-color 0.3s linear;
+  transition: color 0.3s linear,border-color 0.3s linear;
+  border-radius: 5px 0 0 5px;
+}
+
+.c18 svg {
+  width: 0.7rem;
+  height: 1.2rem;
+}
+
+.c18:hover,
+.c18:focus {
+  cursor: pointer;
+  color: #855aff;
+  border-color: #855aff;
+}
+
+.c19 {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid #717B8A;
+  color: #717B8A;
+  -webkit-transition: color 0.3s linear,border-color 0.3s linear;
+  transition: color 0.3s linear,border-color 0.3s linear;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  border-radius: 5px 0 0 5px;
+}
+
+.c19 svg {
+  width: 0.7rem;
+  height: 1.2rem;
+}
+
+.c19:hover,
+.c19:focus {
+  cursor: pointer;
+  color: #855aff;
+  border-color: #855aff;
+}
+
+.c16 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  font-size: 1.2rem;
+  padding: 0.8rem 2.4rem;
+  background: transparent;
+  color: #717B8A;
+}
+
+.c16 .effect {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #717B8A;
+}
+
+.c16 .effect path {
+  -webkit-transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c16:is(:hover,:focus) .effect {
+  stroke: #855aff;
+}
+
+.c16:is(:hover,:focus) {
+  color: #855aff;
+}
+
+.c16:not(:disabled):is(:hover,:focus) {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.c16:not(:disabled):active {
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+}
+
+.c16 span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  z-index: 1;
+}
+
+.c16:not(:disabled):is(:hover,:focus) span {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.c16:not(:disabled):is(:hover,:focus) .icon {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c16:not(:disabled):active span {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.c16 svg {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c16 .effect {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  z-index: -1;
+}
+
+.c16 .effect path {
+  -webkit-transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c16:not(:disabled):is(:hover,:focus) .effect path {
+  d: path( 'M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0' );
+}
+
+.c16:not(:disabled):active .effect path {
+  d: path( 'M0 5C0 2.23858 2.23858 0 5 0H95C97.7614 0 100 2.23858 100 5V95C100 97.7614 97.7614 100 95 100H5C2.23858 100 0 97.7614 0 95V5Z' );
+}
+
+.c1 {
+  max-width: 165.6rem;
+  margin: 0 1.6rem;
+}
+
+.c5 {
+  display: none;
+}
+
+.c14 {
+  display: none;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #855aff;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c7:hover {
+  cursor: pointer;
+  color: #855aff;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #717B8A;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c10:hover {
+  cursor: pointer;
+  color: #855aff;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c33:hover {
+  cursor: pointer;
+  color: #855aff;
+}
+
+.c8 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.c11 {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.c12 {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.c13 {
+  width: 3.2rem;
+  height: 1.7rem;
+}
+
+.c9 {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 1.6rem;
+}
+
+.c4 {
+  color: #F4F4F5;
+  font-size: 1.6rem;
+  font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.c20 {
+  width: 100%;
+  height: 22rem;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 0.4rem;
+}
+
+.c21 {
+  width: 100%;
+  min-height: 37.8rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
+}
+
+.c22 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2rem;
+  position: absolute;
+  gap: 1.6rem;
+  top: 0;
+  background: linear-gradient(90deg,#010914 12.5%,rgba(4,4,12,0.3) 100%);
+}
+
+.c23 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.c28 {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.c29 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+  color: #F4F4F5;
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+  position: absolute;
+  top: 9px;
+  left: 11px;
+}
+
+.c24 {
+  max-width: calc(100% - 4rem);
+}
+
+.c25 {
+  font-size: 2.0rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  color: #F4F4F5;
+  font-style: normal;
+  margin-bottom: 2.4rem;
+}
+
+.c26 {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #717B8A;
+}
+
+.c27 {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #717B8A;
+  margin-top: 5px;
+}
+
+.c30 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c31 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  font-style: normal;
+  color: #F4F4F5;
+}
+
+.c32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.c0 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 4.0rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+}
+
+@media (min-width:1170px) {
+  .c1 {
+    margin: 0 3.2rem;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    margin: 0 4.8rem;
+  }
+}
+
+@media (min-width:1656px) {
+  .c1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:1170px) {
+  .c5 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c20 {
+    width: 29.1rem;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (min-width:450px) {
+  .c21 {
+    -webkit-filter: none;
+    filter: none;
+    background-color: #010914;
+  }
+}
+
+@media (min-width:450px) {
+  .c22 {
+    width: auto;
+    min-height: 20.8rem;
+    position: inherit;
+    background-color: #010914;
+  }
+}
+
+@media (min-width:450px) {
+  .c25 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c26 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c27 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c31 {
+    font-size: 2.0rem;
+  }
+}
+
+<section
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <h1
+          class="c4"
+        >
+          Bestsellers
+        </h1>
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            <div
+              class="c7"
+              color="secondary"
+            >
+              <svg
+                aria-label="All Platforms Icon"
+                class="c8"
+                fill="none"
+                role="figure"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  clip-path="url(#a)"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M6.902 0H2.297C1.028 0 0 1.017 0 2.271v4.554C0 8.08 1.028 9.097 2.297 9.097h4.605c1.269 0 2.297-1.017 2.297-2.272V2.271C9.199 1.017 8.17 0 6.902 0ZM17.709 0h-4.605c-1.269 0-2.297 1.017-2.297 2.271v4.554c0 1.255 1.028 2.272 2.297 2.272h4.605c1.268 0 2.297-1.017 2.297-2.272V2.271C20.006 1.017 18.977 0 17.709 0ZM6.902 10.903H2.297C1.028 10.903 0 11.92 0 13.174v4.555C0 18.983 1.028 20 2.297 20h4.605c1.269 0 2.297-1.017 2.297-2.271v-4.554c0-1.255-1.028-2.272-2.297-2.272ZM17.709 10.903h-4.605c-1.269 0-2.297 1.017-2.297 2.271v4.555c0 1.254 1.028 2.271 2.297 2.271h4.605c1.268 0 2.297-1.017 2.297-2.271v-4.554c0-1.255-1.029-2.272-2.297-2.272Z"
+                  />
+                </g>
+              </svg>
+              <span
+                aria-label="All platforms"
+                class="c9"
+              >
+                All platforms
+              </span>
+            </div>
+            <div
+              class="c10"
+              color="secondary"
+            >
+              <svg
+                aria-label="PlayStation Icon"
+                class="c11"
+                fill="none"
+                role="figure"
+                viewBox="0 0 28 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span
+                aria-label="PlayStation"
+                class="c9"
+              >
+                PlayStation
+              </span>
+            </div>
+            <div
+              class="c10"
+              color="secondary"
+            >
+              <svg
+                aria-label="Xbox Icon"
+                class="c12"
+                fill="none"
+                role="figure"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span
+                aria-label="Xbox"
+                class="c9"
+              >
+                Xbox
+              </span>
+            </div>
+            <div
+              class="c10"
+              color="secondary"
+            >
+              <svg
+                aria-label="PC Icon"
+                class="c13"
+                fill="none"
+                role="figure"
+                viewBox="0 0 34 19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M.426 18 3.324.545h6.886c1.318 0 2.4.253 3.247.759.853.5 1.45 1.196 1.79 2.088.347.886.426 1.91.239 3.068-.193 1.165-.614 2.19-1.262 3.077a6.556 6.556 0 0 1-2.505 2.062c-1.029.495-2.216.742-3.563.742H3.767l.486-2.957h3.792c.716 0 1.327-.123 1.833-.367.511-.25.918-.594 1.219-1.031.3-.443.497-.952.588-1.526.096-.585.065-1.094-.094-1.525a1.87 1.87 0 0 0-.878-1.006c-.42-.244-.986-.366-1.696-.366H6.528L4.116 18H.426ZM33.232 6.656H29.55c.012-.488-.05-.92-.187-1.295a2.533 2.533 0 0 0-.614-.972 2.576 2.576 0 0 0-.98-.605 3.76 3.76 0 0 0-1.304-.213c-.932 0-1.787.233-2.565.699-.779.466-1.435 1.142-1.969 2.028-.534.881-.903 1.946-1.108 3.196-.199 1.205-.187 2.213.034 3.026.222.812.614 1.426 1.176 1.84.569.41 1.276.614 2.122.614a5.56 5.56 0 0 0 1.492-.196c.472-.136.9-.33 1.287-.58a4.309 4.309 0 0 0 1.023-.928c.295-.364.525-.776.69-1.236h3.707a8.442 8.442 0 0 1-1.09 2.318 8.73 8.73 0 0 1-1.816 1.995 8.76 8.76 0 0 1-2.463 1.38c-.92.341-1.929.512-3.026.512-1.585 0-2.945-.364-4.082-1.091-1.13-.727-1.946-1.776-2.446-3.145-.5-1.37-.594-3.02-.281-4.952.312-1.87.923-3.454 1.832-4.756.915-1.306 2.026-2.298 3.333-2.974a9.063 9.063 0 0 1 4.21-1.014c1.04 0 1.98.142 2.82.426.842.284 1.558.699 2.149 1.244a5.098 5.098 0 0 1 1.346 1.986c.301.784.432 1.682.392 2.693Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span
+                aria-label="Personal computer"
+                class="c9"
+              >
+                Personal computer
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c14"
+      >
+        <div
+          class="c15"
+        >
+          <button
+            aria-label="Button Action"
+            class="c16"
+          >
+            <span>
+              All
+            </span>
+            <svg
+              aria-hidden="true"
+              class="effect"
+              preserveAspectRatio="none"
+              viewBox="-5 -5 110 110"
+            >
+              <path
+                d="M0 8C0 3.58172 3.58172 0 8 0H92C96.4183 0 100 3.58172 100 8V92C100 96.4183 96.4183 100 92 100H8C3.58172 100 0 96.4183 0 92V8Z"
+              />
+            </svg>
+          </button>
+          <div
+            class="c17"
+          >
+            <button
+              class="c18"
+              direction="left"
+              id="bestsellers-game-list-prev-arrow"
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                preserveAspectRatio="none"
+                viewBox="0 0 8 13"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.258 12.466a.937.937 0 0 0 0-1.325L2.618 6.5l4.64-4.64A.937.937 0 0 0 5.933.533L.629 5.837a.938.938 0 0 0 0 1.326l5.304 5.303a.937.937 0 0 0 1.325 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button
+              class="c19"
+              direction="right"
+              id="bestsellers-game-list-next-arrow"
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                preserveAspectRatio="none"
+                viewBox="0 0 8 13"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.258 12.466a.937.937 0 0 0 0-1.325L2.618 6.5l4.64-4.64A.937.937 0 0 0 5.933.533L.629 5.837a.938.938 0 0 0 0 1.326l5.304 5.303a.937.937 0 0 0 1.325 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="Swiper"
+  >
+    <div
+      data-testid="Swiper-Slide"
+    >
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <article
+          class="c20"
+        >
+          <div
+            class="c21"
+            href="/game"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="God of War: Ragnarök"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="c22"
+          >
+            <div
+              class="c23"
+              href="/game"
+            >
+              <div
+                class="c24"
+              >
+                <h3
+                  class="c25"
+                >
+                  God of War: Ragnarök
+                </h3>
+                <p
+                  class="c26"
+                >
+                  Action-adventure 
+                </p>
+                <p
+                  class="c27"
+                >
+                  Santa Monica Games
+                  , 
+                  2022
+                </p>
+              </div>
+              <div
+                class="c28"
+              >
+                <svg
+                  aria-label="Score"
+                  height="42"
+                  role="img"
+                  viewBox="0 0 42 42"
+                  width="42"
+                >
+                  <path
+                    d="M1 21a20 20 0 1 1 40 0 20 20 0 0 1-40 0"
+                    fill="none"
+                    pathLength="100"
+                    stroke="#0FBF00"
+                    stroke-dasharray="100 0"
+                    stroke-dashoffset="-25"
+                    stroke-width="2"
+                  />
+                </svg>
+                <p
+                  class="c29"
+                >
+                  5,0
+                </p>
+              </div>
+            </div>
+            <div
+              class="0 c30"
+            >
+              <p
+                class="1 c31"
+              >
+                $ 60.99
+              </p>
+              <div
+                class="2 c32"
+              >
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PlayStation Icon"
+                    class="c11"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 28 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <article
+          class="c20"
+        >
+          <div
+            class="c21"
+            href="/game"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Star Wars Jedi: Fallen Order"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="c22"
+          >
+            <div
+              class="c23"
+              href="/game"
+            >
+              <div
+                class="c24"
+              >
+                <h3
+                  class="c25"
+                >
+                  Star Wars Jedi: Fallen Order
+                </h3>
+                <p
+                  class="c26"
+                >
+                  Action-adventure 
+                </p>
+                <p
+                  class="c27"
+                >
+                  EA
+                  , 
+                  2019
+                </p>
+              </div>
+              <div
+                class="c28"
+              >
+                <svg
+                  aria-label="Score"
+                  height="42"
+                  role="img"
+                  viewBox="0 0 42 42"
+                  width="42"
+                >
+                  <path
+                    d="M1 21a20 20 0 1 1 40 0 20 20 0 0 1-40 0"
+                    fill="none"
+                    pathLength="100"
+                    stroke="#FFF720"
+                    stroke-dasharray="76 24"
+                    stroke-dashoffset="-25"
+                    stroke-width="2"
+                  />
+                </svg>
+                <p
+                  class="c29"
+                >
+                  3,8
+                </p>
+              </div>
+            </div>
+            <div
+              class="0 c30"
+            >
+              <p
+                class="1 c31"
+              >
+                $ 30.00
+              </p>
+              <div
+                class="2 c32"
+              >
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PlayStation Icon"
+                    class="c11"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 28 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="Xbox Icon"
+                    class="c12"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PC Icon"
+                    class="c13"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 34 19"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.426 18 3.324.545h6.886c1.318 0 2.4.253 3.247.759.853.5 1.45 1.196 1.79 2.088.347.886.426 1.91.239 3.068-.193 1.165-.614 2.19-1.262 3.077a6.556 6.556 0 0 1-2.505 2.062c-1.029.495-2.216.742-3.563.742H3.767l.486-2.957h3.792c.716 0 1.327-.123 1.833-.367.511-.25.918-.594 1.219-1.031.3-.443.497-.952.588-1.526.096-.585.065-1.094-.094-1.525a1.87 1.87 0 0 0-.878-1.006c-.42-.244-.986-.366-1.696-.366H6.528L4.116 18H.426ZM33.232 6.656H29.55c.012-.488-.05-.92-.187-1.295a2.533 2.533 0 0 0-.614-.972 2.576 2.576 0 0 0-.98-.605 3.76 3.76 0 0 0-1.304-.213c-.932 0-1.787.233-2.565.699-.779.466-1.435 1.142-1.969 2.028-.534.881-.903 1.946-1.108 3.196-.199 1.205-.187 2.213.034 3.026.222.812.614 1.426 1.176 1.84.569.41 1.276.614 2.122.614a5.56 5.56 0 0 0 1.492-.196c.472-.136.9-.33 1.287-.58a4.309 4.309 0 0 0 1.023-.928c.295-.364.525-.776.69-1.236h3.707a8.442 8.442 0 0 1-1.09 2.318 8.73 8.73 0 0 1-1.816 1.995 8.76 8.76 0 0 1-2.463 1.38c-.92.341-1.929.512-3.026.512-1.585 0-2.945-.364-4.082-1.091-1.13-.727-1.946-1.776-2.446-3.145-.5-1.37-.594-3.02-.281-4.952.312-1.87.923-3.454 1.832-4.756.915-1.306 2.026-2.298 3.333-2.974a9.063 9.063 0 0 1 4.21-1.014c1.04 0 1.98.142 2.82.426.842.284 1.558.699 2.149 1.244a5.098 5.098 0 0 1 1.346 1.986c.301.784.432 1.682.392 2.693Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <article
+          class="c20"
+        >
+          <div
+            class="c21"
+            href="/game"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Cyberpunk 2077"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="c22"
+          >
+            <div
+              class="c23"
+              href="/game"
+            >
+              <div
+                class="c24"
+              >
+                <h3
+                  class="c25"
+                >
+                  Cyberpunk 2077
+                </h3>
+                <p
+                  class="c26"
+                >
+                  Action-adventure 
+                </p>
+                <p
+                  class="c27"
+                >
+                  CD PROJEKT RED
+                  , 
+                  2020
+                </p>
+              </div>
+              <div
+                class="c28"
+              >
+                <svg
+                  aria-label="Score"
+                  height="42"
+                  role="img"
+                  viewBox="0 0 42 42"
+                  width="42"
+                >
+                  <path
+                    d="M1 21a20 20 0 1 1 40 0 20 20 0 0 1-40 0"
+                    fill="none"
+                    pathLength="100"
+                    stroke="#FF3333"
+                    stroke-dasharray="36 64"
+                    stroke-dashoffset="-25"
+                    stroke-width="2"
+                  />
+                </svg>
+                <p
+                  class="c29"
+                >
+                  1,8
+                </p>
+              </div>
+            </div>
+            <div
+              class="0 c30"
+            >
+              <p
+                class="1 c31"
+              >
+                $ 10.00
+              </p>
+              <div
+                class="2 c32"
+              >
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PlayStation Icon"
+                    class="c11"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 28 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="Xbox Icon"
+                    class="c12"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PC Icon"
+                    class="c13"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 34 19"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.426 18 3.324.545h6.886c1.318 0 2.4.253 3.247.759.853.5 1.45 1.196 1.79 2.088.347.886.426 1.91.239 3.068-.193 1.165-.614 2.19-1.262 3.077a6.556 6.556 0 0 1-2.505 2.062c-1.029.495-2.216.742-3.563.742H3.767l.486-2.957h3.792c.716 0 1.327-.123 1.833-.367.511-.25.918-.594 1.219-1.031.3-.443.497-.952.588-1.526.096-.585.065-1.094-.094-1.525a1.87 1.87 0 0 0-.878-1.006c-.42-.244-.986-.366-1.696-.366H6.528L4.116 18H.426ZM33.232 6.656H29.55c.012-.488-.05-.92-.187-1.295a2.533 2.533 0 0 0-.614-.972 2.576 2.576 0 0 0-.98-.605 3.76 3.76 0 0 0-1.304-.213c-.932 0-1.787.233-2.565.699-.779.466-1.435 1.142-1.969 2.028-.534.881-.903 1.946-1.108 3.196-.199 1.205-.187 2.213.034 3.026.222.812.614 1.426 1.176 1.84.569.41 1.276.614 2.122.614a5.56 5.56 0 0 0 1.492-.196c.472-.136.9-.33 1.287-.58a4.309 4.309 0 0 0 1.023-.928c.295-.364.525-.776.69-1.236h3.707a8.442 8.442 0 0 1-1.09 2.318 8.73 8.73 0 0 1-1.816 1.995 8.76 8.76 0 0 1-2.463 1.38c-.92.341-1.929.512-3.026.512-1.585 0-2.945-.364-4.082-1.091-1.13-.727-1.946-1.776-2.446-3.145-.5-1.37-.594-3.02-.281-4.952.312-1.87.923-3.454 1.832-4.756.915-1.306 2.026-2.298 3.333-2.974a9.063 9.063 0 0 1 4.21-1.014c1.04 0 1.98.142 2.82.426.842.284 1.558.699 2.149 1.244a5.098 5.098 0 0 1 1.346 1.986c.301.784.432 1.682.392 2.693Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <article
+          class="c20"
+        >
+          <div
+            class="c21"
+            href="/game"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="The Last of Us Part II"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="c22"
+          >
+            <div
+              class="c23"
+              href="/game"
+            >
+              <div
+                class="c24"
+              >
+                <h3
+                  class="c25"
+                >
+                  The Last of Us Part II
+                </h3>
+                <p
+                  class="c26"
+                >
+                  Action-adventure 
+                </p>
+                <p
+                  class="c27"
+                >
+                  Naughty Dog
+                  , 
+                  2020
+                </p>
+              </div>
+              <div
+                class="c28"
+              >
+                <svg
+                  aria-label="Score"
+                  height="42"
+                  role="img"
+                  viewBox="0 0 42 42"
+                  width="42"
+                >
+                  <path
+                    d="M1 21a20 20 0 1 1 40 0 20 20 0 0 1-40 0"
+                    fill="none"
+                    pathLength="100"
+                    stroke="#0FBF00"
+                    stroke-dasharray="100 0"
+                    stroke-dashoffset="-25"
+                    stroke-width="2"
+                  />
+                </svg>
+                <p
+                  class="c29"
+                >
+                  5,0
+                </p>
+              </div>
+            </div>
+            <div
+              class="0 c30"
+            >
+              <p
+                class="1 c31"
+              >
+                $ 60.99
+              </p>
+              <div
+                class="2 c32"
+              >
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PlayStation Icon"
+                    class="c11"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 28 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <article
+          class="c20"
+        >
+          <div
+            class="c21"
+            href="/game"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Elden Ring"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="c22"
+          >
+            <div
+              class="c23"
+              href="/game"
+            >
+              <div
+                class="c24"
+              >
+                <h3
+                  class="c25"
+                >
+                  Elden Ring
+                </h3>
+                <p
+                  class="c26"
+                >
+                  Action-adventure 
+                </p>
+                <p
+                  class="c27"
+                >
+                  BANDAI NAMCO Entertainment Inc
+                  , 
+                  2022
+                </p>
+              </div>
+              <div
+                class="c28"
+              >
+                <svg
+                  aria-label="Score"
+                  height="42"
+                  role="img"
+                  viewBox="0 0 42 42"
+                  width="42"
+                >
+                  <path
+                    d="M1 21a20 20 0 1 1 40 0 20 20 0 0 1-40 0"
+                    fill="none"
+                    pathLength="100"
+                    stroke="#0FBF00"
+                    stroke-dasharray="96 4"
+                    stroke-dashoffset="-25"
+                    stroke-width="2"
+                  />
+                </svg>
+                <p
+                  class="c29"
+                >
+                  4,8
+                </p>
+              </div>
+            </div>
+            <div
+              class="0 c30"
+            >
+              <p
+                class="1 c31"
+              >
+                $ 60.99
+              </p>
+              <div
+                class="2 c32"
+              >
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PlayStation Icon"
+                    class="c11"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 28 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <article
+          class="c20"
+        >
+          <div
+            class="c21"
+            href="/game"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Horizon Forbidden West"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="c22"
+          >
+            <div
+              class="c23"
+              href="/game"
+            >
+              <div
+                class="c24"
+              >
+                <h3
+                  class="c25"
+                >
+                  Horizon Forbidden West
+                </h3>
+                <p
+                  class="c26"
+                >
+                  Action-adventure 
+                </p>
+                <p
+                  class="c27"
+                >
+                  Santa Monica Games
+                  , 
+                  2022
+                </p>
+              </div>
+              <div
+                class="c28"
+              >
+                <svg
+                  aria-label="Score"
+                  height="42"
+                  role="img"
+                  viewBox="0 0 42 42"
+                  width="42"
+                >
+                  <path
+                    d="M1 21a20 20 0 1 1 40 0 20 20 0 0 1-40 0"
+                    fill="none"
+                    pathLength="100"
+                    stroke="#0FBF00"
+                    stroke-dasharray="96 4"
+                    stroke-dashoffset="-25"
+                    stroke-width="2"
+                  />
+                </svg>
+                <p
+                  class="c29"
+                >
+                  4,8
+                </p>
+              </div>
+            </div>
+            <div
+              class="0 c30"
+            >
+              <p
+                class="1 c31"
+              >
+                $ 60.99
+              </p>
+              <div
+                class="2 c32"
+              >
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PlayStation Icon"
+                    class="c11"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 28 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <article
+          class="c20"
+        >
+          <div
+            class="c21"
+            href="/game"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Marvel's Spider-Man"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="c22"
+          >
+            <div
+              class="c23"
+              href="/game"
+            >
+              <div
+                class="c24"
+              >
+                <h3
+                  class="c25"
+                >
+                  Marvel's Spider-Man
+                </h3>
+                <p
+                  class="c26"
+                >
+                  Action-adventure 
+                </p>
+                <p
+                  class="c27"
+                >
+                  Insomniac Games
+                  , 
+                  2018
+                </p>
+              </div>
+              <div
+                class="c28"
+              >
+                <svg
+                  aria-label="Score"
+                  height="42"
+                  role="img"
+                  viewBox="0 0 42 42"
+                  width="42"
+                >
+                  <path
+                    d="M1 21a20 20 0 1 1 40 0 20 20 0 0 1-40 0"
+                    fill="none"
+                    pathLength="100"
+                    stroke="#0FBF00"
+                    stroke-dasharray="94 6"
+                    stroke-dashoffset="-25"
+                    stroke-width="2"
+                  />
+                </svg>
+                <p
+                  class="c29"
+                >
+                  4,7
+                </p>
+              </div>
+            </div>
+            <div
+              class="0 c30"
+            >
+              <p
+                class="1 c31"
+              >
+                $ 60.99
+              </p>
+              <div
+                class="2 c32"
+              >
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PlayStation Icon"
+                    class="c11"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 28 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PC Icon"
+                    class="c13"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 34 19"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.426 18 3.324.545h6.886c1.318 0 2.4.253 3.247.759.853.5 1.45 1.196 1.79 2.088.347.886.426 1.91.239 3.068-.193 1.165-.614 2.19-1.262 3.077a6.556 6.556 0 0 1-2.505 2.062c-1.029.495-2.216.742-3.563.742H3.767l.486-2.957h3.792c.716 0 1.327-.123 1.833-.367.511-.25.918-.594 1.219-1.031.3-.443.497-.952.588-1.526.096-.585.065-1.094-.094-1.525a1.87 1.87 0 0 0-.878-1.006c-.42-.244-.986-.366-1.696-.366H6.528L4.116 18H.426ZM33.232 6.656H29.55c.012-.488-.05-.92-.187-1.295a2.533 2.533 0 0 0-.614-.972 2.576 2.576 0 0 0-.98-.605 3.76 3.76 0 0 0-1.304-.213c-.932 0-1.787.233-2.565.699-.779.466-1.435 1.142-1.969 2.028-.534.881-.903 1.946-1.108 3.196-.199 1.205-.187 2.213.034 3.026.222.812.614 1.426 1.176 1.84.569.41 1.276.614 2.122.614a5.56 5.56 0 0 0 1.492-.196c.472-.136.9-.33 1.287-.58a4.309 4.309 0 0 0 1.023-.928c.295-.364.525-.776.69-1.236h3.707a8.442 8.442 0 0 1-1.09 2.318 8.73 8.73 0 0 1-1.816 1.995 8.76 8.76 0 0 1-2.463 1.38c-.92.341-1.929.512-3.026.512-1.585 0-2.945-.364-4.082-1.091-1.13-.727-1.946-1.776-2.446-3.145-.5-1.37-.594-3.02-.281-4.952.312-1.87.923-3.454 1.832-4.756.915-1.306 2.026-2.298 3.333-2.974a9.063 9.063 0 0 1 4.21-1.014c1.04 0 1.98.142 2.82.426.842.284 1.558.699 2.149 1.244a5.098 5.098 0 0 1 1.346 1.986c.301.784.432 1.682.392 2.693Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <article
+          class="c20"
+        >
+          <div
+            class="c21"
+            href="/game"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="The Witcher 3"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="c22"
+          >
+            <div
+              class="c23"
+              href="/game"
+            >
+              <div
+                class="c24"
+              >
+                <h3
+                  class="c25"
+                >
+                  The Witcher 3
+                </h3>
+                <p
+                  class="c26"
+                >
+                  Action-adventure 
+                </p>
+                <p
+                  class="c27"
+                >
+                  CD PROJEKT SA
+                  , 
+                  2015
+                </p>
+              </div>
+              <div
+                class="c28"
+              >
+                <svg
+                  aria-label="Score"
+                  height="42"
+                  role="img"
+                  viewBox="0 0 42 42"
+                  width="42"
+                >
+                  <path
+                    d="M1 21a20 20 0 1 1 40 0 20 20 0 0 1-40 0"
+                    fill="none"
+                    pathLength="100"
+                    stroke="#0FBF00"
+                    stroke-dasharray="90 10"
+                    stroke-dashoffset="-25"
+                    stroke-width="2"
+                  />
+                </svg>
+                <p
+                  class="c29"
+                >
+                  4,5
+                </p>
+              </div>
+            </div>
+            <div
+              class="0 c30"
+            >
+              <p
+                class="1 c31"
+              >
+                $ 60.99
+              </p>
+              <div
+                class="2 c32"
+              >
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PlayStation Icon"
+                    class="c11"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 28 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="Xbox Icon"
+                    class="c12"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="c33"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PC Icon"
+                    class="c13"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 34 19"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.426 18 3.324.545h6.886c1.318 0 2.4.253 3.247.759.853.5 1.45 1.196 1.79 2.088.347.886.426 1.91.239 3.068-.193 1.165-.614 2.19-1.262 3.077a6.556 6.556 0 0 1-2.505 2.062c-1.029.495-2.216.742-3.563.742H3.767l.486-2.957h3.792c.716 0 1.327-.123 1.833-.367.511-.25.918-.594 1.219-1.031.3-.443.497-.952.588-1.526.096-.585.065-1.094-.094-1.525a1.87 1.87 0 0 0-.878-1.006c-.42-.244-.986-.366-1.696-.366H6.528L4.116 18H.426ZM33.232 6.656H29.55c.012-.488-.05-.92-.187-1.295a2.533 2.533 0 0 0-.614-.972 2.576 2.576 0 0 0-.98-.605 3.76 3.76 0 0 0-1.304-.213c-.932 0-1.787.233-2.565.699-.779.466-1.435 1.142-1.969 2.028-.534.881-.903 1.946-1.108 3.196-.199 1.205-.187 2.213.034 3.026.222.812.614 1.426 1.176 1.84.569.41 1.276.614 2.122.614a5.56 5.56 0 0 0 1.492-.196c.472-.136.9-.33 1.287-.58a4.309 4.309 0 0 0 1.023-.928c.295-.364.525-.776.69-1.236h3.707a8.442 8.442 0 0 1-1.09 2.318 8.73 8.73 0 0 1-1.816 1.995 8.76 8.76 0 0 1-2.463 1.38c-.92.341-1.929.512-3.026.512-1.585 0-2.945-.364-4.082-1.091-1.13-.727-1.946-1.776-2.446-3.145-.5-1.37-.594-3.02-.281-4.952.312-1.87.923-3.454 1.832-4.756.915-1.306 2.026-2.298 3.333-2.974a9.063 9.063 0 0 1 4.21-1.014c1.04 0 1.98.142 2.82.426.842.284 1.558.699 2.149 1.244a5.098 5.098 0 0 1 1.346 1.986c.301.784.432 1.682.392 2.693Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+`;

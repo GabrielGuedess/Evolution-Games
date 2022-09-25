@@ -4,7 +4,7 @@ import { ButtonProps } from './Button';
 
 export type WrapperProps = {
   hasIcon: boolean;
-} & Pick<ButtonProps, 'size' | 'fullWidth'>;
+} & Pick<ButtonProps, 'size' | 'fullWidth' | 'variant'>;
 
 const wrapperModifiers = {
   small: (theme: DefaultTheme) => css`
@@ -32,6 +32,43 @@ const wrapperModifiers = {
     }
   `,
 
+  solid: (theme: DefaultTheme) => css`
+    background: ${theme.colors.primary};
+    color: ${theme.colors.whiteText};
+
+    .effect {
+      fill: ${theme.colors.primary};
+
+      :is(:hover, :focus) {
+        box-shadow: ${theme.shadows.box};
+        color: ${theme.colors.whiteText};
+      }
+    }
+  `,
+
+  outline: (theme: DefaultTheme) => css`
+    background: transparent;
+    color: ${theme.colors.secondary};
+
+    .effect {
+      fill: none;
+      stroke-width: 2px;
+      stroke: ${theme.colors.secondary};
+
+      path {
+        transition: 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      }
+    }
+
+    :is(:hover, :focus) .effect {
+      stroke: ${theme.colors.primary};
+    }
+
+    :is(:hover, :focus) {
+      color: ${theme.colors.primary};
+    }
+  `,
+
   disabled: () => css`
     &:disabled {
       cursor: not-allowed;
@@ -41,27 +78,26 @@ const wrapperModifiers = {
 };
 
 export const Wrapper = styled.button<WrapperProps>`
-  ${({ theme, hasIcon, size, fullWidth, disabled }) => css`
+  ${({ theme, hasIcon, size, fullWidth, disabled, variant }) => css`
     width: fit-content;
-    background: ${theme.colors.primaryForWhite};
     cursor: pointer;
     position: relative;
     outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: ${theme.colors.whiteText};
     text-decoration: none;
+    border-radius: 5px;
     transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 
     ${!!size && wrapperModifiers[size](theme)};
     ${!!fullWidth && wrapperModifiers.fullWidth()};
     ${!!hasIcon && wrapperModifiers.withIcon(theme)};
     ${disabled && wrapperModifiers.disabled()};
+    ${!!variant && wrapperModifiers[variant](theme)}
 
     :not(:disabled):is(:hover, :focus) {
       filter: brightness(1.1);
-      box-shadow: ${theme.shadows.box};
     }
 
     :not(:disabled):active {
@@ -95,7 +131,6 @@ export const Wrapper = styled.button<WrapperProps>`
     }
 
     .effect {
-      fill: ${theme.colors.primary};
       position: absolute;
       top: -5%;
       left: -5%;
@@ -116,7 +151,7 @@ export const Wrapper = styled.button<WrapperProps>`
 
     :not(:disabled):active .effect path {
       d: path(
-        'M0,0 C30,10 70,10 100,0 C95,30 95,70 100,100 C70,90 30,90 0,100 C5,70 5,30 0,0'
+        'M0 5C0 2.23858 2.23858 0 5 0H95C97.7614 0 100 2.23858 100 5V95C100 97.7614 97.7614 100 95 100H5C2.23858 100 0 97.7614 0 95V5Z'
       );
     }
   `}

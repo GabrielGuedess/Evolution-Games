@@ -10,5 +10,11 @@ exports['<Home /> should render the Home correctly 1'] = `
   <div
     data-testid="Slider"
   />
+  <div
+    data-testid="GameList"
+  />
+  <div
+    data-testid="GameList"
+  />
 </main>
 `;

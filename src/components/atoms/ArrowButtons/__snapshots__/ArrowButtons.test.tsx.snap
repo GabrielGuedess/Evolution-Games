@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<ArrowButtons /> should render the heading 1'] = `
+.c0 {
+  min-width: 6.4rem;
+}
+
+.c1 {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid #717B8A;
+  color: #717B8A;
+  -webkit-transition: color 0.3s linear,border-color 0.3s linear;
+  transition: color 0.3s linear,border-color 0.3s linear;
+  border-radius: 5px 0 0 5px;
+}
+
+.c1 svg {
+  width: 0.7rem;
+  height: 1.2rem;
+}
+
+.c1:hover,
+.c1:focus {
+  cursor: pointer;
+  color: #855aff;
+  border-color: #855aff;
+}
+
+.c2 {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid #717B8A;
+  color: #717B8A;
+  -webkit-transition: color 0.3s linear,border-color 0.3s linear;
+  transition: color 0.3s linear,border-color 0.3s linear;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  border-radius: 5px 0 0 5px;
+}
+
+.c2 svg {
+  width: 0.7rem;
+  height: 1.2rem;
+}
+
+.c2:hover,
+.c2:focus {
+  cursor: pointer;
+  color: #855aff;
+  border-color: #855aff;
+}
+
+<div
+  class="c0"
+>
+  <button
+    class="c1"
+    direction="left"
+    id="swiper-prev-id"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      preserveAspectRatio="none"
+      viewBox="0 0 8 13"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7.258 12.466a.937.937 0 0 0 0-1.325L2.618 6.5l4.64-4.64A.937.937 0 0 0 5.933.533L.629 5.837a.938.938 0 0 0 0 1.326l5.304 5.303a.937.937 0 0 0 1.325 0Z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+  <button
+    class="c2"
+    direction="right"
+    id="swiper-next-id"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      preserveAspectRatio="none"
+      viewBox="0 0 8 13"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7.258 12.466a.937.937 0 0 0 0-1.325L2.618 6.5l4.64-4.64A.937.937 0 0 0 5.933.533L.629 5.837a.938.938 0 0 0 0 1.326l5.304 5.303a.937.937 0 0 0 1.325 0Z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+</div>
+`;

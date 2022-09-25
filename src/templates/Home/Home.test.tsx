@@ -18,6 +18,13 @@ jest.mock('components/organisms/Slider/Slider', () => ({
   },
 }));
 
+jest.mock('components/organisms/GameList/GameList', () => ({
+  __esModule: true,
+  GameList: function Mock({ children }: { children: React.ReactNode }) {
+    return <div data-testid="GameList">{children}</div>;
+  },
+}));
+
 describe('<Home />', () => {
   it('should render the Home correctly', () => {
     // Arrange
@@ -26,6 +33,7 @@ describe('<Home />', () => {
     // Assert
     expect(screen.getByTestId('Navbar')).toBeInTheDocument();
     expect(screen.getByTestId('Slider')).toBeInTheDocument();
+    expect(screen.getAllByTestId('GameList')).toHaveLength(2);
 
     expect(container.firstChild).toMatchSnapshot();
   });

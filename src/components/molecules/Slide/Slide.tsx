@@ -2,10 +2,6 @@ import Image from 'next/image';
 
 import * as S from './Slide.styles';
 
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
-
 export type SlideProps = {
   srcSlideImage: string;
   altSlideImage: string;
