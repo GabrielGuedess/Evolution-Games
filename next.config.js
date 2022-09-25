@@ -11,6 +11,16 @@ module.exports = withPWA({
     styledComponents: true,
   },
   images: {
-    domains: ['images.unsplash.com'],
+    domains: [
+      'images.unsplash.com',
+      'i.pinimg.com',
+      'cdn2.steamgriddb.com',
+      'whatifgaming.com',
+      'www.jeuxvideo-live.com',
+      'image.api.playstation.com',
+      't.ctcdn.com.br',
+      'gmedia.playstation.com',
+      'e.snmc.io',
+    ],
   },
 });
