@@ -30,6 +30,7 @@ exports['<Home /> should render the Home correctly 1'] = `
   align-items: center;
   justify-items: center;
   grid-row-gap: 2rem;
+  margin-top: 1.6rem;
 }
 
 .c3 .image-one {
@@ -131,6 +132,7 @@ exports['<Home /> should render the Home correctly 1'] = `
     grid-template-rows: repeat(2,1fr);
     grid-template-areas: 'a b b' 'c c c';
     grid-column-gap: 2rem;
+    margin-top: 0;
   }
 }
 

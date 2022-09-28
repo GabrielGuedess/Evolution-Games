@@ -17,6 +17,7 @@ export const CategoryGrid = styled(Container)`
   align-items: center;
   justify-items: center;
   grid-row-gap: 2rem;
+  margin-top: 1.6rem;
 
   .image-one {
     grid-area: a;
@@ -35,6 +36,7 @@ export const CategoryGrid = styled(Container)`
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 'a b b' 'c c c';
     grid-column-gap: 2rem;
+    margin-top: 0;
   `}
 `;
 
