@@ -5,7 +5,7 @@ import { renderWithTheme } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
-import { CategorySection } from './CategorySection';
+import CategorySection from './CategorySection';
 
 type Image = { src: string; alt: string; width: number; height: number };
 

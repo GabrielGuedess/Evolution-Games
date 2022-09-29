@@ -8,7 +8,7 @@ import { Title } from 'components/atoms/Title/Title';
 
 import * as S from './CategorySection.styles';
 
-export const CategorySection = () => {
+const CategorySection = () => {
   const isPortrait = useMediaQuery({ query: '(max-width: 1169px)' });
 
   return (
@@ -21,12 +21,12 @@ export const CategorySection = () => {
           <S.ImageWrapper className="image-one">
             <S.ImageHeader>
               <S.ImageTitle>Para os amantes da emoção</S.ImageTitle>
-              <S.ImageSubTitle>Acão e Aventura</S.ImageSubTitle>
+              <S.ImageSubTitle>Ação e Aventura</S.ImageSubTitle>
             </S.ImageHeader>
             <Image
               quality={100}
               objectFit="cover"
-              alt="Acão e Aventura"
+              alt="Ação e Aventura"
               className="image-category"
               width={isPortrait ? 396 : 608}
               height={isPortrait ? 370 : 568}
@@ -55,7 +55,7 @@ export const CategorySection = () => {
           <S.ImageWrapper className="image-three">
             <S.ImageHeader>
               <S.ImageTitle>Para os amantes da qualidade</S.ImageTitle>
-              <S.ImageSubTitle>Jogos 4k</S.ImageSubTitle>
+              <S.ImageSubTitle>Jogos em 4k</S.ImageSubTitle>
             </S.ImageHeader>
             <Image
               quality={100}
@@ -72,3 +72,5 @@ export const CategorySection = () => {
     </S.Wrapper>
   );
 };
+
+export default CategorySection;
