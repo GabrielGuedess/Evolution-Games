@@ -1,76 +1,67 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { useMediaQuery } from 'react-responsive';
-
 import { Container } from 'components/atoms/Container/Container';
 import { Title } from 'components/atoms/Title/Title';
 
 import * as S from './CategorySection.styles';
 
-const CategorySection = () => {
-  const isPortrait = useMediaQuery({ query: '(max-width: 1169px)' });
-
-  return (
-    <S.Wrapper>
-      <Container>
-        <Title textAlign="left">Categorias</Title>
-      </Container>
-      <S.CategoryGrid>
-        <Link href="/">
-          <S.ImageWrapper className="image-one">
-            <S.ImageHeader>
-              <S.ImageTitle>Para os amantes da emoção</S.ImageTitle>
-              <S.ImageSubTitle>Ação e Aventura</S.ImageSubTitle>
-            </S.ImageHeader>
-            <Image
-              quality={100}
-              objectFit="cover"
-              alt="Ação e Aventura"
-              className="image-category"
-              width={isPortrait ? 396 : 608}
-              height={isPortrait ? 370 : 568}
-              src="/img/category/actionAdventure.png"
-            />
-          </S.ImageWrapper>
-        </Link>
-        <Link href="/">
-          <S.ImageWrapper className="image-two">
-            <S.ImageHeader>
-              <S.ImageTitle>Para os amantes do terror</S.ImageTitle>
-              <S.ImageSubTitle>Terror</S.ImageSubTitle>
-            </S.ImageHeader>
-            <Image
-              alt="Terror"
-              quality={100}
-              objectFit="cover"
-              className="image-category"
-              width={isPortrait ? 396 : 1029}
-              height={isPortrait ? 370 : 568}
-              src="/img/category/horror.png"
-            />
-          </S.ImageWrapper>
-        </Link>
-        <Link href="/">
-          <S.ImageWrapper className="image-three">
-            <S.ImageHeader>
-              <S.ImageTitle>Para os amantes da qualidade</S.ImageTitle>
-              <S.ImageSubTitle>Jogos em 4k</S.ImageSubTitle>
-            </S.ImageHeader>
-            <Image
-              quality={100}
-              alt="Jogos 4k"
-              objectFit="cover"
-              className="image-category"
-              width={isPortrait ? 396 : 1656}
-              height={isPortrait ? 370 : 787}
-              src="/img/category/4k.png"
-            />
-          </S.ImageWrapper>
-        </Link>
-      </S.CategoryGrid>
-    </S.Wrapper>
-  );
-};
-
-export default CategorySection;
+export const CategorySection = () => (
+  <S.Wrapper>
+    <Container>
+      <Title textAlign="left">Categorias</Title>
+    </Container>
+    <S.FirstColumn>
+      <Link href="/">
+        <S.ActionImageCategory>
+          <S.ImageHeader>
+            <S.ImageTitle>Para os amantes da emoção</S.ImageTitle>
+            <S.ImageSubTitle>Ação e Aventura</S.ImageSubTitle>
+          </S.ImageHeader>
+          <Image
+            layout="fill"
+            loading="lazy"
+            objectFit="cover"
+            alt="Ação e Aventura"
+            className="image-category"
+            src="/img/category/actionAdventure.png"
+          />
+        </S.ActionImageCategory>
+      </Link>
+      <Link href="/">
+        <S.TerrorImageCategory>
+          <S.ImageHeader>
+            <S.ImageTitle>Para os amantes do terror</S.ImageTitle>
+            <S.ImageSubTitle>Terror</S.ImageSubTitle>
+          </S.ImageHeader>
+          <Image
+            alt="Terror"
+            layout="fill"
+            loading="lazy"
+            objectFit="cover"
+            className="image-category"
+            src="/img/category/horror.png"
+          />
+        </S.TerrorImageCategory>
+      </Link>
+    </S.FirstColumn>
+    <S.SecondColumn>
+      <Link href="/">
+        <S.QualityImageCategory>
+          <S.ImageHeader>
+            <S.ImageTitle>Para os amantes da qualidade</S.ImageTitle>
+            <S.ImageSubTitle>Jogos em 4k</S.ImageSubTitle>
+          </S.ImageHeader>
+          <Image
+            layout="fill"
+            loading="lazy"
+            alt="Jogos 4k"
+            objectFit="cover"
+            className="image-category"
+            src="/img/category/4k.png"
+          />
+        </S.QualityImageCategory>
+      </Link>
+    </S.SecondColumn>
+  </S.Wrapper>
+);

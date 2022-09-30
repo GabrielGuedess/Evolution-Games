@@ -9,45 +9,61 @@ export const Wrapper = styled.section`
   margin-bottom: 6rem;
 `;
 
-export const CategoryGrid = styled(Container)`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: 'a' 'b' 'c';
-  align-items: center;
-  justify-items: center;
-  grid-row-gap: 2rem;
-  margin-top: 1.6rem;
+export const FirstColumn = styled(Container)`
+  ${({ theme }) => css`
+    height: 760px;
+    max-height: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: ${theme.spacings.xsmall};
+    gap: 2rem;
 
-  .image-one {
-    grid-area: a;
-  }
+    ${media.greaterThan('large')`
+      height: 500px;
+      max-height: initial;
+      flex-direction: row;
+    `}
 
-  .image-two {
-    grid-area: b;
-  }
-
-  .image-three {
-    grid-area: c;
-  }
-
-  ${media.greaterThan('large')`
-    grid-template-columns: 37% repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 'a b b' 'c c c';
-    grid-column-gap: 2rem;
-    margin-top: 0;
+    ${media.greaterThan('huge')`
+      height: 570px;
+      max-height: initial;
+      margin-top: ${theme.spacings.large};
+    `}
   `}
 `;
 
-export const ImageWrapper = styled.div`
+export const SecondColumn = styled(Container)`
+  height: 100%;
+  max-height: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+
+  ${media.greaterThan('large')`
+    width: auto;
+    height: 650px;
+    max-height: 650px;
+  `}
+
+  ${media.greaterThan('huge')`
+    height: 787px;
+    max-height: 787px;
+  `}
+`;
+
+export const ActionImageCategory = styled.div`
   ${({ theme }) => css`
+    width: 100%;
     max-width: 396px;
-    max-height: 370px;
+    height: 370px;
+    flex: 1;
     position: relative;
-    cursor: pointer;
 
     .image-category {
+      cursor: pointer;
       transition: transform 0.5s ease;
     }
 
@@ -62,10 +78,71 @@ export const ImageWrapper = styled.div`
     }
 
     ${media.greaterThan('large')`
-      width: auto;
-      height: auto;
+      width: 100%;
       max-width: initial;
-      max-height: initial;
+      height: 100%;
+    `}
+  `}
+`;
+
+export const TerrorImageCategory = styled.div`
+  ${({ theme }) => css`
+    width: 100%;
+    max-width: 396px;
+    height: 370px;
+    flex: 1;
+    position: relative;
+
+    .image-category {
+      cursor: pointer;
+      transition: transform 0.5s ease;
+    }
+
+    &:hover {
+      h4 {
+        text-shadow: 0px 0px 3px ${theme.colors.white};
+      }
+
+      .image-category {
+        transform: scale(1.2);
+      }
+    }
+
+    ${media.greaterThan('large')`
+      width: 100%;
+      max-width: initial;
+      height: 100%;
+      flex: 1.69;
+    `}
+  `}
+`;
+
+export const QualityImageCategory = styled.div`
+  ${({ theme }) => css`
+    width: 100%;
+    max-width: 396px;
+    height: 370px;
+    position: relative;
+
+    .image-category {
+      cursor: pointer;
+      transition: transform 0.5s ease;
+    }
+
+    &:hover {
+      h4 {
+        text-shadow: 0px 0px 3px ${theme.colors.white};
+      }
+
+      .image-category {
+        transform: scale(1.2);
+      }
+    }
+
+    ${media.greaterThan('large')`
+      width: 100%;
+      max-width: initial;
+      height: 100%;
     `}
   `}
 `;
