@@ -1,18 +1,10 @@
-import dynamic from 'next/dynamic';
-
+import { CategorySection } from 'components/organisms/CategorySection/CategorySection';
 import { GameList } from 'components/organisms/GameList/GameList';
 import { Navbar } from 'components/organisms/Navbar/Navbar';
 import { Slider } from 'components/organisms/Slider/Slider';
 
 import * as S from './Home.styles';
 import { userInfo, sliderMock, gameCardItems } from './mock';
-
-const CategorySection = dynamic(
-  () => import('components/organisms/CategorySection/CategorySection'),
-  {
-    ssr: false,
-  },
-);
 
 export const Home = () => (
   <S.Wrapper>

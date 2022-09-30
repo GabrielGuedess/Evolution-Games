@@ -1,6 +1,273 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports['<Home /> should render the Home correctly 1'] = `
+.c1 {
+  max-width: 165.6rem;
+  margin: 0 1.6rem;
+}
+
+.c2 {
+  color: #F4F4F5;
+  font-size: 1.6rem;
+  font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c0 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.c3 {
+  height: 760px;
+  max-height: 760px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1.6rem;
+  gap: 2rem;
+}
+
+.c9 {
+  height: 100%;
+  max-height: 370px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.c4 {
+  width: 100%;
+  max-width: 396px;
+  height: 370px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+}
+
+.c4 .image-category {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.c4:hover h4 {
+  text-shadow: 0px 0px 3px #FFFFFF;
+}
+
+.c4:hover .image-category {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c8 {
+  width: 100%;
+  max-width: 396px;
+  height: 370px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+}
+
+.c8 .image-category {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.c8:hover h4 {
+  text-shadow: 0px 0px 3px #FFFFFF;
+}
+
+.c8:hover .image-category {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c10 {
+  width: 100%;
+  max-width: 396px;
+  height: 370px;
+  position: relative;
+}
+
+.c10 .image-category {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.c10:hover h4 {
+  text-shadow: 0px 0px 3px #FFFFFF;
+}
+
+.c10:hover .image-category {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.c6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #717B8A;
+  line-height: 1.6rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.c7 {
+  font-size: 2.0rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #F4F4F5;
+  text-align: center;
+}
+
+@media (min-width:1170px) {
+  .c1 {
+    margin: 0 3.2rem;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    margin: 0 4.8rem;
+  }
+}
+
+@media (min-width:1656px) {
+  .c1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c3 {
+    height: 500px;
+    max-height: initial;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1440px) {
+  .c3 {
+    height: 570px;
+    max-height: initial;
+    margin-top: 4.0rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c9 {
+    width: auto;
+    height: 650px;
+    max-height: 650px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c9 {
+    height: 787px;
+    max-height: 787px;
+  }
+}
+
+@media (min-width:1170px) {
+  .c4 {
+    width: 100%;
+    max-width: initial;
+    height: 100%;
+  }
+}
+
+@media (min-width:1170px) {
+  .c8 {
+    width: 100%;
+    max-width: initial;
+    height: 100%;
+    -webkit-flex: 1.69;
+    -ms-flex: 1.69;
+    flex: 1.69;
+  }
+}
+
+@media (min-width:1170px) {
+  .c10 {
+    width: 100%;
+    max-width: initial;
+    height: 100%;
+  }
+}
+
+@media (min-width:1170px) {
+  .c6 {
+    font-size: 2.5rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c7 {
+    font-size: 2.8rem;
+  }
+}
+
 <main
   class=""
 >
@@ -16,5 +283,119 @@ exports['<Home /> should render the Home correctly 1'] = `
   <div
     data-testid="GameList"
   />
+  <section
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <h1
+        class="c2"
+      >
+        Categorias
+      </h1>
+    </div>
+    <div
+      class="c1 c3"
+    >
+      <div
+        class="c4"
+      >
+        <div
+          class="c5"
+        >
+          <h3
+            class="c6"
+          >
+            Para os amantes da emoção
+          </h3>
+          <h4
+            class="c7"
+          >
+            Ação e Aventura
+          </h4>
+        </div>
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+        >
+          <img
+            alt="Ação e Aventura"
+            class="image-category"
+            data-nimg="fill"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="c8"
+      >
+        <div
+          class="c5"
+        >
+          <h3
+            class="c6"
+          >
+            Para os amantes do terror
+          </h3>
+          <h4
+            class="c7"
+          >
+            Terror
+          </h4>
+        </div>
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+        >
+          <img
+            alt="Terror"
+            class="image-category"
+            data-nimg="fill"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+    <div
+      class="c1 c9"
+    >
+      <div
+        class="c10"
+      >
+        <div
+          class="c5"
+        >
+          <h3
+            class="c6"
+          >
+            Para os amantes da qualidade
+          </h3>
+          <h4
+            class="c7"
+          >
+            Jogos em 4k
+          </h4>
+        </div>
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+        >
+          <img
+            alt="Jogos 4k"
+            class="image-category"
+            data-nimg="fill"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
 </main>
 `;
