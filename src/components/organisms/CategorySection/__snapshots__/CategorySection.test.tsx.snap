@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports['<Home /> should render the Home correctly 1'] = `
+exports[
+  '<CategorySection /> should render the <CategorySection /> on the desktop 1'
+] = `
 .c1 {
   max-width: 165.6rem;
   margin: 0 1.6rem;
@@ -268,134 +270,91 @@ exports['<Home /> should render the Home correctly 1'] = `
   }
 }
 
-<main
-  class=""
+<section
+  class="c0"
 >
   <div
-    data-testid="Navbar"
-  />
+    class="c1"
+  >
+    <h1
+      class="c2"
+    >
+      Categorias
+    </h1>
+  </div>
   <div
-    data-testid="Slider"
-  />
-  <div
-    data-testid="GameList"
-  />
-  <div
-    data-testid="GameList"
-  />
-  <section
-    class="c0"
+    class="c1 c3"
   >
     <div
-      class="c1"
+      class="c4"
     >
-      <h1
-        class="c2"
+      <div
+        class="c5"
       >
-        Categorias
-      </h1>
+        <h3
+          class="c6"
+        >
+          Para os amantes da emoção
+        </h3>
+        <h4
+          class="c7"
+        >
+          Ação e Aventura
+        </h4>
+      </div>
+      <img
+        alt="Ação e Aventura"
+        src="/img/category/actionAdventure.png"
+      />
     </div>
     <div
-      class="c1 c3"
+      class="c8"
     >
       <div
-        class="c4"
+        class="c5"
       >
-        <div
-          class="c5"
+        <h3
+          class="c6"
         >
-          <h3
-            class="c6"
-          >
-            Para os amantes da emoção
-          </h3>
-          <h4
-            class="c7"
-          >
-            Ação e Aventura
-          </h4>
-        </div>
-        <span
-          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          Para os amantes do terror
+        </h3>
+        <h4
+          class="c7"
         >
-          <img
-            alt="Ação e Aventura"
-            class="image-category"
-            data-nimg="fill"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
-          />
-          <noscript />
-        </span>
+          Terror
+        </h4>
       </div>
-      <div
-        class="c8"
-      >
-        <div
-          class="c5"
-        >
-          <h3
-            class="c6"
-          >
-            Para os amantes do terror
-          </h3>
-          <h4
-            class="c7"
-          >
-            Terror
-          </h4>
-        </div>
-        <span
-          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
-        >
-          <img
-            alt="Terror"
-            class="image-category"
-            data-nimg="fill"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
-          />
-          <noscript />
-        </span>
-      </div>
+      <img
+        alt="Terror"
+        src="/img/category/horror.png"
+      />
     </div>
+  </div>
+  <div
+    class="c1 c9"
+  >
     <div
-      class="c1 c9"
+      class="c10"
     >
       <div
-        class="c10"
+        class="c5"
       >
-        <div
-          class="c5"
+        <h3
+          class="c6"
         >
-          <h3
-            class="c6"
-          >
-            Para os amantes da qualidade
-          </h3>
-          <h4
-            class="c7"
-          >
-            Jogos em 4k
-          </h4>
-        </div>
-        <span
-          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          Para os amantes da qualidade
+        </h3>
+        <h4
+          class="c7"
         >
-          <img
-            alt="Jogos 4k"
-            class="image-category"
-            data-nimg="fill"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
-          />
-          <noscript />
-        </span>
+          Jogos em 4k
+        </h4>
       </div>
+      <img
+        alt="Jogos 4k"
+        src="/img/category/4k.png"
+      />
     </div>
-  </section>
-</main>
+  </div>
+</section>
 `;
