@@ -8,13 +8,6 @@ export const Wrapper = styled.div`
     height: 2rem;
     color: ${theme.colors.white};
 
-    ${media.lessThan('medium')`
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    `}
-
     ${media.greaterThan('medium')`
       width: 13.7rem;
       height: 3.2rem;
