@@ -1,4 +1,5 @@
 import { CategorySection } from 'components/organisms/CategorySection/CategorySection';
+import { Footer } from 'components/organisms/Footer/Footer';
 import { GameList } from 'components/organisms/GameList/GameList';
 import { Navbar } from 'components/organisms/Navbar/Navbar';
 import { Slider } from 'components/organisms/Slider/Slider';
@@ -13,5 +14,6 @@ export const Home = () => (
     <GameList title="Bestsellers" data={gameCardItems} />
     <GameList title="Most Popular Games" data={gameCardItems} />
     <CategorySection />
+    <Footer />
   </S.Wrapper>
 );
