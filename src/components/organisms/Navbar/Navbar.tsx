@@ -30,7 +30,9 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
 
   return (
     <S.Wrapper>
-      <Logo />
+      <S.WrapperLogotipo>
+        <Logo />
+      </S.WrapperLogotipo>
 
       <MediaMatch greaterThan="medium">
         <NavigationMenu.Root>
@@ -80,7 +82,7 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
             </MediaMatch>
           </S.WrapperIcons>
 
-          <MediaMatch lessThan="medium">
+          <S.CustomMediaMatch lessThan="medium">
             <Popover.Root open={isOpen} onOpenChange={setIsOpen}>
               <Popover.Trigger>
                 <Hamburger
@@ -94,7 +96,7 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
               <Popover.Anchor />
               <MenuMobile path={asPath} {...props} />
             </Popover.Root>
-          </MediaMatch>
+          </S.CustomMediaMatch>
         </>
       )}
     </S.Wrapper>

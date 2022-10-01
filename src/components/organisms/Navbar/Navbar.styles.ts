@@ -2,6 +2,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import media from 'styled-media-query';
 
 import { Container } from 'components/atoms/Container/Container';
+import MediaMatch from 'components/atoms/MediaMatch/MediaMatch';
 
 import styled, { css } from 'styled-components';
 
@@ -11,6 +12,7 @@ export const Wrapper = styled(Container).attrs({ as: 'menu' })`
     inset: 0 0 auto 0;
     padding: 1.4rem 0;
     display: flex;
+    align-items: center;
     flex-direction: row;
     z-index: ${theme.layers.menu};
     justify-content: space-between;
@@ -19,6 +21,22 @@ export const Wrapper = styled(Container).attrs({ as: 'menu' })`
       flex-direction: row;
       padding: 3.6rem 0;
     `}
+  `}
+`;
+
+export const WrapperLogotipo = styled.div`
+  order: 2;
+
+  ${media.greaterThan('medium')`
+    order: initial;
+  `}
+`;
+
+export const CustomMediaMatch = styled(MediaMatch)`
+  order: 3;
+
+  ${media.greaterThan('medium')`
+    order: initial;
   `}
 `;
 
@@ -55,9 +73,11 @@ export const WrapperIcons = styled.div`
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  order: 1;
 
   ${media.greaterThan('medium')`
     gap: 3rem;
+    order: initial;
   `}
 `;
 
