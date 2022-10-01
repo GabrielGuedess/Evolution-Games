@@ -112,17 +112,6 @@ export const Column = styled.div`
   `}
 `;
 
-export const PaymentContainer = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  ${media.greaterThan('medium')`
-    width: auto;
-  `}
-`;
-
 export const Payment = styled.div`
   display: flex;
   align-items: center;

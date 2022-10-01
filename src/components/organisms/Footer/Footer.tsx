@@ -160,14 +160,12 @@ export const Footer = () => {
           </S.Payment>
         </MediaMatch>
 
-        <S.BrazilStamp>
-          <Image
-            width={72}
-            height={26}
-            src="/img/brazilStamp.png"
-            alt="Bandeira do Brasil"
-          />
-        </S.BrazilStamp>
+        <Image
+          width={72}
+          height={26}
+          src="/img/brazilStamp.png"
+          alt="Bandeira do Brasil"
+        />
       </S.Wrapper>
       <S.Copyright>
         Copyright ©{currentYear} Evolution. Todos os direitos reservados
