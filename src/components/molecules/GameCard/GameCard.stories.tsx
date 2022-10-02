@@ -14,6 +14,7 @@ export default {
     price: '$ 60.99',
     score: 5.0,
     platform: ['playstation'],
+    primaryColor: '#9db4d0',
     slug: '',
   },
 } as Meta<GameCardProps>;

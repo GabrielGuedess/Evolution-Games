@@ -1,6 +1,11 @@
+import { rgba } from 'polished';
 import media from 'styled-media-query';
 
 import styled, { css } from 'styled-components';
+
+type Color = {
+  color: string;
+};
 
 export const Wrapper = styled.article`
   width: 100%;
@@ -16,6 +21,7 @@ export const Wrapper = styled.article`
     border-radius: 0;
   `}
 `;
+
 export const GameImage = styled.div`
   ${({ theme }) => css`
     width: 100%;
@@ -27,6 +33,24 @@ export const GameImage = styled.div`
     ${media.greaterThan('small')`
       filter: none;
       background-color: ${theme.colors.gameDetails};
+    `}
+  `}
+`;
+
+export const CircleBlur = styled.div<Color>`
+  ${({ color }) => css`
+    display: none;
+    position: absolute;
+    top: -120%;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg, ${color}, ${rgba(color, 0.2)});
+    filter: blur(7rem);
+
+    ${media.greaterThan('small')`
+      display: block;
     `}
   `}
 `;
@@ -49,6 +73,7 @@ export const GameContent = styled.div`
       min-height: 20.8rem;
       position: inherit;
       background-color: ${theme.colors.gameDetails};
+      overflow: hidden;
     `}
   `}
 `;
@@ -72,10 +97,10 @@ export const Percentage = styled.p`
     font-style: normal;
     line-height: ${theme.spacings.small};
     color: ${theme.colors.whiteText};
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 1rem ${rgba(theme.colors.white, 0.5)};
     position: absolute;
-    top: 9px;
-    left: 11px;
+    top: 0.9rem;
+    left: 1.1rem;
   `}
 `;
 
@@ -83,8 +108,9 @@ export const BoxHighlight = styled.div`
   max-width: calc(100% - 4rem);
 `;
 
-export const Title = styled.h3`
+export const Title = styled.strong`
   ${({ theme }) => css`
+    display: block;
     font-size: ${theme.font.sizes.xxmedium};
     line-height: ${theme.spacings.medium};
     font-weight: ${theme.font.regular};

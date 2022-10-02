@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports['<GameCard /> should render the heading 1'] = `
-.c13 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,12 +19,12 @@ exports['<GameCard /> should render the heading 1'] = `
   transition: color 0.3s linear;
 }
 
-.c13:hover {
+.c14:hover {
   cursor: pointer;
   color: #855aff;
 }
 
-.c14 {
+.c15 {
   width: 2.8rem;
   height: 2.8rem;
 }
@@ -45,6 +45,19 @@ exports['<GameCard /> should render the heading 1'] = `
   cursor: pointer;
   -webkit-filter: blur(0.5px);
   filter: blur(0.5px);
+}
+
+.c3 {
+  display: none;
+  position: absolute;
+  top: -120%;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: linear-gradient(180deg,#f00,rgba(255,0,0,0.2));
+  -webkit-filter: blur(7rem);
+  filter: blur(7rem);
 }
 
 .c2 {
@@ -68,7 +81,7 @@ exports['<GameCard /> should render the heading 1'] = `
   background: linear-gradient(90deg,#010914 12.5%,rgba(4,4,12,0.3) 100%);
 }
 
-.c3 {
+.c4 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -81,28 +94,29 @@ exports['<GameCard /> should render the heading 1'] = `
   cursor: pointer;
 }
 
-.c8 {
+.c9 {
   margin-top: 1rem;
   position: relative;
 }
 
-.c9 {
+.c10 {
   font-size: 1.4rem;
   font-weight: 400;
   font-style: normal;
   line-height: 2.4rem;
   color: #F4F4F5;
-  text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+  text-shadow: 0 0 1rem rgba(255,255,255,0.5);
   position: absolute;
-  top: 9px;
-  left: 11px;
-}
-
-.c4 {
-  max-width: calc(100% - 4rem);
+  top: 0.9rem;
+  left: 1.1rem;
 }
 
 .c5 {
+  max-width: calc(100% - 4rem);
+}
+
+.c6 {
+  display: block;
   font-size: 2.0rem;
   line-height: 3.2rem;
   font-weight: 400;
@@ -111,7 +125,7 @@ exports['<GameCard /> should render the heading 1'] = `
   margin-bottom: 2.4rem;
 }
 
-.c6 {
+.c7 {
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: 400;
@@ -119,7 +133,7 @@ exports['<GameCard /> should render the heading 1'] = `
   color: #717B8A;
 }
 
-.c7 {
+.c8 {
   font-size: 1rem;
   line-height: 1.6rem;
   font-weight: 400;
@@ -128,7 +142,7 @@ exports['<GameCard /> should render the heading 1'] = `
   margin-top: 5px;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -143,7 +157,7 @@ exports['<GameCard /> should render the heading 1'] = `
   justify-content: space-between;
 }
 
-.c11 {
+.c12 {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
@@ -151,7 +165,7 @@ exports['<GameCard /> should render the heading 1'] = `
   color: #F4F4F5;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -184,34 +198,41 @@ exports['<GameCard /> should render the heading 1'] = `
 }
 
 @media (min-width:450px) {
+  .c3 {
+    display: block;
+  }
+}
+
+@media (min-width:450px) {
   .c2 {
     width: auto;
     min-height: 20.8rem;
     position: inherit;
     background-color: #010914;
-  }
-}
-
-@media (min-width:450px) {
-  .c5 {
-    font-size: 2.5rem;
+    overflow: hidden;
   }
 }
 
 @media (min-width:450px) {
   .c6 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (min-width:450px) {
   .c7 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c8 {
     font-size: 1.2rem;
   }
 }
 
 @media (min-width:450px) {
-  .c11 {
+  .c12 {
     font-size: 2.0rem;
   }
 }
@@ -233,23 +254,27 @@ exports['<GameCard /> should render the heading 1'] = `
   >
     <div
       class="c3"
+      color="#f00"
+    />
+    <div
+      class="c4"
       href="/game"
     >
       <div
-        class="c4"
+        class="c5"
       >
-        <h3
-          class="c5"
+        <strong
+          class="c6"
         >
           God of War: Ragnarök
-        </h3>
+        </strong>
         <p
-          class="c6"
+          class="c7"
         >
           Action-adventure
         </p>
         <p
-          class="c7"
+          class="0 c8"
         >
           Santa Monica Games
           , 
@@ -257,7 +282,7 @@ exports['<GameCard /> should render the heading 1'] = `
         </p>
       </div>
       <div
-        class="c8"
+        class="c9"
       >
         <svg
           aria-label="Score"
@@ -277,30 +302,30 @@ exports['<GameCard /> should render the heading 1'] = `
           />
         </svg>
         <p
-          class="c9"
+          class="c10"
         >
           5,0
         </p>
       </div>
     </div>
     <div
-      class="0 c10"
+      class="1 c11"
     >
       <p
-        class="1 c11"
+        class="2 c12"
       >
         $ 60.99
       </p>
       <div
-        class="2 c12"
+        class="3 c13"
       >
         <div
-          class="c13"
+          class="c14"
           color="white"
         >
           <svg
             aria-label="PlayStation Icon"
-            class="c14"
+            class="c15"
             fill="none"
             role="figure"
             viewBox="0 0 28 22"
