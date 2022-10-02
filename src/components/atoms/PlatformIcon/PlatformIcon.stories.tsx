@@ -8,6 +8,7 @@ export default {
   args: {
     hasTitle: true,
     isActive: false,
+    size: 'medium',
   },
 } as Meta<PlatformIconProps>;
 

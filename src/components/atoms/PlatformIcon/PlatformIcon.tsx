@@ -5,6 +5,7 @@ export type Platform = 'playstation' | 'xbox' | 'pc' | 'all';
 export type PlatformIconProps = {
   platform: Platform;
   color?: 'white' | 'secondary';
+  size?: 'small' | 'medium';
   hasTitle?: boolean;
   isActive?: boolean;
   onClick?: () => void;
@@ -14,6 +15,7 @@ export const PlatformIcon = ({
   onClick,
   platform,
   color = 'white',
+  size = 'medium',
   hasTitle = false,
   isActive = false,
 }: PlatformIconProps) => {
@@ -31,6 +33,7 @@ export const PlatformIcon = ({
           fill="none"
           role="figure"
           platform={platform}
+          size={size}
           viewBox="0 0 28 22"
           aria-label="PlayStation Icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +50,7 @@ export const PlatformIcon = ({
           fill="none"
           role="figure"
           platform={platform}
+          size={size}
           viewBox="0 0 20 20"
           aria-label="Xbox Icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -63,6 +67,7 @@ export const PlatformIcon = ({
           fill="none"
           role="figure"
           platform={platform}
+          size={size}
           viewBox="0 0 34 19"
           aria-label="PC Icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +84,7 @@ export const PlatformIcon = ({
           fill="none"
           role="figure"
           platform={platform}
+          size={size}
           viewBox="0 0 20 20"
           aria-label="All Platforms Icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +96,7 @@ export const PlatformIcon = ({
       )}
 
       {hasTitle && !!platformTitle[platform] && (
-        <S.Label aria-label={platformTitle[platform]}>
+        <S.Label size={size} aria-label={platformTitle[platform]}>
           {platformTitle[platform]}
         </S.Label>
       )}

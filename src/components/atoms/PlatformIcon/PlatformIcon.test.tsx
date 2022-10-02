@@ -68,4 +68,36 @@ describe('<PlatformIcon />', () => {
 
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it('should render in in medium size', () => {
+    const { container } = renderWithTheme(
+      <PlatformIcon platform="pc" color="secondary" hasTitle size="medium" />,
+    );
+
+    // Arrange
+    const label = screen.getByLabelText('Personal computer');
+
+    // Assert
+    expect(label).toHaveStyle({
+      fontSize: theme.font.sizes.medium,
+    });
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('should render in in small size', () => {
+    const { container } = renderWithTheme(
+      <PlatformIcon platform="pc" color="secondary" hasTitle size="small" />,
+    );
+
+    // Arrange
+    const label = screen.getByLabelText('Personal computer');
+
+    // Assert
+    expect(label).toHaveStyle({
+      'font-size': theme.font.sizes.small,
+    });
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
