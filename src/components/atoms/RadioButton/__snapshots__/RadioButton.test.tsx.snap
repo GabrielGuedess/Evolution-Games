@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<RadioButton /> should render the heading 1'] = `
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  outline: none;
+  margin: 0;
+  cursor: pointer;
+  border: 0.2rem solid rgba(113,123,138,0.5);
+  background: transparent;
+  border-radius: 50%;
+  display: grid;
+  justify-self: end;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-transition: border 0.5s ease;
+  transition: border 0.5s ease;
+}
+
+.c1::before,
+.c1::after {
+  content: '';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  border-radius: 50%;
+}
+
+.c1::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #04040C;
+  z-index: 1;
+  opacity: var(--opacity,1);
+}
+
+.c1::after {
+  position: relative;
+  width: calc(100% / 2);
+  height: calc(100% / 2);
+  background: #855aff;
+  top: var(--y,100%);
+  -webkit-transition: top 0.5s cubic-bezier(0.48,1.97,0.5,0.63);
+  transition: top 0.5s cubic-bezier(0.48,1.97,0.5,0.63);
+}
+
+.c1:checked {
+  border: 0.2rem solid #855aff;
+  box-shadow: 0 0.5rem 1.5rem rgba(133,90,255,0.25);
+}
+
+.c1:checked::after {
+  --y: 0%;
+  -webkit-animation: edctGW 0.3s ease-out 0.17s;
+  animation: edctGW 0.3s ease-out 0.17s;
+}
+
+.c1:checked::before {
+  --opacity: 0;
+}
+
+.c1:checked ~ input[type='radio']::after {
+  --y: -100%;
+}
+
+.c1:not(:checked)::before {
+  --opacity: 1;
+  -webkit-transition: opacity 0s linear 0.5s;
+  transition: opacity 0s linear 0.5s;
+}
+
+.c2 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.c2 span {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+}
+
+.c0 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 0.375rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 0.2rem;
+  -webkit-transition: background 0.15s linear;
+  transition: background 0.15s linear;
+}
+
+.c0:is(:focus,:hover) {
+  background: rgba(133,90,255,0.15);
+  border-radius: 0.375rem;
+}
+
+<div
+  class=""
+>
+  <label
+    class="c0"
+  >
+    <input
+      class="c1"
+      type="radio"
+    />
+    <div
+      class="c2"
+    >
+      <span>
+        Radio
+      </span>
+    </div>
+  </label>
+</div>
+`;
