@@ -1,10 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper } from 'swiper/react';
 
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.section`
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 `;
 
 export const SwiperContainer = styled(Swiper).attrs({
@@ -57,10 +57,6 @@ export const SwiperContainer = styled(Swiper).attrs({
   },
 })`
   max-width: 1920px;
-`;
-
-export const Slide = styled(SwiperSlide)`
-  padding: 2px;
 `;
 
 export const Header = styled.div`

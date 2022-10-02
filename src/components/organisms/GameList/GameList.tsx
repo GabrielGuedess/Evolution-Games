@@ -1,6 +1,7 @@
-/* eslint-disable prettier/prettier */
 import { useState } from 'react';
 
+import * as Dialog from '@radix-ui/react-dialog';
+import { FunnelSimple } from 'phosphor-react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
 
@@ -13,7 +14,11 @@ import {
   Platform,
 } from 'components/atoms/PlatformIcon/PlatformIcon';
 import { Title } from 'components/atoms/Title/Title';
-import { GameCard, GameCardProps } from 'components/molecules/GameCard/GameCard';
+import { FilterMobile } from 'components/molecules/FilterMobile/FilterMobile';
+import {
+  GameCard,
+  GameCardProps,
+} from 'components/molecules/GameCard/GameCard';
 
 import * as S from './GameList.styles';
 
@@ -26,14 +31,16 @@ export const GameList = ({ title, data }: GameListProps) => {
   const [filterBy, setFilterBy] = useState<Platform>('all');
   const id = title.toLocaleLowerCase().replaceAll(' ', '-');
 
-  const filteredPlatform = data.filter(game => (filterBy === 'all' ? true : game.platform.includes(filterBy)));
+  const filteredPlatform = data.filter(game =>
+    filterBy === 'all' ? true : game.platform.includes(filterBy),
+  );
 
   return (
     <S.Wrapper>
       <Container>
         <S.Header>
           <S.TitleBox>
-            <Title>{title}</Title>
+            <Title hasAnimation>{title}</Title>
             <MediaMatch greaterThan="large">
               <S.ControlBox>
                 <PlatformIcon
@@ -67,9 +74,24 @@ export const GameList = ({ title, data }: GameListProps) => {
               </S.ControlBox>
             </MediaMatch>
           </S.TitleBox>
-          <MediaMatch greaterThan="medium">
+
+          <MediaMatch lessThan="large">
+            <Dialog.Root modal>
+              <Dialog.Trigger>
+                <FunnelSimple size={20} />
+              </Dialog.Trigger>
+              <Dialog.Portal>
+                <Dialog.Overlay />
+                <FilterMobile setFilterBy={setFilterBy} filterBy={filterBy} />
+              </Dialog.Portal>
+            </Dialog.Root>
+          </MediaMatch>
+
+          <MediaMatch greaterThan="large">
             <S.ButtonBox>
-              <Button size="small" variant="outline">All</Button>
+              <Button size="small" variant="outline">
+                All
+              </Button>
               <ArrowButtons
                 prevId={`${id}-game-list-prev-arrow`}
                 nextId={`${id}-game-list-next-arrow`}
@@ -79,11 +101,11 @@ export const GameList = ({ title, data }: GameListProps) => {
         </S.Header>
       </Container>
       <S.SwiperContainer
-        loop={false}
         navigation={{
           nextEl: `#${id}-game-list-next-arrow`,
           prevEl: `#${id}-game-list-prev-arrow`,
         }}
+        loop={false}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
       >
         {filteredPlatform.map(card => (
