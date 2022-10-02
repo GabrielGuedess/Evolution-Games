@@ -33,6 +33,7 @@ export const Slider = ({ slides }: SliderProps) => (
       keyboard={{
         enabled: true,
       }}
+      speed={1500}
       parallax
       loop
       grabCursor
