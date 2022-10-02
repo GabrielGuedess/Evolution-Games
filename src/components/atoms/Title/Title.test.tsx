@@ -3,6 +3,8 @@ import { renderWithTheme } from 'utils/tests/helpers';
 import { screen } from '@testing-library/react';
 import 'jest-styled-components';
 
+import theme from 'styles/theme';
+
 import { Title } from './Title';
 
 describe('<Title />', () => {
@@ -33,5 +35,18 @@ describe('<Title />', () => {
 
     // Assert
     expect(heading).toHaveStyle({ 'text-align': 'left' });
+  });
+
+  it('should render the <Title /> component text large', () => {
+    renderWithTheme(<Title size="large">Bestsellers</Title>);
+    // Arrange
+    const heading = screen.getByRole('heading', {
+      name: 'Bestsellers',
+    });
+
+    // Assert
+    expect(heading).toHaveStyle({
+      'font-size': theme.font.sizes.big,
+    });
   });
 });
