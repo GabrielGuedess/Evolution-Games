@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Checkbox /> should render the heading 1'] = `
+.c6 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c0 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.375rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 0.2rem;
+}
+
+.c3 {
+  width: 2rem;
+  height: 2rem;
+  background: rgba(113,123,138,0.5);
+  border-radius: 0.2rem;
+}
+
+.c3 rect {
+  stroke: transparent;
+  -webkit-transition: stroke 0.3s;
+  transition: stroke 0.3s;
+}
+
+.c3 .check-worm,
+.c3 .box-worm {
+  stroke: #FFFFFF;
+  -webkit-filter: drop-shadow(0 0 1rem #FFFFFF);
+  filter: drop-shadow(0 0 1rem #FFFFFF);
+  -webkit-transition: stroke 0.3s, stroke-dashoffset 0.6s cubic-bezier(0.42,-0.2,0.58,1.2);
+  transition: stroke 0.3s, stroke-dashoffset 0.6s cubic-bezier(0.42,-0.2,0.58,1.2);
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.c5::after {
+  border-radius: 0.375rem;
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  -webkit-transition: background-color 0.15s linear;
+  transition: background-color 0.15s linear;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  margin: 0.375rem;
+}
+
+.c1:checked + .c2 {
+  background-color: #855aff;
+  box-shadow: 0 0.5rem 1.5rem rgba(133,90,255,0.25);
+}
+
+.c1:is(:focus,:hover) ~ .c4:after {
+  background-color: rgba(133,90,255,0.15);
+}
+
+.c1:is(:checked,:indeterminate) + .c2 .box-worm {
+  stroke-dashoffset: -91;
+}
+
+.c1:is(:checked,:indeterminate) + .c2 .check-worm {
+  stroke-dashoffset: -6;
+}
+
+.c1:indeterminate + .c2 .box-worm {
+  stroke-dashoffset: -111.38;
+}
+
+.c1:indeterminate + .c2 .check-worm {
+  stroke-dashoffset: -26.38;
+}
+
+<div
+  class=""
+>
+  <label
+    class="c0"
+    for="test"
+  >
+    <input
+      class="c1"
+      id="test"
+      type="checkbox"
+    />
+    <svg
+      class="c2 c3"
+      viewBox="0 0 24 24"
+    >
+      <g
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      >
+        <rect
+          height="22"
+          width="22"
+          x="1"
+          y="1"
+        />
+        <polyline
+          class="box-worm"
+          points="23,1 1,1 1,23 23,23 23,4"
+          stroke-dasharray="30 146"
+          stroke-dashoffset="30"
+        />
+        <polyline
+          class="check-worm"
+          points="23,4 10,17 5,12 18,12"
+          stroke-dasharray="17.38 149.68"
+          stroke-dashoffset="103.38"
+        />
+      </g>
+    </svg>
+    <div
+      class="c4 c5"
+    >
+      <span
+        class="c6 checkbox-text"
+      >
+        test
+      </span>
+    </div>
+  </label>
+</div>
+`;
