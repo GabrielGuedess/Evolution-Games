@@ -12,6 +12,7 @@ const gameCardItems: GameCardProps[] = [
     score: 5.0,
     platform: ['playstation'],
     slug: '',
+    primaryColor: '#9db4d0',
   },
   {
     id: '2',
@@ -24,6 +25,7 @@ const gameCardItems: GameCardProps[] = [
     score: 3.8,
     platform: ['playstation', 'pc', 'xbox'],
     slug: '',
+    primaryColor: '#a8b6cb',
   },
   {
     id: '3',
@@ -36,6 +38,7 @@ const gameCardItems: GameCardProps[] = [
     score: 1.8,
     platform: ['playstation', 'pc', 'xbox'],
     slug: '',
+    primaryColor: '#dabbde',
   },
   {
     id: '4',
@@ -48,6 +51,7 @@ const gameCardItems: GameCardProps[] = [
     score: 5.0,
     platform: ['playstation'],
     slug: '',
+    primaryColor: '#b2a7a5',
   },
   {
     id: '5',
@@ -59,8 +63,8 @@ const gameCardItems: GameCardProps[] = [
     price: '$ 60.99',
     score: 4.8,
     platform: ['playstation'],
-
     slug: '',
+    primaryColor: '#aeb195',
   },
   {
     id: '6',
@@ -73,6 +77,7 @@ const gameCardItems: GameCardProps[] = [
     score: 4.8,
     platform: ['playstation'],
     slug: '',
+    primaryColor: '#aeb1d2',
   },
   {
     id: '7',
@@ -85,6 +90,7 @@ const gameCardItems: GameCardProps[] = [
     score: 4.7,
     platform: ['playstation', 'pc'],
     slug: '',
+    primaryColor: '#9ab3c5',
   },
   {
     id: '8',
@@ -97,6 +103,7 @@ const gameCardItems: GameCardProps[] = [
     score: 4.5,
     platform: ['playstation', 'pc', 'xbox'],
     slug: '',
+    primaryColor: '#d1b2a3',
   },
 ];
 

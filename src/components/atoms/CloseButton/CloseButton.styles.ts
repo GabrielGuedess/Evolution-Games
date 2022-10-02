@@ -3,9 +3,25 @@ import media from 'styled-media-query';
 
 import styled, { css } from 'styled-components';
 
-export const Close = styled(Popover.Close)`
-  ${({ theme }) => css`
-    color: ${theme.colors.primary};
+import { CloseButtonProps } from './CloseButton';
+
+type CloseProps = Pick<CloseButtonProps, 'side' | 'color'>;
+
+const closeModifiers = {
+  left: () => css`
+    top: 0.5rem;
+    left: 2.1rem;
+  `,
+
+  right: () => css`
+    top: 0;
+    right: 0;
+  `,
+};
+
+export const Close = styled(Popover.Close)<CloseProps>`
+  ${({ theme, side, color }) => css`
+    color: ${theme.colors[color!]};
     padding: 0.5rem;
     transition: color 0.3s linear;
     cursor: pointer;
@@ -14,8 +30,8 @@ export const Close = styled(Popover.Close)`
     font-size: 1.2rem;
     align-items: center;
     position: absolute;
-    top: 0.5rem;
-    left: 2.1rem;
+    z-index: ${theme.layers.alwaysOnTop};
+    ${closeModifiers[side!]()}
 
     svg {
       cursor: pointer;

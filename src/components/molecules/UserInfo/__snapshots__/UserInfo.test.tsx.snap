@@ -31,13 +31,13 @@ exports['<UserInfo /> should render the heading 1'] = `
   color: #F4F4F5;
 }
 
-.c8 .effect {
-  fill: #855aff;
-}
-
-.c8 .effect:is(:hover,:focus) {
+.c8:not(:disabled):is(:hover,:focus) {
   box-shadow: 0 0.8rem 2.8rem rgba(118,74,241,0.5);
   color: #F4F4F5;
+}
+
+.c8 .effect {
+  fill: #855aff;
 }
 
 .c8:not(:disabled):is(:hover,:focus) {
@@ -125,6 +125,7 @@ exports['<UserInfo /> should render the heading 1'] = `
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
+  z-index: 50;
   top: 0.5rem;
   left: 2.1rem;
 }
@@ -218,6 +219,8 @@ exports['<UserInfo /> should render the heading 1'] = `
   <button
     aria-label="Close Action"
     class="c1"
+    color="primary"
+    side="left"
     type="button"
   >
     <svg

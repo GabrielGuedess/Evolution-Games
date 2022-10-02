@@ -14,6 +14,7 @@ const props: GameCardProps = {
   price: '$ 60.99',
   score: 5.0,
   platform: ['playstation'],
+  primaryColor: '#f00',
   slug: '',
 };
 
@@ -29,7 +30,7 @@ describe('<GameCard />', () => {
     // Arrange
     const { container } = renderWithTheme(<GameCard {...props} />);
 
-    const title = screen.getByRole('heading', { name: props.title });
+    const title = screen.getByText(props.title);
     const genre = screen.getByText(props.genre);
     const description = screen.getByText(`${props.developer}, ${props.year}`);
     const image = screen.getByRole('img', { name: props.title });

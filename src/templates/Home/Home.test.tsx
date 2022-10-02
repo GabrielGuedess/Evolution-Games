@@ -25,6 +25,17 @@ jest.mock('components/organisms/GameList/GameList', () => ({
   },
 }));
 
+jest.mock('components/organisms/HighlightCarousel/HighlightCarousel', () => ({
+  __esModule: true,
+  HighlightCarousel: function Mock({
+    children,
+  }: {
+    children: React.ReactNode;
+  }) {
+    return <div data-testid="HighlightCarousel">{children}</div>;
+  },
+}));
+
 describe('<Home />', () => {
   it('should render the Home correctly', () => {
     // Arrange
@@ -33,6 +44,7 @@ describe('<Home />', () => {
     // Assert
     expect(screen.getByTestId('Navbar')).toBeInTheDocument();
     expect(screen.getByTestId('Slider')).toBeInTheDocument();
+    expect(screen.getByTestId('HighlightCarousel')).toBeInTheDocument();
     expect(screen.getAllByTestId('GameList')).toHaveLength(2);
 
     expect(container.firstChild).toMatchSnapshot();

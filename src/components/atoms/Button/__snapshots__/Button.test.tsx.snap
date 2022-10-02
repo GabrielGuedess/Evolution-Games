@@ -31,13 +31,13 @@ exports['<Button /> should render the medium size by default 1'] = `
   color: #F4F4F5;
 }
 
-.c0 .effect {
-  fill: #855aff;
-}
-
-.c0 .effect:is(:hover,:focus) {
+.c0:not(:disabled):is(:hover,:focus) {
   box-shadow: 0 0.8rem 2.8rem rgba(118,74,241,0.5);
   color: #F4F4F5;
+}
+
+.c0 .effect {
+  fill: #855aff;
 }
 
 .c0:not(:disabled):is(:hover,:focus) {

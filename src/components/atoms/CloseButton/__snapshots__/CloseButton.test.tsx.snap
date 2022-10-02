@@ -18,6 +18,7 @@ exports['<CloseButton /> should render correctly 1'] = `
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
+  z-index: 50;
   top: 0.5rem;
   left: 2.1rem;
 }
@@ -35,6 +36,8 @@ exports['<CloseButton /> should render correctly 1'] = `
 <button
   aria-label="Close Action"
   class="c0"
+  color="primary"
+  side="left"
   type="button"
 >
   <svg

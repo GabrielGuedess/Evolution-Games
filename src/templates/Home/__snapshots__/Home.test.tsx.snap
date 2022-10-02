@@ -453,6 +453,9 @@ exports['<Home /> should render the Home correctly 1'] = `
     data-testid="GameList"
   />
   <div
+    data-testid="HighlightCarousel"
+  />
+  <div
     data-testid="GameList"
   />
   <section

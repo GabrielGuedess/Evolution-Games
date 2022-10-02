@@ -21,6 +21,7 @@ export type GameCardProps = {
   score: number;
   price: string;
   platform: Platform[];
+  primaryColor: string;
 };
 
 export const GameCard = ({
@@ -33,6 +34,7 @@ export const GameCard = ({
   slug,
   developer,
   platform,
+  primaryColor,
 }: GameCardProps) => {
   const { gameBad, gameAverage, gameGreat } = theme.colors;
   const formatValue = Math.trunc((score / 5) * 100);
@@ -60,6 +62,8 @@ export const GameCard = ({
         </S.GameImage>
       </Link>
       <S.GameContent>
+        <S.CircleBlur color={primaryColor} />
+
         <Link href={`/game/${slug}`} passHref>
           <S.GameInfo>
             <S.BoxHighlight>
