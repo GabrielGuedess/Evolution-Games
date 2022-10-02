@@ -10,13 +10,22 @@ export type ButtonProps = {
   size?: 'small' | 'medium' | 'large';
   fullWidth?: boolean;
   icon?: JSX.Element;
-  children: React.ReactNode;
+  children?: React.ReactNode;
+  minimal?: boolean;
   variant?: 'solid' | 'outline';
   as?: React.ElementType;
 } & ButtonTypes;
 
 const Button: React.ForwardRefRenderFunction<S.WrapperProps, ButtonProps> = (
-  { children, icon, size = 'medium', variant = 'solid', fullWidth, ...props },
+  {
+    children,
+    icon,
+    size = 'medium',
+    variant = 'solid',
+    minimal = false,
+    fullWidth,
+    ...props
+  },
   ref,
 ) => (
   <S.Wrapper
@@ -25,6 +34,7 @@ const Button: React.ForwardRefRenderFunction<S.WrapperProps, ButtonProps> = (
     ref={ref}
     fullWidth={fullWidth}
     variant={variant}
+    minimal={minimal}
     aria-label="Button Action"
     {...props}
   >

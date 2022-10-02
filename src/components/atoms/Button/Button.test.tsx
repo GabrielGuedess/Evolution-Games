@@ -86,4 +86,14 @@ describe('<Button />', () => {
       '/link',
     );
   });
+
+  it('should render Button as minimal', () => {
+    renderWithTheme(<Button minimal>Buy now</Button>);
+
+    // Assert
+    expect(screen.getByLabelText('Button Action')).toHaveStyle({
+      background: 'transparent',
+      color: theme.colors.secondary,
+    });
+  });
 });

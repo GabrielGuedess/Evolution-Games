@@ -4,7 +4,7 @@ import { ButtonProps } from './Button';
 
 export type WrapperProps = {
   hasIcon: boolean;
-} & Pick<ButtonProps, 'size' | 'fullWidth' | 'variant'>;
+} & Pick<ButtonProps, 'size' | 'fullWidth' | 'variant' | 'minimal'>;
 
 const wrapperModifiers = {
   small: (theme: DefaultTheme) => css`
@@ -36,13 +36,13 @@ const wrapperModifiers = {
     background: ${theme.colors.primary};
     color: ${theme.colors.whiteText};
 
+    :not(:disabled):is(:hover, :focus) {
+      box-shadow: ${theme.shadows.box};
+      color: ${theme.colors.whiteText};
+    }
+
     .effect {
       fill: ${theme.colors.primary};
-
-      :is(:hover, :focus) {
-        box-shadow: ${theme.shadows.box};
-        color: ${theme.colors.whiteText};
-      }
     }
   `,
 
@@ -60,17 +60,26 @@ const wrapperModifiers = {
       }
     }
 
-    :is(:hover, :focus) .effect {
+    :not(:disabled):is(:hover, :focus) .effect {
       stroke: ${theme.colors.primary};
     }
 
-    :is(:hover, :focus) {
+    :not(:disabled):is(:hover, :focus) {
       color: ${theme.colors.primary};
     }
   `,
 
+  minimal: (theme: DefaultTheme) => css`
+    background: transparent;
+    color: ${theme.colors.secondary};
+
+    .effect {
+      display: none;
+    }
+  `,
+
   disabled: () => css`
-    &:disabled {
+    :disabled {
       cursor: not-allowed;
       filter: saturate(30%);
     }
@@ -78,7 +87,7 @@ const wrapperModifiers = {
 };
 
 export const Wrapper = styled.button<WrapperProps>`
-  ${({ theme, hasIcon, size, fullWidth, disabled, variant }) => css`
+  ${({ theme, hasIcon, size, fullWidth, disabled, variant, minimal }) => css`
     width: fit-content;
     cursor: pointer;
     position: relative;
@@ -91,10 +100,11 @@ export const Wrapper = styled.button<WrapperProps>`
     transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 
     ${!!size && wrapperModifiers[size](theme)};
-    ${!!fullWidth && wrapperModifiers.fullWidth()};
-    ${!!hasIcon && wrapperModifiers.withIcon(theme)};
-    ${disabled && wrapperModifiers.disabled()};
     ${!!variant && wrapperModifiers[variant](theme)}
+    ${!!hasIcon && wrapperModifiers.withIcon(theme)};
+    ${minimal && wrapperModifiers.minimal(theme)}
+    ${!!fullWidth && wrapperModifiers.fullWidth()};
+    ${disabled && wrapperModifiers.disabled()};
 
     :not(:disabled):is(:hover, :focus) {
       filter: brightness(1.1);

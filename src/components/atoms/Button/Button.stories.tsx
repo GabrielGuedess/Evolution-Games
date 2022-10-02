@@ -69,3 +69,17 @@ asLink.args = {
   as: 'a',
   href: '/link',
 };
+
+export const outline: Story<ButtonProps> = args => <Button {...args} />;
+
+outline.args = {
+  children: 'All',
+  variant: 'outline',
+};
+
+export const minimal: Story<ButtonProps> = args => <Button {...args} />;
+
+minimal.args = {
+  icon: <Funnel weight="fill" size={20} className="icon" />,
+  minimal: true,
+};
