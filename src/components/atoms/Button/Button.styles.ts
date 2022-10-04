@@ -1,3 +1,5 @@
+import media from 'styled-media-query';
+
 import styled, { css, DefaultTheme } from 'styled-components';
 
 import { ButtonProps } from './Button';
@@ -142,15 +144,22 @@ export const Wrapper = styled.button<WrapperProps>`
 
     .effect {
       position: absolute;
-      top: -5%;
-      left: -5%;
-      width: 110%;
-      height: 110%;
+      top: initial;
+      left: initial;
+      width: 100%;
+      height: 100%;
       z-index: -1;
 
       path {
         transition: 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
       }
+
+      ${media.greaterThan('small')`
+        top: -5%;
+        left: -5%;
+        width: 110%;
+        height: 110%;
+      `}
     }
 
     :not(:disabled):is(:hover, :focus) .effect path {
