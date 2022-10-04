@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports['<FilterMobile /> should render the component correctly 1'] = `
+@media (min-width:450px) {
+
+}
+
 @media (min-width:768px) {
 
 }
