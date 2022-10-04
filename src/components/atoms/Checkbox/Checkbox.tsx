@@ -1,14 +1,16 @@
+import { InputHTMLAttributes } from 'react';
+
 import * as S from './Checkbox.styles';
 
 export type CheckboxProps = {
   title: string;
   icon?: JSX.Element;
-};
+} & InputHTMLAttributes<HTMLInputElement>;
 
-export const Checkbox = ({ title, icon }: CheckboxProps) => (
+export const Checkbox = ({ title, icon, ...props }: CheckboxProps) => (
   <S.Wrapper>
     <S.CheckboxWrapper htmlFor={title}>
-      <S.Checkbox type="checkbox" id={title} />
+      <S.Checkbox type="checkbox" id={title} {...props} />
 
       <S.Icon viewBox="0 0 24 24">
         <g
