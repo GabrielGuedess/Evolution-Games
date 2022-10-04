@@ -9,7 +9,7 @@ const props: HighlightGameProps = {
   gameLogo: '/img/games/highlightName/nameStarWars.png',
   gameLogoAlt: 'Logo Star Wars',
   alt: 'Star Wars',
-  releaseYear: new Date(),
+  releaseYear: new Date('09-10-2022'),
   genre: 'Action-adventure',
   developer: 'Respawn Entertainment',
   platform: ['pc', 'playstation', 'xbox'],

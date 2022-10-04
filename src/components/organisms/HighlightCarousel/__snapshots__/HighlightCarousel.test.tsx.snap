@@ -149,10 +149,10 @@ exports['<HighlightCarousel /> should render the heading 1'] = `
 
 .c7 .effect {
   position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
+  top: initial;
+  left: initial;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
@@ -373,6 +373,15 @@ exports['<HighlightCarousel /> should render the heading 1'] = `
   display: -ms-flexbox;
   display: flex;
   gap: 1.2rem;
+}
+
+@media (min-width:450px) {
+  .c7 .effect {
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+  }
 }
 
 @media (min-width:1170px) {
@@ -784,7 +793,7 @@ exports['<HighlightCarousel /> should render the heading 1'] = `
               <p
                 class="c15"
               >
-                1 de outubro de 2022
+                10 de setembro de 2022
               </p>
               <span
                 class="c16"
@@ -975,7 +984,7 @@ exports['<HighlightCarousel /> should render the heading 1'] = `
               <p
                 class="c15"
               >
-                1 de outubro de 2022
+                10 de setembro de 2022
               </p>
               <span
                 class="c16"
@@ -1166,7 +1175,7 @@ exports['<HighlightCarousel /> should render the heading 1'] = `
               <p
                 class="c15"
               >
-                1 de outubro de 2022
+                10 de setembro de 2022
               </p>
               <span
                 class="c16"

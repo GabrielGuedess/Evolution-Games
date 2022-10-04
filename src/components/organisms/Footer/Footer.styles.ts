@@ -118,8 +118,6 @@ export const Payment = styled.div`
   justify-content: space-between;
 `;
 
-export const BrazilStamp = styled.div``;
-
 export const Copyright = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xsmall};

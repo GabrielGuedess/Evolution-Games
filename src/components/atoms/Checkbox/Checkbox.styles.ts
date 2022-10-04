@@ -7,7 +7,6 @@ export const Wrapper = styled.div``;
 export const Title = styled.span`
   ${({ theme }) => css`
     color: ${theme.colors.white};
-    text-transform: capitalize;
     font-size: ${theme.font.sizes.small};
     transition: color 0.3s;
   `}
