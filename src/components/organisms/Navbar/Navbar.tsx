@@ -30,9 +30,11 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
 
   return (
     <S.Wrapper>
-      <S.WrapperLogotipo>
-        <Logo />
-      </S.WrapperLogotipo>
+      <Link href="/">
+        <S.WrapperLogotipo>
+          <Logo />
+        </S.WrapperLogotipo>
+      </Link>
 
       <MediaMatch greaterThan="large">
         <NavigationMenu.Root>

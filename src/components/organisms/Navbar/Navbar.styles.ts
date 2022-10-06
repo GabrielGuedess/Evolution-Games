@@ -26,6 +26,7 @@ export const Wrapper = styled(Container).attrs({ as: 'menu' })`
 
 export const WrapperLogotipo = styled.div`
   order: 2;
+  cursor: pointer;
 
   ${media.greaterThan('large')`
     order: initial;

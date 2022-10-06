@@ -101,6 +101,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+  cursor: pointer;
 }
 
 .c16 {
