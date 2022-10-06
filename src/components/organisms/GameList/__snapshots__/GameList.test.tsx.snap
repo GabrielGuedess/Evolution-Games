@@ -992,11 +992,10 @@ exports['<GameList /> should render the <GameList /> 1'] = `
                 alt="God of War: Ragnarök"
                 data-nimg="fill"
                 decoding="async"
-                sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=3840&q=75"
-                srcset="/_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F34%2Ff8%2Fe5%2F34f8e55845212171e8bb35edc5b08018.jpg&w=3840&q=75 3840w"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
               />
+              <noscript />
             </span>
           </div>
           <div
@@ -1109,11 +1108,10 @@ exports['<GameList /> should render the <GameList /> 1'] = `
                 alt="Star Wars Jedi: Fallen Order"
                 data-nimg="fill"
                 decoding="async"
-                sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=3840&q=75"
-                srcset="/_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Fgrid%2F935a281a70ae21d54479c9c468145f7e.png&w=3840&q=75 3840w"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
               />
+              <noscript />
             </span>
           </div>
           <div
@@ -1262,11 +1260,10 @@ exports['<GameList /> should render the <GameList /> 1'] = `
                 alt="Cyberpunk 2077"
                 data-nimg="fill"
                 decoding="async"
-                sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=3840&q=75"
-                srcset="/_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fwhatifgaming.com%2Fwp-content%2Fuploads%2F2022%2F05%2FNeon-Aesthetic.jpg&w=3840&q=75 3840w"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
               />
+              <noscript />
             </span>
           </div>
           <div
@@ -1415,11 +1412,10 @@ exports['<GameList /> should render the <GameList /> 1'] = `
                 alt="The Last of Us Part II"
                 data-nimg="fill"
                 decoding="async"
-                sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=3840&q=75"
-                srcset="/_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fwww.jeuxvideo-live.com%2Fwp-content%2Fuploads%2Fjvl%2F2022%2F07%2Fle-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg&w=3840&q=75 3840w"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
               />
+              <noscript />
             </span>
           </div>
           <div
@@ -1532,11 +1528,10 @@ exports['<GameList /> should render the <GameList /> 1'] = `
                 alt="Elden Ring"
                 data-nimg="fill"
                 decoding="async"
-                sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=3840&q=75"
-                srcset="/_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202110%2F2000%2FaGhopp3MHppi7kooGE2Dtt8C.png&w=3840&q=75 3840w"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
               />
+              <noscript />
             </span>
           </div>
           <div
@@ -1649,11 +1644,10 @@ exports['<GameList /> should render the <GameList /> 1'] = `
                 alt="Horizon Forbidden West"
                 data-nimg="fill"
                 decoding="async"
-                sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=3840&q=75"
-                srcset="/_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Ft.ctcdn.com.br%2Fefyy2ADqd67kPvUfXBVJWMJiX_I%3D%2F1400x788%2Fsmart%2Ffilters%3Aformat(webp)%2Fi499600.png&w=3840&q=75 3840w"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
               />
+              <noscript />
             </span>
           </div>
           <div
@@ -1766,11 +1760,10 @@ exports['<GameList /> should render the <GameList /> 1'] = `
                 alt="Marvel's Spider-Man"
                 data-nimg="fill"
                 decoding="async"
-                sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=3840&q=75"
-                srcset="/_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202008%2F1020%2Fb0OfuUs4lHGWG4VNlHcXwL5a.jpg&w=3840&q=75 3840w"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
               />
+              <noscript />
             </span>
           </div>
           <div
@@ -1901,11 +1894,10 @@ exports['<GameList /> should render the <GameList /> 1'] = `
                 alt="The Witcher 3"
                 data-nimg="fill"
                 decoding="async"
-                sizes="100vw"
-                src="/_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=3840&q=75"
-                srcset="/_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fe.snmc.io%2Flk%2Ff%2Fx%2F1508cc32995d91b6206ee1b1e82b9338%2F8329790&w=3840&q=75 3840w"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
               />
+              <noscript />
             </span>
           </div>
           <div

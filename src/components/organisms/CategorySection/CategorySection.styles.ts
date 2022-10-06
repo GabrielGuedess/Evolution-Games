@@ -157,7 +157,7 @@ export const ImageHeader = styled.div`
   z-index: 1;
 `;
 
-export const ImageTitle = styled.h3`
+export const ImageTitle = styled.strong`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
     font-weight: ${theme.font.regular};
@@ -174,7 +174,7 @@ export const ImageTitle = styled.h3`
   `}
 `;
 
-export const ImageSubTitle = styled.h4`
+export const ImageSubTitle = styled.strong`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xxmedium};
     font-weight: ${theme.font.regular};
