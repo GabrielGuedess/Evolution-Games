@@ -11,7 +11,7 @@ const gameCardItems: GameCardProps[] = [
     price: '$ 60.99',
     score: 5.0,
     platform: ['playstation'],
-    slug: '',
+    slug: 'god-of-war-ragnarok',
     primaryColor: '#9db4d0',
   },
   {
@@ -24,7 +24,7 @@ const gameCardItems: GameCardProps[] = [
     price: '$ 30.00',
     score: 3.8,
     platform: ['playstation', 'pc', 'xbox'],
-    slug: '',
+    slug: 'star-wars-jedi-fallen-order',
     primaryColor: '#a8b6cb',
   },
   {
@@ -37,7 +37,7 @@ const gameCardItems: GameCardProps[] = [
     price: '$ 10.00',
     score: 1.8,
     platform: ['playstation', 'pc', 'xbox'],
-    slug: '',
+    slug: 'cyberpunk-2077',
     primaryColor: '#dabbde',
   },
   {
@@ -50,7 +50,7 @@ const gameCardItems: GameCardProps[] = [
     price: '$ 60.99',
     score: 5.0,
     platform: ['playstation'],
-    slug: '',
+    slug: 'the-last-of-us-part-ii',
     primaryColor: '#b2a7a5',
   },
   {
@@ -63,7 +63,7 @@ const gameCardItems: GameCardProps[] = [
     price: '$ 60.99',
     score: 4.8,
     platform: ['playstation'],
-    slug: '',
+    slug: 'elden-ring',
     primaryColor: '#aeb195',
   },
   {
@@ -76,7 +76,7 @@ const gameCardItems: GameCardProps[] = [
     price: '$ 60.99',
     score: 4.8,
     platform: ['playstation'],
-    slug: '',
+    slug: 'horizon-forbidden-west',
     primaryColor: '#aeb1d2',
   },
   {
@@ -89,7 +89,7 @@ const gameCardItems: GameCardProps[] = [
     price: '$ 60.99',
     score: 4.7,
     platform: ['playstation', 'pc'],
-    slug: '',
+    slug: 'marvels-spider-man',
     primaryColor: '#9ab3c5',
   },
   {
@@ -102,7 +102,7 @@ const gameCardItems: GameCardProps[] = [
     price: '$ 60.99',
     score: 4.5,
     platform: ['playstation', 'pc', 'xbox'],
-    slug: '',
+    slug: 'the-witcher-3-wild-hund',
     primaryColor: '#d1b2a3',
   },
 ];
