@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports['<MenuMobile /> should render user logged 1'] = `
-@media (min-width:768px) {
+@media (min-width:1170px) {
 
 }
 
