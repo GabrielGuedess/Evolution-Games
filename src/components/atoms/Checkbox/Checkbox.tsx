@@ -37,7 +37,7 @@ export const Checkbox = ({ title, icon }: CheckboxProps) => (
       <S.WrapperInfos>
         {icon}
 
-        <S.Title className="checkbox-text">{title}</S.Title>
+        <S.Title>{title}</S.Title>
       </S.WrapperInfos>
     </S.CheckboxWrapper>
   </S.Wrapper>
