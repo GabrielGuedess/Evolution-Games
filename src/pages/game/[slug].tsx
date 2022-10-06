@@ -27,14 +27,6 @@ export const getStaticProps: GetStaticProps = async () => ({
     developer: 'CD Project',
     releaseYear: '2020',
     availablePlatforms: ['pc', 'playstation', 'xbox'],
-    price: {
-      playstation3: 10,
-      playstation4: 20,
-      playstation5: 60,
-      xbox360: 10,
-      xboxOne: 20,
-      xboxSeriesX: 60,
-    },
     backgroundVideo:
       'https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/s/sp/spiderman-miles-morales/video/spider-man-miles-morales-hero-video-01-15sec-720-web-en-06jul20.mp4',
     backgroundImage: '/img/games/theWitcher.jpg',
