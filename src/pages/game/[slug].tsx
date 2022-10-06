@@ -11,7 +11,7 @@ export default function Index(props: GameProps) {
   return <Game {...props} />;
 }
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
-  const host = process.env.HOST || 'http://localhost:3000';
+  const host = process.env.VERCEL_URL || 'http://localhost:3000';
   const data = await fetch(`${host}/api/games/${params?.slug}`);
   const game = await data.json();
 
