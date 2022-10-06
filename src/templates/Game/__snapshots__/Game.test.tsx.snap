@@ -1,0 +1,1580 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Game /> should render components correctly 1'] = `
+.c7 {
+  max-width: 165.6rem;
+  margin: 0 1.6rem;
+}
+
+.c41 {
+  display: none;
+}
+
+.c34 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #855aff;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c34:hover {
+  cursor: pointer;
+  color: #855aff;
+}
+
+.c36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c36:hover {
+  cursor: pointer;
+  color: #855aff;
+}
+
+.c35 {
+  width: 3.2rem;
+  height: 1.7rem;
+}
+
+.c37 {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.c38 {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.c0 {
+  position: relative;
+  height: 100vh;
+}
+
+.c0 .backgroundImage {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: -1;
+  -webkit-mask-image: linear-gradient( 90deg, transparent 20%, rgba(4,4,12,0.7) 80% ), linear-gradient( 180deg, transparent 4%, #FFFFFF 56%, transparent 100% );
+  mask-image: linear-gradient( 90deg, transparent 20%, rgba(4,4,12,0.7) 80% ), linear-gradient( 180deg, transparent 4%, #FFFFFF 56%, transparent 100% );
+}
+
+.c0 .swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem;
+}
+
+.c1 {
+  position: absolute;
+  inset: 0;
+}
+
+.c2 {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg,transparent 20%,rgba(4,4,12,0.7) 80%), linear-gradient( 180deg, transparent 4%, #FFFFFF 56%, transparent 100% );
+  mask-image: linear-gradient(90deg,transparent 20%,rgba(4,4,12,0.7) 80%), linear-gradient( 180deg, transparent 4%, #FFFFFF 56%, transparent 100% );
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3rem;
+  z-index: 10;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.c18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.c8 .c9 {
+  display: none;
+}
+
+.c12 {
+  font-weight: 500;
+  line-height: 3.2rem;
+  font-size: 2rem;
+  color: #F4F4F5;
+}
+
+.c12 span {
+  font-weight: 500;
+  line-height: 3.2rem;
+  text-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
+  font-size: 2rem;
+  color: #855aff;
+}
+
+.c20 {
+  font-style: italic;
+  color: #F4F4F5;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+
+.c13 {
+  line-height: 3.2rem;
+  font-size: 1.4rem;
+  color: #F4F4F5;
+}
+
+.c15 {
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  cursor: pointer;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c15.swiper-button-disabled {
+  display: none;
+}
+
+.c17 {
+  position: absolute;
+  top: 50%;
+  right: -2rem;
+  cursor: pointer;
+  -webkit-transform: translate(50%,-50%);
+  -ms-transform: translate(50%,-50%);
+  transform: translate(50%,-50%);
+}
+
+.c17.swiper-button-disabled {
+  display: none;
+}
+
+.c24 {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.c25 {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.c14 {
+  position: relative;
+  overflow: visible;
+}
+
+.c16 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-shadow: 0 0.8rem 1rem rgba(133,90,255,0.25);
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.c21 {
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+  color: #F4F4F5;
+}
+
+.c21 span {
+  color: #855aff;
+}
+
+.c22 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  gap: 5rem;
+  padding-bottom: calc(6rem - 1.6rem);
+  z-index: 10;
+}
+
+.c23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.c26 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.c27 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.c28 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c29 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  color: #F4F4F5;
+}
+
+.c30 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  color: #717B8A;
+}
+
+.c31 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c32 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.c40 {
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #F4F4F5;
+}
+
+.c39 {
+  height: 1.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #855aff;
+  text-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
+}
+
+.c4 {
+  display: none;
+  position: absolute;
+  inset: 0 auto 0 0;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+}
+
+.c5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c6 {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 100%;
+  height: 120%;
+  -webkit-filter: blur(1.5rem);
+  filter: blur(1.5rem);
+  background: linear-gradient(90deg,#04040c 53.13%,rgba(4,4,12,0.7) 100%);
+}
+
+@media (min-width:1170px) {
+  .c7 {
+    margin: 0 3.2rem;
+  }
+}
+
+@media (min-width:1440px) {
+  .c7 {
+    margin: 0 4.8rem;
+  }
+}
+
+@media (min-width:1656px) {
+  .c7 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width:1170px) {
+  .c41 {
+    display: block;
+  }
+}
+
+@media (min-width:1170px) {
+  .c0 .backgroundImage {
+    -webkit-mask-image: linear-gradient( 180deg, transparent 4%, #FFFFFF 56%, transparent 100% );
+    mask-image: linear-gradient( 180deg, transparent 4%, #FFFFFF 56%, transparent 100% );
+  }
+}
+
+@media (min-width:1170px) {
+  .c2 {
+    -webkit-mask-image: linear-gradient( 180deg, transparent 4%, #FFFFFF 56%, transparent 100% );
+    mask-image: linear-gradient( 180deg, transparent 4%, #FFFFFF 56%, transparent 100% );
+  }
+}
+
+@media (min-width:1170px) {
+  .c18 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c8 {
+    padding-top: 10rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+  }
+
+  .c8 .c9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 12% 2rem 0;
+    overflow-y: auto;
+    z-index: 10;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .c8 .c9::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (min-width:1170px) {
+  .c12 {
+    font-size: 2.5rem;
+  }
+
+  .c12 span {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c13 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c24 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c25 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .c22 {
+    gap: 1rem;
+    padding-bottom: calc(3rem - 1.6rem);
+  }
+}
+
+@media (min-width:1170px) {
+  .c22 {
+    width: 50%;
+    gap: 5rem;
+    padding-bottom: calc(9rem - 1.6rem);
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .c23 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 2rem;
+    padding-right: 1.2rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c23 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4rem;
+    padding-right: 0;
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .c26 {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width:1440px) {
+  .c26 {
+    gap: 3rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c27 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c29 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c30 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c40 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c4 {
+    display: block;
+  }
+}
+
+<div
+  data-testid="Base Mock"
+>
+  <div
+    class=""
+  >
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <div
+          class="c2"
+        >
+          <video
+            autoplay=""
+            class="c3"
+            loop=""
+          >
+            <source
+              src="https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/s/sp/spiderman-miles-morales/video/spider-man-miles-morales-hero-video-01-15sec-720-web-en-06jul20.mp4"
+            />
+          </video>
+        </div>
+      </div>
+      <div
+        class="2 c4"
+      >
+        <div
+          class="3 c5"
+        >
+          <div
+            class="4 c6"
+          />
+        </div>
+      </div>
+      <div
+        class="c7 c8"
+      >
+        <div
+          class="c9 c10"
+        >
+          <div
+            class="c11"
+          >
+            <strong
+              class="c12"
+            >
+              Sobre esse 
+              <span>
+                Jogo
+              </span>
+            </strong>
+            <span
+              class="1 c13"
+            >
+              The Witcher: Wild Hunt é um RPG de mundo aberto de fantasia cheio de escolhas vitais. Em The Witcher, você joga como um caçador de monstros profissional, Geralt de Rívia, em busca da criança da profecia em um vasto mundo aberto, rico em cidades mercantis, ilhas piratas, passagens perigosas nas montanhas e cavernas esquecidas a serem exploradas.
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            <strong
+              class="c12"
+            >
+              Galeria
+            </strong>
+            <div
+              class="6 c14"
+            >
+              <svg
+                class="2 c15"
+                fill="currentColor"
+                height="25"
+                id="left"
+                viewBox="0 0 256 256"
+                width="25"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="256"
+                  width="256"
+                />
+                <polyline
+                  fill="none"
+                  points="160 208 80 128 160 48"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+              </svg>
+              <div
+                data-testid="Swiper"
+              >
+                <div
+                  data-testid="Swiper-Slide"
+                >
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="The Witcher image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="The Witcher image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="Resident Evil 8 image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="Resident Evil 8 image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="Star Wars image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="Star Wars image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="The Last Of Us image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="The Last Of Us image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="Star Wars Highlight image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="Star Wars Highlight image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="The Witcher 2 image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="The Witcher 2 image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <svg
+                class="3 c17"
+                fill="currentColor"
+                height="25"
+                id="right"
+                viewBox="0 0 256 256"
+                width="25"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="256"
+                  width="256"
+                />
+                <polyline
+                  fill="none"
+                  points="96 48 176 128 96 208"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="c11"
+          >
+            <strong
+              class="c12"
+            >
+              Requisitos de Sistema
+            </strong>
+            <div
+              class="c18"
+            >
+              <div
+                class="8 c19"
+              >
+                <span
+                  class="0 c20"
+                >
+                  Mínimos:
+                </span>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    SO:
+                  </span>
+                   
+                  SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 10
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Processador:
+                  </span>
+                   
+                  Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Memória:
+                  </span>
+                   
+                  6 GB de RAM
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Placa de vídeo:
+                  </span>
+                   
+                  Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Armazenamento:
+                  </span>
+                   
+                  35 GB de espaço disponível
+                </p>
+              </div>
+              <div
+                class="8 c19"
+              >
+                <span
+                  class="0 c20"
+                >
+                  Recomendados:
+                </span>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    SO:
+                  </span>
+                   
+                  SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 11
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Processador:
+                  </span>
+                   
+                  Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Memória:
+                  </span>
+                   
+                  8 GB de RAM
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Placa de vídeo:
+                  </span>
+                   
+                  Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Armazenamento:
+                  </span>
+                   
+                  35 GB de espaço disponível
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c11"
+          >
+            <strong
+              class="c12"
+            >
+              Consoles Disponíveis
+            </strong>
+            <span
+              class="0 c20"
+            >
+              Playstation 3
+            </span>
+            <span
+              class="0 c20"
+            >
+              Playstation 4
+            </span>
+            <span
+              class="0 c20"
+            >
+              Playstation 5
+            </span>
+            <span
+              class="0 c20"
+            >
+              Xbox 360
+            </span>
+            <span
+              class="0 c20"
+            >
+              Xbox One
+            </span>
+            <span
+              class="0 c20"
+            >
+              Xbox Series X
+            </span>
+          </div>
+        </div>
+        <div
+          class="0 c22"
+        >
+          <div
+            class="1 c23"
+          >
+            <svg
+              class="4 c24"
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 256 256"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <path
+                d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+            </svg>
+            <svg
+              class="5 c25"
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 256 256"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <path
+                d="M208.8,72H47.2a8.1,8.1,0,0,0-8,7.1L25,207.1a8,8,0,0,0,7.9,8.9H223.1a8,8,0,0,0,7.9-8.9l-14.2-128A8.1,8.1,0,0,0,208.8,72Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+              <path
+                d="M88,72a40,40,0,0,1,80,0"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+            </svg>
+          </div>
+          <div
+            class="2 c26"
+          >
+            <h1
+              class="3 c27"
+            >
+              The Witcher 3: Wild Hunt
+            </h1>
+            <div
+              class="4 c28"
+            >
+              <span
+                class="5 c29"
+              >
+                RPG, 
+                Action
+              </span>
+              <span
+                class="5 c30"
+                color="secondary"
+              >
+                CD Project
+                , 
+                2020
+              </span>
+            </div>
+            <div
+              class="6 c31"
+            >
+              <div
+                class="7 c32"
+              >
+                <div
+                  class="8 c33"
+                >
+                  <div
+                    class="c34"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PC Icon"
+                      class="c35"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 34 19"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.426 18 3.324.545h6.886c1.318 0 2.4.253 3.247.759.853.5 1.45 1.196 1.79 2.088.347.886.426 1.91.239 3.068-.193 1.165-.614 2.19-1.262 3.077a6.556 6.556 0 0 1-2.505 2.062c-1.029.495-2.216.742-3.563.742H3.767l.486-2.957h3.792c.716 0 1.327-.123 1.833-.367.511-.25.918-.594 1.219-1.031.3-.443.497-.952.588-1.526.096-.585.065-1.094-.094-1.525a1.87 1.87 0 0 0-.878-1.006c-.42-.244-.986-.366-1.696-.366H6.528L4.116 18H.426ZM33.232 6.656H29.55c.012-.488-.05-.92-.187-1.295a2.533 2.533 0 0 0-.614-.972 2.576 2.576 0 0 0-.98-.605 3.76 3.76 0 0 0-1.304-.213c-.932 0-1.787.233-2.565.699-.779.466-1.435 1.142-1.969 2.028-.534.881-.903 1.946-1.108 3.196-.199 1.205-.187 2.213.034 3.026.222.812.614 1.426 1.176 1.84.569.41 1.276.614 2.122.614a5.56 5.56 0 0 0 1.492-.196c.472-.136.9-.33 1.287-.58a4.309 4.309 0 0 0 1.023-.928c.295-.364.525-.776.69-1.236h3.707a8.442 8.442 0 0 1-1.09 2.318 8.73 8.73 0 0 1-1.816 1.995 8.76 8.76 0 0 1-2.463 1.38c-.92.341-1.929.512-3.026.512-1.585 0-2.945-.364-4.082-1.091-1.13-.727-1.946-1.776-2.446-3.145-.5-1.37-.594-3.02-.281-4.952.312-1.87.923-3.454 1.832-4.756.915-1.306 2.026-2.298 3.333-2.974a9.063 9.063 0 0 1 4.21-1.014c1.04 0 1.98.142 2.82.426.842.284 1.558.699 2.149 1.244a5.098 5.098 0 0 1 1.346 1.986c.301.784.432 1.682.392 2.693Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <button
+                    aria-controls="radix-:r0:"
+                    aria-expanded="false"
+                    aria-haspopup="dialog"
+                    data-state="closed"
+                    type="button"
+                  >
+                    <div
+                      class="c36"
+                      color="white"
+                    >
+                      <svg
+                        aria-label="PlayStation Icon"
+                        class="c37"
+                        fill="none"
+                        role="figure"
+                        viewBox="0 0 28 22"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                  <button
+                    aria-controls="radix-:r1:"
+                    aria-expanded="false"
+                    aria-haspopup="dialog"
+                    data-state="closed"
+                    type="button"
+                  >
+                    <div
+                      class="c36"
+                      color="white"
+                    >
+                      <svg
+                        aria-label="Xbox Icon"
+                        class="c38"
+                        fill="none"
+                        role="figure"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+                <span
+                  class="1 c39"
+                />
+              </div>
+              <strong
+                class="9 c40"
+              >
+                R$ 60,00
+              </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c41"
+    >
+      <div
+        class="c7"
+      >
+        <div
+          class="c9 c10"
+        >
+          <div
+            class="c11"
+          >
+            <strong
+              class="c12"
+            >
+              Sobre esse 
+              <span>
+                Jogo
+              </span>
+            </strong>
+            <span
+              class="1 c13"
+            >
+              The Witcher: Wild Hunt é um RPG de mundo aberto de fantasia cheio de escolhas vitais. Em The Witcher, você joga como um caçador de monstros profissional, Geralt de Rívia, em busca da criança da profecia em um vasto mundo aberto, rico em cidades mercantis, ilhas piratas, passagens perigosas nas montanhas e cavernas esquecidas a serem exploradas.
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            <strong
+              class="c12"
+            >
+              Galeria
+            </strong>
+            <div
+              class="6 c14"
+            >
+              <div
+                data-testid="Swiper"
+              >
+                <div
+                  data-testid="Swiper-Slide"
+                >
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="The Witcher image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="The Witcher image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="Resident Evil 8 image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="Resident Evil 8 image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="Star Wars image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="Star Wars image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="The Last Of Us image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="The Last Of Us image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="Star Wars Highlight image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="Star Wars Highlight image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="Swiper-Slide"
+                  >
+                    <div
+                      aria-label="The Witcher 2 image gallery"
+                      class="7 c16"
+                    >
+                      <span
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                      >
+                        <img
+                          alt="The Witcher 2 image gallery"
+                          data-nimg="fill"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                        />
+                        <noscript />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c11"
+          >
+            <strong
+              class="c12"
+            >
+              Requisitos de Sistema
+            </strong>
+            <div
+              class="c18"
+            >
+              <div
+                class="8 c19"
+              >
+                <span
+                  class="0 c20"
+                >
+                  Mínimos:
+                </span>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    SO:
+                  </span>
+                   
+                  SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 10
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Processador:
+                  </span>
+                   
+                  Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Memória:
+                  </span>
+                   
+                  6 GB de RAM
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Placa de vídeo:
+                  </span>
+                   
+                  Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Armazenamento:
+                  </span>
+                   
+                  35 GB de espaço disponível
+                </p>
+              </div>
+              <div
+                class="8 c19"
+              >
+                <span
+                  class="0 c20"
+                >
+                  Recomendados:
+                </span>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    SO:
+                  </span>
+                   
+                  SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 11
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Processador:
+                  </span>
+                   
+                  Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Memória:
+                  </span>
+                   
+                  8 GB de RAM
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Placa de vídeo:
+                  </span>
+                   
+                  Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290
+                </p>
+                <p
+                  class="9 c21"
+                >
+                  <span>
+                    Armazenamento:
+                  </span>
+                   
+                  35 GB de espaço disponível
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="c11"
+          >
+            <strong
+              class="c12"
+            >
+              Consoles Disponíveis
+            </strong>
+            <span
+              class="0 c20"
+            >
+              Playstation 3
+            </span>
+            <span
+              class="0 c20"
+            >
+              Playstation 4
+            </span>
+            <span
+              class="0 c20"
+            >
+              Playstation 5
+            </span>
+            <span
+              class="0 c20"
+            >
+              Xbox 360
+            </span>
+            <span
+              class="0 c20"
+            >
+              Xbox One
+            </span>
+            <span
+              class="0 c20"
+            >
+              Xbox Series X
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-testid="HighlightCarousel"
+    />
+    <div
+      data-testid="GameList Mock"
+    />
+  </div>
+</div>
+`;
