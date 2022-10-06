@@ -240,7 +240,7 @@ exports['<HighlightGame /> should render the heading 1'] = `
       <p
         class="c4"
       >
-        1 de outubro de 2022
+        6 de outubro de 2022
       </p>
       <span
         class="c5"

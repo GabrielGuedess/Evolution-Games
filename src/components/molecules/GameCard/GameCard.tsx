@@ -55,9 +55,9 @@ export const GameCard = ({
           <Image
             src={img}
             alt={title}
-            priority
             layout="fill"
             objectFit="cover"
+            loading="lazy"
           />
         </S.GameImage>
       </Link>
