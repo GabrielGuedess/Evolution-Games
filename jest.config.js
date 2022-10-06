@@ -16,6 +16,8 @@ const customJestConfig = {
     '!src/styles/**/*.ts',
     '!src/utils/tests/*.ts(x)?',
     '!src/utils/requestFake.ts',
+    '!src/api/**/**.ts',
+    '!src/pages/api/**/**.ts',
   ],
   transformIgnorePatterns: ['node_modules/(?!(swiper|ssr-window|dom7)/)'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
