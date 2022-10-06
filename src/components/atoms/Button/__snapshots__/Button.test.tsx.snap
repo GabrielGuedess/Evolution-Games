@@ -88,10 +88,10 @@ exports['<Button /> should render the medium size by default 1'] = `
 
 .c0 .effect {
   position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
+  top: initial;
+  left: initial;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
@@ -106,6 +106,15 @@ exports['<Button /> should render the medium size by default 1'] = `
 
 .c0:not(:disabled):active .effect path {
   d: path( 'M0 5C0 2.23858 2.23858 0 5 0H95C97.7614 0 100 2.23858 100 5V95C100 97.7614 97.7614 100 95 100H5C2.23858 100 0 97.7614 0 95V5Z' );
+}
+
+@media (min-width:450px) {
+  .c0 .effect {
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+  }
 }
 
 <button

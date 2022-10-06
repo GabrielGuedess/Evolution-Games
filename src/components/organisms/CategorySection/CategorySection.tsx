@@ -21,6 +21,7 @@ export const CategorySection = () => (
           <Image
             layout="fill"
             loading="lazy"
+            quality={100}
             objectFit="cover"
             alt="Ação e Aventura"
             className="image-category"
@@ -37,6 +38,7 @@ export const CategorySection = () => (
           <Image
             alt="Terror"
             layout="fill"
+            quality={100}
             loading="lazy"
             objectFit="cover"
             className="image-category"
@@ -55,6 +57,7 @@ export const CategorySection = () => (
           <Image
             layout="fill"
             loading="lazy"
+            quality={100}
             alt="Jogos 4k"
             objectFit="cover"
             className="image-category"

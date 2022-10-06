@@ -3,7 +3,6 @@
 exports['<Checkbox /> should render the heading 1'] = `
 .c6 {
   color: #FFFFFF;
-  text-transform: capitalize;
   font-size: 1.4rem;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;

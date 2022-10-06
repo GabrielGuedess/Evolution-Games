@@ -32,6 +32,7 @@
     "@radix-ui/react-accessible-icon": "^1.0.0",
     "@radix-ui/react-avatar": "^1.0.0",
     "@radix-ui/react-dialog": "^1.0.0",
+    "@radix-ui/react-label": "^1.0.0",
     "@radix-ui/react-navigation-menu": "^1.0.0",
     "@radix-ui/react-popover": "^1.0.0",
     "hamburger-react": "^2.5.0",
@@ -70,7 +71,7 @@
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
-    "commitizen": "^4.2.5",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.24.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -97,10 +98,5 @@
     "storybook-dark-mode": "^1.1.2",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
