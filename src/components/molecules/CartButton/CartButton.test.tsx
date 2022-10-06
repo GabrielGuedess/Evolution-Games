@@ -6,12 +6,6 @@ import { cartItems } from 'components/organisms/Navbar/mock';
 
 import { CartButton } from './CartButton';
 
-global.ResizeObserver = jest.fn().mockImplementation(() => ({
-  observe: jest.fn(),
-  unobserve: jest.fn(),
-  disconnect: jest.fn(),
-}));
-
 jest.mock('components/atoms/CartIcon/CartIcon', () => ({
   __esModule: true,
   CartIcon: function Mock({ children }: { children: React.ReactNode }) {
