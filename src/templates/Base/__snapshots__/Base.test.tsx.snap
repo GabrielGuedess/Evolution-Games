@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Base /> should render component correctly 1'] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 {
+  margin-top: 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c2 {
+  margin-top: 6rem;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    margin-top: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    data-testid="Navbar Mock"
+  />
+  <div
+    aria-label="Content"
+    class="c1"
+  >
+    Test
+  </div>
+  <div
+    class="c2"
+  >
+    <div
+      data-testid="Footer Mock"
+    />
+  </div>
+</div>
+`;
