@@ -45,6 +45,7 @@
     "object-curly-newline": "off",
     "react/jsx-wrap-multilines": "off",
     "operator-linebreak": "off",
+    "class-methods-use-this": "off",
     "indent": "off",
     "react/jsx-indent": "off",
     "react/jsx-one-expression-per-line": "off",
