@@ -9,24 +9,43 @@ export default {
     hasTitle: true,
     isActive: false,
     size: 'medium',
+    variant: 'simple',
   },
 } as Meta<PlatformIconProps>;
 
-export const Playstation: Story<PlatformIconProps> = args => (
+export const Playstation4: Story<PlatformIconProps> = args => (
   <PlatformIcon {...args} />
 );
 
-Playstation.args = {
-  platform: 'playstation',
+Playstation4.args = {
+  platform: 'ps4',
   color: 'white',
 };
 
-export const Xbox: Story<PlatformIconProps> = args => (
+export const Playstation5: Story<PlatformIconProps> = args => (
   <PlatformIcon {...args} />
 );
 
-Xbox.args = {
-  platform: 'xbox',
+Playstation5.args = {
+  platform: 'ps5',
+  color: 'white',
+};
+
+export const XboxOne: Story<PlatformIconProps> = args => (
+  <PlatformIcon {...args} />
+);
+
+XboxOne.args = {
+  platform: 'one',
+  color: 'white',
+};
+
+export const XboxSeries: Story<PlatformIconProps> = args => (
+  <PlatformIcon {...args} />
+);
+
+XboxSeries.args = {
+  platform: 'xs',
   color: 'white',
 };
 
