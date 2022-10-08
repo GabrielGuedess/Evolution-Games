@@ -8,7 +8,7 @@ export default {
   component: RadioButton,
   args: {
     title: 'playstation',
-    icon: <PlatformIcon platform="playstation" size="small" />,
+    icon: <PlatformIcon platform="ps4" size="small" />,
   },
 } as Meta<RadioButtonProps>;
 
