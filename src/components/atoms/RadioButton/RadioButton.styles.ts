@@ -95,6 +95,7 @@ export const Radio = styled.input`
 export const WrapperInfos = styled.div`
   cursor: pointer;
   display: flex;
+  align-items: center;
   gap: 1rem;
 
   span {

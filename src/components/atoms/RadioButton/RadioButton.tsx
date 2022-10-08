@@ -18,7 +18,7 @@ export const RadioButton = ({
       <S.Radio data-testid={id} id={id} type="radio" {...props} />
       <S.WrapperInfos>
         {icon}
-        <span>{title}</span>
+        {!!title && <span>{title}</span>}
       </S.WrapperInfos>
     </S.Label>
   </S.Wrapper>
