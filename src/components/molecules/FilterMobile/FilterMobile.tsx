@@ -40,23 +40,23 @@ export const FilterMobile = ({ setFilterBy, filterBy }: FilterMobileProps) => (
           }
         />
         <RadioButton
-          title="Playstation"
-          id="playstation"
-          icon={<PlatformIcon platform="playstation" size="small" />}
-          value="playstation"
+          title="Playstation 5"
+          id="ps5"
+          icon={<PlatformIcon platform="ps5" size="small" />}
+          value="ps5"
           name="gameFilter"
-          checked={filterBy === 'playstation'}
+          checked={filterBy === 'ps5'}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setFilterBy(e.target.value as Platform)
           }
         />
         <RadioButton
-          title="Xbox"
-          id="xbox"
-          value="xbox"
+          title="Xbox Series X|S"
+          id="xs"
+          value="xs"
           name="gameFilter"
-          checked={filterBy === 'xbox'}
-          icon={<PlatformIcon platform="xbox" size="small" />}
+          checked={filterBy === 'xs'}
+          icon={<PlatformIcon platform="xs" size="small" />}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setFilterBy(e.target.value as Platform)
           }

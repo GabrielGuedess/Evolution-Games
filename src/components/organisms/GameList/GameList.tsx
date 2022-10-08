@@ -52,17 +52,17 @@ export const GameList = ({ title, data }: GameListProps) => {
                 />
                 <PlatformIcon
                   hasTitle
-                  platform="playstation"
+                  platform="ps5"
                   color="secondary"
-                  isActive={filterBy === 'playstation'}
-                  onClick={() => setFilterBy('playstation')}
+                  isActive={filterBy === 'ps5'}
+                  onClick={() => setFilterBy('ps5')}
                 />
                 <PlatformIcon
                   hasTitle
-                  platform="xbox"
+                  platform="xs"
                   color="secondary"
-                  isActive={filterBy === 'xbox'}
-                  onClick={() => setFilterBy('xbox')}
+                  isActive={filterBy === 'xs'}
+                  onClick={() => setFilterBy('xs')}
                 />
                 <PlatformIcon
                   hasTitle

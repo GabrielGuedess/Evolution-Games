@@ -38,6 +38,7 @@ export const HighlightGame = ({
         quality={100}
         alt={alt}
         className="imageBackground"
+        loading="lazy"
       />
     </S.WrapperHighlight>
 
@@ -50,6 +51,7 @@ export const HighlightGame = ({
           objectFit="contain"
           quality={100}
           alt={gameLogoAlt}
+          loading="lazy"
         />
 
         <S.Release>

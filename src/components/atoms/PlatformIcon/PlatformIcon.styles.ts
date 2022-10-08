@@ -3,49 +3,12 @@ import styled, { css } from 'styled-components';
 import { PlatformIconProps } from './PlatformIcon';
 
 const iconModifiers = {
-  small: () => ({
-    playstation: () => css`
-      width: 1.8rem;
-      height: 1.8rem;
-    `,
-
-    xbox: () => css`
-      width: 1.8rem;
-      height: 1.8rem;
-    `,
-
-    pc: () => css`
-      width: 2rem;
-      height: 1rem;
-    `,
-
-    all: () => css`
-      width: 1.5rem;
-      height: 1.5rem;
-    `,
-  }),
-
-  medium: () => ({
-    playstation: () => css`
-      width: 2.8rem;
-      height: 2.8rem;
-    `,
-
-    xbox: () => css`
-      width: 2.2rem;
-      height: 2.2rem;
-    `,
-
-    pc: () => css`
-      width: 3.2rem;
-      height: 1.7rem;
-    `,
-
-    all: () => css`
-      width: 2rem;
-      height: 2rem;
-    `,
-  }),
+  small: () => css`
+    height: 1.4rem;
+  `,
+  medium: () => css`
+    height: 1.8rem;
+  `,
 };
 
 export const Wrapper = styled.div<
@@ -65,9 +28,9 @@ export const Wrapper = styled.div<
   `}
 `;
 
-export const Icon = styled.svg<Pick<PlatformIconProps, 'platform' | 'size'>>`
-  ${({ platform, size }) => css`
-    ${!!iconModifiers[size!]()[platform] && iconModifiers[size!]()[platform]}
+export const Icon = styled.svg<Pick<PlatformIconProps, 'size'>>`
+  ${({ size }) => css`
+    ${!!iconModifiers[size!]() && iconModifiers[size!]()}
   `}
 `;
 

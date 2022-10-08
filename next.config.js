@@ -21,6 +21,7 @@ module.exports = withPWA({
       't.ctcdn.com.br',
       'gmedia.playstation.com',
       'e.snmc.io',
+      'www.trustedreviews.com',
     ],
   },
 });

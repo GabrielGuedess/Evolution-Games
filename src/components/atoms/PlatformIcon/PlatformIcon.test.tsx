@@ -8,9 +8,7 @@ import { PlatformIcon } from './PlatformIcon';
 
 describe('<PlatformIcon />', () => {
   it('should render the playstation icon', () => {
-    const { container } = renderWithTheme(
-      <PlatformIcon platform="playstation" />,
-    );
+    const { container } = renderWithTheme(<PlatformIcon platform="ps4" />);
 
     // Arrange
     const icon = screen.getByLabelText('PlayStation Icon');
@@ -24,12 +22,12 @@ describe('<PlatformIcon />', () => {
 
   it('should render selected playstation icon', () => {
     const { container } = renderWithTheme(
-      <PlatformIcon platform="playstation" hasTitle isActive />,
+      <PlatformIcon platform="ps4" hasTitle isActive />,
     );
 
     // Arrange
     const icon = screen.getByLabelText('PlayStation Icon');
-    const label = screen.getByLabelText('PlayStation');
+    const label = screen.getByLabelText('PlayStation 4');
 
     // Assert
     expect(label.parentElement).toHaveStyle({
@@ -41,8 +39,7 @@ describe('<PlatformIcon />', () => {
     });
 
     expect(icon).toHaveStyle({
-      height: '2.8rem',
-      width: '2.8rem',
+      height: '1.8rem',
     });
 
     expect(container.firstChild).toMatchSnapshot();

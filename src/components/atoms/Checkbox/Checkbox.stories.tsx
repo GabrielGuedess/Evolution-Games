@@ -8,7 +8,7 @@ export default {
   component: Checkbox,
   args: {
     title: 'Playstation',
-    icon: <PlatformIcon platform="playstation" size="small" />,
+    icon: <PlatformIcon platform="ps4" size="small" />,
   },
 } as Meta<CheckboxProps>;
 

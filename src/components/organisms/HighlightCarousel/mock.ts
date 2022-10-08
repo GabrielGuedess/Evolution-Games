@@ -9,7 +9,7 @@ export const highlightMock: HighlightGameProps[] = [
     releaseYear: new Date(2019, 10, 10),
     genre: 'Action-adventure',
     developer: 'Respawn Entertainment',
-    platform: ['pc', 'playstation', 'xbox'],
+    platform: ['pc', 'ps5', 'one'],
   },
   {
     img: '/img/games/r8.jpg',
@@ -19,7 +19,7 @@ export const highlightMock: HighlightGameProps[] = [
     releaseYear: new Date('09-10-2022'),
     genre: 'Action-adventure',
     developer: 'Respawn Entertainment',
-    platform: ['pc', 'playstation', 'xbox'],
+    platform: ['pc', 'ps4', 'xs'],
   },
   {
     img: '/img/games/starWars.jpg',
@@ -29,7 +29,7 @@ export const highlightMock: HighlightGameProps[] = [
     releaseYear: new Date('09-10-2022'),
     genre: 'Action-adventure',
     developer: 'Respawn Entertainment',
-    platform: ['pc', 'playstation', 'xbox'],
+    platform: ['pc', 'ps5', 'xs'],
   },
   {
     img: '/img/games/theLastOfUs.jpg',
@@ -39,6 +39,6 @@ export const highlightMock: HighlightGameProps[] = [
     releaseYear: new Date('09-10-2022'),
     genre: 'Action-adventure',
     developer: 'Respawn Entertainment',
-    platform: ['playstation'],
+    platform: ['ps4'],
   },
 ];

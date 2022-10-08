@@ -16,7 +16,7 @@ export const Wrapper = styled(Popover.Content)`
     backdrop-filter: blur(0.3rem);
     border-radius: ${theme.border.radius.regular};
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan('large')`
       display: none;
     `}
   `}

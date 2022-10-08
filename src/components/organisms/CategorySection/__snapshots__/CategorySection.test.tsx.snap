@@ -291,16 +291,16 @@ exports[
       <div
         class="c5"
       >
-        <h3
+        <strong
           class="c6"
         >
           Para os amantes da emoção
-        </h3>
-        <h4
+        </strong>
+        <strong
           class="c7"
         >
           Ação e Aventura
-        </h4>
+        </strong>
       </div>
       <img
         alt="Ação e Aventura"
@@ -313,16 +313,16 @@ exports[
       <div
         class="c5"
       >
-        <h3
+        <strong
           class="c6"
         >
           Para os amantes do terror
-        </h3>
-        <h4
+        </strong>
+        <strong
           class="c7"
         >
           Terror
-        </h4>
+        </strong>
       </div>
       <img
         alt="Terror"
@@ -339,16 +339,16 @@ exports[
       <div
         class="c5"
       >
-        <h3
+        <strong
           class="c6"
         >
           Para os amantes da qualidade
-        </h3>
-        <h4
+        </strong>
+        <strong
           class="c7"
         >
           Jogos em 4k
-        </h4>
+        </strong>
       </div>
       <img
         alt="Jogos 4k"

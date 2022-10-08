@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     height: 2rem;
     color: ${theme.colors.white};
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan('large')`
       width: 13.7rem;
       height: 3.2rem;
       color: ${theme.colors.primary};

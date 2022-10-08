@@ -17,7 +17,7 @@ export const Wrapper = styled(Container).attrs({ as: 'menu' })`
     z-index: ${theme.layers.menu};
     justify-content: space-between;
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan('large')`
       flex-direction: row;
       padding: 3.6rem 0;
     `}
@@ -26,8 +26,9 @@ export const Wrapper = styled(Container).attrs({ as: 'menu' })`
 
 export const WrapperLogotipo = styled.div`
   order: 2;
+  cursor: pointer;
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     order: initial;
   `}
 `;
@@ -35,7 +36,7 @@ export const WrapperLogotipo = styled.div`
 export const CustomMediaMatch = styled(MediaMatch)`
   order: 3;
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     order: initial;
   `}
 `;
@@ -75,7 +76,7 @@ export const WrapperIcons = styled.div`
   gap: 1.5rem;
   order: 1;
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan('large')`
     gap: 3rem;
     order: initial;
   `}

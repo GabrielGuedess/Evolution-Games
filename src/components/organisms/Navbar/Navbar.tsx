@@ -30,11 +30,13 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
 
   return (
     <S.Wrapper>
-      <S.WrapperLogotipo>
-        <Logo />
-      </S.WrapperLogotipo>
+      <Link href="/">
+        <S.WrapperLogotipo>
+          <Logo />
+        </S.WrapperLogotipo>
+      </Link>
 
-      <MediaMatch greaterThan="medium">
+      <MediaMatch greaterThan="large">
         <NavigationMenu.Root>
           <S.ListTextLink>
             <S.ItemTextLink>
@@ -77,12 +79,12 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
 
             <CartButton items={cartItems} />
 
-            <MediaMatch greaterThan="medium">
+            <MediaMatch greaterThan="large">
               <AvatarUser {...props} />
             </MediaMatch>
           </S.WrapperIcons>
 
-          <S.CustomMediaMatch lessThan="medium">
+          <S.CustomMediaMatch lessThan="large">
             <Popover.Root open={isOpen} onOpenChange={setIsOpen}>
               <Popover.Trigger>
                 <Hamburger

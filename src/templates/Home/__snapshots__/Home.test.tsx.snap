@@ -387,7 +387,7 @@ exports['<Home /> should render the Home correctly 1'] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1170px) {
   .c14 {
     width: 13.7rem;
     height: 3.2rem;
@@ -479,16 +479,16 @@ exports['<Home /> should render the Home correctly 1'] = `
         <div
           class="c5"
         >
-          <h3
+          <strong
             class="c6"
           >
             Para os amantes da emoção
-          </h3>
-          <h4
+          </strong>
+          <strong
             class="c7"
           >
             Ação e Aventura
-          </h4>
+          </strong>
         </div>
         <span
           style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
@@ -510,16 +510,16 @@ exports['<Home /> should render the Home correctly 1'] = `
         <div
           class="c5"
         >
-          <h3
+          <strong
             class="c6"
           >
             Para os amantes do terror
-          </h3>
-          <h4
+          </strong>
+          <strong
             class="c7"
           >
             Terror
-          </h4>
+          </strong>
         </div>
         <span
           style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
@@ -545,16 +545,16 @@ exports['<Home /> should render the Home correctly 1'] = `
         <div
           class="c5"
         >
-          <h3
+          <strong
             class="c6"
           >
             Para os amantes da qualidade
-          </h3>
-          <h4
+          </strong>
+          <strong
             class="c7"
           >
             Jogos em 4k
-          </h4>
+          </strong>
         </div>
         <span
           style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"

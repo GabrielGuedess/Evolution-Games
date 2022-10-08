@@ -5,12 +5,6 @@ import { fireEvent, screen } from '@testing-library/react';
 
 import { MenuMobile } from './MenuMobile';
 
-global.ResizeObserver = jest.fn().mockImplementation(() => ({
-  observe: jest.fn(),
-  unobserve: jest.fn(),
-  disconnect: jest.fn(),
-}));
-
 describe('<MenuMobile />', () => {
   it('should render user logged', () => {
     // Arrange

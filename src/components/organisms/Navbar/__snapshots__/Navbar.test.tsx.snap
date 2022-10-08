@@ -101,6 +101,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+  cursor: pointer;
 }
 
 .c16 {
@@ -184,7 +185,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   color: #855aff;
 }
 
-@media (min-width:768px) {
+@media (min-width:1170px) {
   .c3 {
     width: 13.7rem;
     height: 3.2rem;
@@ -192,13 +193,13 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1170px) {
   .c4 {
     display: block;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:1170px) {
   .c15 {
     display: block;
   }
@@ -210,7 +211,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1170px) {
 
 }
 
@@ -233,7 +234,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1170px) {
   .c1 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -242,7 +243,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1170px) {
   .c2 {
     -webkit-order: initial;
     -ms-flex-order: initial;
@@ -250,7 +251,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1170px) {
   .c16 {
     -webkit-order: initial;
     -ms-flex-order: initial;
@@ -258,7 +259,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1170px) {
   .c9 {
     gap: 3rem;
     -webkit-order: initial;

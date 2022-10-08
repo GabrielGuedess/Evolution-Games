@@ -1,35 +1,34 @@
-/* eslint-disable react/no-unused-prop-types */
 import Image from 'next/image';
 import Link from 'next/link';
 
-import {
-  PlatformIcon,
-  Platform,
-} from 'components/atoms/PlatformIcon/PlatformIcon';
+import Game from 'types/game';
+
+import { PlatformIcon } from 'components/atoms/PlatformIcon/PlatformIcon';
 
 import theme from '../../../styles/theme';
 import * as S from './GameCard.styles';
 
-export type GameCardProps = {
-  id?: string;
-  title: string;
-  slug: string;
-  genre: string;
-  developer: string;
-  year: string;
-  img: string;
-  score: number;
-  price: string;
-  platform: Platform[];
-  primaryColor: string;
-};
+export type GameCardProps = Pick<
+  Game,
+  | 'id'
+  | 'name'
+  | 'slug'
+  | 'genres'
+  | 'developer'
+  | 'releaseDate'
+  | 'image'
+  | 'score'
+  | 'price'
+  | 'platform'
+  | 'primaryColor'
+>;
 
 export const GameCard = ({
-  year,
-  genre,
-  title,
+  releaseDate,
+  genres,
+  name,
   price,
-  img,
+  image,
   score,
   slug,
   developer,
@@ -53,11 +52,11 @@ export const GameCard = ({
       <Link href={`/game/${slug}`} passHref>
         <S.GameImage>
           <Image
-            src={img}
-            alt={title}
-            priority
+            src={image}
+            alt={name}
             layout="fill"
             objectFit="cover"
+            loading="lazy"
           />
         </S.GameImage>
       </Link>
@@ -67,10 +66,10 @@ export const GameCard = ({
         <Link href={`/game/${slug}`} passHref>
           <S.GameInfo>
             <S.BoxHighlight>
-              <S.Title>{title}</S.Title>
-              <S.Genre>{genre}</S.Genre>
+              <S.Title>{name}</S.Title>
+              <S.Genre>{genres.join(', ')}</S.Genre>
               <S.Developer>
-                {developer}, {year}
+                {developer}, {new Date(releaseDate).getFullYear()}
               </S.Developer>
             </S.BoxHighlight>
             <S.Score>
@@ -101,15 +100,14 @@ export const GameCard = ({
           </S.GameInfo>
         </Link>
         <S.GameFooter>
-          <S.Price>{price}</S.Price>
+          <S.Price>
+            {Intl.NumberFormat('pt-br', {
+              style: 'currency',
+              currency: 'BRL',
+            }).format(price)}
+          </S.Price>
           <S.Platform>
-            {platform?.includes('playstation') && (
-              <PlatformIcon platform="playstation" />
-            )}
-
-            {platform?.includes('xbox') && <PlatformIcon platform="xbox" />}
-
-            {platform?.includes('pc') && <PlatformIcon platform="pc" />}
+            <PlatformIcon platform={platform} variant="complete" />
           </S.Platform>
         </S.GameFooter>
       </S.GameContent>
