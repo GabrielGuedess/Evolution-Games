@@ -1,7 +1,7 @@
-import * as Popover from '@radix-ui/react-popover';
 import { CaretRight, CaretLeft, HandbagSimple, Heart } from 'phosphor-react';
 import { rgba } from 'polished';
 import media from 'styled-media-query';
+import { customMedia } from 'utils/media/customMedia';
 
 import { Container } from 'components/atoms/Container/Container';
 
@@ -141,6 +141,7 @@ export const WrapperContainer = styled(Container)`
       padding-top: 10rem;
       display: flex;
       height: 100%;
+      margin-left: 0;
 
       ${Info} {
           display: flex;
@@ -155,11 +156,22 @@ export const WrapperContainer = styled(Container)`
           z-index: ${theme.layers.base};
           margin-top: 0;
           margin-bottom: 0;
+          padding-left: 3.2rem;
 
           ::-webkit-scrollbar {
             display: none;
           }
         }
+    `}
+
+    ${customMedia.greaterThan('huge')`
+      ${Info} {
+        padding-left: 4.8rem;
+      }
+    `}
+
+    ${customMedia.greaterThan('max')`
+      margin-left: calc(((100% - 165.6rem) / 2) - 4.8rem);
     `}
   `}
 `;
@@ -411,25 +423,6 @@ export const Price = styled.strong`
     ${media.greaterThan('large')`
       font-size: ${theme.font.sizes.large};
     `}
-  `}
-`;
-
-export const ContentConsole = styled(Popover.Content)`
-  ${({ theme }) => css`
-    padding: 1rem;
-    border-radius: 0.8rem;
-    background: ${theme.colors.gameDetails};
-    z-index: ${theme.layers.base};
-  `}
-`;
-
-export const ActivePlatform = styled.span`
-  ${({ theme }) => css`
-    height: 1.5rem;
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: ${theme.colors.primary};
-    text-shadow: ${theme.shadows.text};
   `}
 `;
 

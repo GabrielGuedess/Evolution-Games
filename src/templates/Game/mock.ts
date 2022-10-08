@@ -1,16 +1,15 @@
 import { GameProps } from './Game';
 
 export const gameMock: GameProps = {
-  gameName: 'The Witcher 3: Wild Hunt',
+  name: 'The Witcher 3: Wild Hunt',
   slug: 'the-witcher-3-wild-hund',
   genres: ['RPG', 'Action'],
   developer: 'CD Project',
-  releaseYear: '2020',
-  availablePlatforms: ['pc', 'playstation', 'xbox'],
-  backgroundVideo:
+  releaseDate: '2020',
+  platform: 'pc',
+  video:
     'https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/s/sp/spiderman-miles-morales/video/spider-man-miles-morales-hero-video-01-15sec-720-web-en-06jul20.mp4',
-  backgroundImage: '/img/games/theWitcher.jpg',
-  backgroundImageAlt: 'The Witcher Background',
+  background: '/img/games/theWitcher.jpg',
   description:
     'The Witcher: Wild Hunt é um RPG de mundo aberto de fantasia cheio de escolhas vitais. Em The Witcher, você joga como um caçador de monstros profissional, Geralt de Rívia, em busca da criança da profecia em um vasto mundo aberto, rico em cidades mercantis, ilhas piratas, passagens perigosas nas montanhas e cavernas esquecidas a serem exploradas.',
   gallery: [
@@ -81,34 +80,5 @@ export const gameMock: GameProps = {
       hd: '35 GB de espaço disponível',
     },
   ],
-  pricePc: 60,
-  playstationAvailable: [
-    {
-      console: 'Playstation 3',
-      priceConsole: 10,
-    },
-    {
-      console: 'Playstation 4',
-      priceConsole: 40,
-    },
-    {
-      console: 'Playstation 5',
-      priceConsole: 50,
-    },
-  ],
-  xboxAvailable: [
-    {
-      console: 'Xbox 360',
-      priceConsole: 10,
-    },
-    {
-      console: 'Xbox One',
-      priceConsole: 40,
-    },
-    {
-      console: 'Xbox Series X',
-      priceConsole: 50,
-    },
-  ],
-  defaultPlatform: 'Pc',
+  price: 60,
 };

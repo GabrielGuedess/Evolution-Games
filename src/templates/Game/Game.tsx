@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 import { useState } from 'react';
 
-import * as Popover from '@radix-ui/react-popover';
 import { Navigation, Pagination, Scrollbar, A11y, Keyboard } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Lightbox, { SlideImage } from 'yet-another-react-lightbox';
+import Game from 'types/game';
+import Lightbox from 'yet-another-react-lightbox';
 import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen';
 import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
@@ -15,126 +15,83 @@ import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 
 import { Base } from 'templates/Base/Base';
-import { gameCardItems } from 'templates/Home/mock';
 
 import { Container } from 'components/atoms/Container/Container';
 import MediaMatch from 'components/atoms/MediaMatch/MediaMatch';
-import {
-  Platform,
-  PlatformIcon,
-} from 'components/atoms/PlatformIcon/PlatformIcon';
-import { RadioButton } from 'components/atoms/RadioButton/RadioButton';
-import { GameList } from 'components/organisms/GameList/GameList';
+import { PlatformIcon } from 'components/atoms/PlatformIcon/PlatformIcon';
 import { HighlightCarousel } from 'components/organisms/HighlightCarousel/HighlightCarousel';
 import { highlightMock } from 'components/organisms/HighlightCarousel/mock';
 
 import * as S from './Game.styles';
 
-export type PlaystationAvailable = {
-  console: 'Playstation 3' | 'Playstation 4' | 'Playstation 5';
-  priceConsole: number;
-};
-
-export type XboxAvailable = {
-  console: 'Xbox 360' | 'Xbox One' | 'Xbox Series X';
-  priceConsole: number;
-};
-
-export type PCSystemItem = {
-  type: 'minimal' | 'recommended';
-  so: string;
-  cpu: string;
-  memory: string;
-  gpu: string;
-  hd: string;
-};
-
-export type DefaultPlatform =
-  | 'Playstation 3'
-  | 'Playstation 4'
-  | 'Playstation 5'
-  | 'Xbox 360'
-  | 'Xbox One'
-  | 'Xbox Series X'
-  | 'Pc';
-
-export type GameProps = {
-  gameName: string;
-  slug: string;
-  genres: string[];
-  developer: string;
-  releaseYear: string;
-  availablePlatforms: Platform[];
-  pricePc?: number;
-  backgroundVideo?: string;
-  backgroundImage: string;
-  backgroundImageAlt: string;
-  description: string;
-  gallery: SlideImage[];
-  playstationAvailable?: PlaystationAvailable[];
-  xboxAvailable?: XboxAvailable[];
-  pcSystem?: [PCSystemItem, PCSystemItem];
-  defaultPlatform: DefaultPlatform;
-};
+export type GameProps = Pick<
+  Game,
+  | 'name'
+  | 'slug'
+  | 'genres'
+  | 'developer'
+  | 'releaseDate'
+  | 'platform'
+  | 'price'
+  | 'video'
+  | 'background'
+  | 'description'
+  | 'gallery'
+  | 'pcSystem'
+>;
 
 export const Game = ({
-  gameName,
+  name,
   slug,
   genres,
   developer,
-  releaseYear,
-  availablePlatforms,
-  pricePc,
-  backgroundVideo,
-  backgroundImage,
-  backgroundImageAlt,
+  releaseDate,
+  background,
+  video,
+  price,
+  platform,
   description,
   gallery,
-  playstationAvailable,
-  xboxAvailable,
   pcSystem,
-  defaultPlatform,
 }: GameProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
-  const [consoleItem, setConsoleItem] =
-    useState<DefaultPlatform>(defaultPlatform);
 
-  const pricePlaystation = playstationAvailable?.find(
-    item => item.console === consoleItem,
-  )?.priceConsole;
-
-  const priceXbox = xboxAvailable?.find(
-    item => item.console === consoleItem,
-  )?.priceConsole;
-
-  const price = consoleItem !== 'Pc' ? pricePlaystation || priceXbox : pricePc;
+  const releaseYear = new Date(releaseDate).getFullYear();
+  const consoleList = {
+    ps4: 'Playstation 4',
+    ps5: 'Playstation 5',
+    one: 'Xbox One',
+    xs: 'Xbox Series X',
+    pc: 'Computador Pessoal',
+    all: 'Todas as plataformas',
+  };
 
   return (
     <Base>
       <S.Wrapper>
         <NextSeo
-          title={`${gameName} - Evolution Games`}
+          title={`${name} - Evolution Games`}
           description={description}
           canonical={`http://localhost:3000/game/${slug}`}
           openGraph={{
             url: `http://localhost:3000/game/${slug}`,
-            title: `${gameName} - Evolution Games`,
+            title: `${name} - Evolution Games`,
             description,
             images: [
               {
-                url: backgroundImage,
-                alt: `${gameName}`,
+                url: background,
+                alt: `${name}`,
               },
             ],
           }}
         />
 
         <S.WrapperPrimaryGame>
-          {!backgroundVideo && (
+          {!video && (
             <Image
-              src={backgroundImage}
-              alt={backgroundImageAlt}
+              src={background}
+              alt={name}
               layout="fill"
               objectFit="cover"
               className="backgroundImage"
@@ -144,7 +101,7 @@ export const Game = ({
           <S.WrapperVideo>
             <S.WrapperRelativeVideo>
               <S.Video muted autoPlay loop>
-                <source src={backgroundVideo} />
+                <source src={video} />
               </S.Video>
             </S.WrapperRelativeVideo>
           </S.WrapperVideo>
@@ -185,8 +142,6 @@ export const Game = ({
                       Pagination,
                       Scrollbar,
                       A11y,
-                      Navigation,
-                      Pagination,
                       Keyboard,
                     ]}
                   >
@@ -249,21 +204,10 @@ export const Game = ({
                 </S.SectionInfo>
               )}
 
-              {(!!playstationAvailable || !!xboxAvailable) && (
+              {!!consoleList[platform] && (
                 <S.SectionInfo>
-                  <S.TitleInfo>Consoles Disponíveis</S.TitleInfo>
-
-                  {playstationAvailable?.map(item => (
-                    <S.Subtitle key={`available-${item.console}`}>
-                      {item.console}
-                    </S.Subtitle>
-                  ))}
-
-                  {xboxAvailable?.map(item => (
-                    <S.Subtitle key={`available-${item.console}`}>
-                      {item.console}
-                    </S.Subtitle>
-                  ))}
+                  <S.TitleInfo>Plataformas Disponíveis</S.TitleInfo>
+                  <S.Subtitle>{consoleList[platform]}</S.Subtitle>
                 </S.SectionInfo>
               )}
             </S.Info>
@@ -275,14 +219,10 @@ export const Game = ({
               </S.Controls>
 
               <S.WrapperGame>
-                <S.TitleGame>{gameName}</S.TitleGame>
+                <S.TitleGame>{name}</S.TitleGame>
 
                 <S.SecondInfos>
-                  <S.SubTitleGame>
-                    {genres.map((genre, i, row) =>
-                      i + 1 === row.length ? genre : `${genre}, `,
-                    )}
-                  </S.SubTitleGame>
+                  <S.SubTitleGame>{genres.join(', ')}</S.SubTitleGame>
                   <S.SubTitleGame color="secondary">
                     {developer}, {releaseYear}
                   </S.SubTitleGame>
@@ -291,81 +231,8 @@ export const Game = ({
                 <S.FooterInfos>
                   <S.WrapperPlatform>
                     <S.Platform>
-                      {availablePlatforms.map(platform =>
-                        platform === 'pc' ? (
-                          <PlatformIcon
-                            key={platform}
-                            platform={platform}
-                            isActive={consoleItem === 'Pc'}
-                            onClick={() => setConsoleItem('Pc')}
-                          />
-                        ) : (
-                          <Popover.Root key={platform}>
-                            <Popover.Trigger>
-                              {platform === 'playstation' && (
-                                <PlatformIcon
-                                  platform={platform}
-                                  isActive={consoleItem.includes('Playstation')}
-                                />
-                              )}
-                              {platform === 'xbox' && (
-                                <PlatformIcon
-                                  platform={platform}
-                                  isActive={consoleItem.includes('Xbox')}
-                                />
-                              )}
-                            </Popover.Trigger>
-                            <Popover.Portal>
-                              <S.ContentConsole
-                                side="top"
-                                align="center"
-                                sideOffset={10}
-                              >
-                                {platform === 'playstation'
-                                  ? playstationAvailable?.map(item => (
-                                      <RadioButton
-                                        key={item.console}
-                                        title={item.console}
-                                        aria-label={item.console}
-                                        name="console"
-                                        checked={consoleItem === item.console}
-                                        value={item.console}
-                                        onChange={(
-                                          e: React.ChangeEvent<HTMLInputElement>,
-                                        ) =>
-                                          setConsoleItem(
-                                            e.target.value as DefaultPlatform,
-                                          )
-                                        }
-                                      />
-                                    ))
-                                  : xboxAvailable?.map(item => (
-                                      <RadioButton
-                                        key={item.console}
-                                        title={item.console}
-                                        aria-label={item.console}
-                                        name="console"
-                                        checked={consoleItem === item.console}
-                                        value={item.console}
-                                        onChange={(
-                                          e: React.ChangeEvent<HTMLInputElement>,
-                                        ) =>
-                                          setConsoleItem(
-                                            e.target.value as DefaultPlatform,
-                                          )
-                                        }
-                                      />
-                                    ))}
-                                <Popover.Arrow />
-                              </S.ContentConsole>
-                            </Popover.Portal>
-                          </Popover.Root>
-                        ),
-                      )}
+                      <PlatformIcon platform={platform} variant="complete" />
                     </S.Platform>
-                    <S.ActivePlatform>
-                      {consoleItem === 'Pc' ? '' : consoleItem}
-                    </S.ActivePlatform>
                   </S.WrapperPlatform>
 
                   <S.Price>
@@ -405,8 +272,6 @@ export const Game = ({
                       Pagination,
                       Scrollbar,
                       A11y,
-                      Navigation,
-                      Pagination,
                       Keyboard,
                     ]}
                   >
@@ -467,21 +332,11 @@ export const Game = ({
                 </S.SectionInfo>
               )}
 
-              {(!!playstationAvailable || !!xboxAvailable) && (
+              {!!consoleList[platform] && (
                 <S.SectionInfo>
                   <S.TitleInfo>Consoles Disponíveis</S.TitleInfo>
 
-                  {playstationAvailable?.map(item => (
-                    <S.Subtitle key={`available-mobile-${item.console}`}>
-                      {item.console}
-                    </S.Subtitle>
-                  ))}
-
-                  {xboxAvailable?.map(item => (
-                    <S.Subtitle key={`available-mobile-${item.console}`}>
-                      {item.console}
-                    </S.Subtitle>
-                  ))}
+                  <S.Subtitle>{consoleList[platform]}</S.Subtitle>
                 </S.SectionInfo>
               )}
             </S.Info>
@@ -535,7 +390,6 @@ export const Game = ({
         )}
 
         <HighlightCarousel title="Novidades" data={highlightMock} />
-        <GameList title="Outras pessoas compraram" data={gameCardItems} />
       </S.Wrapper>
     </Base>
   );

@@ -1,10 +1,24 @@
 import { renderWithTheme } from 'utils/tests/helpers';
 
-import { screen, waitFor } from '@testing-library/react';
+import { screen, waitFor, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import { Game } from './Game';
 import { gameMock } from './mock';
+
+type Image = { src: string; alt: string; width: number; height: number };
+
+jest.mock('next/image', () => ({
+  __esModule: true,
+  default: (image: Image) => (
+    <img
+      src={image.src}
+      alt={image.alt}
+      width={image.width}
+      height={image.height}
+    />
+  ),
+}));
 
 jest.mock('templates/Base/Base', () => ({
   __esModule: true,
@@ -33,8 +47,21 @@ jest.mock('components/organisms/HighlightCarousel/HighlightCarousel', () => ({
 
 jest.mock('yet-another-react-lightbox', () => ({
   __esModule: true,
-  default: function Mock({ children }: { children: React.ReactNode }) {
-    return <div data-testid="Lightbox Mock">{children}</div>;
+  default: function Mock({
+    children,
+    close,
+  }: {
+    children: React.ReactNode;
+    close: () => void;
+  }) {
+    return (
+      <div data-testid="Lightbox Mock">
+        <button type="button" data-testid="close" onClick={close}>
+          Close
+        </button>
+        {children}
+      </div>
+    );
   },
 }));
 
@@ -122,57 +149,6 @@ describe('<Game />', () => {
     });
   });
 
-  it('should change checked radio PlayStation', async () => {
-    renderWithTheme(<Game {...gameMock} />);
-
-    // Arrange
-    const playstationIcon = screen.getByLabelText('PlayStation Icon');
-
-    // Act
-    await userEvent.click(playstationIcon);
-
-    // Assert
-    await waitFor(async () => {
-      await userEvent.click(screen.getByLabelText('Playstation 5'));
-
-      expect(screen.getByLabelText('Playstation 5')).toBeChecked();
-    });
-  });
-
-  it('should change checked radio Xbox', async () => {
-    renderWithTheme(<Game {...gameMock} />);
-
-    // Arrange
-    const xboxIcon = screen.getByLabelText('Xbox Icon');
-
-    // Act
-    await userEvent.click(xboxIcon);
-
-    // Assert
-    await waitFor(async () => {
-      await userEvent.click(screen.getByLabelText('Xbox One'));
-
-      expect(screen.getByLabelText('Xbox One')).toBeChecked();
-    });
-  });
-
-  it('should change checked radio PC', async () => {
-    renderWithTheme(<Game {...gameMock} defaultPlatform="Playstation 4" />);
-
-    // Arrange
-    const pcIcon = screen.getByLabelText('PC Icon');
-
-    // Act
-    await userEvent.click(pcIcon);
-
-    // Assert
-    await waitFor(async () => {
-      await userEvent.click(screen.getByLabelText('PlayStation Icon'));
-
-      expect(screen.getByLabelText('Playstation 4')).not.toBeChecked();
-    });
-  });
-
   it('should close lightbox', async () => {
     renderWithTheme(<Game {...gameMock} />);
 
@@ -180,14 +156,10 @@ describe('<Game />', () => {
     const imageDesktop = screen.getAllByLabelText('Star Wars image gallery')[0];
 
     // Act
-    await userEvent.click(imageDesktop);
-
-    // Act
-    await userEvent.keyboard('{Escape}');
+    fireEvent.click(imageDesktop);
+    fireEvent.click(screen.getByTestId('close'));
 
     // Assert
-    // await waitFor(async () => {
-    //   expect(screen.queryByTestId('Lightbox Mock')).not.toBeInTheDocument();
-    // });
+    expect(screen.queryByTestId('Lightbox Mock')).toBeNull();
   });
 });
