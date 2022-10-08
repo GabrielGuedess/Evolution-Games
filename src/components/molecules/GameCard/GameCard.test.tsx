@@ -6,14 +6,15 @@ import { GameCard, GameCardProps } from './GameCard';
 
 const props: GameCardProps = {
   id: '1',
-  title: 'God of War: Ragnarök',
-  genre: 'Action-adventure',
+  name: 'God of War: Ragnarök',
+  genres: ['Action-adventure'],
   developer: 'Santa Monica Games',
-  year: '2022',
-  img: 'https://i.pinimg.com/originals/34/f8/e5/34f8e55845212171e8bb35edc5b08018.jpg',
-  price: '$ 60.99',
+  releaseDate: new Date('11-09-2022'),
+  image:
+    'https://i.pinimg.com/originals/34/f8/e5/34f8e55845212171e8bb35edc5b08018.jpg',
+  price: 250,
   score: 5.0,
-  platform: ['playstation'],
+  platform: 'ps4',
   primaryColor: '#f00',
   slug: '',
 };
@@ -30,16 +31,18 @@ describe('<GameCard />', () => {
     // Arrange
     const { container } = renderWithTheme(<GameCard {...props} />);
 
-    const title = screen.getByText(props.title);
-    const genre = screen.getByText(props.genre);
-    const description = screen.getByText(`${props.developer}, ${props.year}`);
-    const image = screen.getByRole('img', { name: props.title });
+    const title = screen.getByText(props.name);
+    const genre = screen.getByText(props.genres.join(', '));
+    const description = screen.getByText(
+      `${props.developer}, ${new Date(props.releaseDate).getFullYear()}`,
+    );
+    const image = screen.getByRole('img', { name: props.name });
 
     // Assert
     expect(title).toBeInTheDocument();
     expect(genre).toBeInTheDocument();
     expect(description).toBeInTheDocument();
-    expect(image).toHaveAttribute('src', props.img);
+    expect(image).toHaveAttribute('src', props.image);
 
     expect(container.firstChild).toMatchSnapshot();
   });
