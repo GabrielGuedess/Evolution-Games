@@ -3,6 +3,7 @@ import { renderWithTheme } from 'utils/tests/helpers';
 import { screen } from '@testing-library/react';
 
 import { Home } from './Home';
+import { gameCardItems } from './mock';
 
 jest.mock('components/organisms/Navbar/Navbar', () => ({
   __esModule: true,
@@ -39,7 +40,7 @@ jest.mock('components/organisms/HighlightCarousel/HighlightCarousel', () => ({
 describe('<Home />', () => {
   it('should render the Home correctly', () => {
     // Arrange
-    const { container } = renderWithTheme(<Home />);
+    const { container } = renderWithTheme(<Home gameList={gameCardItems} />);
 
     // Assert
     expect(screen.getByTestId('Navbar')).toBeInTheDocument();
