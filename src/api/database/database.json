@@ -1,133 +1,20 @@
 {
   "games": [
     {
-      "gameId": "1",
-      "gameName": "The Witcher 3: Wild Hunt",
-      "slug": "the-witcher-3-wild-hund",
-      "genres": [
-        "RPG",
-        "Action"
-      ],
-      "developer": "CD Project",
-      "releaseYear": "2020",
-      "availablePlatforms": [
-        "pc",
-        "playstation",
-        "xbox"
-      ],
-      "backgroundImage": "/img/games/theWitcher.jpg",
-      "backgroundImageAlt": "The Witcher Background",
-      "description": "The Witcher: Wild Hunt é um RPG de mundo aberto de fantasia cheio de escolhas vitais. Em The Witcher, você joga como um caçador de monstros profissional, Geralt de Rívia, em busca da criança da profecia em um vasto mundo aberto, rico em cidades mercantis, ilhas piratas, passagens perigosas nas montanhas e cavernas esquecidas a serem exploradas.",
-      "gallery": [
-        {
-          "src": "/img/games/god.jpg",
-          "alt": "The Witcher image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/r8.jpg",
-          "alt": "Resident Evil 8 image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/starWars.jpg",
-          "alt": "Star Wars image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/theLastOfUs.jpg",
-          "alt": "The Last Of Us image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/starWarsHighlight.png",
-          "alt": "Star Wars Highlight image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/god.jpg",
-          "alt": "The Witcher 2 image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        }
-      ],
-      "pcSystem": [
-        {
-          "type": "minimal",
-          "so": "SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 10",
-          "cpu": "Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940",
-          "memory": "6 GB de RAM",
-          "gpu": "Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870",
-          "hd": "35 GB de espaço disponível"
-        },
-        {
-          "type": "recommended",
-          "so": "SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 11",
-          "cpu": "Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz",
-          "memory": "8 GB de RAM",
-          "gpu": "Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290",
-          "hd": "35 GB de espaço disponível"
-        }
-      ],
-      "pricePc": 1000,
-      "playstationAvailable": [
-        {
-          "console": "Playstation 3",
-          "priceConsole": 10
-        },
-        {
-          "console": "Playstation 4",
-          "priceConsole": 40
-        },
-        {
-          "console": "Playstation 5",
-          "priceConsole": 50
-        }
-      ],
-      "xboxAvailable": [
-        {
-          "console": "Xbox 360",
-          "priceConsole": 10
-        },
-        {
-          "console": "Xbox One",
-          "priceConsole": 40
-        },
-        {
-          "console": "Xbox Series X",
-          "priceConsole": 50
-        }
-      ],
-      "defaultPlatform": "Pc"
-    },
-    {
-      "gameId": "2",
-      "gameName": "God of War: Ragnarök",
+      "id": "1",
+      "name": "God of War: Ragnarök",
       "slug": "god-of-war-ragnarok",
-      "genres": ["Action-adventure"],
+      "genres": [
+        "Action-adventure"
+      ],
       "developer": "Santa Monica Games",
-      "releaseYear": "2022",
-      "availablePlatforms": ["playstation"],
-      "backgroundVideo": "https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/g/go/god-of-war-ragnarok/asset/hero/god-of-war-ragnarok-hero-desktop-02-en-11jul22.mp4",
-      "backgroundImage": "https://i.pinimg.com/originals/34/f8/e5/34f8e55845212171e8bb35edc5b08018.jpg",
-      "backgroundImageAlt": "God of War Background",
+      "releaseDate": "2022",
+      "platform": "ps5",
+      "score": 5.0,
+      "primaryColor": "#9db4d0",
+      "video": "https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/g/go/god-of-war-ragnarok/asset/hero/god-of-war-ragnarok-hero-desktop-02-en-11jul22.mp4",
+      "image": "https://i.pinimg.com/originals/34/f8/e5/34f8e55845212171e8bb35edc5b08018.jpg",
+      "background": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-raganok-clean-keyart-01-en-10mar22?$4000px$",
       "description": "God of War: Ragnarok, se passa três anos após o evento do jogo de 2018, com Atreus um pouco mais velho enquanto tenta entender suas origens e a importância de seu nome de batismo — Loki. A busca por respostas vai desencadear no auge do Ragnarok, o fim dos tempos Nórdicos.",
       "gallery": [
         {
@@ -179,175 +66,23 @@
           "type": "image"
         }
       ],
-      "playstationAvailable": [
-        {
-          "console": "Playstation 4",
-          "priceConsole": 40
-        },
-        {
-          "console": "Playstation 5",
-          "priceConsole": 50
-        }
-      ],
-      "defaultPlatform": "Playstation 5"
+      "price": 350
     },
     {
-      "gameId": "3",
-      "gameName": "Horizon Forbidden West",
-      "slug": "horizon-forbidden-west",
-      "genres": ["Action-adventure"],
-      "developer": "Guerrilla",
-      "releaseYear": "2022",
-      "availablePlatforms": ["playstation"],
-      "backgroundVideo": "https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/h/ho/horizon-forbidden-west/hero/video/horizon-forbiddent-west-hero-desktop-en-19aug21.mp4.mp4",
-      "backgroundImage": "https://gmedia.playstation.com/is/image/SIEPDC/elden-ring-hero-banner-desktop-01-en-02feb22?$4000px$",
-      "backgroundImageAlt": "Horizon Forbidden West Background",
-      "description": "Explore terras distantes, enfrente máquinas maiores e mais imponentes, e encontre novas tribos incríveis ao retornar o futuro distante e pós-apocalíptico de Horizon. A terra está morrendo! Tempestades implacáveis e uma praga incontrolável devastam o que sobrou da humanidade enquanto máquinas assustadoras vagam por territórios próximos. A vida na Terra segue rumo à outra extinção, e ninguém sabe o porquê. Cabe a Aloy descobrir os segredos por trás dessas ameaças e restaurar a ordem e equilíbrio ao mundo. Ao longo do caminho, ela reencontrará velhos amigos, forjará alianças com novas facções e descobrirá o legado do passado antigo enquanto tenta se manter um passo à frente de um novo inimigo.",
-      "gallery": [
-        {
-          "src": "/img/games/god.jpg",
-          "alt": "The Witcher image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/r8.jpg",
-          "alt": "Resident Evil 8 image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/starWars.jpg",
-          "alt": "Star Wars image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/theLastOfUs.jpg",
-          "alt": "The Last Of Us image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/starWarsHighlight.png",
-          "alt": "Star Wars Highlight image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/god.jpg",
-          "alt": "The Witcher 2 image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        }
-      ],
-      "playstationAvailable": [
-        {
-          "console": "Playstation 4",
-          "priceConsole": 40
-        },
-        {
-          "console": "Playstation 5",
-          "priceConsole": 50
-        }
-      ],
-      "defaultPlatform": "Playstation 5"
-    },
-    {
-      "gameId": "4",
-      "gameName": "Elden Ring",
-      "slug": "elden-ring",
-      "genres": ["Action-adventure"],
-      "developer": "BANDAI NAMCO Entertainment Inc",
-      "releaseYear": "2022",
-      "availablePlatforms": ["playstation", "pc"],
-      "backgroundImage": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/11/Elden-Ring-Key-Art-e1637061164566.jpg",
-      "backgroundImageAlt": "Elden Ring Background",
-      "description": "Explore terras distantes, enfrente máquinas maiores e mais imponentes, e encontre novas tribos incríveis ao retornar o futuro distante e pós-apocalíptico de Horizon. A terra está morrendo! Tempestades implacáveis e uma praga incontrolável devastam o que sobrou da humanidade enquanto máquinas assustadoras vagam por territórios próximos. A vida na Terra segue rumo à outra extinção, e ninguém sabe o porquê. Cabe a Aloy descobrir os segredos por trás dessas ameaças e restaurar a ordem e equilíbrio ao mundo. Ao longo do caminho, ela reencontrará velhos amigos, forjará alianças com novas facções e descobrirá o legado do passado antigo enquanto tenta se manter um passo à frente de um novo inimigo.",
-      "gallery": [
-        {
-          "src": "/img/games/god.jpg",
-          "alt": "The Witcher image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/r8.jpg",
-          "alt": "Resident Evil 8 image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/starWars.jpg",
-          "alt": "Star Wars image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/theLastOfUs.jpg",
-          "alt": "The Last Of Us image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/starWarsHighlight.png",
-          "alt": "Star Wars Highlight image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/god.jpg",
-          "alt": "The Witcher 2 image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        }
-      ],
-      "playstationAvailable": [
-        {
-          "console": "Playstation 4",
-          "priceConsole": 40
-        },
-        {
-          "console": "Playstation 5",
-          "priceConsole": 50
-        }
-      ],
-      "defaultPlatform": "Playstation 5"
-    },
-    {
-      "gameId": "5",
-      "gameName": "Star Wars Jedi: Fallen Order",
+      "id": "2",
+      "name": "Star Wars Jedi: Fallen Order",
       "slug": "star-wars-jedi-fallen-order",
-      "genres": ["Action-adventure"],
+      "genres": [
+        "Action-adventure"
+      ],
       "developer": "EA",
-      "releaseYear": "2019",
-      "availablePlatforms": ["playstation", "pc"],
-      "backgroundImage": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-jedi-fallen-order-hero-01-ps4-en-25aug20?$4000px$",
-      "backgroundImageAlt": "Star Wars Jedi: Fallen Order Background",
+      "releaseDate": "2019",
+      "platform": "xs",
+      "score": 3.8,
+      "primaryColor": "#a8b6cb",
+      "video": "https://compass-ssl.xbox.com/assets/d4/9c/d49c795e-d6a6-449f-a3ed-1e108fc5de13.mp4?n=Star-Wars-JFO_GLP-Hero-Cinemagraph_1920x834.mp4",
+      "image": "https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/935a281a70ae21d54479c9c468145f7e.png",
+      "background": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-jedi-fallen-order-hero-01-ps4-en-25aug20?$4000px$",
       "description": "Torne-se um Padawan Jedi em uma nova história de Star Wars da Respawn Entertainment, criadores de Apex Legends e Titanfall. Após os eventos do Episódio III: A Vingança dos Sith e da Ordem 66 do Senador Palpatine, elaborada para destruir a Ordem Jedi e abrir caminho para o Império, você é o último Padawan Jedi vivo e a última esperança de sobrevivência. ",
       "gallery": [
         {
@@ -399,181 +134,23 @@
           "type": "image"
         }
       ],
-      "playstationAvailable": [
-        {
-          "console": "Playstation 4",
-          "priceConsole": 40
-        },
-        {
-          "console": "Playstation 5",
-          "priceConsole": 50
-        }
-      ],
-      "defaultPlatform": "Playstation 5"
+      "price": 200
     },
     {
-      "gameId": "6",
-      "gameName": "Marvel's Spider-Man",
-      "slug": "marvels-spider-man",
-      "genres": ["Action-adventure"],
-      "developer": "Insomniac Games",
-      "releaseYear": "2020",
-      "availablePlatforms": ["playstation"],
-      "backgroundVideo": "https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/s/sp/spiderman-miles-morales/video/spider-man-miles-morales-hero-video-01-15sec-720-web-en-06jul20.mp4",
-      "backgroundImage": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-jedi-fallen-order-hero-01-ps4-en-25aug20?$4000px$",
-      "backgroundImageAlt": "Marvel's Spider-Man Background",
-      "description": "Torne-se um Padawan Jedi em uma nova história de Star Wars da Respawn Entertainment, criadores de Apex Legends e Titanfall. Após os eventos do Episódio III: A Vingança dos Sith e da Ordem 66 do Senador Palpatine, elaborada para destruir a Ordem Jedi e abrir caminho para o Império, você é o último Padawan Jedi vivo e a última esperança de sobrevivência. ",
-      "gallery": [
-        {
-          "src": "/img/games/god.jpg",
-          "alt": "The Witcher image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/r8.jpg",
-          "alt": "Resident Evil 8 image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/starWars.jpg",
-          "alt": "Star Wars image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/theLastOfUs.jpg",
-          "alt": "The Last Of Us image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/starWarsHighlight.png",
-          "alt": "Star Wars Highlight image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/god.jpg",
-          "alt": "The Witcher 2 image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        }
-      ],
-      "playstationAvailable": [
-        {
-          "console": "Playstation 4",
-          "priceConsole": 40
-        },
-        {
-          "console": "Playstation 5",
-          "priceConsole": 50
-        }
-      ],
-      "defaultPlatform": "Playstation 5"
-    },
-    {
-      "gameId": "7",
-      "gameName": "The Last of Us Part II",
-      "slug": "the-last-of-us-part-ii",
-      "genres": ["Action-adventure"],
-      "developer": "Insomniac Games",
-      "releaseYear": "2020",
-      "availablePlatforms": ["playstation"],
-      "backgroundVideo": "https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/l/la/the-last-of-us-part-ii/videos/the-last-of-us-part-ii-live-video-block-01-ps4-us-23sep19.mp4",
-      "backgroundImage": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-jedi-fallen-order-hero-01-ps4-en-25aug20?$4000px$",
-      "backgroundImageAlt": "The Last of Us Part II Background",
-      "description": "Cinco anos depois de uma jornada perigosa pelos Estados Unidos num cenário pós-pandêmico, Ellie e Joel se acomodaram em Jackson, Wyoming. A vida numa comunidade próspera de sobreviventes lhes trouxe paz e estabilidade, apesar da ameaça constante dos infectados e de outros sobreviventes mais desesperados.Quando um evento violento interrompe a paz, Ellie parte numa jornada incansável para fazer justiça e virar a página. Enquanto vai atrás de cada um dos responsáveis, ela se confronta com as repercussões físicas e emocionais devastadoras das próprias ações.",
-      "gallery": [
-        {
-          "src": "/img/games/god.jpg",
-          "alt": "The Witcher image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/r8.jpg",
-          "alt": "Resident Evil 8 image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/starWars.jpg",
-          "alt": "Star Wars image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/theLastOfUs.jpg",
-          "alt": "The Last Of Us image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/starWarsHighlight.png",
-          "alt": "Star Wars Highlight image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        },
-        {
-          "src": "/img/games/god.jpg",
-          "alt": "The Witcher 2 image gallery",
-          "imageFit": "cover",
-          "width": 1920,
-          "height": 1080,
-          "type": "image"
-        }
-      ],
-      "playstationAvailable": [
-        {
-          "console": "Playstation 4",
-          "priceConsole": 40
-        },
-        {
-          "console": "Playstation 5",
-          "priceConsole": 50
-        }
-      ],
-      "defaultPlatform": "Playstation 5"
-    },
-    {
-      "gameId": "8",
-      "gameName": "Cyberpunk 2077",
+      "id": "3",
+      "name": "Cyberpunk 2077",
       "slug": "cyberpunk-2077",
-      "genres": ["Action-adventure"],
-      "developer": "CD Project",
-      "releaseYear": "2020",
-      "availablePlatforms": [
-        "pc",
-        "playstation",
-        "xbox"
+      "genres": [
+        "Action-adventure"
       ],
-      "backgroundVideo": "https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/c/cy/cyberpunk-2077/ps4/videos/cyberpunk-2077-video-hero-01-ps4-en-18jun19.mp4",
-      "backgroundImage": "/img/games/theWitcher.jpg",
-      "backgroundImageAlt": "Cyberpunk 2077 Background",
+      "developer": "CD Project",
+      "releaseDate": "2020",
+      "platform": "xs",
+      "score": 1.8,
+      "primaryColor": "#dabbde",
+      "video": "https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/c/cy/cyberpunk-2077/ps4/videos/cyberpunk-2077-video-hero-01-ps4-en-18jun19.mp4",
+      "image": "https://whatifgaming.com/wp-content/uploads/2022/05/Neon-Aesthetic.jpg",
+      "background": "https://whatifgaming.com/wp-content/uploads/2022/05/Neon-Aesthetic.jpg",
       "description": "Cyberpunk 2077 é um mundo aberto de ação e aventura dos criadores de The Witcher 3: Wild Hunt, a CD Projekt Red. O jogo acontece em Night City, uma megalópole obcecada pelo poder, glamour e modificações biológicas. Você controla V, um mercenário fora da lei em busca de um implante sem igual, que carrega o segredo da imortalidade. Atualizado para a nova geração e com conteúdo adicional grátis, personalize seu personagem e estilo de jogo enquanto aceita serviços, constrói uma reputação e desbloqueia melhorias. Seus relacionamentos e decisões definem a história e o mundo à sua volta. As lendas nascem aqui. Qual será a sua?",
       "gallery": [
         {
@@ -643,28 +220,364 @@
           "hd": "35 GB de espaço disponível"
         }
       ],
-      "pricePc": 1000,
-      "playstationAvailable": [
+      "price": 450
+    },
+    {
+      "id": "4",
+      "name": "The Last of Us Part II",
+      "slug": "the-last-of-us-part-ii",
+      "genres": ["Action-adventure"],
+      "developer": "Naughty Dog",
+      "releaseDate": "2020",
+      "platform": "ps5",
+      "score": 5.0,
+      "primaryColor": "#b2a7a5",
+      "video": "https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/l/la/the-last-of-us-part-ii/videos/the-last-of-us-part-ii-live-video-block-01-ps4-us-23sep19.mp4",
+      "image": "https://www.jeuxvideo-live.com/wp-content/uploads/jvl/2022/07/le-multi-de-the-last-of-us-2-deevoile-quelques-secrets-de-conception-104207-large.jpg",
+      "background": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-jedi-fallen-order-hero-01-ps4-en-25aug20?$4000px$",
+      "description": "Cinco anos depois de uma jornada perigosa pelos Estados Unidos num cenário pós-pandêmico, Ellie e Joel se acomodaram em Jackson, Wyoming. A vida numa comunidade próspera de sobreviventes lhes trouxe paz e estabilidade, apesar da ameaça constante dos infectados e de outros sobreviventes mais desesperados.Quando um evento violento interrompe a paz, Ellie parte numa jornada incansável para fazer justiça e virar a página. Enquanto vai atrás de cada um dos responsáveis, ela se confronta com as repercussões físicas e emocionais devastadoras das próprias ações.",
+      "gallery": [
         {
-          "console": "Playstation 4",
-          "priceConsole": 40
+          "src": "/img/games/god.jpg",
+          "alt": "The Witcher image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
         },
         {
-          "console": "Playstation 5",
-          "priceConsole": 50
-        }
-      ],
-      "xboxAvailable": [
-        {
-          "console": "Xbox One",
-          "priceConsole": 40
+          "src": "/img/games/r8.jpg",
+          "alt": "Resident Evil 8 image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
         },
         {
-          "console": "Xbox Series X",
-          "priceConsole": 50
+          "src": "/img/games/starWars.jpg",
+          "alt": "Star Wars image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/theLastOfUs.jpg",
+          "alt": "The Last Of Us image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/starWarsHighlight.png",
+          "alt": "Star Wars Highlight image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/god.jpg",
+          "alt": "The Witcher 2 image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
         }
       ],
-      "defaultPlatform": "Pc"
+      "price": 250
+    },
+    {
+      "id": "5",
+      "name": "Elden Ring",
+      "slug": "elden-ring",
+      "genres": [
+        "Action-adventure"
+      ],
+      "developer": "BANDAI NAMCO Entertainment Inc",
+      "releaseDate": "2022",
+      "platform": "pc",
+      "score": 4.7,
+      "primaryColor": "#aeb195",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/aGhopp3MHppi7kooGE2Dtt8C.png",
+      "background": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/11/Elden-Ring-Key-Art-e1637061164566.jpg",
+      "description": "Explore terras distantes, enfrente máquinas maiores e mais imponentes, e encontre novas tribos incríveis ao retornar o futuro distante e pós-apocalíptico de Horizon. A terra está morrendo! Tempestades implacáveis e uma praga incontrolável devastam o que sobrou da humanidade enquanto máquinas assustadoras vagam por territórios próximos. A vida na Terra segue rumo à outra extinção, e ninguém sabe o porquê. Cabe a Aloy descobrir os segredos por trás dessas ameaças e restaurar a ordem e equilíbrio ao mundo. Ao longo do caminho, ela reencontrará velhos amigos, forjará alianças com novas facções e descobrirá o legado do passado antigo enquanto tenta se manter um passo à frente de um novo inimigo.",
+      "gallery": [
+        {
+          "src": "/img/games/god.jpg",
+          "alt": "The Witcher image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/r8.jpg",
+          "alt": "Resident Evil 8 image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/starWars.jpg",
+          "alt": "Star Wars image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/theLastOfUs.jpg",
+          "alt": "The Last Of Us image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/starWarsHighlight.png",
+          "alt": "Star Wars Highlight image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/god.jpg",
+          "alt": "The Witcher 2 image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        }
+      ],
+      "price": 400
+    },
+    {
+      "id": "6",
+      "name": "Horizon Forbidden West",
+      "slug": "horizon-forbidden-west",
+      "genres": [
+        "Action-adventure"
+      ],
+      "developer": "Guerrilla",
+      "releaseDate": "2022",
+      "platform": "ps5",
+      "score": 4.8,
+      "primaryColor": "#aeb1d2",
+      "video": "https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/h/ho/horizon-forbidden-west/hero/video/horizon-forbiddent-west-hero-desktop-en-19aug21.mp4.mp4",
+      "image": "https://t.ctcdn.com.br/efyy2ADqd67kPvUfXBVJWMJiX_I=/1400x788/smart/filters:format(webp)/i499600.png",
+      "background": "https://gmedia.playstation.com/is/image/SIEPDC/elden-ring-hero-banner-desktop-01-en-02feb22?$4000px$",
+      "description": "Explore terras distantes, enfrente máquinas maiores e mais imponentes, e encontre novas tribos incríveis ao retornar o futuro distante e pós-apocalíptico de Horizon. A terra está morrendo! Tempestades implacáveis e uma praga incontrolável devastam o que sobrou da humanidade enquanto máquinas assustadoras vagam por territórios próximos. A vida na Terra segue rumo à outra extinção, e ninguém sabe o porquê. Cabe a Aloy descobrir os segredos por trás dessas ameaças e restaurar a ordem e equilíbrio ao mundo. Ao longo do caminho, ela reencontrará velhos amigos, forjará alianças com novas facções e descobrirá o legado do passado antigo enquanto tenta se manter um passo à frente de um novo inimigo.",
+      "gallery": [
+        {
+          "src": "/img/games/god.jpg",
+          "alt": "The Witcher image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/r8.jpg",
+          "alt": "Resident Evil 8 image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/starWars.jpg",
+          "alt": "Star Wars image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/theLastOfUs.jpg",
+          "alt": "The Last Of Us image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/starWarsHighlight.png",
+          "alt": "Star Wars Highlight image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/god.jpg",
+          "alt": "The Witcher 2 image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        }
+      ],
+      "price": 350
+    },
+
+    {
+      "id": "7",
+      "name": "Marvel's Spider-Man",
+      "slug": "marvels-spider-man",
+      "genres": [
+        "Action-adventure"
+      ],
+      "developer": "Insomniac Games",
+      "releaseDate": "2020",
+      "platform": "ps5",
+      "score": 4.7,
+      "primaryColor": "#9ab3c5",
+      "video": "https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/games/pdps/s/sp/spiderman-miles-morales/video/spider-man-miles-morales-hero-video-01-15sec-720-web-en-06jul20.mp4",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/b0OfuUs4lHGWG4VNlHcXwL5a.jpg",
+      "background": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-jedi-fallen-order-hero-01-ps4-en-25aug20?$4000px$",
+      "description": "Torne-se um Padawan Jedi em uma nova história de Star Wars da Respawn Entertainment, criadores de Apex Legends e Titanfall. Após os eventos do Episódio III: A Vingança dos Sith e da Ordem 66 do Senador Palpatine, elaborada para destruir a Ordem Jedi e abrir caminho para o Império, você é o último Padawan Jedi vivo e a última esperança de sobrevivência. ",
+      "gallery": [
+        {
+          "src": "/img/games/god.jpg",
+          "alt": "The Witcher image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/r8.jpg",
+          "alt": "Resident Evil 8 image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/starWars.jpg",
+          "alt": "Star Wars image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/theLastOfUs.jpg",
+          "alt": "The Last Of Us image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/starWarsHighlight.png",
+          "alt": "Star Wars Highlight image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/god.jpg",
+          "alt": "The Witcher 2 image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        }
+      ],
+      "price": 250
+    },
+    {
+      "id": "8",
+      "name": "The Witcher 3: Wild Hunt",
+      "slug": "the-witcher-3-wild-hund",
+      "genres": [
+        "RPG",
+        "Action"
+      ],
+      "developer": "CD Project",
+      "releaseDate": "2020",
+      "platform": "one",
+      "score": 4.5,
+      "primaryColor": "#d1b2a3",
+      "image": "https://e.snmc.io/lk/f/x/1508cc32995d91b6206ee1b1e82b9338/8329790",
+      "background": "/img/games/theWitcher.jpg",
+      "video": "https://mylivewallpapers.com/wp-content/uploads/Games/PREVIEW-The-Witchers-Trophy.mp4",
+      "description": "The Witcher: Wild Hunt é um RPG de mundo aberto de fantasia cheio de escolhas vitais. Em The Witcher, você joga como um caçador de monstros profissional, Geralt de Rívia, em busca da criança da profecia em um vasto mundo aberto, rico em cidades mercantis, ilhas piratas, passagens perigosas nas montanhas e cavernas esquecidas a serem exploradas.",
+      "gallery": [
+        {
+          "src": "/img/games/god.jpg",
+          "alt": "The Witcher image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/r8.jpg",
+          "alt": "Resident Evil 8 image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/starWars.jpg",
+          "alt": "Star Wars image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/theLastOfUs.jpg",
+          "alt": "The Last Of Us image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/starWarsHighlight.png",
+          "alt": "Star Wars Highlight image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        },
+        {
+          "src": "/img/games/god.jpg",
+          "alt": "The Witcher 2 image gallery",
+          "imageFit": "cover",
+          "width": 1920,
+          "height": 1080,
+          "type": "image"
+        }
+      ],
+      "pcSystem": [
+        {
+          "type": "minimal",
+          "so": "SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 10",
+          "cpu": "Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940",
+          "memory": "6 GB de RAM",
+          "gpu": "Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870",
+          "hd": "35 GB de espaço disponível"
+        },
+        {
+          "type": "recommended",
+          "so": "SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 11",
+          "cpu": "Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz",
+          "memory": "8 GB de RAM",
+          "gpu": "Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290",
+          "hd": "35 GB de espaço disponível"
+        }
+      ],
+      "price": 100
     }
   ]
 }
