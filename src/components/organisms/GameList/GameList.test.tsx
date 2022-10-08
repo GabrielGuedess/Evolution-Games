@@ -54,7 +54,7 @@ describe('<GameList />', () => {
 
     // Assert
     expect(icon.parentElement).toHaveStyle({ color: theme.colors.primary });
-    expect(screen.getAllByTestId('Swiper-Slide')).toHaveLength(4);
+    expect(screen.getAllByTestId('Swiper-Slide')).toHaveLength(2);
   });
 
   it('should filter by PlayStation exclusive games', () => {
@@ -68,7 +68,7 @@ describe('<GameList />', () => {
 
     // Assert
     expect(icon.parentElement).toHaveStyle({ color: theme.colors.primary });
-    expect(screen.getAllByTestId('Swiper-Slide')).toHaveLength(9);
+    expect(screen.getAllByTestId('Swiper-Slide')).toHaveLength(5);
   });
 
   it('should filter by PC exclusive games', () => {
@@ -82,7 +82,7 @@ describe('<GameList />', () => {
 
     // Assert
     expect(icon.parentElement).toHaveStyle({ color: theme.colors.primary });
-    expect(screen.getAllByTestId('Swiper-Slide')).toHaveLength(5);
+    expect(screen.getAllByTestId('Swiper-Slide')).toHaveLength(2);
   });
 
   it('should render all games', () => {

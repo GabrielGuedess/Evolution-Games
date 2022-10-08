@@ -39,8 +39,8 @@ describe('<FilterMobile />', () => {
     );
 
     // Arrange
-    const playstation = screen.getByTestId('playstation');
-    const xbox = screen.getByTestId('xbox');
+    const playstation = screen.getByTestId('ps5');
+    const xbox = screen.getByTestId('xs');
     const pc = screen.getByTestId('pc');
 
     // Act
@@ -55,7 +55,7 @@ describe('<FilterMobile />', () => {
   it('should change the default check radio input', () => {
     renderWithTheme(
       <Dialog.Root open>
-        <FilterMobile {...props} filterBy="playstation" />
+        <FilterMobile {...props} filterBy="ps5" />
       </Dialog.Root>,
     );
 
