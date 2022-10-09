@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 import { Navigation, Pagination, Scrollbar, A11y, Keyboard } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Game from 'types/game';
+import GameType from 'types/game';
 import Lightbox from 'yet-another-react-lightbox';
 import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen';
 import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
@@ -25,7 +25,7 @@ import { highlightMock } from 'components/organisms/HighlightCarousel/mock';
 import * as S from './Game.styles';
 
 export type GameProps = Pick<
-  Game,
+  GameType,
   | 'name'
   | 'slug'
   | 'genres'
