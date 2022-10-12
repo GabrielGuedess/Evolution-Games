@@ -133,6 +133,7 @@ exports['<RadioButton /> should render the heading 1'] = `
     <input
       class="c1"
       type="radio"
+      value=""
     />
     <div
       class="c2"
