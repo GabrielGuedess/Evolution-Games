@@ -28,14 +28,16 @@ export type ExplorerTemplateProps = {
   filterItems: ItemProps[];
 };
 
-const fetchGames = async ({ pageParam = 1 }) =>
-  (
-    await fetch(
-      `${
-        process.env.VERCEL_URL || 'http://localhost:3000'
-      }/api/games?page=${pageParam}`,
-    )
-  ).json();
+const fetchGames = async ({ pageParam = 1 }) => {
+  const host = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : 'http://localhost:3000';
+
+  const res = await fetch(`${host}/api/games?page=${pageParam}`);
+  const data = await res.json();
+
+  return data;
+};
 
 export const Explorer = ({ filterItems }: ExplorerTemplateProps) => {
   const [isOpen, setIsOpen] = useState(false);
