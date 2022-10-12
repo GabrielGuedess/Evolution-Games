@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Empty /> should render the heading 1'] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.c1 {
+  max-width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.c3 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 34px;
+  text-align: center;
+  color: #855aff;
+  text-shadow: 0px 0.8rem 2.4rem rgba(118,74,241,0.25);
+}
+
+.c4 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #717B8A;
+}
+
+<div
+  class="c0"
+>
+  <img
+    alt="two gamers in a couch playing videogame"
+    class="c1"
+    src="/img/svg/Empty.svg"
+  />
+  <div
+    class="c2"
+  >
+    <strong
+      class="c3"
+    >
+      No Teste
+    </strong>
+    <span
+      class="c4"
+    >
+      Testando...
+    </span>
+  </div>
+</div>
+`;
