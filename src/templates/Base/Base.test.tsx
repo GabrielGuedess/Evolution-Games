@@ -41,7 +41,7 @@ describe('<Base />', () => {
     render(<Base hasColors>Test</Base>);
 
     // Assert
-    expect(screen.getByLabelText('Circle left blur')).toBeInTheDocument();
-    expect(screen.getByLabelText('Circle right blur')).toBeInTheDocument();
+    expect(screen.getByTestId('Circle left blur')).toBeInTheDocument();
+    expect(screen.getByTestId('Circle right blur')).toBeInTheDocument();
   });
 });

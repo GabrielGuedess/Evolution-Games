@@ -17,8 +17,8 @@ export const Base = ({
   <S.Wrapper>
     {hasColors && (
       <>
-        <S.CircleBlurLeft aria-label="Circle left blur" />
-        <S.CircleBlurRight aria-label="Circle right blur" />
+        <S.CircleBlurLeft data-testid="Circle left blur" />
+        <S.CircleBlurRight data-testid="Circle right blur" />
       </>
     )}
 
