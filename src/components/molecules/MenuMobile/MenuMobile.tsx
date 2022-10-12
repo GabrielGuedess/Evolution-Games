@@ -22,7 +22,7 @@ export const MenuMobile = ({ path, username }: MenuProps) => (
         </S.ItemTextLink>
 
         <S.ItemTextLink>
-          <Link href="/" passHref>
+          <Link href="/explorer" passHref>
             <S.LinkTextLink active={path === '/explorer'}>
               Explorer
             </S.LinkTextLink>

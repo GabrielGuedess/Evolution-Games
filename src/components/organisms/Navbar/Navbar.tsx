@@ -46,8 +46,8 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
             </S.ItemTextLink>
 
             <S.ItemTextLink>
-              <Link href="/games" passHref>
-                <S.LinkTextLink active={asPath === '/games'}>
+              <Link href="/explorer" passHref>
+                <S.LinkTextLink active={asPath.includes('/explorer')}>
                   Explorer
                 </S.LinkTextLink>
               </Link>

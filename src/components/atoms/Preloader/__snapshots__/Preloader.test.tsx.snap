@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Preloader /> should render the heading 1'] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  width: 5em;
+  height: 10em;
+}
+
+.c1 .ap__ring {
+  stroke: hsla(223,10%,90%,0.1);
+  -webkit-transition: stroke 0.3s;
+  transition: stroke 0.3s;
+}
+
+.c1 .ap__worm1,
+.c1 .ap__worm2 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.c1 .ap__worm1 {
+  -webkit-animation-name: cmHHGy;
+  animation-name: cmHHGy;
+}
+
+.c1 .ap__worm2 {
+  -webkit-animation-name: ilqOlV;
+  animation-name: ilqOlV;
+  visibility: hidden;
+}
+
+<div
+  class="c0"
+>
+  <svg
+    aria-label="Loading"
+    class="c1"
+    viewBox="0 0 128 256"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <lineargradient
+        id="ap-grad1"
+        x1="0"
+        x2="0"
+        y1="0"
+        y2="1"
+      >
+        <stop
+          offset="0%"
+          stop-color="#855aff"
+        />
+        <stop
+          offset="100%"
+          stop-color="#916aff"
+        />
+      </lineargradient>
+      <lineargradient
+        id="ap-grad2"
+        x1="0"
+        x2="0"
+        y1="0"
+        y2="1"
+      >
+        <stop
+          offset="0%"
+          stop-color="#a98bff"
+        />
+        <stop
+          offset="50%"
+          stop-color="#5f27ff"
+        />
+        <stop
+          offset="100%"
+          stop-color="#916aff"
+        />
+      </lineargradient>
+    </defs>
+    <circle
+      class="ap__ring"
+      cx="64"
+      cy="192"
+      fill="none"
+      r="56"
+      stroke="#ddd"
+      stroke-linecap="round"
+      stroke-width="16"
+    />
+    <circle
+      class="ap__worm1"
+      cx="64"
+      cy="192"
+      fill="none"
+      r="56"
+      stroke="url(#ap-grad1)"
+      stroke-dasharray="87.96 263.89"
+      stroke-linecap="round"
+      stroke-width="16"
+    />
+    <path
+      class="ap__worm2"
+      d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z"
+      fill="none"
+      stroke="url(#ap-grad2)"
+      stroke-dasharray="87.96 494"
+      stroke-linecap="round"
+      stroke-width="16"
+    />
+  </svg>
+</div>
+`;

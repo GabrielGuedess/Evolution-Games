@@ -5,6 +5,16 @@ export default async function gameHandler(
   req: VercelRequest,
   res: VercelResponse,
 ) {
-  const games = await game.findAll();
-  res.json(games);
+  const { page } = req.query;
+
+  if (!page) {
+    const games = await game.findAll();
+
+    res.json(games);
+    return;
+  }
+
+  const gamesPage = await game.findPage(page as string);
+
+  res.json(gamesPage);
 }
