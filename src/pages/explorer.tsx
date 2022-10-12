@@ -81,8 +81,8 @@ export async function getServerSideProps({ query }: NextPageContext) {
 
   const queryClient = new QueryClient();
 
-  const host = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
+  const host = process.env.NEXT_PUBLIC_VERCEL_URL
+    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
     : 'http://localhost:3000';
 
   const fetchGames = async () => {
