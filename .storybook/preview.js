@@ -1,11 +1,16 @@
 import { RouterContext } from 'next/dist/shared/lib/router-context';
 
+import { themes } from '@storybook/theming';
+import { initialize, mswDecorator } from 'msw-storybook-addon';
+
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyles from 'styles/global';
 import theme from 'styles/theme';
 
-import { themes } from '@storybook/theming';
+initialize({
+  onUnhandledRequest: 'bypass',
+});
 
 export const parameters = {
   nextRouter: {
@@ -15,6 +20,7 @@ export const parameters = {
     dark: { ...themes.dark, appBg: '#2F2F2F' },
     light: { ...themes.normal, appBg: '#FFFFFF' },
   },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds: {
     default: 'Evolution-dark',
     values: [
@@ -31,6 +37,7 @@ export const parameters = {
 };
 
 export const decorators = [
+  mswDecorator,
   Story => (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
