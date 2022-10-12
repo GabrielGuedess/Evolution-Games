@@ -17,6 +17,7 @@ const customJestConfig = {
     '!src/utils/tests/*.ts(x)?',
     '!src/utils/requestFake.ts',
     '!src/api/**/**.ts',
+    '!src/**/**/mock.ts',
     '!src/pages/api/**/**.ts',
   ],
   transformIgnorePatterns: ['node_modules/(?!(swiper|ssr-window|dom7)/)'],
