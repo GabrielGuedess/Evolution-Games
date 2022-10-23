@@ -43,6 +43,7 @@
     "no-extra-boolean-cast": "off",
     "no-irregular-whitespace": "off",
     "object-curly-newline": "off",
+    "consistent-return": "off",
     "react/jsx-wrap-multilines": "off",
     "operator-linebreak": "off",
     "class-methods-use-this": "off",
