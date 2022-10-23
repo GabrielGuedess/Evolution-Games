@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -40,7 +40,9 @@ jest.mock('components/organisms/HighlightCarousel/HighlightCarousel', () => ({
 describe('<Home />', () => {
   it('should render the Home correctly', () => {
     // Arrange
-    const { container } = renderWithTheme(<Home gameList={gameCardItems} />);
+    const { container } = renderWithProviders(
+      <Home gameList={gameCardItems} />,
+    );
 
     // Assert
     expect(screen.getByTestId('Navbar')).toBeInTheDocument();

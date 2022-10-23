@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -30,7 +30,7 @@ jest.mock('swiper/react', () => ({
 
 describe('<HighlightCarousel />', () => {
   it('should render the heading', () => {
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <HighlightCarousel title="Pre-order" data={highlightMock} />,
     );
 

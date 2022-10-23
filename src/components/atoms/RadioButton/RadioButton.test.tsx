@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -7,7 +7,7 @@ import { RadioButton } from './RadioButton';
 
 describe('<RadioButton />', () => {
   it('should render the heading', () => {
-    const { container } = renderWithTheme(<RadioButton title="Radio" />);
+    const { container } = renderWithProviders(<RadioButton title="Radio" />);
 
     expect(screen.getByText(/Radio/i)).toBeInTheDocument();
 
@@ -16,7 +16,7 @@ describe('<RadioButton />', () => {
 
   it('should dispatch onCheck when label status changes', async () => {
     const onCheck = jest.fn();
-    renderWithTheme(
+    renderWithProviders(
       <RadioButton title="Radio" onCheck={onCheck} value="anyValue" />,
     );
 

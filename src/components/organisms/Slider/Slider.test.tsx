@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -36,7 +36,7 @@ jest.mock('swiper/react', () => ({
 describe('<Slider />', () => {
   it('should render the Swiper correctly', () => {
     // Arrange
-    const { container } = renderWithTheme(<Slider slides={sliderMock} />);
+    const { container } = renderWithProviders(<Slider slides={sliderMock} />);
 
     // Assert
     expect(screen.getByTestId('Swiper')).toBeInTheDocument();

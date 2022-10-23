@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -8,7 +8,7 @@ import { Logo } from './Logo';
 
 describe('<Logo />', () => {
   it('should render with default settings', () => {
-    renderWithTheme(<Logo />);
+    renderWithProviders(<Logo />);
 
     // Arrange
     const labelText = screen.getByLabelText(/Evolution/i);

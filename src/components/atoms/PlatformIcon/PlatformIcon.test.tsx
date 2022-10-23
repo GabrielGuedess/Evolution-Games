@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -8,7 +8,7 @@ import { PlatformIcon } from './PlatformIcon';
 
 describe('<PlatformIcon />', () => {
   it('should render the playstation icon', () => {
-    const { container } = renderWithTheme(<PlatformIcon platform="ps4" />);
+    const { container } = renderWithProviders(<PlatformIcon platform="ps4" />);
 
     // Arrange
     const icon = screen.getByLabelText('PlayStation Icon');
@@ -21,7 +21,7 @@ describe('<PlatformIcon />', () => {
   });
 
   it('should render selected playstation icon', () => {
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <PlatformIcon platform="ps4" hasTitle isActive />,
     );
 
@@ -46,7 +46,7 @@ describe('<PlatformIcon />', () => {
   });
 
   it('should render pc icon in secondary color', () => {
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <PlatformIcon platform="pc" color="secondary" hasTitle />,
     );
 
@@ -67,7 +67,7 @@ describe('<PlatformIcon />', () => {
   });
 
   it('should render in in medium size', () => {
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <PlatformIcon platform="pc" color="secondary" hasTitle size="medium" />,
     );
 
@@ -83,7 +83,7 @@ describe('<PlatformIcon />', () => {
   });
 
   it('should render in in small size', () => {
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <PlatformIcon platform="pc" color="secondary" hasTitle size="small" />,
     );
 

@@ -1,5 +1,5 @@
 import * as Popover from '@radix-ui/react-popover';
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { fireEvent, screen } from '@testing-library/react';
 
@@ -8,7 +8,7 @@ import { MenuMobile } from './MenuMobile';
 describe('<MenuMobile />', () => {
   it('should render user logged', () => {
     // Arrange
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <Popover.Root>
         <Popover.Trigger>
           <div data-testid="Click" />
@@ -28,7 +28,7 @@ describe('<MenuMobile />', () => {
   });
 
   it('should render user not logged', () => {
-    renderWithTheme(
+    renderWithProviders(
       <Popover.Root>
         <Popover.Trigger>
           <div data-testid="Click" />

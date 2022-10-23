@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -20,7 +20,7 @@ jest.mock('next/image', () => ({
 
 describe('<CategorySection />', () => {
   it('should render the <CategorySection /> on the desktop', () => {
-    const { container } = renderWithTheme(<CategorySection />);
+    const { container } = renderWithProviders(<CategorySection />);
 
     // Arrange
     const title = screen.getByRole('heading', { name: 'Categorias' });

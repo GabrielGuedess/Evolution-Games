@@ -1,5 +1,5 @@
 import { Envelope } from 'phosphor-react';
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -7,7 +7,7 @@ import { InputForm } from './InputForm';
 
 describe('<InputForm />', () => {
   it('should render the <InputForm />', () => {
-    const { container } = renderWithTheme(<InputForm label="Senha" />);
+    const { container } = renderWithProviders(<InputForm label="Senha" />);
 
     expect(screen.getByText('Senha')).toBeInTheDocument();
 
@@ -15,7 +15,7 @@ describe('<InputForm />', () => {
   });
 
   it('should render the <InputForm /> with the indication of invalid values', () => {
-    renderWithTheme(
+    renderWithProviders(
       <InputForm
         isInvalid
         label="E-mail"
