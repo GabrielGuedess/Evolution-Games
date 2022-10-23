@@ -129,7 +129,7 @@ exports['<Footer /> should render the heading 1'] = `
   .c4 {
     width: 13.7rem;
     height: 3.2rem;
-    color: #855aff;
+    color: #7C3AED;
   }
 }
 

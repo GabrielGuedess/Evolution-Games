@@ -21,7 +21,7 @@ exports['<GameCard /> should render the heading 1'] = `
 
 .c14:hover {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c15 {

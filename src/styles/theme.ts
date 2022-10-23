@@ -32,8 +32,7 @@ export default {
     },
   },
   colors: {
-    primary: '#855aff',
-    primaryForWhite: '#6200EE',
+    primary: '#7C3AED',
     secondary: '#717B8A',
     mainBg: '#04040C',
     white: '#FFFFFF',

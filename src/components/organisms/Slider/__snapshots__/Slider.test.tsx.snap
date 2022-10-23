@@ -111,7 +111,7 @@ exports['<Slider /> should render the Swiper correctly 1'] = `
 }
 
 .c0 .swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #855aff;
+  background-color: #7C3AED;
   opacity: 1;
 }
 

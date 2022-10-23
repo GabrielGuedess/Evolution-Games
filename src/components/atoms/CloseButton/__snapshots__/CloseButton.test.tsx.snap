@@ -2,7 +2,7 @@
 
 exports['<CloseButton /> should render correctly 1'] = `
 .c0 {
-  color: #855aff;
+  color: #7C3AED;
   padding: 0.5rem;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;

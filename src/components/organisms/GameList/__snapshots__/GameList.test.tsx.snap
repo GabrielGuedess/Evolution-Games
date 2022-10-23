@@ -23,8 +23,8 @@ exports['<GameList /> should render the <GameList /> 1'] = `
 .c15:hover,
 .c15:focus {
   cursor: pointer;
-  color: #855aff;
-  border-color: #855aff;
+  color: #7C3AED;
+  border-color: #7C3AED;
 }
 
 .c16 {
@@ -48,8 +48,8 @@ exports['<GameList /> should render the <GameList /> 1'] = `
 .c16:hover,
 .c16:focus {
   cursor: pointer;
-  color: #855aff;
-  border-color: #855aff;
+  color: #7C3AED;
+  border-color: #7C3AED;
 }
 
 .c13 {
@@ -94,11 +94,11 @@ exports['<GameList /> should render the <GameList /> 1'] = `
 }
 
 .c13:not(:disabled):is(:hover,:focus) .effect {
-  stroke: #855aff;
+  stroke: #7C3AED;
 }
 
 .c13:not(:disabled):is(:hover,:focus) {
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c13:not(:disabled):is(:hover,:focus) {
@@ -195,14 +195,14 @@ exports['<GameList /> should render the <GameList /> 1'] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #855aff;
+  color: #7C3AED;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
 .c7:hover {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c10 {
@@ -225,7 +225,7 @@ exports['<GameList /> should render the <GameList /> 1'] = `
 
 .c10:hover {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c31 {
@@ -248,7 +248,7 @@ exports['<GameList /> should render the <GameList /> 1'] = `
 
 .c31:hover {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c8 {

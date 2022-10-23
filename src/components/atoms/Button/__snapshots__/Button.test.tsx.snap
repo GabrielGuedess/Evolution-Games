@@ -27,7 +27,7 @@ exports['<Button /> should render the medium size by default 1'] = `
   transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
   font-size: 1.4rem;
   padding: 0.8rem 3.2rem;
-  background: #855aff;
+  background: #7C3AED;
   color: #F4F4F5;
 }
 
@@ -37,7 +37,7 @@ exports['<Button /> should render the medium size by default 1'] = `
 }
 
 .c0 .effect {
-  fill: #855aff;
+  fill: #7C3AED;
 }
 
 .c0:not(:disabled):is(:hover,:focus) {

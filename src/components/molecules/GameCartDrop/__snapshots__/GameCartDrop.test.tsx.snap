@@ -112,7 +112,7 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
 }
 
 .c9:is(:hover,:focus) {
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c10 {
@@ -157,7 +157,7 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
 }
 
 .c11:is(:hover,:focus) {
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c12 {
@@ -205,11 +205,11 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
 }
 
 .c15:is(:hover,:focus) {
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c16 {
-  color: #855aff;
+  color: #7C3AED;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
