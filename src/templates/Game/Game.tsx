@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { useState } from 'react';
 
+import { apiEndPt } from 'constants/index';
 import { Navigation, Pagination, Scrollbar, A11y, Keyboard } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import GameType from 'types/game';
@@ -73,9 +74,9 @@ export const Game = ({
         <NextSeo
           title={`${name} - Evolution Games`}
           description={description}
-          canonical={`http://localhost:3000/game/${slug}`}
+          canonical={`${apiEndPt}/game/${slug}`}
           openGraph={{
-            url: `http://localhost:3000/game/${slug}`,
+            url: `${apiEndPt}/game/${slug}`,
             title: `${name} - Evolution Games`,
             description,
             images: [

@@ -1,6 +1,8 @@
 import { GetServerSideProps } from 'next';
 import { useRouter } from 'next/router';
 
+import { apiEndPt } from 'constants/index';
+
 import { Game, GameProps } from 'templates/Game/Game';
 
 export default function Index(props: GameProps) {
@@ -12,10 +14,7 @@ export default function Index(props: GameProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
-  const host = process.env.NEXT_PUBLIC_VERCEL_URL
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-    : 'http://localhost:3000';
-  const data = await fetch(`${host}/api/games/${params?.slug}`);
+  const data = await fetch(`${apiEndPt}/api/games/${params?.slug}`);
   const game = await data.json();
 
   if (!game) {
