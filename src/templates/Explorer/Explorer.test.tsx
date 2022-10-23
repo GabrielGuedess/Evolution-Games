@@ -1,5 +1,5 @@
 /* eslint-disable import-helpers/order-imports */
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { QueryClient, QueryClientProvider } from 'react-query';
 
@@ -53,7 +53,7 @@ jest.mock('templates/Base/Base', () => ({
 
 describe('<Explorer />', () => {
   it('should render the components correctly', () => {
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <QueryClientProvider client={queryClient}>
         <Explorer filterItems={filterItems} />
       </QueryClientProvider>,
@@ -66,7 +66,7 @@ describe('<Explorer />', () => {
   });
 
   it('should render the RadioButton', async () => {
-    renderWithTheme(
+    renderWithProviders(
       <QueryClientProvider client={queryClient}>
         <Explorer filterItems={filterItems} />
       </QueryClientProvider>,
@@ -86,7 +86,7 @@ describe('<Explorer />', () => {
   });
 
   it('should change checked RadioButtons', async () => {
-    renderWithTheme(
+    renderWithProviders(
       <QueryClientProvider client={queryClient}>
         <Explorer filterItems={filterItems} />
       </QueryClientProvider>,
@@ -114,7 +114,7 @@ describe('<Explorer />', () => {
   });
 
   it('should open Explorer Sidebar when click in button', async () => {
-    renderWithTheme(
+    renderWithProviders(
       <QueryClientProvider client={queryClient}>
         <Explorer filterItems={filterItems} />
       </QueryClientProvider>,
@@ -129,7 +129,7 @@ describe('<Explorer />', () => {
   });
 
   it('should render more games', async () => {
-    renderWithTheme(
+    renderWithProviders(
       <QueryClientProvider client={queryClient}>
         <Explorer filterItems={filterItems} />
       </QueryClientProvider>,
@@ -141,7 +141,7 @@ describe('<Explorer />', () => {
   });
 
   it('should render query selected', () => {
-    renderWithTheme(
+    renderWithProviders(
       <QueryClientProvider client={queryClient}>
         <Explorer filterItems={filterItems} />
       </QueryClientProvider>,

@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen, waitFor, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -110,7 +110,7 @@ jest.mock('yet-another-react-lightbox/plugins/thumbnails.css', jest.fn());
 describe('<Game />', () => {
   it('should render components correctly', () => {
     // Arrange
-    const { container } = renderWithTheme(<Game {...gameMock} />);
+    const { container } = renderWithProviders(<Game {...gameMock} />);
 
     // Assert
     expect(screen.getByTestId('Base Mock')).toBeInTheDocument();
@@ -120,7 +120,7 @@ describe('<Game />', () => {
   });
 
   it('should render the lightbox on click in desktop', async () => {
-    renderWithTheme(<Game {...gameMock} />);
+    renderWithProviders(<Game {...gameMock} />);
 
     // Arrange
     const imageDesktop = screen.getAllByLabelText('Star Wars image gallery')[0];
@@ -135,7 +135,7 @@ describe('<Game />', () => {
   });
 
   it('should render the lightbox on click in mobile', async () => {
-    renderWithTheme(<Game {...gameMock} />);
+    renderWithProviders(<Game {...gameMock} />);
 
     // Arrange
     const imageMobile = screen.getAllByLabelText('Star Wars image gallery')[1];
@@ -150,7 +150,7 @@ describe('<Game />', () => {
   });
 
   it('should close lightbox', async () => {
-    renderWithTheme(<Game {...gameMock} />);
+    renderWithProviders(<Game {...gameMock} />);
 
     // Arrange
     const imageDesktop = screen.getAllByLabelText('Star Wars image gallery')[0];
