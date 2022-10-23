@@ -10,6 +10,8 @@ export type InputFormProps = {
   icon?: JSX.Element;
   isInvalid?: boolean;
   errorMessage?: string;
+  mask?: string;
+  as?: React.ElementType;
 } & InputHTMLAttributes<HTMLInputElement>;
 
 export const InputForm = ({
@@ -21,11 +23,23 @@ export const InputForm = ({
   ...props
 }: InputFormProps) => (
   <S.Wrapper>
-    {!!label && <S.Label htmlFor={labelFor}>{label}</S.Label>}
     <S.WrapperInput>
-      <S.Input name={labelFor} id={labelFor} isInvalid={isInvalid} {...props} />
+      <S.Input
+        autoComplete="on"
+        name={labelFor}
+        id={labelFor}
+        isInvalid={isInvalid}
+        {...props}
+      />
+      {!!label && (
+        <S.Label htmlFor={labelFor} aria-label={labelFor}>
+          {label}
+        </S.Label>
+      )}
+
       {!!icon && <S.IconWrapper>{icon}</S.IconWrapper>}
     </S.WrapperInput>
+
     {isInvalid && !!errorMessage && (
       <S.ErrorMessage>
         <WarningCircle size={18} />
