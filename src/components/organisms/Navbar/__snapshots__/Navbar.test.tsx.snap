@@ -11,22 +11,22 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   display: none;
 }
 
-.c15 {
+.c14 {
   display: none;
 }
 
-.c13 {
+.c12 {
   cursor: pointer;
 }
 
-.c14 {
+.c13 {
   cursor: pointer;
   color: #F4F4F5;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 
-.c14:is(:hover,:focus) {
+.c13:is(:hover,:focus) {
   color: #855aff;
 }
 
@@ -42,32 +42,6 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 .c11:is(:hover,:focus) {
   cursor: pointer;
   color: #855aff;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #6200EE;
-  box-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
-  color: #FFFFFF;
-  font-size: 1.2rem;
-  line-height: 1rem;
-  border-radius: 1rem;
-  padding: 0.3rem 0.6rem;
-  position: absolute;
-  top: -0.4rem;
-  right: -0.4rem;
-  cursor: pointer;
 }
 
 .c0 {
@@ -104,7 +78,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   cursor: pointer;
 }
 
-.c16 {
+.c15 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -200,14 +174,8 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 }
 
 @media (max-width:1170px) {
-  .c15 {
+  .c14 {
     display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c12 {
-    font-size: 0.8rem;
   }
 }
 
@@ -252,7 +220,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 }
 
 @media (min-width:1170px) {
-  .c16 {
+  .c15 {
     -webkit-order: initial;
     -ms-flex-order: initial;
     order: initial;
@@ -383,63 +351,47 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
     <div
       class=""
     >
-      <button
-        aria-controls="radix-:r4:"
-        aria-expanded="false"
-        aria-haspopup="dialog"
-        data-state="closed"
-        type="button"
+      <div
+        class="c11"
       >
-        <div
-          class="c11"
+        <svg
+          aria-hidden="true"
+          aria-label="Cart Icon"
+          fill="currentColor"
+          focusable="false"
+          height="24"
+          viewBox="0 0 256 256"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            aria-label="Cart Icon"
-            fill="currentColor"
-            focusable="false"
-            height="24"
-            viewBox="0 0 256 256"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="none"
-              height="256"
-              width="256"
-            />
-            <path
-              d="M208.8,72H47.2a8.1,8.1,0,0,0-8,7.1L25,207.1a8,8,0,0,0,7.9,8.9H223.1a8,8,0,0,0,7.9-8.9l-14.2-128A8.1,8.1,0,0,0,208.8,72Z"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            />
-            <path
-              d="M88,72a40,40,0,0,1,80,0"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            />
-          </svg>
-          <span
-            style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
-          >
-            Shopping Bag
-          </span>
-          <span
-            aria-label="Cart Items"
-            class="c12"
-            role="img"
-          >
-            3
-          </span>
-        </div>
-      </button>
-      <div />
+          <rect
+            fill="none"
+            height="256"
+            width="256"
+          />
+          <path
+            d="M208.8,72H47.2a8.1,8.1,0,0,0-8,7.1L25,207.1a8,8,0,0,0,7.9,8.9H223.1a8,8,0,0,0,7.9-8.9l-14.2-128A8.1,8.1,0,0,0,208.8,72Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          />
+          <path
+            d="M88,72a40,40,0,0,1,80,0"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          />
+        </svg>
+        <span
+          style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+        >
+          Shopping Bag
+        </span>
+      </div>
     </div>
     <div
       class="c4"
@@ -448,17 +400,17 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
         class=""
       >
         <button
-          aria-controls="radix-:r5:"
+          aria-controls="radix-:r4:"
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="User Photo Button"
-          class="c13"
+          class="c12"
           data-state="closed"
           type="button"
         >
           <a
             aria-label="Link for Login"
-            class="c14"
+            class="c13"
             href="/sign-in"
           >
             <svg
@@ -498,10 +450,10 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
     </div>
   </div>
   <div
-    class="c15 c16"
+    class="c14 c15"
   >
     <button
-      aria-controls="radix-:r6:"
+      aria-controls="radix-:r5:"
       aria-expanded="false"
       aria-haspopup="dialog"
       data-state="closed"

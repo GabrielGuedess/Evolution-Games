@@ -1,8 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
-
-import { fireEvent, screen } from '@testing-library/react';
-
-import { cartItems } from 'components/organisms/Navbar/mock';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { CartButton } from './CartButton';
 
@@ -16,14 +12,9 @@ jest.mock('components/atoms/CartIcon/CartIcon', () => ({
 describe('<CartButton />', () => {
   it('should render others components correctly', () => {
     // Arrange
-    const { container } = renderWithTheme(<CartButton items={cartItems} />);
-
-    // Act
-    fireEvent.click(screen.getByTestId('Mock CartIcon'));
+    const { container } = renderWithProviders(<CartButton />);
 
     // Assert
-    expect(screen.getByTestId('Mock CartIcon')).toBeInTheDocument();
-
     expect(container.firstChild).toMatchSnapshot();
   });
 });
