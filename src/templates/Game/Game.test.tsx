@@ -1,3 +1,7 @@
+import {
+  CartContextProps,
+  CartContextDefaultValues,
+} from 'hooks/useCart/useCart';
 import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen, waitFor, fireEvent } from '@testing-library/react';
@@ -161,5 +165,45 @@ describe('<Game />', () => {
 
     // Assert
     expect(screen.queryByTestId('Lightbox Mock')).toBeNull();
+  });
+
+  it('should add the game to cart', async () => {
+    const cartProviderProps: CartContextProps = {
+      ...CartContextDefaultValues,
+      addToCart: jest.fn(),
+      isInCart: () => false,
+    };
+
+    renderWithProviders(<Game {...gameMock} />, { cartProviderProps });
+
+    // Arrange
+    const add = screen.getByLabelText('Add from cart');
+
+    // Act
+    fireEvent.click(add);
+
+    // Assert
+    expect(add).toBeInTheDocument();
+    expect(cartProviderProps.addToCart).toHaveBeenCalled();
+  });
+
+  it('should remove the game to cart', async () => {
+    const cartProviderProps: CartContextProps = {
+      ...CartContextDefaultValues,
+      removeFromCart: jest.fn(),
+      isInCart: () => true,
+    };
+
+    renderWithProviders(<Game {...gameMock} />, { cartProviderProps });
+
+    // Arrange
+    const remove = screen.getByLabelText('Add from cart');
+
+    // Act
+    fireEvent.click(remove);
+
+    // Assert
+    expect(remove).toBeInTheDocument();
+    expect(cartProviderProps.removeFromCart).toHaveBeenCalled();
   });
 });

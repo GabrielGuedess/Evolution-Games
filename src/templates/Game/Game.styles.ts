@@ -268,6 +268,30 @@ export const Handbag = styled(HandbagSimple)`
   `}
 `;
 
+export const WrapperHandbag = styled.div`
+  position: relative;
+`;
+
+export const Badge = styled.span`
+  ${({ theme }) => css`
+    width: 1.6rem;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: ${theme.colors.primaryForWhite};
+    box-shadow: ${theme.shadows.text};
+    color: ${theme.colors.white};
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    padding: 0.3rem 0.6rem;
+    position: absolute;
+    top: -0.4rem;
+    right: -0.4rem;
+    cursor: pointer;
+  `}
+`;
+
 export const SwiperContainer = styled.div`
   position: relative;
   overflow: visible;
