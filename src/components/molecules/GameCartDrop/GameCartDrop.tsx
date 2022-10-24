@@ -1,88 +1,89 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
-import { useState } from 'react';
-
+import { useCart } from 'hooks/useCart/useCart';
 import { Trash } from 'phosphor-react';
+
+import {
+  PlatformIcon,
+  Platform,
+} from 'components/atoms/PlatformIcon/PlatformIcon';
 
 import * as S from './GameCartDrop.styles';
 
 export type GameCartDropProps = {
+  id: string;
   src: string;
-  genre: string;
+  genres: string[];
   title: string;
   developer: string;
+  quantity: number;
+  platform: Platform;
   price: number;
 };
 
 export const GameCartDrop = ({
+  id,
   src,
-  genre,
+  genres,
   title,
   developer,
+  quantity,
+  platform,
   price,
 }: GameCartDropProps) => {
-  const [quantityGames, setQuantityGames] = useState(1);
-
-  function handleQuantity(type: 'less' | 'more') {
-    if (type === 'less' && quantityGames > 1) {
-      setQuantityGames(quantityGames - 1);
-    }
-
-    if (type === 'more' && quantityGames < 10) {
-      setQuantityGames(quantityGames + 1);
-    }
-  }
+  const { removeFromCart, setQuantity } = useCart();
 
   return (
     <S.Wrapper>
       <S.GameInfoWrapper>
-        <S.GameImageWrapper>
-          <Image src={src} layout="fill" alt="Image game" objectFit="cover" />
-        </S.GameImageWrapper>
+        <Link href={`game/${id}`}>
+          <S.GameImageWrapper>
+            <Image src={src} layout="fill" alt="Image game" objectFit="cover" />
+          </S.GameImageWrapper>
+        </Link>
 
         <S.InfoWrapper>
-          <S.Genre>{genre}</S.Genre>
+          <S.Genre>{genres.join(', ')}</S.Genre>
           <S.Title>{title}</S.Title>
           <S.Developer>{developer}</S.Developer>
+          <PlatformIcon platform={platform} hasTitle size="small" />
+
+          <S.BuyInfoWrapper>
+            <S.Remove
+              onClick={() => removeFromCart(id)}
+              aria-label="Remove from Cart"
+            >
+              <Trash size={20} />
+            </S.Remove>
+            <S.ButtonQuantityWrapper>
+              <S.ButtonQuantity
+                disabled={quantity === 1}
+                onClick={() => setQuantity(id, quantity - 1)}
+                aria-label="Less to Cart"
+              >
+                {' '}
+                -{' '}
+              </S.ButtonQuantity>
+              <S.Quantity aria-label="Quantity Cart">{quantity}</S.Quantity>
+              <S.ButtonQuantity
+                disabled={quantity === 10}
+                onClick={() => setQuantity(id, quantity + 1)}
+                aria-label="Add to Cart"
+              >
+                {' '}
+                +{' '}
+              </S.ButtonQuantity>
+            </S.ButtonQuantityWrapper>
+          </S.BuyInfoWrapper>
         </S.InfoWrapper>
-      </S.GameInfoWrapper>
-
-      <S.BuyInfoWrapper>
-        <S.ButtonQuantityWrapper>
-          <S.ButtonLess
-            onClick={() => handleQuantity('less')}
-            aria-label="Less to Cart"
-          >
-            {' '}
-            -{' '}
-          </S.ButtonLess>
-          <S.Quantity aria-label="Quantity Cart">{quantityGames}</S.Quantity>
-          <S.ButtonMore
-            onClick={() => handleQuantity('more')}
-            aria-label="Add to Cart"
-          >
-            {' '}
-            +{' '}
-          </S.ButtonMore>
-        </S.ButtonQuantityWrapper>
-
         <S.Total>
           {Intl.NumberFormat('pt-BR', {
             style: 'currency',
             currency: 'BRL',
-          }).format(price * quantityGames)}
+          }).format(price * quantity)}
         </S.Total>
-      </S.BuyInfoWrapper>
-
-      <S.GameOptions>
-        <S.Options>
-          <S.MoveToFavorites>Move To Favorites</S.MoveToFavorites>
-          <S.Remove>
-            <Trash size={20} />
-            Remover
-          </S.Remove>
-        </S.Options>
-      </S.GameOptions>
+      </S.GameInfoWrapper>
     </S.Wrapper>
   );
 };

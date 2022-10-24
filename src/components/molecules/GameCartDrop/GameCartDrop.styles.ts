@@ -1,7 +1,10 @@
+import media from 'styled-media-query';
+
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
+    max-height: 40rem;
     display: flex;
     flex-direction: column;
     padding: 1.2rem 0;
@@ -11,19 +14,32 @@ export const Wrapper = styled.div`
 
 export const GameInfoWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
+
+  ${media.greaterThan('small')`
+    flex-direction: row;
+  `}
 `;
 
 export const GameImageWrapper = styled.div`
-  width: 50%;
+  width: 100%;
+  max-height: 22rem;
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
+
+  ${media.greaterThan('small')`
+    width: 32rem;
+    max-height: 16rem;
+  `}
 `;
 
 export const InfoWrapper = styled.div`
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   padding: 0 0.8rem;
 `;
@@ -34,7 +50,11 @@ export const Genre = styled.h2`
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 300;
-    margin-bottom: 0.8rem;
+    margin: 0.8rem 0;
+
+    ${media.greaterThan('small')`
+      margin: 0 0 0.8rem 0;
+    `}
   `}
 `;
 
@@ -52,36 +72,55 @@ export const Developer = styled.h2`
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 300;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.8rem;
   `}
 `;
 
 export const BuyInfoWrapper = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
+
+  ${media.greaterThan('small')`
+    width: auto;
+  `}
 `;
 
 export const ButtonQuantityWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-left: calc(25% - 5.5rem);
+  margin-left: auto;
+
+  ${media.greaterThan('small')`
+    margin-left: 12rem;
+  `}
 `;
 
-export const ButtonLess = styled.button`
+export const ButtonQuantity = styled.button`
   ${({ theme }) => css`
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     color: ${theme.colors.whiteText};
+    background-color: ${theme.colors.primary};
+    border-radius: 50%;
     font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: color 0.2s linear;
+    transition: all 0.2s linear;
 
     :is(:hover, :focus) {
-      color: ${theme.colors.primary};
+      text-shadow: 0 0 2px ${theme.colors.white};
+    }
+
+    &:disabled,
+    &:disabled:hover,
+    &:disabled:focus {
+      opacity: 0.8;
+      text-shadow: none;
     }
   `}
 `;
@@ -98,28 +137,15 @@ export const Quantity = styled.span`
   `}
 `;
 
-export const ButtonMore = styled.button`
-  ${({ theme }) => css`
-    width: 3rem;
-    height: 3rem;
-    color: ${theme.colors.whiteText};
-    font-size: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: color 0.2s linear;
-
-    :is(:hover, :focus) {
-      color: ${theme.colors.primary};
-    }
-  `}
-`;
-
 export const Total = styled.strong`
   ${({ theme }) => css`
     font-size: 1.6rem;
     color: ${theme.colors.whiteText};
+    align-self: center;
+
+    ${media.greaterThan('small')`
+      margin-left: auto;
+    `}
   `}
 `;
 
@@ -134,22 +160,6 @@ export const Options = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-`;
-
-export const MoveToFavorites = styled.button`
-  ${({ theme }) => css`
-    color: ${theme.colors.secondary};
-    font-size: 1.2rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: color 0.2s linear;
-    padding: 0 2rem;
-    border-right: 2px solid ${theme.colors.whiteText};
-
-    :is(:hover, :focus) {
-      color: ${theme.colors.primary};
-    }
-  `}
 `;
 
 export const Remove = styled.button`

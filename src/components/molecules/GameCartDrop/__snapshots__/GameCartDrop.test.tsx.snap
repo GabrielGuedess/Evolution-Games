@@ -1,7 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports['<GameCartDrop /> should render the Image Game 1'] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c7:hover {
+  cursor: pointer;
+  color: #855aff;
+}
+
+.c8 {
+  height: 1.4rem;
+}
+
+.c9 {
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 1.6rem;
+  font-size: 1.4rem;
+}
+
 .c0 {
+  max-height: 40rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,15 +53,20 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 1rem;
 }
 
 .c2 {
-  width: 50%;
+  width: 100%;
+  max-height: 22rem;
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 
 .c3 {
@@ -34,6 +74,10 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -45,7 +89,7 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   font-size: 1.2rem;
   font-style: italic;
   font-weight: 300;
-  margin-bottom: 0.8rem;
+  margin: 0.8rem 0;
 }
 
 .c5 {
@@ -59,10 +103,11 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   font-size: 1.2rem;
   font-style: italic;
   font-weight: 300;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.8rem;
 }
 
-.c7 {
+.c10 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -75,9 +120,10 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: auto;
 }
 
-.c8 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -86,13 +132,15 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: calc(25% - 5.5rem);
+  margin-left: auto;
 }
 
-.c9 {
-  width: 3rem;
-  height: 3rem;
+.c13 {
+  width: 2.5rem;
+  height: 2.5rem;
   color: #F4F4F5;
+  background-color: #855aff;
+  border-radius: 50%;
   font-size: 1.6rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -107,15 +155,22 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
-  -webkit-transition: color 0.2s linear;
-  transition: color 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
-.c9:is(:hover,:focus) {
-  color: #855aff;
+.c13:is(:hover,:focus) {
+  text-shadow: 0 0 2px #FFFFFF;
 }
 
-.c10 {
+.c13:disabled,
+.c13:disabled:hover,
+.c13:disabled:focus {
+  opacity: 0.8;
+  text-shadow: none;
+}
+
+.c14 {
   width: 5rem;
   height: 5rem;
   color: #F4F4F5;
@@ -134,81 +189,15 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   justify-content: center;
 }
 
-.c11 {
-  width: 3rem;
-  height: 3rem;
-  color: #F4F4F5;
-  font-size: 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  cursor: pointer;
-  -webkit-transition: color 0.2s linear;
-  transition: color 0.2s linear;
-}
-
-.c11:is(:hover,:focus) {
-  color: #855aff;
-}
-
-.c12 {
-  font-size: 1.6rem;
-  color: #F4F4F5;
-}
-
-.c13 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 2rem;
-}
-
 .c15 {
-  color: #717B8A;
-  font-size: 1.2rem;
-  font-weight: 500;
-  cursor: pointer;
-  -webkit-transition: color 0.2s linear;
-  transition: color 0.2s linear;
-  padding: 0 2rem;
-  border-right: 2px solid #F4F4F5;
+  font-size: 1.6rem;
+  color: #F4F4F5;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
-.c15:is(:hover,:focus) {
-  color: #855aff;
-}
-
-.c16 {
+.c11 {
   color: #855aff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -221,6 +210,45 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media (min-width:450px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:450px) {
+  .c2 {
+    width: 32rem;
+    max-height: 16rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c4 {
+    margin: 0 0 0.8rem 0;
+  }
+}
+
+@media (min-width:450px) {
+  .c10 {
+    width: auto;
+  }
+}
+
+@media (min-width:450px) {
+  .c12 {
+    margin-left: 12rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c15 {
+    margin-left: auto;
+  }
 }
 
 <div
@@ -263,122 +291,133 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
       >
         CD Projekt
       </h2>
-    </div>
-  </div>
-  <div
-    class="c7"
-  >
-    <div
-      class="c8"
-    >
-      <button
-        aria-label="Less to Cart"
-        class="c9"
-      >
-         
-        -
-         
-      </button>
-      <span
-        aria-label="Quantity Cart"
-        class="0 c10"
-      >
-        1
-      </span>
-      <button
-        aria-label="Add to Cart"
-        class="1 c11"
-      >
-         
-        +
-         
-      </button>
-    </div>
-    <strong
-      class="2 c12"
-    >
-      R$ 100,00
-    </strong>
-  </div>
-  <div
-    class="3 c13"
-  >
-    <div
-      class="4 c14"
-    >
-      <button
-        class="5 c15"
-      >
-        Move To Favorites
-      </button>
-      <button
-        class="6 c16"
+      <div
+        class="c7"
+        color="white"
       >
         <svg
-          fill="currentColor"
-          height="20"
-          viewBox="0 0 256 256"
-          width="20"
+          aria-label="PlayStation Icon"
+          class="c8"
+          fill="none"
+          role="figure"
+          viewBox="0 0 28 22"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect
-            fill="none"
-            height="256"
-            width="256"
-          />
-          <line
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="16"
-            x1="216"
-            x2="40"
-            y1="56"
-            y2="56"
-          />
-          <line
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="16"
-            x1="104"
-            x2="104"
-            y1="104"
-            y2="168"
-          />
-          <line
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="16"
-            x1="152"
-            x2="152"
-            y1="104"
-            y2="168"
-          />
           <path
-            d="M200,56V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V56"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="16"
-          />
-          <path
-            d="M168,56V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V56"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="16"
+            d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+            fill="currentColor"
           />
         </svg>
-        Remover
-      </button>
+        <span
+          aria-label="PlayStation 4"
+          class="c9"
+        >
+          PlayStation 4
+        </span>
+      </div>
+      <div
+        class="c10"
+      >
+        <button
+          aria-label="Remove from Cart"
+          class="4 c11"
+        >
+          <svg
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 256 256"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="256"
+              width="256"
+            />
+            <line
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+              x1="216"
+              x2="40"
+              y1="56"
+              y2="56"
+            />
+            <line
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+              x1="104"
+              x2="104"
+              y1="104"
+              y2="168"
+            />
+            <line
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+              x1="152"
+              x2="152"
+              y1="104"
+              y2="168"
+            />
+            <path
+              d="M200,56V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V56"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            />
+            <path
+              d="M168,56V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V56"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            />
+          </svg>
+        </button>
+        <div
+          class="c12"
+        >
+          <button
+            aria-label="Less to Cart"
+            class="c13"
+          >
+             
+            -
+             
+          </button>
+          <span
+            aria-label="Quantity Cart"
+            class="0 c14"
+          >
+            2
+          </span>
+          <button
+            aria-label="Add to Cart"
+            class="c13"
+          >
+             
+            +
+             
+          </button>
+        </div>
+      </div>
     </div>
+    <strong
+      class="1 c15"
+    >
+      R$ 200,00
+    </strong>
   </div>
 </div>
 `;
