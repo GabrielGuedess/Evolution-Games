@@ -1,4 +1,4 @@
-import { validateEmail } from '.';
+import { validateEmail } from './index';
 
 describe('validations', () => {
   it('should verify that the email is valid', () => {

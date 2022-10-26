@@ -5,7 +5,7 @@ import { useState, ChangeEvent, FormEvent } from 'react';
 
 import { Eye, EyeSlash, CircleNotch } from 'phosphor-react';
 import requestFake from 'utils/requestFake';
-import { validateEmail } from 'utils/validate';
+import { validateEmail } from 'utils/validations';
 
 import Button from 'components/atoms/Button/Button';
 import { Checkbox } from 'components/atoms/Checkbox/Checkbox';
