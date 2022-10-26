@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Auth /> should render the children 1'] = `
+.c0 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url('/img/sign-in-background-image.png');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 1.6rem;
+  position: relative;
+}
+
+.c1 {
+  display: block;
+  z-index: 50;
+}
+
+.c1 .arrow {
+  position: absolute;
+  color: #F4F4F5;
+  top: calc(100% / 20);
+  left: 0.4rem;
+}
+
+.c2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.c2::-webkit-scrollbar {
+  display: none;
+}
+
+.c3 {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 8.0rem;
+}
+
+.c4 {
+  font-size: 2.0rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 3.2rem;
+  color: #F4F4F5;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    background-position: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media (min-width:1440px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<main
+  class="c0"
+>
+  <a
+    class="c1"
+    href="/"
+  >
+    <svg
+      class="arrow"
+      fill="currentColor"
+      height="32"
+      viewBox="0 0 256 256"
+      width="32"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        fill="none"
+        height="256"
+        width="256"
+      />
+      <polyline
+        fill="none"
+        points="160 208 80 128 160 48"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </svg>
+  </a>
+  <div
+    class="c2"
+  >
+    Auth
+  </div>
+  <div
+    class="c3"
+  >
+    <a
+      class="c4"
+      href="/"
+    >
+      Voltar para a Home
+    </a>
+  </div>
+</main>
+`;

@@ -2,7 +2,7 @@
 
 exports['<CartDropDown /> should render the GameCartDrop 1'] = `
 .c1 {
-  color: #855aff;
+  color: #7C3AED;
   padding: 0.5rem;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
@@ -58,7 +58,7 @@ exports['<CartDropDown /> should render the GameCartDrop 1'] = `
 }
 
 .c4 {
-  color: #855aff;
+  color: #7C3AED;
   font-size: 1.2rem;
   padding: 1rem;
   -webkit-text-decoration: underline;

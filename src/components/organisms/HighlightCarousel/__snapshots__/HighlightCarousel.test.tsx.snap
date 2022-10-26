@@ -23,8 +23,8 @@ exports['<HighlightCarousel /> should render the heading 1'] = `
 .c9:hover,
 .c9:focus {
   cursor: pointer;
-  color: #855aff;
-  border-color: #855aff;
+  color: #7C3AED;
+  border-color: #7C3AED;
 }
 
 .c10 {
@@ -48,8 +48,8 @@ exports['<HighlightCarousel /> should render the heading 1'] = `
 .c10:hover,
 .c10:focus {
   cursor: pointer;
-  color: #855aff;
-  border-color: #855aff;
+  color: #7C3AED;
+  border-color: #7C3AED;
 }
 
 .c7 {
@@ -94,11 +94,11 @@ exports['<HighlightCarousel /> should render the heading 1'] = `
 }
 
 .c7:not(:disabled):is(:hover,:focus) .effect {
-  stroke: #855aff;
+  stroke: #7C3AED;
 }
 
 .c7:not(:disabled):is(:hover,:focus) {
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c7:not(:disabled):is(:hover,:focus) {
@@ -212,7 +212,7 @@ exports['<HighlightCarousel /> should render the heading 1'] = `
 
 .c19:hover {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c20 {

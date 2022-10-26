@@ -1,5 +1,3 @@
-import media from 'styled-media-query';
-
 import styled, { css, DefaultTheme } from 'styled-components';
 
 type AlignBoxProps = {
@@ -54,79 +52,18 @@ const iconValidEmailModifiers = {
   `,
 };
 
-export const Wrapper = styled.main`
-  ${({ theme }) => css`
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    background-image: url('/img/sign-in-background-image.png');
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0 ${theme.spacings.xsmall};
-    position: relative;
-
-    .animation-spinner {
-      transition: none;
-    }
-
-    ${media.greaterThan('huge')`
-      background-position: center;
-    `}
-  `}
-`;
-
-export const IconWrapper = styled.a`
-  ${({ theme }) => css`
-    display: block;
-
-    .arrow {
-      position: absolute;
-      color: ${theme.colors.whiteText};
-      top: calc(100% / 10);
-      left: 0.4rem;
-    }
-
-    ${media.greaterThan('medium')`
-      display: none;
-    `}
-  `}
-`;
-
-export const FirstColumn = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  ${media.greaterThan('huge')`
-    width: 50%;
-  `}
-`;
-
-export const SecondColumn = styled.div`
-  ${({ theme }) => css`
-    width: 50%;
-    height: 100%;
-    display: none;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: ${theme.spacings.huge};
-
-    ${media.greaterThan('huge')`
-      display: flex;
-    `}
-  `}
-`;
-
-export const Form = styled.form`
+export const Wrapper = styled.form`
   width: 100%;
   max-width: 40.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 1.6rem;
+
+  .animation-spinner {
+    transition: none;
+  }
 
   > button span {
     padding: 0.9rem 0;
@@ -158,6 +95,9 @@ export const InputBox = styled.div`
   ${({ theme }) => css`
     width: 100%;
     margin-top: ${theme.spacings.big};
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
   `}
 `;
 
@@ -211,16 +151,5 @@ export const NoAccount = styled.p`
     font-weight: ${theme.font.regular};
     color: ${theme.colors.secondary};
     margin-right: 0.6rem;
-  `}
-`;
-
-export const GoBack = styled.a`
-  ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xxmedium};
-    font-style: italic;
-    font-weight: 300;
-    line-height: ${theme.spacings.medium};
-    color: ${theme.colors.whiteText};
-    text-decoration: underline;
   `}
 `;

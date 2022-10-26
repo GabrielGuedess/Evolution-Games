@@ -82,12 +82,12 @@ exports['<Checkbox /> should render the heading 1'] = `
 }
 
 .c1:checked + .c2 {
-  background-color: #855aff;
-  box-shadow: 0 0.5rem 1.5rem rgba(133,90,255,0.25);
+  background-color: #7C3AED;
+  box-shadow: 0 0.5rem 1.5rem rgba(124,58,237,0.25);
 }
 
 .c1:is(:focus,:hover) ~ .c4:after {
-  background-color: rgba(133,90,255,0.15);
+  background-color: rgba(124,58,237,0.15);
 }
 
 .c1:is(:checked,:indeterminate) + .c2 .box-worm {

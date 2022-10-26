@@ -23,8 +23,8 @@ exports['<ArrowButtons /> should render the heading 1'] = `
 .c1:hover,
 .c1:focus {
   cursor: pointer;
-  color: #855aff;
-  border-color: #855aff;
+  color: #7C3AED;
+  border-color: #7C3AED;
 }
 
 .c2 {
@@ -48,8 +48,8 @@ exports['<ArrowButtons /> should render the heading 1'] = `
 .c2:hover,
 .c2:focus {
   cursor: pointer;
-  color: #855aff;
-  border-color: #855aff;
+  color: #7C3AED;
+  border-color: #7C3AED;
 }
 
 <div

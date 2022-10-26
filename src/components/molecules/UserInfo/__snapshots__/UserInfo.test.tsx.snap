@@ -27,7 +27,7 @@ exports['<UserInfo /> should render the heading 1'] = `
   transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
   font-size: 1.4rem;
   padding: 0.8rem 3.2rem;
-  background: #855aff;
+  background: #7C3AED;
   color: #F4F4F5;
 }
 
@@ -37,7 +37,7 @@ exports['<UserInfo /> should render the heading 1'] = `
 }
 
 .c8 .effect {
-  fill: #855aff;
+  fill: #7C3AED;
 }
 
 .c8:not(:disabled):is(:hover,:focus) {
@@ -109,7 +109,7 @@ exports['<UserInfo /> should render the heading 1'] = `
 }
 
 .c1 {
-  color: #855aff;
+  color: #7C3AED;
   padding: 0.5rem;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
@@ -186,7 +186,7 @@ exports['<UserInfo /> should render the heading 1'] = `
 }
 
 .c5 span {
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c6 {

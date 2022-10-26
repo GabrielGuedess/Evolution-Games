@@ -1,5 +1,11 @@
-import { SignInForm } from 'templates/SignInForm/SignInForm';
+import { Auth } from 'templates/Auth/Auth';
+
+import { SignIn as SignInForm } from 'components/organisms/SignIn/SignIn';
 
 export default function SignIn() {
-  return <SignInForm />;
+  return (
+    <Auth>
+      <SignInForm />
+    </Auth>
+  );
 }

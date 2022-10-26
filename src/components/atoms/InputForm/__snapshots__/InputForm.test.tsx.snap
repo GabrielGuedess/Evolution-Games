@@ -9,75 +9,162 @@ exports['<InputForm /> should render the <InputForm /> 1'] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 1.6rem;
-}
-
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  width: 100%;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 3.2rem;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #F4F4F5;
-  background-color: transparent;
-  border-radius: 1rem;
-  padding: 0.8rem 1.6rem;
-  color: #FFFFFF;
-}
-
-.c3:-webkit-autofill ~ div,
-.c3:-webkit-autofill:hover ~ div,
-.c3:-webkit-autofill:focus ~ div,
-.c3:-webkit-autofill:active ~ div {
-  color: #717B8A;
-}
-
-.c3::-webkit-input-placeholder {
-  color: #717B8A;
-}
-
-.c3::-moz-placeholder {
-  color: #717B8A;
-}
-
-.c3:-ms-input-placeholder {
-  color: #717B8A;
-}
-
-.c3::placeholder {
-  color: #717B8A;
 }
 
 .c1 {
+  position: relative;
+}
+
+.c4 {
+  position: absolute;
+  left: 1rem;
+  top: 1.7rem;
+  padding: 0 3px;
   font-size: 1.4rem;
-  font-style: normal;
   font-weight: 400;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.c4::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.c2 {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
   line-height: 3.2rem;
-  margin-bottom: 0.3rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #272530;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  color: #FFFFFF;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c2::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23272530" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c2 .c3 {
+  color: #FFFFFF;
+}
+
+.c2:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 100rem #04040C inset;
+  -webkit-text-fill-color: #FFFFFF;
+}
+
+.c2:-webkit-autofill ~ div,
+.c2:-webkit-autofill:hover ~ div,
+.c2:-webkit-autofill:focus ~ div,
+.c2:-webkit-autofill:active ~ div {
+  color: #717B8A;
+}
+
+.c2::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c2::-moz-placeholder {
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c2:-ms-input-placeholder {
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c2::placeholder {
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c2:focus {
+  border-color: #7C3AED;
+}
+
+.c2:focus::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%237C3AED" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}
+
+.c2:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c2:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c2:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c2:focus::placeholder {
+  opacity: 1;
+}
+
+.c2:is(:focus,:valid) + .c3 {
+  top: -2rem;
+  color: #7C3AED;
+  font-size: 1.2rem;
+}
+
+.c2::selection {
+  color: #FFFFFF;
+  background: #7C3AED;
+}
+
+@media (min-width:768px) {
+  .c4::before {
+    background: #04040C;
+  }
+}
+
+@media (min-width:768px) {
+  .c2:is(:focus,:valid) + .c3 {
+    top: -8px;
+  }
 }
 
 <div
   class="c0"
 >
-  <span
-    class="c1"
-    id="radix-:r0:"
-    role="label"
-  >
-    Senha
-  </span>
   <div
-    class="c2"
+    class="c1"
   >
     <input
-      class="c3"
+      autocomplete="on"
+      class="c2"
     />
+    <label
+      class="c3 c4"
+    >
+      Senha
+    </label>
   </div>
 </div>
 `;

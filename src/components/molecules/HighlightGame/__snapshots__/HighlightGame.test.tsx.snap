@@ -29,7 +29,7 @@ exports['<HighlightGame /> should render the heading 1'] = `
 
 .c8:hover {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c9 {

@@ -50,15 +50,15 @@ exports['<RadioButton /> should render the heading 1'] = `
   position: relative;
   width: calc(100% / 2);
   height: calc(100% / 2);
-  background: #855aff;
+  background: #7C3AED;
   top: var(--y,100%);
   -webkit-transition: top 0.5s cubic-bezier(0.48,1.97,0.5,0.63);
   transition: top 0.5s cubic-bezier(0.48,1.97,0.5,0.63);
 }
 
 .c1:checked {
-  border: 0.2rem solid #855aff;
-  box-shadow: 0 0.5rem 1.5rem rgba(133,90,255,0.25);
+  border: 0.2rem solid #7C3AED;
+  box-shadow: 0 0.5rem 1.5rem rgba(124,58,237,0.25);
 }
 
 .c1:checked::after {
@@ -120,7 +120,7 @@ exports['<RadioButton /> should render the heading 1'] = `
 }
 
 .c0:is(:focus,:hover) {
-  background: rgba(133,90,255,0.15);
+  background: rgba(124,58,237,0.15);
   border-radius: 0.375rem;
 }
 

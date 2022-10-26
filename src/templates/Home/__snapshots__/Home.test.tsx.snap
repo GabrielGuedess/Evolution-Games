@@ -391,7 +391,7 @@ exports['<Home /> should render the Home correctly 1'] = `
   .c14 {
     width: 13.7rem;
     height: 3.2rem;
-    color: #855aff;
+    color: #7C3AED;
   }
 }
 
