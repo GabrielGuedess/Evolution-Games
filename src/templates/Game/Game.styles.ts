@@ -279,7 +279,7 @@ export const Badge = styled.span`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: ${theme.colors.primaryForWhite};
+    background: ${theme.colors.primary};
     box-shadow: ${theme.shadows.text};
     color: ${theme.colors.white};
     font-size: 1.4rem;
