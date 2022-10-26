@@ -27,7 +27,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 }
 
 .c13:is(:hover,:focus) {
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c11 {
@@ -41,7 +41,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 
 .c11:is(:hover,:focus) {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c0 {
@@ -106,12 +106,12 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
   text-transform: uppercase;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
-  color: #855aff;
+  color: #7C3AED;
   text-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
 }
 
 .c7:is(:hover,:focus) {
-  color: #855aff;
+  color: #7C3AED;
   text-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
 }
 
@@ -129,7 +129,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 }
 
 .c8:is(:hover,:focus) {
-  color: #855aff;
+  color: #7C3AED;
   text-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
 }
 
@@ -156,14 +156,14 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
 
 .c10:is(:hover,:focus) {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 @media (min-width:1170px) {
   .c3 {
     width: 13.7rem;
     height: 3.2rem;
-    color: #855aff;
+    color: #7C3AED;
   }
 }
 

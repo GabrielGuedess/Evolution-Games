@@ -40,7 +40,7 @@ exports['<Empty /> should render the heading 1'] = `
   font-size: 2.8rem;
   line-height: 34px;
   text-align: center;
-  color: #855aff;
+  color: #7C3AED;
   text-shadow: 0px 0.8rem 2.4rem rgba(118,74,241,0.25);
 }
 

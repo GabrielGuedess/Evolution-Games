@@ -30,7 +30,7 @@ exports['<Game /> should render components correctly 1'] = `
 
 .c35:hover {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c36 {
@@ -151,7 +151,7 @@ exports['<Game /> should render components correctly 1'] = `
   line-height: 3.2rem;
   text-shadow: 0 0.8rem 1rem rgba(118,74,241,0.5);
   font-size: 2rem;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c20 {
@@ -227,7 +227,7 @@ exports['<Game /> should render components correctly 1'] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  box-shadow: 0 0.8rem 1rem rgba(133,90,255,0.25);
+  box-shadow: 0 0.8rem 1rem rgba(124,58,237,0.25);
 }
 
 .c19 {
@@ -249,7 +249,7 @@ exports['<Game /> should render components correctly 1'] = `
 }
 
 .c21 span {
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c22 {

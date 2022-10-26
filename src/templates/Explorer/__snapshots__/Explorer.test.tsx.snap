@@ -27,7 +27,7 @@ exports['<Explorer /> should render the components correctly 1'] = `
   transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
   font-size: 1.6rem;
   padding: 0.8rem 4.8rem;
-  background: #855aff;
+  background: #7C3AED;
   color: #F4F4F5;
 }
 
@@ -37,7 +37,7 @@ exports['<Explorer /> should render the components correctly 1'] = `
 }
 
 .c25 .effect {
-  fill: #855aff;
+  fill: #7C3AED;
 }
 
 .c25 span {
@@ -138,7 +138,7 @@ exports['<Explorer /> should render the components correctly 1'] = `
   transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
   font-size: 1.4rem;
   padding: 0.8rem 3.2rem;
-  background: #855aff;
+  background: #7C3AED;
   color: #F4F4F5;
   background: transparent;
   color: #717B8A;
@@ -150,7 +150,7 @@ exports['<Explorer /> should render the components correctly 1'] = `
 }
 
 .c47 .effect {
-  fill: #855aff;
+  fill: #7C3AED;
 }
 
 .c47 span {
@@ -262,7 +262,7 @@ exports['<Explorer /> should render the components correctly 1'] = `
 
 .c44:hover {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c45 {
@@ -502,12 +502,12 @@ exports['<Explorer /> should render the components correctly 1'] = `
 }
 
 .c14:checked + .c15 {
-  background-color: #855aff;
-  box-shadow: 0 0.5rem 1.5rem rgba(133,90,255,0.25);
+  background-color: #7C3AED;
+  box-shadow: 0 0.5rem 1.5rem rgba(124,58,237,0.25);
 }
 
 .c14:is(:focus,:hover) ~ .c17:after {
-  background-color: rgba(133,90,255,0.15);
+  background-color: rgba(124,58,237,0.15);
 }
 
 .c14:is(:checked,:indeterminate) + .c15 .box-worm {
@@ -636,14 +636,14 @@ exports['<Explorer /> should render the components correctly 1'] = `
   aspect-ratio: 1/1;
   border-radius: 50%;
   background: #FFFFFF;
-  border: 2px solid #855aff;
-  box-shadow: 0px 0px 0.5rem rgba(255,255,255,0.25), 0px 0px 0.8rem #855aff;
+  border: 2px solid #7C3AED;
+  box-shadow: 0px 0px 0.5rem rgba(255,255,255,0.25), 0px 0px 0.8rem #7C3AED;
 }
 
 .c10 {
   width: 50%;
   padding: 1rem 0;
-  border: 0.1rem solid #855aff;
+  border: 0.1rem solid #7C3AED;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

@@ -61,11 +61,11 @@ exports['<Preloader /> should render the heading 1'] = `
       >
         <stop
           offset="0%"
-          stop-color="#855aff"
+          stop-color="#7C3AED"
         />
         <stop
           offset="100%"
-          stop-color="#916aff"
+          stop-color="#894dee"
         />
       </lineargradient>
       <lineargradient
@@ -77,15 +77,15 @@ exports['<Preloader /> should render the heading 1'] = `
       >
         <stop
           offset="0%"
-          stop-color="#a98bff"
+          stop-color="#a375f2"
         />
         <stop
           offset="50%"
-          stop-color="#5f27ff"
+          stop-color="#5f14e0"
         />
         <stop
           offset="100%"
-          stop-color="#916aff"
+          stop-color="#894dee"
         />
       </lineargradient>
     </defs>

@@ -3,7 +3,7 @@ import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen, act, fireEvent, waitFor } from '@testing-library/react';
 
-import { SignInForm } from './SignInForm';
+import { SignIn } from './SignIn';
 
 jest.mock('utils/requestFake', () => ({
   __esModule: true,
@@ -13,7 +13,7 @@ jest.mock('utils/requestFake', () => ({
 describe('<FormSingIn />', () => {
   beforeEach(() => {
     (requestFake as jest.Mock).mockClear();
-    renderWithProviders(<SignInForm />);
+    renderWithProviders(<SignIn />);
   });
 
   it('should render the <FormSingIn />', () => {

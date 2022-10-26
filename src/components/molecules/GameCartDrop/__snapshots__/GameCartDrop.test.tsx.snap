@@ -21,7 +21,7 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
 
 .c7:hover {
   cursor: pointer;
-  color: #855aff;
+  color: #7C3AED;
 }
 
 .c8 {
@@ -139,7 +139,7 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   width: 2.5rem;
   height: 2.5rem;
   color: #F4F4F5;
-  background-color: #855aff;
+  background-color: #7C3AED;
   border-radius: 50%;
   font-size: 1.6rem;
   display: -webkit-box;
@@ -199,7 +199,7 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
 }
 
 .c11 {
-  color: #855aff;
+  color: #7C3AED;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
