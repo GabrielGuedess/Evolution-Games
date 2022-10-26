@@ -64,7 +64,6 @@ exports['<Checkbox /> should render the heading 1'] = `
   display: block;
   position: absolute;
   inset: 0;
-  z-index: -1;
   -webkit-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
 }
@@ -118,6 +117,7 @@ exports['<Checkbox /> should render the heading 1'] = `
       class="c1"
       id="test"
       type="checkbox"
+      value=""
     />
     <svg
       class="c2 c3"

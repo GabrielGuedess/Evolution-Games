@@ -330,7 +330,7 @@ exports['<Navbar /> should render the Navbar correctly 1'] = `
             <a
               class="c8"
               data-radix-collection-item=""
-              href="/games"
+              href="/explorer"
             >
               Explorer
             </a>

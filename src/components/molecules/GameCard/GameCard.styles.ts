@@ -15,7 +15,7 @@ export const Wrapper = styled.article`
   margin: 0 auto;
   border-radius: 0.4rem;
 
-  ${media.greaterThan('small')`
+  ${media.greaterThan('medium')`
     width: 29.1rem;
     height: 100%;
     border-radius: 0;
@@ -30,7 +30,7 @@ export const GameImage = styled.div`
     cursor: pointer;
     filter: blur(0.5px);
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('medium')`
       filter: none;
       background-color: ${theme.colors.gameDetails};
     `}
@@ -49,7 +49,7 @@ export const CircleBlur = styled.div<Color>`
     background-image: linear-gradient(180deg, ${color}, ${rgba(color, 0.2)});
     filter: blur(7rem);
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('medium')`
       display: block;
     `}
   `}
@@ -68,7 +68,7 @@ export const GameContent = styled.div`
     top: 0;
     background: linear-gradient(90deg, #010914 12.5%, rgba(4, 4, 12, 0.3) 100%);
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('medium')`
       width: auto;
       min-height: 20.8rem;
       position: inherit;
@@ -118,7 +118,7 @@ export const Title = styled.strong`
     font-style: normal;
     margin-bottom: ${theme.spacings.small};
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xbig};
     `}
   `}
@@ -132,7 +132,7 @@ export const Genre = styled.p`
     font-style: normal;
     color: ${theme.colors.secondary};
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.medium};
     `}
   `}
@@ -147,7 +147,7 @@ export const Developer = styled.p`
     color: ${theme.colors.secondary};
     margin-top: 5px;
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xsmall};
     `}
   `}
@@ -167,7 +167,7 @@ export const Price = styled.p`
     font-style: normal;
     color: ${theme.colors.whiteText};
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('medium')`
       font-size: ${theme.font.sizes.xxmedium};
     `}
   `}

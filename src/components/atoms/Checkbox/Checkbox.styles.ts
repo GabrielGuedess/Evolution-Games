@@ -55,7 +55,6 @@ export const WrapperInfos = styled.div`
     display: block;
     position: absolute;
     inset: 0;
-    z-index: -1;
     transition: background-color 0.15s linear;
   }
 `;

@@ -75,6 +75,11 @@ const wrapperModifiers = {
     background: transparent;
     color: ${theme.colors.secondary};
 
+    :not(:disabled):is(:hover, :focus) {
+      box-shadow: 0 0 0 transparent;
+      color: ${theme.colors.whiteText};
+    }
+
     .effect {
       display: none;
     }
