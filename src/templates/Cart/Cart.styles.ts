@@ -22,7 +22,8 @@ export const Heading = styled.div`
   ${({ theme }) => css`
     width: 100%;
     padding-bottom: ${theme.spacings.small};
-    border-bottom: 1px solid ${theme.colors.secondary};
+    border-bottom: 1px solid ${theme.colors.whiteText};
+    margin-bottom: ${theme.spacings.xsmall};
 
     ${media.greaterThan('medium')`
       padding-bottom: ${theme.spacings.large};

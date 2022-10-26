@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    max-height: 40rem;
+    max-height: 44rem;
     display: flex;
     flex-direction: column;
     padding: 1.2rem 0;
@@ -142,9 +142,11 @@ export const Total = styled.strong`
     font-size: 1.6rem;
     color: ${theme.colors.whiteText};
     align-self: center;
+    margin-bottom: ${theme.spacings.small};
 
     ${media.greaterThan('small')`
       margin-left: auto;
+      margin-bottom: 0;
     `}
   `}
 `;

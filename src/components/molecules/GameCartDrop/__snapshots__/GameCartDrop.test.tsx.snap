@@ -36,7 +36,7 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
 }
 
 .c0 {
-  max-height: 40rem;
+  max-height: 44rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -195,6 +195,7 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  margin-bottom: 2.4rem;
 }
 
 .c11 {
@@ -248,6 +249,7 @@ exports['<GameCartDrop /> should render the Image Game 1'] = `
 @media (min-width:450px) {
   .c15 {
     margin-left: auto;
+    margin-bottom: 0;
   }
 }
 
