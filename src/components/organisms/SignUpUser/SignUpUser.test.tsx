@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -17,7 +17,7 @@ const setUserPhoto = jest.fn();
 
 describe('<SignUpUser />', () => {
   it('should render the heading', () => {
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <SignUpUser
         userInputs={userInputs}
         setUserInputs={setUserInputs}
@@ -28,9 +28,7 @@ describe('<SignUpUser />', () => {
       />,
     );
 
-    expect(
-      screen.getByRole('heading', { name: /SignUpUser/i }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole('form')).toBeInTheDocument();
 
     expect(container.firstChild).toMatchSnapshot();
   });

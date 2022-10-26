@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<SignUpFinally /> should render the heading 1'] = `
+.c5 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  font-size: 1.6rem;
+  padding: 0.8rem 4.8rem;
+  background: #7C3AED;
+  color: #F4F4F5;
+  width: 100%;
+}
+
+.c5:not(:disabled):is(:hover,:focus) {
+  box-shadow: 0 0.8rem 2.8rem rgba(118,74,241,0.5);
+  color: #F4F4F5;
+}
+
+.c5 .effect {
+  fill: #7C3AED;
+}
+
+.c5:not(:disabled):is(:hover,:focus) {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.c5:not(:disabled):active {
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+}
+
+.c5 span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  z-index: 1;
+}
+
+.c5:not(:disabled):is(:hover,:focus) span {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.c5:not(:disabled):is(:hover,:focus) .icon {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c5:not(:disabled):active span {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.c5 svg {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c5 .effect {
+  position: absolute;
+  top: initial;
+  left: initial;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.c5 .effect path {
+  -webkit-transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c5:not(:disabled):is(:hover,:focus) .effect path {
+  d: path( 'M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0' );
+}
+
+.c5:not(:disabled):active .effect path {
+  d: path( 'M0 5C0 2.23858 2.23858 0 5 0H95C97.7614 0 100 2.23858 100 5V95C100 97.7614 97.7614 100 95 100H5C2.23858 100 0 97.7614 0 95V5Z' );
+}
+
+.c0 {
+  width: 100%;
+  max-width: 50.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 6rem;
+  z-index: 10;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.c4 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 6.3rem;
+}
+
+.c4 > a span {
+  padding: 0.9rem 0;
+}
+
+.c2 {
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #F4F4F5;
+  -webkit-animation: dBlapP 5s 750ms linear infinite;
+  animation: dBlapP 5s 750ms linear infinite;
+}
+
+.c3 {
+  font-size: 1.2rem;
+  color: #717B8A;
+}
+
+@media (min-width:450px) {
+  .c5 .effect {
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 1.4rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <h1
+      class="c2"
+    >
+      Parabéns, 
+      Gabriel
+      !
+    </h1>
+    <div
+      class="c3"
+    >
+      Você completou a integração, você pode começar a usar a Evolution!
+    </div>
+  </div>
+  <div
+    class="c4"
+  >
+    <a
+      aria-label="Button Action"
+      class="c5"
+      href="/"
+    >
+      <span>
+        Começar
+      </span>
+      <svg
+        aria-hidden="true"
+        class="effect"
+        preserveAspectRatio="none"
+        viewBox="-5 -5 110 110"
+      >
+        <path
+          d="M0 8C0 3.58172 3.58172 0 8 0H92C96.4183 0 100 3.58172 100 8V92C100 96.4183 96.4183 100 92 100H8C3.58172 100 0 96.4183 0 92V8Z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
