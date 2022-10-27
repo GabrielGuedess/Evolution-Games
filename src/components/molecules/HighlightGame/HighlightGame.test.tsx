@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -18,7 +18,7 @@ const props: HighlightGameProps = {
 describe('<HighlightGame />', () => {
   it('should render the heading', () => {
     // Arrange
-    const { container } = renderWithTheme(<HighlightGame {...props} />);
+    const { container } = renderWithProviders(<HighlightGame {...props} />);
 
     expect(screen.getByRole('img', { name: props.alt })).toBeInTheDocument();
 

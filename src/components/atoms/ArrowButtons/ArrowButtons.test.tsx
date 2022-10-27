@@ -1,10 +1,10 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { ArrowButtons } from './ArrowButtons';
 
 describe('<ArrowButtons />', () => {
   it('should render the heading', () => {
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <ArrowButtons nextId="swiper-next-id" prevId="swiper-prev-id" />,
     );
 

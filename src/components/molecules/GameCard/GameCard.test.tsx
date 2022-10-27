@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -29,7 +29,7 @@ jest.mock('next/image', () => ({
 describe('<GameCard />', () => {
   it('should render the heading', () => {
     // Arrange
-    const { container } = renderWithTheme(<GameCard {...props} />);
+    const { container } = renderWithProviders(<GameCard {...props} />);
 
     const title = screen.getByText(props.name);
     const genre = screen.getByText(props.genres.join(', '));

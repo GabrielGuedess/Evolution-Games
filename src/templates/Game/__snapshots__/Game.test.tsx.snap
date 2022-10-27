@@ -6,11 +6,11 @@ exports['<Game /> should render components correctly 1'] = `
   margin: 0 1.6rem;
 }
 
-.c37 {
+.c38 {
   display: none;
 }
 
-.c34 {
+.c35 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28,12 +28,12 @@ exports['<Game /> should render components correctly 1'] = `
   transition: color 0.3s linear;
 }
 
-.c34:hover {
+.c35:hover {
   cursor: pointer;
   color: #7C3AED;
 }
 
-.c35 {
+.c36 {
   height: 1.8rem;
 }
 
@@ -201,10 +201,14 @@ exports['<Game /> should render components correctly 1'] = `
   cursor: pointer;
 }
 
-.c25 {
+.c26 {
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
+}
+
+.c25 {
+  position: relative;
 }
 
 .c14 {
@@ -282,7 +286,7 @@ exports['<Game /> should render components correctly 1'] = `
   gap: 4rem;
 }
 
-.c26 {
+.c27 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -294,13 +298,13 @@ exports['<Game /> should render components correctly 1'] = `
   gap: 2.5rem;
 }
 
-.c27 {
+.c28 {
   font-size: 2.8rem;
   font-weight: 500;
   color: #FFFFFF;
 }
 
-.c28 {
+.c29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -310,21 +314,21 @@ exports['<Game /> should render components correctly 1'] = `
   flex-direction: column;
 }
 
-.c29 {
+.c30 {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 3.2rem;
   color: #F4F4F5;
 }
 
-.c30 {
+.c31 {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 3.2rem;
   color: #717B8A;
 }
 
-.c31 {
+.c32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -333,25 +337,6 @@ exports['<Game /> should render components correctly 1'] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c32 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 1.6rem;
 }
 
 .c33 {
@@ -367,10 +352,29 @@ exports['<Game /> should render components correctly 1'] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 1.6rem;
 }
 
-.c36 {
+.c34 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.c37 {
   font-weight: 500;
   font-size: 2.8rem;
   color: #F4F4F5;
@@ -422,7 +426,7 @@ exports['<Game /> should render components correctly 1'] = `
 }
 
 @media (max-width:1170px) {
-  .c37 {
+  .c38 {
     display: block;
   }
 }
@@ -525,7 +529,7 @@ exports['<Game /> should render components correctly 1'] = `
 }
 
 @media (min-width:1170px) {
-  .c25 {
+  .c26 {
     width: 3rem;
     height: 3rem;
   }
@@ -571,26 +575,20 @@ exports['<Game /> should render components correctly 1'] = `
 }
 
 @media screen and (orientation:landscape) {
-  .c26 {
+  .c27 {
     gap: 1.5rem;
   }
 }
 
 @media (min-width:1440px) {
-  .c26 {
+  .c27 {
     gap: 3rem;
   }
 }
 
 @media (min-width:1170px) {
-  .c27 {
+  .c28 {
     font-size: 4.5rem;
-  }
-}
-
-@media (min-width:1170px) {
-  .c29 {
-    font-size: 2rem;
   }
 }
 
@@ -601,7 +599,13 @@ exports['<Game /> should render components correctly 1'] = `
 }
 
 @media (min-width:1170px) {
-  .c36 {
+  .c31 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c37 {
     font-size: 3.2rem;
   }
 }
@@ -639,13 +643,13 @@ exports['<Game /> should render components correctly 1'] = `
         </div>
       </div>
       <div
-        class="0 c4"
+        class="2 c4"
       >
         <div
-          class="1 c5"
+          class="3 c5"
         >
           <div
-            class="2 c6"
+            class="4 c6"
           />
         </div>
       </div>
@@ -681,7 +685,7 @@ exports['<Game /> should render components correctly 1'] = `
               Galeria
             </strong>
             <div
-              class="6 c14"
+              class="8 c14"
             >
               <svg
                 class="2 c15"
@@ -717,7 +721,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="The Witcher image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="The Witcher image gallery"
@@ -730,7 +734,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="Resident Evil 8 image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="Resident Evil 8 image gallery"
@@ -743,7 +747,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="Star Wars image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="Star Wars image gallery"
@@ -756,7 +760,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="The Last Of Us image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="The Last Of Us image gallery"
@@ -769,7 +773,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="Star Wars Highlight image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="Star Wars Highlight image gallery"
@@ -782,7 +786,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="The Witcher 2 image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="The Witcher 2 image gallery"
@@ -829,7 +833,7 @@ exports['<Game /> should render components correctly 1'] = `
               class="c18"
             >
               <div
-                class="8 c19"
+                class="0 c19"
               >
                 <span
                   class="0 c20"
@@ -837,7 +841,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Mínimos:
                 </span>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     SO:
@@ -846,7 +850,7 @@ exports['<Game /> should render components correctly 1'] = `
                   SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 10
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Processador:
@@ -855,7 +859,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Memória:
@@ -864,7 +868,7 @@ exports['<Game /> should render components correctly 1'] = `
                   6 GB de RAM
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Placa de vídeo:
@@ -873,7 +877,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Armazenamento:
@@ -883,7 +887,7 @@ exports['<Game /> should render components correctly 1'] = `
                 </p>
               </div>
               <div
-                class="8 c19"
+                class="0 c19"
               >
                 <span
                   class="0 c20"
@@ -891,7 +895,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Recomendados:
                 </span>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     SO:
@@ -900,7 +904,7 @@ exports['<Game /> should render components correctly 1'] = `
                   SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 11
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Processador:
@@ -909,7 +913,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Memória:
@@ -918,7 +922,7 @@ exports['<Game /> should render components correctly 1'] = `
                   8 GB de RAM
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Placa de vídeo:
@@ -927,7 +931,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Armazenamento:
@@ -954,10 +958,10 @@ exports['<Game /> should render components correctly 1'] = `
           </div>
         </div>
         <div
-          class="0 c22"
+          class="2 c22"
         >
           <div
-            class="1 c23"
+            class="3 c23"
           >
             <svg
               class="4 c24"
@@ -981,55 +985,60 @@ exports['<Game /> should render components correctly 1'] = `
                 stroke-width="16"
               />
             </svg>
-            <svg
-              class="5 c25"
-              fill="currentColor"
-              height="1em"
-              viewBox="0 0 256 256"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="6 c25"
             >
-              <rect
-                fill="none"
-                height="256"
-                width="256"
-              />
-              <path
-                d="M208.8,72H47.2a8.1,8.1,0,0,0-8,7.1L25,207.1a8,8,0,0,0,7.9,8.9H223.1a8,8,0,0,0,7.9-8.9l-14.2-128A8.1,8.1,0,0,0,208.8,72Z"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-              <path
-                d="M88,72a40,40,0,0,1,80,0"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              />
-            </svg>
+              <svg
+                aria-label="Add from cart"
+                class="5 c26"
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 256 256"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="256"
+                  width="256"
+                />
+                <path
+                  d="M208.8,72H47.2a8.1,8.1,0,0,0-8,7.1L25,207.1a8,8,0,0,0,7.9,8.9H223.1a8,8,0,0,0,7.9-8.9l-14.2-128A8.1,8.1,0,0,0,208.8,72Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+                <path
+                  d="M88,72a40,40,0,0,1,80,0"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            class="2 c26"
+            class="4 c27"
           >
             <h1
-              class="3 c27"
+              class="5 c28"
             >
               The Witcher 3: Wild Hunt
             </h1>
             <div
-              class="4 c28"
+              class="6 c29"
             >
               <span
-                class="5 c29"
+                class="7 c30"
               >
                 RPG, Action
               </span>
               <span
-                class="5 c30"
+                class="7 c31"
                 color="secondary"
               >
                 CD Project
@@ -1038,21 +1047,21 @@ exports['<Game /> should render components correctly 1'] = `
               </span>
             </div>
             <div
-              class="6 c31"
+              class="8 c32"
             >
               <div
-                class="7 c32"
+                class="9 c33"
               >
                 <div
-                  class="8 c33"
+                  class="0 c34"
                 >
                   <div
-                    class="c34"
+                    class="c35"
                     color="white"
                   >
                     <svg
                       aria-label="PC Icon"
-                      class="c35"
+                      class="c36"
                       fill="none"
                       role="figure"
                       viewBox="0 0 28 16"
@@ -1067,7 +1076,7 @@ exports['<Game /> should render components correctly 1'] = `
                 </div>
               </div>
               <strong
-                class="9 c36"
+                class="1 c37"
               >
                 R$ 60,00
               </strong>
@@ -1077,7 +1086,7 @@ exports['<Game /> should render components correctly 1'] = `
       </div>
     </div>
     <div
-      class="c37"
+      class="c38"
     >
       <div
         class="c7"
@@ -1111,7 +1120,7 @@ exports['<Game /> should render components correctly 1'] = `
               Galeria
             </strong>
             <div
-              class="6 c14"
+              class="8 c14"
             >
               <div
                 data-testid="Swiper"
@@ -1124,7 +1133,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="The Witcher image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="The Witcher image gallery"
@@ -1137,7 +1146,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="Resident Evil 8 image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="Resident Evil 8 image gallery"
@@ -1150,7 +1159,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="Star Wars image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="Star Wars image gallery"
@@ -1163,7 +1172,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="The Last Of Us image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="The Last Of Us image gallery"
@@ -1176,7 +1185,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="Star Wars Highlight image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="Star Wars Highlight image gallery"
@@ -1189,7 +1198,7 @@ exports['<Game /> should render components correctly 1'] = `
                   >
                     <div
                       aria-label="The Witcher 2 image gallery"
-                      class="7 c16"
+                      class="9 c16"
                     >
                       <img
                         alt="The Witcher 2 image gallery"
@@ -1213,7 +1222,7 @@ exports['<Game /> should render components correctly 1'] = `
               class="c18"
             >
               <div
-                class="8 c19"
+                class="0 c19"
               >
                 <span
                   class="0 c20"
@@ -1221,7 +1230,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Mínimos:
                 </span>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     SO:
@@ -1230,7 +1239,7 @@ exports['<Game /> should render components correctly 1'] = `
                   SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 10
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Processador:
@@ -1239,7 +1248,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Memória:
@@ -1248,7 +1257,7 @@ exports['<Game /> should render components correctly 1'] = `
                   6 GB de RAM
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Placa de vídeo:
@@ -1257,7 +1266,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Armazenamento:
@@ -1267,7 +1276,7 @@ exports['<Game /> should render components correctly 1'] = `
                 </p>
               </div>
               <div
-                class="8 c19"
+                class="0 c19"
               >
                 <span
                   class="0 c20"
@@ -1275,7 +1284,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Recomendados:
                 </span>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     SO:
@@ -1284,7 +1293,7 @@ exports['<Game /> should render components correctly 1'] = `
                   SO: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 11
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Processador:
@@ -1293,7 +1302,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Memória:
@@ -1302,7 +1311,7 @@ exports['<Game /> should render components correctly 1'] = `
                   8 GB de RAM
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Placa de vídeo:
@@ -1311,7 +1320,7 @@ exports['<Game /> should render components correctly 1'] = `
                   Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290
                 </p>
                 <p
-                  class="9 c21"
+                  class="1 c21"
                 >
                   <span>
                     Armazenamento:

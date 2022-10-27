@@ -1,5 +1,5 @@
 import * as Dialog from '@radix-ui/react-dialog';
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { fireEvent, screen } from '@testing-library/react';
 
@@ -17,7 +17,7 @@ describe('<FilterMobile />', () => {
 
   it('should render the component correctly', () => {
     // Arrange
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <Dialog.Root>
         <Dialog.Trigger>Abrir</Dialog.Trigger>
         <FilterMobile {...props} />
@@ -32,7 +32,7 @@ describe('<FilterMobile />', () => {
   });
 
   it('should change check radio input', () => {
-    renderWithTheme(
+    renderWithProviders(
       <Dialog.Root open>
         <FilterMobile {...props} />
       </Dialog.Root>,
@@ -53,7 +53,7 @@ describe('<FilterMobile />', () => {
   });
 
   it('should change the default check radio input', () => {
-    renderWithTheme(
+    renderWithProviders(
       <Dialog.Root open>
         <FilterMobile {...props} filterBy="ps5" />
       </Dialog.Root>,

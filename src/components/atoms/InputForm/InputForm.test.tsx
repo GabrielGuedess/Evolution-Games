@@ -1,5 +1,5 @@
 import { Envelope } from 'phosphor-react';
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -11,7 +11,7 @@ import { InputForm } from './InputForm';
 describe('<InputForm />', () => {
   it('should render the <InputForm />', () => {
     // Arrange
-    const { container } = renderWithTheme(<InputForm label="Senha" />);
+    const { container } = renderWithProviders(<InputForm label="Senha" />);
 
     // Assert
     expect(screen.getByText('Senha')).toBeInTheDocument();
@@ -20,7 +20,7 @@ describe('<InputForm />', () => {
   });
 
   it('should render the <InputForm /> with the indication of invalid values', () => {
-    renderWithTheme(
+    renderWithProviders(
       <InputForm
         isInvalid
         placeholder="E-mail"
@@ -41,7 +41,7 @@ describe('<InputForm />', () => {
   });
 
   it('should change colors with invalid email', async () => {
-    renderWithTheme(
+    renderWithProviders(
       <InputForm
         isInvalid
         placeholder="E-mail"

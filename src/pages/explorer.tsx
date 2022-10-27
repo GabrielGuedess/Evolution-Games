@@ -2,6 +2,8 @@ import { NextPageContext } from 'next';
 
 import { dehydrate, QueryClient } from 'react-query';
 
+import { apiEndPt } from 'constants/index';
+
 import {
   Explorer as ExplorerTemplate,
   ExplorerTemplateProps,
@@ -81,12 +83,8 @@ export async function getServerSideProps({ query }: NextPageContext) {
 
   const queryClient = new QueryClient();
 
-  const host = process.env.NEXT_PUBLIC_VERCEL_URL
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-    : 'http://localhost:3000';
-
   const fetchGames = async () => {
-    const res = await fetch(`${host}/api/games?page=1`);
+    const res = await fetch(`${apiEndPt}/api/games?page=1`);
 
     const data = await res.json();
 

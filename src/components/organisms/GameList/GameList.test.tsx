@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen, fireEvent } from '@testing-library/react';
 
@@ -32,7 +32,7 @@ jest.mock('swiper/react', () => ({
 
 describe('<GameList />', () => {
   it('should render the <GameList />', () => {
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <GameList title="Bestsellers" data={gameCardItems} />,
     );
 
@@ -44,7 +44,7 @@ describe('<GameList />', () => {
   });
 
   it('should filter by Xbox games', () => {
-    renderWithTheme(<GameList title="Bestsellers" data={gameCardItems} />);
+    renderWithProviders(<GameList title="Bestsellers" data={gameCardItems} />);
 
     // Arrange
     const [icon] = screen.getAllByLabelText('Xbox Icon');
@@ -58,7 +58,7 @@ describe('<GameList />', () => {
   });
 
   it('should filter by PlayStation exclusive games', () => {
-    renderWithTheme(<GameList title="Bestsellers" data={gameCardItems} />);
+    renderWithProviders(<GameList title="Bestsellers" data={gameCardItems} />);
 
     // Arrange
     const [icon] = screen.getAllByLabelText('PlayStation Icon');
@@ -72,7 +72,7 @@ describe('<GameList />', () => {
   });
 
   it('should filter by PC exclusive games', () => {
-    renderWithTheme(<GameList title="Bestsellers" data={gameCardItems} />);
+    renderWithProviders(<GameList title="Bestsellers" data={gameCardItems} />);
 
     // Arrange
     const [icon] = screen.getAllByLabelText('PC Icon');
@@ -86,7 +86,7 @@ describe('<GameList />', () => {
   });
 
   it('should render all games', () => {
-    renderWithTheme(<GameList title="Bestsellers" data={gameCardItems} />);
+    renderWithProviders(<GameList title="Bestsellers" data={gameCardItems} />);
 
     // Arrange
     const [icon] = screen.getAllByLabelText('All Platforms Icon');

@@ -1,0 +1,668 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<SignUpUser /> should render the heading 1'] = `
+.c12 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  font-size: 1.6rem;
+  padding: 0.8rem 4.8rem;
+  background: #7C3AED;
+  color: #F4F4F5;
+  width: 100%;
+}
+
+.c12:not(:disabled):is(:hover,:focus) {
+  box-shadow: 0 0.8rem 2.8rem rgba(118,74,241,0.5);
+  color: #F4F4F5;
+}
+
+.c12 .effect {
+  fill: #7C3AED;
+}
+
+.c12:disabled {
+  cursor: not-allowed;
+  -webkit-filter: saturate(30%);
+  filter: saturate(30%);
+}
+
+.c12:not(:disabled):is(:hover,:focus) {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.c12:not(:disabled):active {
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+}
+
+.c12 span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  z-index: 1;
+}
+
+.c12:not(:disabled):is(:hover,:focus) span {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.c12:not(:disabled):is(:hover,:focus) .icon {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c12:not(:disabled):active span {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.c12 svg {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c12 .effect {
+  position: absolute;
+  top: initial;
+  left: initial;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.c12 .effect path {
+  -webkit-transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c12:not(:disabled):is(:hover,:focus) .effect path {
+  d: path( 'M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0' );
+}
+
+.c12:not(:disabled):active .effect path {
+  d: path( 'M0 5C0 2.23858 2.23858 0 5 0H95C97.7614 0 100 2.23858 100 5V95C100 97.7614 97.7614 100 95 100H5C2.23858 100 0 97.7614 0 95V5Z' );
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  position: relative;
+}
+
+.c8 {
+  position: absolute;
+  left: 1rem;
+  top: 1.7rem;
+  padding: 0 3px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.c8::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.c6 {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 3.2rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #272530;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  color: #FFFFFF;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c6::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23272530" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c6 .c7 {
+  color: #FFFFFF;
+}
+
+.c6:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 100rem #04040C inset;
+  -webkit-text-fill-color: #FFFFFF;
+}
+
+.c6:-webkit-autofill ~ div,
+.c6:-webkit-autofill:hover ~ div,
+.c6:-webkit-autofill:focus ~ div,
+.c6:-webkit-autofill:active ~ div {
+  color: #717B8A;
+}
+
+.c6::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c6::-moz-placeholder {
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c6:-ms-input-placeholder {
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c6::placeholder {
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c6:focus {
+  border-color: #7C3AED;
+}
+
+.c6:focus::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%237C3AED" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}
+
+.c6:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c6:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c6:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c6:focus::placeholder {
+  opacity: 1;
+}
+
+.c6:is(:focus,:valid) + .c7 {
+  top: -2rem;
+  color: #7C3AED;
+  font-size: 1.2rem;
+}
+
+.c6::selection {
+  color: #FFFFFF;
+  background: #7C3AED;
+}
+
+.c9 {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.c0 {
+  width: 100%;
+  max-width: 40.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.c0 .animation-spinner {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.c0 > button span {
+  padding: 0.9rem 0;
+}
+
+.c1 {
+  position: relative;
+  width: 25rem;
+  aspect-ratio: 1/1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #272530;
+  margin-bottom: 3.2rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.c1:is(:hover,:focus) {
+  border: 2px solid #7C3AED;
+}
+
+.c1:is(:hover,:focus) svg {
+  color: #7C3AED;
+}
+
+.c2 {
+  color: #717B8A;
+  position: absolute;
+  inset: auto 0 0 auto;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  outline: none;
+}
+
+.c2:is(:hover,:focus) {
+  color: #7C3AED;
+}
+
+.c3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.c10 {
+  width: 2rem;
+  height: 2rem;
+  fill: none;
+}
+
+.c10 polyline,
+.c10 path {
+  stroke-width: 1.6;
+  stroke: #FFFFFF;
+}
+
+.c10 path {
+  stroke-dasharray: 46;
+  stroke-dashoffset: 150;
+  -webkit-transition: stroke-dasharray 0.6s ease 0s, stroke-dashoffset 0.8s ease 0.3s,stroke 0.3s ease 0.6s;
+  transition: stroke-dasharray 0.6s ease 0s, stroke-dashoffset 0.8s ease 0.3s,stroke 0.3s ease 0.6s;
+}
+
+.c10 polyline {
+  stroke-dashoffset: 0;
+  -webkit-transition: stroke-dashoffset 0.5s ease 0.6s,stroke 0.3s ease 0.6s;
+  transition: stroke-dashoffset 0.5s ease 0.6s,stroke 0.3s ease 0.6s;
+}
+
+.c11 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:450px) {
+  .c12 .effect {
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+  }
+}
+
+@media (min-width:768px) {
+  .c8::before {
+    background: #04040C;
+  }
+}
+
+@media (min-width:768px) {
+  .c6:is(:focus,:valid) + .c7 {
+    top: -8px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    gap: 1.6rem;
+  }
+}
+
+<form
+  class="c0"
+  role="form"
+>
+  <input
+    accept="image/*"
+    style="display: none;"
+    type="file"
+  />
+  <div
+    class="c1"
+  >
+    <div
+      class="go2017755475"
+      color="ECFAFE"
+      size="240"
+    >
+      <p
+        class="go3451136944"
+        color="1F84A3"
+        size="240"
+      />
+    </div>
+    <button
+      aria-label="User Photo"
+      class="c2"
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="30"
+        viewBox="0 0 256 256"
+        width="30"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="none"
+          height="256"
+          width="256"
+        />
+        <path
+          d="M208,208H48a16,16,0,0,1-16-16V80A16,16,0,0,1,48,64H80L96,40h64l16,24h32a16,16,0,0,1,16,16V192A16,16,0,0,1,208,208Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        />
+        <circle
+          cx="128"
+          cy="132"
+          fill="none"
+          r="36"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class="c3"
+  >
+    <div
+      class="c4"
+    >
+      <div
+        class="c5"
+      >
+        <input
+          autocomplete="on"
+          class="c6"
+          id="email"
+          name="email"
+          placeholder="Insira seu e-mail"
+          required=""
+          type="email"
+          value=""
+        />
+        <label
+          aria-label="email"
+          class="c7 c8"
+          for="email"
+        >
+          E-mail
+        </label>
+        <div
+          class="c9"
+        >
+          <svg
+            class="c10"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M10.8000002,10.8000002 C9.85000038,11.6500006 9.18349609,12 8,12 C5.80000019,12 4,10.1999998 4,8 C4,5.80000019 5.80000019,4 8,4 C10.1999998,4 12,6 12,8 C12,9.35332031 12.75,9.5 13.5,9.5 C14.25,9.5 15,8.60000038 15,8 C15,4 12,1 8,1 C4,1 1,4 1,8 C1,12 4,15 8,15 C12,15 15,12 15,8"
+            />
+            <polyline
+              points="5 8.375 7.59090909 11 14.5 4"
+              transform="translate(0 -0.5)"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c4"
+    >
+      <div
+        class="c5"
+      >
+        <input
+          autocomplete="on"
+          class="c6"
+          id="username"
+          name="username"
+          placeholder="Insira sua senha"
+          required=""
+          value=""
+        />
+        <label
+          aria-label="username"
+          class="c7 c8"
+          for="username"
+        >
+          Username
+        </label>
+      </div>
+    </div>
+    <div
+      class="c4"
+    >
+      <div
+        class="c5"
+      >
+        <input
+          autocomplete="on"
+          class="c6"
+          id="password"
+          name="password"
+          placeholder="Insira sua senha"
+          required=""
+          type="password"
+          value=""
+        />
+        <label
+          aria-label="password"
+          class="c7 c8"
+          for="password"
+        >
+          Senha
+        </label>
+        <div
+          class="c9"
+        >
+          <div
+            class="c11"
+          >
+            <svg
+              aria-label="Mostrar senha"
+              fill="currentColor"
+              height="26"
+              viewBox="0 0 256 256"
+              width="26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <path
+                d="M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+              <circle
+                cx="128"
+                cy="128"
+                fill="none"
+                r="40"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c4"
+    >
+      <div
+        class="c5"
+      >
+        <input
+          autocomplete="on"
+          class="c6"
+          id="confirm-password"
+          name="confirmPassword"
+          placeholder="Confirme sua senha"
+          required=""
+          type="password"
+          value=""
+        />
+        <label
+          aria-label="confirm-password"
+          class="c7 c8"
+          for="confirm-password"
+        >
+          Confirmar Senha
+        </label>
+      </div>
+    </div>
+  </div>
+  <button
+    aria-label="Button Action"
+    class="c12"
+    disabled=""
+    type="submit"
+  >
+    <span>
+      Próximo
+    </span>
+    <svg
+      aria-hidden="true"
+      class="effect"
+      preserveAspectRatio="none"
+      viewBox="-5 -5 110 110"
+    >
+      <path
+        d="M0 8C0 3.58172 3.58172 0 8 0H92C96.4183 0 100 3.58172 100 8V92C100 96.4183 96.4183 100 92 100H8C3.58172 100 0 96.4183 0 92V8Z"
+      />
+    </svg>
+  </button>
+</form>
+`;

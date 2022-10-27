@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -8,7 +8,7 @@ import { Checkbox } from './Checkbox';
 describe('<Checkbox />', () => {
   it('should render the heading', () => {
     // Arrange
-    const { container } = renderWithTheme(<Checkbox title="test" />);
+    const { container } = renderWithProviders(<Checkbox title="test" />);
 
     // Assert
     expect(screen.getByText('test')).toBeInTheDocument();
@@ -19,7 +19,7 @@ describe('<Checkbox />', () => {
   it('should render dispatch onCheck when status change', async () => {
     const onCheck = jest.fn();
 
-    renderWithTheme(<Checkbox title="checkbox" onCheck={onCheck} />);
+    renderWithProviders(<Checkbox title="checkbox" onCheck={onCheck} />);
 
     expect(onCheck).not.toHaveBeenCalled();
 

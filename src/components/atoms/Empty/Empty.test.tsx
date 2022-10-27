@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -7,7 +7,7 @@ import { Empty } from './Empty';
 describe('<Empty />', () => {
   it('should render the heading', () => {
     // Arrange
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <Empty title="No Teste" description="Testando..." />,
     );
 
@@ -19,7 +19,7 @@ describe('<Empty />', () => {
   });
 
   it('should render the button', () => {
-    renderWithTheme(
+    renderWithProviders(
       <Empty title="No Teste" description="Testando..." hasLink />,
     );
 

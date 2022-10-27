@@ -1,5 +1,5 @@
 import { Funnel } from 'phosphor-react';
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -10,7 +10,7 @@ import Button from './Button';
 describe('<Button />', () => {
   it('should render the medium size by default', () => {
     // Arrange
-    const { container } = renderWithTheme(<Button>Buy now</Button>);
+    const { container } = renderWithProviders(<Button>Buy now</Button>);
 
     // Assert
     expect(screen.getByLabelText('Button Action')).toHaveStyle({
@@ -22,7 +22,7 @@ describe('<Button />', () => {
   });
 
   it('should render the small size', () => {
-    renderWithTheme(<Button size="small">Buy now</Button>);
+    renderWithProviders(<Button size="small">Buy now</Button>);
 
     // Assert
     expect(screen.getByLabelText('Button Action')).toHaveStyle({
@@ -32,7 +32,7 @@ describe('<Button />', () => {
   });
 
   it('should render the large size', () => {
-    renderWithTheme(<Button size="large">Buy now</Button>);
+    renderWithProviders(<Button size="large">Buy now</Button>);
 
     // Assert
     expect(screen.getByLabelText('Button Action')).toHaveStyle({
@@ -42,7 +42,7 @@ describe('<Button />', () => {
   });
 
   it('should render a fullWidth version', () => {
-    renderWithTheme(<Button fullWidth>Buy now</Button>);
+    renderWithProviders(<Button fullWidth>Buy now</Button>);
 
     // Assert
     expect(screen.getByLabelText('Button Action')).toHaveStyle({
@@ -51,7 +51,7 @@ describe('<Button />', () => {
   });
 
   it('should render an icon version', () => {
-    renderWithTheme(
+    renderWithProviders(
       <Button icon={<Funnel data-testid="icon" />}>Buy now</Button>,
     );
 
@@ -61,7 +61,7 @@ describe('<Button />', () => {
   });
 
   it('should render a disabled Button', () => {
-    renderWithTheme(<Button disabled>Buy now</Button>);
+    renderWithProviders(<Button disabled>Buy now</Button>);
 
     // Assert
     expect(screen.getByLabelText('Button Action')).toHaveStyleRule(
@@ -74,7 +74,7 @@ describe('<Button />', () => {
   });
 
   it('should render Button as a link', () => {
-    renderWithTheme(
+    renderWithProviders(
       <Button as="a" href="/link">
         Buy now
       </Button>,
@@ -88,7 +88,7 @@ describe('<Button />', () => {
   });
 
   it('should render Button as minimal', () => {
-    renderWithTheme(<Button minimal>Buy now</Button>);
+    renderWithProviders(<Button minimal>Buy now</Button>);
 
     // Assert
     expect(screen.getByLabelText('Button Action')).toHaveStyle({

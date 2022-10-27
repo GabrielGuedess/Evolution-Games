@@ -1,5 +1,5 @@
 import requestFake from 'utils/requestFake';
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen, act, fireEvent, waitFor } from '@testing-library/react';
 
@@ -13,7 +13,7 @@ jest.mock('utils/requestFake', () => ({
 describe('<FormSingIn />', () => {
   beforeEach(() => {
     (requestFake as jest.Mock).mockClear();
-    renderWithTheme(<SignIn />);
+    renderWithProviders(<SignIn />);
   });
 
   it('should render the <FormSingIn />', () => {

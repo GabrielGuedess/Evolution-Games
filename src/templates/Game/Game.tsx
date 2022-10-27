@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 
 import { useState } from 'react';
 
+import { apiEndPt } from 'constants/index';
+import { useCart } from 'hooks/useCart/useCart';
 import { Navigation, Pagination, Scrollbar, A11y, Keyboard } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import GameType from 'types/game';
@@ -26,6 +29,7 @@ import * as S from './Game.styles';
 
 export type GameProps = Pick<
   GameType,
+  | 'id'
   | 'name'
   | 'slug'
   | 'genres'
@@ -41,6 +45,7 @@ export type GameProps = Pick<
 >;
 
 export const Game = ({
+  id,
   name,
   slug,
   genres,
@@ -56,7 +61,7 @@ export const Game = ({
 }: GameProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
-
+  const { addToCart, isInCart, removeFromCart } = useCart();
   const releaseYear = new Date(releaseDate).getFullYear();
   const consoleList = {
     ps4: 'Playstation 4',
@@ -73,9 +78,9 @@ export const Game = ({
         <NextSeo
           title={`${name} - Evolution Games`}
           description={description}
-          canonical={`http://localhost:3000/game/${slug}`}
+          canonical={`${apiEndPt}/game/${slug}`}
           openGraph={{
-            url: `http://localhost:3000/game/${slug}`,
+            url: `${apiEndPt}/game/${slug}`,
             title: `${name} - Evolution Games`,
             description,
             images: [
@@ -215,7 +220,22 @@ export const Game = ({
             <S.InfoGame>
               <S.Controls>
                 <S.HeartIcon />
-                <S.Handbag />
+                <S.WrapperHandbag>
+                  <S.Handbag
+                    aria-label="Add from cart"
+                    onClick={() =>
+                      isInCart(slug)
+                        ? removeFromCart(slug)
+                        : addToCart({ id: slug, quantity: 1 })
+                    }
+                  />
+
+                  {isInCart(slug) === true && (
+                    <S.Badge role="img" aria-label="Cart Items">
+                      -
+                    </S.Badge>
+                  )}
+                </S.WrapperHandbag>
               </S.Controls>
 
               <S.WrapperGame>

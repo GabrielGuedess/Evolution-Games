@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useInfiniteQuery } from 'react-query';
 
 import * as Popover from '@radix-ui/react-popover';
+import { apiEndPt } from 'constants/index';
 import { CaretDown, FunnelSimple, List } from 'phosphor-react';
 import { ParsedUrlQueryInput } from 'querystring';
 import type Game from 'types/game';
@@ -29,11 +30,7 @@ export type ExplorerTemplateProps = {
 };
 
 const fetchGames = async ({ pageParam = 1 }) => {
-  const host = process.env.NEXT_PUBLIC_VERCEL_URL
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-    : 'http://localhost:3000';
-
-  const res = await fetch(`${host}/api/games?page=${pageParam}`);
+  const res = await fetch(`${apiEndPt}/api/games?page=${pageParam}`);
   const data = await res.json();
 
   return data;

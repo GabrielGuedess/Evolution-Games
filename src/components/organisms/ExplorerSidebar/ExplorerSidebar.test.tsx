@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -9,7 +9,7 @@ import { filterItems } from './mock';
 describe('<ExplorerSidebar />', () => {
   it('should render the headings', () => {
     // Arrange
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <ExplorerSidebar
         items={filterItems}
         isOpen
@@ -30,7 +30,7 @@ describe('<ExplorerSidebar />', () => {
   });
 
   it('should check initial values that are passed', () => {
-    renderWithTheme(
+    renderWithProviders(
       <ExplorerSidebar
         items={filterItems}
         isOpen
@@ -53,7 +53,7 @@ describe('<ExplorerSidebar />', () => {
     // Arrange
     const onFilter = jest.fn();
 
-    renderWithTheme(
+    renderWithProviders(
       <ExplorerSidebar
         items={filterItems}
         isOpen
@@ -73,7 +73,7 @@ describe('<ExplorerSidebar />', () => {
     // Arrange
     const onFilter = jest.fn();
 
-    renderWithTheme(
+    renderWithProviders(
       <ExplorerSidebar
         items={filterItems}
         isOpen
@@ -118,7 +118,7 @@ describe('<ExplorerSidebar />', () => {
       ],
     };
 
-    renderWithTheme(
+    renderWithProviders(
       <ExplorerSidebar
         items={[filterPlatforms]}
         isOpen
@@ -141,7 +141,7 @@ describe('<ExplorerSidebar />', () => {
     // Arrange
     const setIsOpen = jest.fn();
 
-    renderWithTheme(
+    renderWithProviders(
       <ExplorerSidebar
         items={filterItems}
         isOpen
@@ -158,7 +158,7 @@ describe('<ExplorerSidebar />', () => {
   });
 
   it('should change close styles explorer sidebar in mobile', () => {
-    renderWithTheme(
+    renderWithProviders(
       <ExplorerSidebar
         items={filterItems}
         isOpen={false}
@@ -176,7 +176,7 @@ describe('<ExplorerSidebar />', () => {
 
   it('should render default price with range', () => {
     // Arrange
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <ExplorerSidebar
         items={filterItems}
         isOpen
@@ -195,7 +195,7 @@ describe('<ExplorerSidebar />', () => {
 
   it('should change price with range on keyboard', async () => {
     // Arrange
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <ExplorerSidebar
         items={filterItems}
         isOpen

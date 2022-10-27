@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -14,7 +14,7 @@ const props: SlideProps = {
 describe('<Slide />', () => {
   it('should render the Image background and highlight name', () => {
     // Arrange
-    const { container } = renderWithTheme(<Slide {...props} />);
+    const { container } = renderWithProviders(<Slide {...props} />);
 
     // Assert
     expect(

@@ -82,12 +82,12 @@ exports['<ExplorerSidebar /> should render the headings 1'] = `
 }
 
 .c12:checked + .c13 {
-  background-color: #855aff;
-  box-shadow: 0 0.5rem 1.5rem rgba(133,90,255,0.25);
+  background-color: #7C3AED;
+  box-shadow: 0 0.5rem 1.5rem rgba(124,58,237,0.25);
 }
 
 .c12:is(:focus,:hover) ~ .c15:after {
-  background-color: rgba(133,90,255,0.15);
+  background-color: rgba(124,58,237,0.15);
 }
 
 .c12:is(:checked,:indeterminate) + .c13 .box-worm {
@@ -220,14 +220,14 @@ exports['<ExplorerSidebar /> should render the headings 1'] = `
   aspect-ratio: 1/1;
   border-radius: 50%;
   background: #FFFFFF;
-  border: 2px solid #855aff;
-  box-shadow: 0px 0px 0.5rem rgba(255,255,255,0.25), 0px 0px 0.8rem #855aff;
+  border: 2px solid #7C3AED;
+  box-shadow: 0px 0px 0.5rem rgba(255,255,255,0.25), 0px 0px 0.8rem #7C3AED;
 }
 
 .c8 {
   width: 50%;
   padding: 1rem 0;
-  border: 0.1rem solid #855aff;
+  border: 0.1rem solid #7C3AED;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

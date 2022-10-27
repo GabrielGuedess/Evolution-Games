@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -17,7 +17,7 @@ const setCurrentStep = jest.fn();
 
 describe('<SignUpData />', () => {
   it('should render the heading', () => {
-    const { container } = renderWithTheme(
+    const { container } = renderWithProviders(
       <SignUpData
         dataInputs={dataInputs}
         setDataInputs={setDataInputs}
@@ -26,9 +26,7 @@ describe('<SignUpData />', () => {
       />,
     );
 
-    expect(
-      screen.getByRole('heading', { name: /SignUpData/i }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole('form')).toBeInTheDocument();
 
     expect(container.firstChild).toMatchSnapshot();
   });

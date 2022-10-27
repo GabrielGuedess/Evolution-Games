@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 
@@ -19,7 +19,7 @@ useRouter.mockImplementation(() => ({
 describe('<Navbar />', () => {
   it('should render the Navbar correctly', () => {
     // Arrange
-    const { container } = renderWithTheme(<Navbar />);
+    const { container } = renderWithProviders(<Navbar />);
 
     // Assert
     expect(screen.getByText('Home')).toHaveStyle({

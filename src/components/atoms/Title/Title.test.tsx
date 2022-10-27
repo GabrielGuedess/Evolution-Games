@@ -1,4 +1,4 @@
-import { renderWithTheme } from 'utils/tests/helpers';
+import { renderWithProviders } from 'utils/tests/helpers';
 
 import { screen } from '@testing-library/react';
 import 'jest-styled-components';
@@ -9,7 +9,7 @@ import { Title } from './Title';
 
 describe('<Title />', () => {
   it('should render the <Title /> component at its default size and center-aligned', () => {
-    const { container } = renderWithTheme(<Title>Bestsellers</Title>);
+    const { container } = renderWithProviders(<Title>Bestsellers</Title>);
     // Arrange
     const heading = screen.getByRole('heading', {
       name: 'Bestsellers',
@@ -27,7 +27,7 @@ describe('<Title />', () => {
   });
 
   it('should render the <Title /> component left-aligned', () => {
-    renderWithTheme(<Title textAlign="left">Bestsellers</Title>);
+    renderWithProviders(<Title textAlign="left">Bestsellers</Title>);
     // Arrange
     const heading = screen.getByRole('heading', {
       name: 'Bestsellers',
@@ -38,7 +38,7 @@ describe('<Title />', () => {
   });
 
   it('should render the <Title /> component text large', () => {
-    renderWithTheme(<Title size="large">Bestsellers</Title>);
+    renderWithProviders(<Title size="large">Bestsellers</Title>);
     // Arrange
     const heading = screen.getByRole('heading', {
       name: 'Bestsellers',
