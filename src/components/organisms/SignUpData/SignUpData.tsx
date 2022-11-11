@@ -13,7 +13,7 @@ export type DataInputs = {
   lastName: string;
   cpf: string;
   cellphone: string;
-  date: string;
+  date: Date;
 };
 
 export type SignUpDataProps = {
@@ -31,7 +31,7 @@ export const SignUpData = ({
 }: SignUpDataProps) => {
   const [errorMessages, setErrorMessages] = useState<FieldErrors>({});
 
-  const handleInput = (field: keyof DataInputs, value: string) => {
+  const handleInput = (field: keyof DataInputs, value: string | Date) => {
     setDataInputs(s => ({ ...s, [field]: value }));
 
     const errors = signUpDataValidate({ ...dataInputs, [field]: value });
@@ -41,6 +41,14 @@ export const SignUpData = ({
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+
+    if (
+      dataInputs.date.toISOString().slice(0, 10) ===
+      new Date().toISOString().slice(0, 10)
+    ) {
+      setErrorMessages({ date: 'Não pode ser hoje' });
+      return;
+    }
 
     if (
       Object.values(errorMessages).some(item => item !== undefined) ||
@@ -123,10 +131,10 @@ export const SignUpData = ({
           name="date"
           label="Data de nascimento"
           labelFor="date"
-          value={dataInputs.date}
+          value={dataInputs.date.toISOString().slice(0, 10)}
           placeholder="Insira sua data de nascimento"
           errorMessage={errorMessages?.date}
-          onChange={e => handleInput('date', e.target.value)}
+          onChange={e => handleInput('date', new Date(e.target.value))}
           isInvalid={!!errorMessages?.date}
         />
       </S.InputBox>
