@@ -13,27 +13,27 @@ export type GameCardProps = Pick<
   | 'id'
   | 'name'
   | 'slug'
+  | 'release_date'
   | 'genres'
-  | 'developer'
-  | 'releaseDate'
+  | 'developers'
   | 'image'
   | 'score'
   | 'price'
-  | 'platform'
-  | 'primaryColor'
+  | 'platforms'
+  | 'primary_color'
 >;
 
 export const GameCard = ({
-  releaseDate,
+  release_date: releaseDate,
   genres,
   name,
   price,
   image,
   score,
   slug,
-  developer,
-  platform,
-  primaryColor,
+  developers,
+  platforms,
+  primary_color: primaryColor,
 }: GameCardProps) => {
   const { gameBad, gameAverage, gameGreat } = theme.colors;
   const formatValue = Math.trunc((score / 5) * 100);
@@ -67,9 +67,10 @@ export const GameCard = ({
           <S.GameInfo>
             <S.BoxHighlight>
               <S.Title>{name}</S.Title>
-              <S.Genre>{genres.join(', ')}</S.Genre>
+              <S.Genre>{genres.map(genre => genre.name).join(', ')}</S.Genre>
               <S.Developer>
-                {developer}, {new Date(releaseDate).getFullYear()}
+                {developers.map(developer => developer.name).join(' | ')},{' '}
+                {new Date(releaseDate).getFullYear()}
               </S.Developer>
             </S.BoxHighlight>
             <S.Score>
@@ -90,12 +91,7 @@ export const GameCard = ({
                   strokeWidth="2"
                 />
               </svg>
-              <S.Percentage>
-                {score.toLocaleString('pt-BR', {
-                  minimumFractionDigits: 1,
-                  maximumFractionDigits: 1,
-                })}
-              </S.Percentage>
+              <S.Percentage>{Number(score).toFixed(1)}</S.Percentage>
             </S.Score>
           </S.GameInfo>
         </Link>
@@ -107,7 +103,13 @@ export const GameCard = ({
             }).format(price)}
           </S.Price>
           <S.Platform>
-            <PlatformIcon platform={platform} variant="complete" />
+            {platforms.map(platform => (
+              <PlatformIcon
+                key={platform.slug}
+                platform={platform.slug}
+                variant="complete"
+              />
+            ))}
           </S.Platform>
         </S.GameFooter>
       </S.GameContent>
