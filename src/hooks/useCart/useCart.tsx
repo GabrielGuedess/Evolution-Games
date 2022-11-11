@@ -114,6 +114,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
     const storage = getStorageItem(CART_KEY);
 
     const getGames = async (items: CartStorageItem[]): Promise<CartItem[]> => {
+      setIsLoading(true);
       if (!items) return [];
       const requests = [];
 
@@ -122,6 +123,8 @@ const CartProvider = ({ children }: CartProviderProps) => {
       }
 
       const res = await Promise.all(requests);
+
+      setIsLoading(false);
       return res;
     };
 
