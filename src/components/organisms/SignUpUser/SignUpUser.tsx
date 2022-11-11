@@ -8,7 +8,13 @@ import {
 } from 'react';
 
 import Avvvatars from 'avvvatars-react';
-import { Camera, CameraSlash, Eye, EyeSlash } from 'phosphor-react';
+import {
+  Camera,
+  CameraSlash,
+  CircleNotch,
+  Eye,
+  EyeSlash,
+} from 'phosphor-react';
 import { FieldErrors, signUpUserValidate } from 'utils/validations';
 
 import Button from 'components/atoms/Button/Button';
@@ -41,6 +47,7 @@ export const SignUpUser = ({
   setCurrentStep,
 }: SignUpUserProps) => {
   const [show, setShow] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [errorMessages, setErrorMessages] = useState<FieldErrors>({});
 
   const fileInput = useRef<HTMLInputElement>(null);
@@ -55,15 +62,56 @@ export const SignUpUser = ({
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+    setLoading(true);
 
     if (
       Object.values(errorMessages).some(item => item !== undefined) ||
       Object.values(userInputs).some(item => item === '')
     ) {
       setErrorMessages(errorMessages);
+      setLoading(false);
       return;
     }
 
+    const exists = await (
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/client/exist`, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: userInputs.email,
+          username: userInputs.username,
+        }),
+      })
+    ).json();
+
+    if (exists.message === 'Client already Exists!') {
+      setErrorMessages({
+        email: 'Email já existe',
+        username: 'Username já existe',
+      });
+      setLoading(false);
+
+      return;
+    }
+
+    if (exists.message === 'Email already Exists!') {
+      setErrorMessages({ email: 'Email já existe' });
+      setLoading(false);
+
+      return;
+    }
+
+    if (exists.message === 'Username already Exists!') {
+      setErrorMessages({ username: 'Username já existe' });
+      setLoading(false);
+
+      return;
+    }
+
+    setLoading(false);
     setErrorMessages({});
     setCurrentStep(currentStep + 1);
   };
@@ -195,6 +243,21 @@ export const SignUpUser = ({
         disabled={
           Object.values(errorMessages).some(item => item !== undefined) ||
           Object.values(userInputs).some(item => item === '')
+        }
+        icon={
+          loading ? (
+            <CircleNotch size={24} className="animation-spinner">
+              <animateTransform
+                attributeName="transform"
+                attributeType="XML"
+                type="rotate"
+                dur="0.6s"
+                from="0 0 0"
+                to="360 0 0"
+                repeatCount="indefinite"
+              />
+            </CircleNotch>
+          ) : undefined
         }
         as="button"
         type="submit"
