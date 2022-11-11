@@ -1,6 +1,6 @@
 import { GetServerSideProps } from 'next';
+import { getSession } from 'next-auth/react';
 
-import { apiEndPt } from 'constants/index';
 import Game from 'types/game';
 
 import { Home } from 'templates/Home/Home';
@@ -11,31 +11,19 @@ export default function Index({ gameList }: { gameList: GameCardProps[] }) {
   return <Home gameList={gameList} />;
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await fetch(`${apiEndPt}/api/games`);
-  const data: { games: Game[] } = await res.json();
+export const getServerSideProps: GetServerSideProps = async context => {
+  const gameList: Game[] = await (
+    await fetch(`${process.env.NEXT_PUBLIC_API_URL}/game/?page=1`)
+  ).json();
 
-  if (!data) {
+  if (!gameList) {
     return { notFound: true };
   }
 
-  const { games } = data;
-
-  const gameList = games.map(game => ({
-    id: game.id,
-    name: game.name,
-    slug: game.slug,
-    genres: game.genres,
-    developer: game.developer,
-    releaseDate: game.releaseDate,
-    image: game.image,
-    score: game.score,
-    price: game.price,
-    platform: game.platform,
-    primaryColor: game.primaryColor,
-  }));
-
   return {
-    props: { gameList },
+    props: {
+      gameList,
+      session: await getSession(context),
+    },
   };
 };

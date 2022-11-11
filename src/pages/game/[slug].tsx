@@ -1,7 +1,6 @@
 import { GetServerSideProps } from 'next';
+import { getSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
-
-import { apiEndPt } from 'constants/index';
 
 import { Game, GameProps } from 'templates/Game/Game';
 
@@ -13,15 +12,21 @@ export default function Index(props: GameProps) {
   return <Game {...props} />;
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
-  const data = await fetch(`${apiEndPt}/api/games/${params?.slug}`);
-  const game = await data.json();
+export const getServerSideProps: GetServerSideProps = async context => {
+  const game = await (
+    await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/game/slug/${context.params?.slug}`,
+    )
+  ).json();
 
   if (!game) {
     return { notFound: true };
   }
 
   return {
-    props: game,
+    props: {
+      ...game,
+      session: await getSession(context),
+    },
   };
 };

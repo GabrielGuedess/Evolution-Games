@@ -1,8 +1,7 @@
-import { NextPageContext } from 'next';
+import { GetServerSideProps } from 'next';
+import { getSession } from 'next-auth/react';
 
 import { dehydrate, QueryClient } from 'react-query';
-
-import { apiEndPt } from 'constants/index';
 
 import {
   Explorer as ExplorerTemplate,
@@ -13,7 +12,7 @@ export default function Explorer(props: ExplorerTemplateProps) {
   return <ExplorerTemplate {...props} />;
 }
 
-export async function getServerSideProps({ query }: NextPageContext) {
+export const getServerSideProps: GetServerSideProps = async context => {
   const filterCategories = {
     title: 'Genre',
     name: 'genre',
@@ -84,9 +83,9 @@ export async function getServerSideProps({ query }: NextPageContext) {
   const queryClient = new QueryClient();
 
   const fetchGames = async () => {
-    const res = await fetch(`${apiEndPt}/api/games?page=1`);
-
-    const data = await res.json();
+    const data = await (
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/game/?page=1`)
+    ).json();
 
     return data;
   };
@@ -101,8 +100,9 @@ export async function getServerSideProps({ query }: NextPageContext) {
         filterPlatforms,
         filterFeedback,
       ],
+      session: await getSession(context),
       dehydratedState: JSON.parse(JSON.stringify(dehydrate(queryClient))),
-      query,
+      query: context.query,
     },
   };
-}
+};
