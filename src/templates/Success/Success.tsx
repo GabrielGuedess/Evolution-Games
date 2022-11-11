@@ -1,10 +1,12 @@
 import Link from 'next/link';
 
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import Particles from 'react-particles';
 
 import { Engine, IOptions, RecursivePartial } from 'tsparticles-engine';
 import { loadFireworksPreset } from 'tsparticles-preset-fireworks';
+
+import { useCart } from 'hooks/useCart/useCart';
 
 import { Base } from 'templates/Base/Base';
 
@@ -14,6 +16,8 @@ import { Container } from 'components/atoms/Container/Container';
 import * as S from './Success.styles';
 
 export const Success = () => {
+  const { clearCart } = useCart();
+
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFireworksPreset(engine);
   }, []);
@@ -21,6 +25,10 @@ export const Success = () => {
   const options: RecursivePartial<IOptions> = {
     preset: 'fireworks',
   };
+
+  useEffect(() => {
+    clearCart();
+  }, [clearCart]);
 
   return (
     <>
