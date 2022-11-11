@@ -1,10 +1,11 @@
+import { signIn } from 'next-auth/react';
+
 import { useCallback, useState } from 'react';
 import Particles from 'react-particles';
 
 import { Check, CircleNotch } from 'phosphor-react';
 import type { Engine, RecursivePartial, IOptions } from 'tsparticles-engine';
 import { loadFireworksPreset } from 'tsparticles-preset-fireworks';
-import requestFake from 'utils/requestFake';
 
 import Button from 'components/atoms/Button/Button';
 import { Logo } from 'components/atoms/Logo/Logo';
@@ -44,7 +45,7 @@ export const SignUpForm = ({ steps }: SignUpFormProps) => {
     lastName: '',
     cpf: '',
     cellphone: '',
-    date: '',
+    date: new Date(),
   });
 
   const [locationInputs, setLocationInputs] = useState({
@@ -62,7 +63,42 @@ export const SignUpForm = ({ steps }: SignUpFormProps) => {
     try {
       setLoading(true);
 
-      await requestFake();
+      const data = new FormData();
+
+      data.append('avatar', userPhoto as Blob);
+
+      data.append('email', userInputs.email);
+      data.append('username', userInputs.username);
+      data.append('password', userInputs.password);
+
+      data.append('name', dataInputs.name);
+      data.append('lastname', dataInputs.lastName);
+      data.append('cpf', dataInputs.cpf);
+      data.append('cellphone', dataInputs.cellphone);
+      data.append('date', dataInputs.date.toISOString());
+
+      data.append('cep', locationInputs.cep);
+      data.append('logradouro', locationInputs.logradouro);
+      data.append('numero', locationInputs.numero);
+      data.append('complemento', locationInputs.complemento);
+      data.append('referencia', locationInputs.referencia);
+      data.append('bairro', locationInputs.bairro);
+      data.append('cidade', locationInputs.cidade);
+      data.append('UF', locationInputs.uf);
+
+      const client = await (
+        await fetch(`${process.env.NEXT_PUBLIC_API_URL}/client`, {
+          method: 'POST',
+          body: data,
+        })
+      ).json();
+
+      if (client) {
+        await signIn('credentials', {
+          ...{ email: userInputs.email, password: userInputs.password },
+          redirect: false,
+        });
+      }
 
       setConfirm(true);
       setCurrentStep(currentStep + 1);
