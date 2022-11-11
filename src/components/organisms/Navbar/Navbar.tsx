@@ -10,10 +10,7 @@ import { Heart } from 'phosphor-react';
 
 import { Logo } from 'components/atoms/Logo/Logo';
 import MediaMatch from 'components/atoms/MediaMatch/MediaMatch';
-import {
-  AvatarUser,
-  AvatarUserProps,
-} from 'components/molecules/AvatarUser/AvatarUser';
+import { AvatarUser } from 'components/molecules/AvatarUser/AvatarUser';
 import { CartButton } from 'components/molecules/CartButton/CartButton';
 import { MenuMobile } from 'components/molecules/MenuMobile/MenuMobile';
 
@@ -21,7 +18,7 @@ import * as S from './Navbar.styles';
 
 export type MenuProps = {
   loading?: boolean;
-} & AvatarUserProps;
+};
 
 export const Navbar = ({ loading = false, ...props }: MenuProps) => {
   const { asPath } = useRouter();
@@ -79,7 +76,7 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
             <CartButton />
 
             <MediaMatch greaterThan="large">
-              <AvatarUser {...props} />
+              <AvatarUser />
             </MediaMatch>
           </S.WrapperIcons>
 
