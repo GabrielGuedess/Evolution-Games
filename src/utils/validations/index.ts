@@ -1,5 +1,6 @@
 import joi from 'joi';
 
+import { SignIn } from 'components/organisms/SignIn/SignIn';
 import { DataInputs } from 'components/organisms/SignUpData/SignUpData';
 import { LocationInputs } from 'components/organisms/SignUpLocation/SignUpLocation';
 import { UserInputs } from 'components/organisms/SignUpUser/SignUpUser';
@@ -57,19 +58,21 @@ const schemaAllFields = {
     .string()
     .min(11)
     .messages({
-      'string.max': 'Deve ter no mínimo 11 números',
+      'string.min': 'Deve ter no mínimo 11 números',
       'string.empty': 'CPF não pode ser vazio',
     })
     .required(),
   cellphone: joi
     .string()
+    .min(11)
     .messages({
+      'string.min': 'Deve ter no mínimo 11 números',
       'string.empty': 'Celular não pode ser vazio',
     })
     .required(),
   date: joi
     .date()
-    .max(new Date())
+    .max(new Date(new Date().setFullYear(new Date().getFullYear() - 1)))
     .min(new Date(1900, 1, 1))
     .messages({
       'date.min': 'Parabéns você é a pessoa mais velha do mundo',
@@ -158,6 +161,14 @@ function getFieldErrors(objError: joi.ValidationResult) {
   }
 
   return errors;
+}
+
+export function signInValidate(values: SignIn) {
+  const { email, password } = schemaAllFields;
+
+  const schema = joi.object({ email, password });
+
+  return getFieldErrors(schema.validate(values, { abortEarly: false }));
 }
 
 export function signUpUserValidate(values: UserInputs) {
