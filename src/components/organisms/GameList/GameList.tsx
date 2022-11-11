@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import * as Dialog from '@radix-ui/react-dialog';
 import { FunnelSimple } from 'phosphor-react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Keyboard } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
 
 import { ArrowButtons } from 'components/atoms/ArrowButtons/ArrowButtons';
@@ -32,7 +32,9 @@ export const GameList = ({ title, data }: GameListProps) => {
   const id = title.toLocaleLowerCase().replaceAll(' ', '-');
 
   const filteredPlatform = data.filter(game =>
-    filterBy === 'all' ? true : game.platform.includes(filterBy),
+    filterBy === 'all'
+      ? true
+      : game.platforms.map(platform => platform.slug).includes(filterBy),
   );
 
   return (
@@ -105,8 +107,11 @@ export const GameList = ({ title, data }: GameListProps) => {
           nextEl: `#${id}-game-list-next-arrow`,
           prevEl: `#${id}-game-list-prev-arrow`,
         }}
+        keyboard={{
+          enabled: true,
+        }}
         loop={false}
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Keyboard]}
       >
         {filteredPlatform.map(card => (
           <SwiperSlide key={card.id}>
