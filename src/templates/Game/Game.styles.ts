@@ -284,7 +284,7 @@ export const Badge = styled.span`
     color: ${theme.colors.white};
     font-size: 1.4rem;
     border-radius: 1rem;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem;
     position: absolute;
     top: -0.4rem;
     right: -0.4rem;

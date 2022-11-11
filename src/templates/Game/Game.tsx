@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 
 import { useState } from 'react';
 
 import { apiEndPt } from 'constants/index';
-import { useCart } from 'hooks/useCart/useCart';
+import { Minus } from 'phosphor-react';
 import { Navigation, Pagination, Scrollbar, A11y, Keyboard } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import GameType from 'types/game';
@@ -17,6 +16,9 @@ import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 
+import { useCart } from 'hooks/useCart/useCart';
+import { useFavorite } from 'hooks/useFavorite/useFavorite';
+
 import { Base } from 'templates/Base/Base';
 
 import { Container } from 'components/atoms/Container/Container';
@@ -24,6 +26,8 @@ import MediaMatch from 'components/atoms/MediaMatch/MediaMatch';
 import { PlatformIcon } from 'components/atoms/PlatformIcon/PlatformIcon';
 import { HighlightCarousel } from 'components/organisms/HighlightCarousel/HighlightCarousel';
 import { highlightMock } from 'components/organisms/HighlightCarousel/mock';
+
+import theme from 'styles/theme';
 
 import * as S from './Game.styles';
 
@@ -33,15 +37,15 @@ export type GameProps = Pick<
   | 'name'
   | 'slug'
   | 'genres'
-  | 'developer'
-  | 'releaseDate'
-  | 'platform'
+  | 'developers'
+  | 'release_date'
+  | 'platforms'
   | 'price'
   | 'video'
   | 'background'
   | 'description'
-  | 'gallery'
-  | 'pcSystem'
+  | 'games_gallery'
+  | 'pc_system'
 >;
 
 export const Game = ({
@@ -49,28 +53,21 @@ export const Game = ({
   name,
   slug,
   genres,
-  developer,
-  releaseDate,
+  developers,
+  release_date: releaseDate,
   background,
   video,
   price,
-  platform,
+  platforms,
   description,
-  gallery,
-  pcSystem,
+  games_gallery: gallery,
+  pc_system: pcSystem,
 }: GameProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
+
+  const { isInFavorite, addToFavorite, removeFromFavorite } = useFavorite();
   const { addToCart, isInCart, removeFromCart } = useCart();
-  const releaseYear = new Date(releaseDate).getFullYear();
-  const consoleList = {
-    ps4: 'Playstation 4',
-    ps5: 'Playstation 5',
-    one: 'Xbox One',
-    xs: 'Xbox Series X',
-    pc: 'Computador Pessoal',
-    all: 'Todas as plataformas',
-  };
 
   return (
     <Base>
@@ -180,59 +177,83 @@ export const Game = ({
                   <S.TitleInfo>Requisitos de Sistema</S.TitleInfo>
 
                   <S.WrapperRequire>
-                    {pcSystem.map(item => (
-                      <S.GridRequire key={item.type}>
-                        <S.Subtitle>
-                          {item.type === 'minimal'
-                            ? 'Mínimos:'
-                            : 'Recomendados:'}
-                        </S.Subtitle>
+                    <S.GridRequire>
+                      <S.Subtitle>Mínimos:</S.Subtitle>
 
-                        <S.RequireItem>
-                          <span>SO:</span> {item.so}
-                        </S.RequireItem>
-                        <S.RequireItem>
-                          <span>Processador:</span> {item.cpu}
-                        </S.RequireItem>
-                        <S.RequireItem>
-                          <span>Memória:</span> {item.memory}
-                        </S.RequireItem>
-                        <S.RequireItem>
-                          <span>Placa de vídeo:</span> {item.gpu}
-                        </S.RequireItem>
-                        <S.RequireItem>
-                          <span>Armazenamento:</span> {item.hd}
-                        </S.RequireItem>
-                      </S.GridRequire>
-                    ))}
+                      <S.RequireItem>
+                        <span>SO:</span> {pcSystem.minimal.so}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Processador:</span> {pcSystem.minimal.cpu}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Memória:</span> {pcSystem.minimal.memory}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Placa de vídeo:</span> {pcSystem.minimal.gpu}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Armazenamento:</span> {pcSystem.minimal.hd}
+                      </S.RequireItem>
+                    </S.GridRequire>
+
+                    <S.GridRequire>
+                      <S.Subtitle>Recomendados:</S.Subtitle>
+
+                      <S.RequireItem>
+                        <span>SO:</span> {pcSystem.recommended.so}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Processador:</span> {pcSystem.recommended.cpu}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Memória:</span> {pcSystem.recommended.memory}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Placa de vídeo:</span> {pcSystem.recommended.gpu}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Armazenamento:</span> {pcSystem.recommended.hd}
+                      </S.RequireItem>
+                    </S.GridRequire>
                   </S.WrapperRequire>
                 </S.SectionInfo>
               )}
 
-              {!!consoleList[platform] && (
-                <S.SectionInfo>
-                  <S.TitleInfo>Plataformas Disponíveis</S.TitleInfo>
-                  <S.Subtitle>{consoleList[platform]}</S.Subtitle>
-                </S.SectionInfo>
-              )}
+              <S.SectionInfo>
+                <S.TitleInfo>Plataformas Disponíveis</S.TitleInfo>
+                {platforms.map(platform => (
+                  <S.Subtitle key={platform.id}>{platform.name}</S.Subtitle>
+                ))}
+              </S.SectionInfo>
             </S.Info>
 
             <S.InfoGame>
               <S.Controls>
-                <S.HeartIcon />
-                <S.WrapperHandbag>
-                  <S.Handbag
-                    aria-label="Add from cart"
-                    onClick={() =>
-                      isInCart(slug)
-                        ? removeFromCart(slug)
-                        : addToCart({ id: slug, quantity: 1 })
-                    }
-                  />
+                <S.HeartIcon
+                  weight={isInFavorite(id) ? 'fill' : 'regular'}
+                  color={
+                    isInFavorite(id) ? theme.colors.primary : theme.colors.white
+                  }
+                  onClick={() =>
+                    isInFavorite(id)
+                      ? removeFromFavorite(id)
+                      : addToFavorite(id)
+                  }
+                />
 
-                  {isInCart(slug) === true && (
+                <S.WrapperHandbag
+                  onClick={() =>
+                    isInCart(id)
+                      ? removeFromCart(id)
+                      : addToCart({ id, quantity: 1 })
+                  }
+                >
+                  <S.Handbag aria-label="Add from cart" />
+
+                  {isInCart(id) && (
                     <S.Badge role="img" aria-label="Cart Items">
-                      -
+                      <Minus size={14} />
                     </S.Badge>
                   )}
                 </S.WrapperHandbag>
@@ -242,16 +263,25 @@ export const Game = ({
                 <S.TitleGame>{name}</S.TitleGame>
 
                 <S.SecondInfos>
-                  <S.SubTitleGame>{genres.join(', ')}</S.SubTitleGame>
+                  <S.SubTitleGame>
+                    {genres.map(genre => genre.name).join(', ')}
+                  </S.SubTitleGame>
                   <S.SubTitleGame color="secondary">
-                    {developer}, {releaseYear}
+                    {developers.map(developer => developer.name).join(' | ')},{' '}
+                    {new Date(releaseDate).getFullYear()}
                   </S.SubTitleGame>
                 </S.SecondInfos>
 
                 <S.FooterInfos>
                   <S.WrapperPlatform>
                     <S.Platform>
-                      <PlatformIcon platform={platform} variant="complete" />
+                      {platforms.map(platform => (
+                        <PlatformIcon
+                          key={platform.slug}
+                          platform={platform.slug}
+                          variant="complete"
+                        />
+                      ))}
                     </S.Platform>
                   </S.WrapperPlatform>
 
@@ -323,42 +353,55 @@ export const Game = ({
                   <S.TitleInfo>Requisitos de Sistema</S.TitleInfo>
 
                   <S.WrapperRequire>
-                    {pcSystem.map(item => (
-                      <S.GridRequire key={item.type}>
-                        <S.Subtitle>
-                          {item.type === 'minimal'
-                            ? 'Mínimos:'
-                            : 'Recomendados:'}
-                        </S.Subtitle>
+                    <S.GridRequire>
+                      <S.Subtitle>Mínimos:</S.Subtitle>
 
-                        <S.RequireItem>
-                          <span>SO:</span> {item.so}
-                        </S.RequireItem>
-                        <S.RequireItem>
-                          <span>Processador:</span> {item.cpu}
-                        </S.RequireItem>
-                        <S.RequireItem>
-                          <span>Memória:</span> {item.memory}
-                        </S.RequireItem>
-                        <S.RequireItem>
-                          <span>Placa de vídeo:</span> {item.gpu}
-                        </S.RequireItem>
-                        <S.RequireItem>
-                          <span>Armazenamento:</span> {item.hd}
-                        </S.RequireItem>
-                      </S.GridRequire>
-                    ))}
+                      <S.RequireItem>
+                        <span>SO:</span> {pcSystem.minimal.so}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Processador:</span> {pcSystem.minimal.cpu}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Memória:</span> {pcSystem.minimal.memory}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Placa de vídeo:</span> {pcSystem.minimal.gpu}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Armazenamento:</span> {pcSystem.minimal.hd}
+                      </S.RequireItem>
+                    </S.GridRequire>
+
+                    <S.GridRequire>
+                      <S.Subtitle>Recomendados:</S.Subtitle>
+
+                      <S.RequireItem>
+                        <span>SO:</span> {pcSystem.recommended.so}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Processador:</span> {pcSystem.recommended.cpu}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Memória:</span> {pcSystem.recommended.memory}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Placa de vídeo:</span> {pcSystem.recommended.gpu}
+                      </S.RequireItem>
+                      <S.RequireItem>
+                        <span>Armazenamento:</span> {pcSystem.recommended.hd}
+                      </S.RequireItem>
+                    </S.GridRequire>
                   </S.WrapperRequire>
                 </S.SectionInfo>
               )}
 
-              {!!consoleList[platform] && (
-                <S.SectionInfo>
-                  <S.TitleInfo>Consoles Disponíveis</S.TitleInfo>
-
-                  <S.Subtitle>{consoleList[platform]}</S.Subtitle>
-                </S.SectionInfo>
-              )}
+              <S.SectionInfo>
+                <S.TitleInfo>Plataformas Disponíveis</S.TitleInfo>
+                {platforms.map(platform => (
+                  <S.Subtitle key={platform.id}>{platform.name}</S.Subtitle>
+                ))}
+              </S.SectionInfo>
             </S.Info>
           </Container>
         </MediaMatch>
