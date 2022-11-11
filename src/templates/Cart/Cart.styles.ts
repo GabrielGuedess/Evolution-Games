@@ -8,6 +8,7 @@ export const Wrapper = styled(Container)`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 4.6rem;
     margin-top: ${theme.spacings.large};
 
@@ -61,19 +62,6 @@ export const Summary = styled.div`
     padding: ${theme.spacings.large};
     position: sticky;
     top: 0;
-  `}
-`;
-
-export const SummaryHeader = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-`;
-
-export const Total = styled.strong`
-  ${({ theme }) => css`
-    font-size: 1.6rem;
-    color: ${theme.colors.whiteText};
   `}
 `;
 
