@@ -1,24 +1,39 @@
 import Link from 'next/link';
 
 import * as Avatar from '@radix-ui/react-avatar';
+import Avvvatars from 'avvvatars-react';
 
 import Button from 'components/atoms/Button/Button';
 import { CloseButton } from 'components/atoms/CloseButton/CloseButton';
-import { AvatarUserProps } from 'components/molecules/AvatarUser/AvatarUser';
 
 import * as S from './UserInfo.styles';
 
+type UserInfoProps = {
+  name: string;
+  email: string;
+  bio?: string | null;
+  username: string;
+  userPhoto?: string | null;
+};
+
 export const UserInfo = ({
   name,
+  email,
   bio,
   username,
   userPhoto,
-}: AvatarUserProps) => (
+}: UserInfoProps) => (
   <S.Wrapper>
     <CloseButton />
 
     <S.Root>
-      <S.AvatarImage src={userPhoto!} alt="Image User" />
+      <S.WrapperPhoto>
+        {userPhoto ? (
+          <S.AvatarImage src={userPhoto} alt="Image User" />
+        ) : (
+          <Avvvatars size={120} value={email} />
+        )}
+      </S.WrapperPhoto>
       <Avatar.Fallback />
     </S.Root>
 
@@ -28,7 +43,8 @@ export const UserInfo = ({
         <span>@</span>
         {username}
       </S.Username>
-      <S.Bio>{bio}</S.Bio>
+
+      {bio && <S.Bio>{bio}</S.Bio>}
 
       <S.ButtonWrapper>
         <Link href="/profile/me" passHref>

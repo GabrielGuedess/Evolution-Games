@@ -1,6 +1,12 @@
 import * as Avatar from '@radix-ui/react-avatar';
 
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+
+const rotate = keyframes`
+  100% {
+    transform: rotate(360deg);
+  }
+`;
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -21,13 +27,40 @@ export const Root = styled(Avatar.Root)`
   justify-content: center;
 `;
 
-export const AvatarImage = styled(Avatar.Image)`
+export const WrapperPhoto = styled.div`
   ${({ theme }) => css`
-    width: 10rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    box-shadow: ${theme.shadows.box};
+    position: relative;
+
+    ::before,
+    ::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border-radius: 50%;
+      border-top: 0.2rem solid ${theme.colors.white};
+      z-index: ${theme.layers.base};
+      filter: drop-shadow(0 0 2px ${theme.colors.primary})
+        drop-shadow(0 0 5px ${theme.colors.primary})
+        drop-shadow(0 0 10px ${theme.colors.primary})
+        drop-shadow(0 0 20px ${theme.colors.primary});
+      animation: ${rotate} 5s infinite linear;
+    }
+
+    ::after {
+      filter: drop-shadow(0 0 2px #f554ff) drop-shadow(0 0 5px #f554ff)
+        drop-shadow(0 0 10px #f554ff) drop-shadow(0 0 20px #f554ff);
+      animation-delay: -2.5s;
+    }
   `}
+`;
+export const AvatarImage = styled(Avatar.Image)`
+  width: 12rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
 `;
 
 export const UserInfoWrapper = styled.div`
