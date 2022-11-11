@@ -1,6 +1,5 @@
 import { useContext, createContext, useState, useEffect } from 'react';
 
-import { apiEndPt } from 'constants/index';
 import Game from 'types/game';
 import { formatPrice } from 'utils/format';
 import { getStorageItem, setStorageItem } from 'utils/localStorage';
@@ -23,6 +22,7 @@ export type CartContextProps = {
   removeFromCart: (id: string) => void;
   addToCart: (game: CartStorageItem) => void;
   setQuantity: (id: string, quantity: number) => void;
+  isLoading: boolean;
 };
 
 export const CartContextDefaultValues: CartContextProps = {
@@ -34,6 +34,7 @@ export const CartContextDefaultValues: CartContextProps = {
   removeFromCart: () => {},
   addToCart: () => {},
   setQuantity: () => {},
+  isLoading: true,
 };
 
 export const CartContext = createContext<CartContextProps>(
@@ -46,19 +47,26 @@ export type CartProviderProps = {
 
 const CartProvider = ({ children }: CartProviderProps) => {
   const [gameItems, setGameItems] = useState<CartItem[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const fetchAPI = async (item: CartStorageItem): Promise<CartItem> => {
-    const res = await fetch(`${apiEndPt}/api/games/${item.id}`);
-    const data: Game = await res.json();
+    setIsLoading(true);
+
+    const data: Game = await (
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/game/id/${item.id}`)
+    ).json();
+
+    setIsLoading(false);
+
     return {
-      id: data.slug!,
-      developer: data.developer,
+      id: data.id!,
+      developers: data.developers,
       genres: data.genres,
-      platform: data.platform,
+      platforms: data.platforms,
       price: data.price,
       quantity: item.quantity,
-      src: data.background,
-      title: data.name,
+      background: data.background,
+      name: data.name,
     };
   };
 
@@ -133,6 +141,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
         setQuantity,
         clearCart,
         removeFromCart,
+        isLoading,
       }}
     >
       {children}
