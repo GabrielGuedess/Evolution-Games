@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
   max-width: 100vw;
   overflow: hidden;
   justify-content: space-between;
+  z-index: 10;
 `;
 
 export const Content = styled.div<Pick<BaseTemplateProps, 'hasMarginTop'>>`
