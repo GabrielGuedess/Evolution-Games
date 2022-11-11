@@ -1,11 +1,12 @@
 /* eslint-disable no-console */
+import { signIn } from 'next-auth/react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-import { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, FormEvent } from 'react';
 
 import { Eye, EyeSlash, CircleNotch } from 'phosphor-react';
-import requestFake from 'utils/requestFake';
-import { validateEmail } from 'utils/validations';
+import { FieldErrors, signInValidate } from 'utils/validations';
 
 import Button from 'components/atoms/Button/Button';
 import { Checkbox } from 'components/atoms/Checkbox/Checkbox';
@@ -13,35 +14,25 @@ import { InputForm } from 'components/atoms/InputForm/InputForm';
 
 import * as S from './SignIn.styles';
 
-type ErrorMessages = {
-  [key: string]: boolean;
-};
-
-type Validations = {
-  [key: string]: (value: string) => boolean;
+export type SignIn = {
+  email: string;
+  password: string;
 };
 
 export const SignIn = () => {
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [errorMessages, setErrorMessages] = useState<ErrorMessages>({});
+  const [errorMessages, setErrorMessages] = useState<FieldErrors>({});
   const [formInputs, setFormInputs] = useState({ email: '', password: '' });
 
-  const validateFields = (name: string, value: string) => {
-    const validations: Validations = {
-      email: validateEmail,
-    };
+  const { push, query } = useRouter();
 
-    if (!!validations[name]) {
-      const isValid = validations[name](value);
-      setErrorMessages({ ...errorMessages, [name]: isValid });
-    }
-  };
+  const handleInput = (field: keyof SignIn, value: string) => {
+    setFormInputs(s => ({ ...s, [field]: value }));
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    validateFields(name, value);
-    setFormInputs({ ...formInputs, [name]: value });
+    const errors = signInValidate({ ...formInputs, [field]: value });
+
+    setErrorMessages({ ...errorMessages, [field]: errors[field] });
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -49,12 +40,30 @@ export const SignIn = () => {
       e.preventDefault();
       setLoading(true);
 
-      await requestFake();
+      const result = await signIn('credentials', {
+        ...formInputs,
+        redirect: false,
+        callbackUrl: `${window.location.origin}${query?.callbackUrl || ''}`,
+      });
+
+      if (result?.error === 'E-mail inválido') {
+        setErrorMessages({ email: result.error });
+        return;
+      }
+
+      if (result?.error === 'Senha inválida') {
+        setErrorMessages({ password: result.error });
+        return;
+      }
+
+      if (result?.url) {
+        setFormInputs({ email: '', password: '' });
+        return push(result?.url);
+      }
     } catch (error) {
-      console.log(error);
+      console.error(error);
     } finally {
       setLoading(false);
-      setFormInputs({ email: '', password: '' });
     }
   };
 
@@ -71,15 +80,13 @@ export const SignIn = () => {
           labelFor="email"
           value={formInputs.email}
           placeholder="Insira seu e-mail"
-          errorMessage="E-mail inválido"
-          onChange={e => handleInputChange(e)}
-          isInvalid={
-            errorMessages.email !== undefined ? !errorMessages.email : false
-          }
+          errorMessage={errorMessages?.email}
+          onChange={e => handleInput('email', e.target.value)}
+          isInvalid={!!errorMessages?.email}
           icon={
             <S.IconValidEmail
               viewBox="0 0 16 16"
-              isValid={errorMessages?.email ?? false}
+              isValid={!errorMessages?.email}
             >
               <path d="M10.8000002,10.8000002 C9.85000038,11.6500006 9.18349609,12 8,12 C5.80000019,12 4,10.1999998 4,8 C4,5.80000019 5.80000019,4 8,4 C10.1999998,4 12,6 12,8 C12,9.35332031 12.75,9.5 13.5,9.5 C14.25,9.5 15,8.60000038 15,8 C15,4 12,1 8,1 C4,1 1,4 1,8 C1,12 4,15 8,15 C12,15 15,12 15,8" />
               <polyline
@@ -96,9 +103,10 @@ export const SignIn = () => {
           labelFor="password"
           value={formInputs.password}
           placeholder="Insira sua senha"
-          errorMessage="Campo obrigatório"
+          errorMessage={errorMessages.password}
           type={show ? 'text' : 'password'}
-          onChange={e => handleInputChange(e)}
+          onChange={e => handleInput('password', e.target.value)}
+          isInvalid={errorMessages.password !== undefined}
           icon={
             <S.WrapperIconPass onClick={() => setShow(!show)}>
               {show ? (
@@ -117,7 +125,11 @@ export const SignIn = () => {
         </Link>
       </S.AlignBox>
       <Button
-        disabled={loading}
+        disabled={
+          Object.values(errorMessages).some(item => item !== undefined) ||
+          Object.values(formInputs).some(item => item === '') ||
+          loading
+        }
         as="button"
         icon={
           loading ? (
