@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { useInfiniteQuery } from 'react-query';
 
 import * as Popover from '@radix-ui/react-popover';
-import { apiEndPt } from 'constants/index';
 import { CaretDown, FunnelSimple, List } from 'phosphor-react';
 import { ParsedUrlQueryInput } from 'querystring';
 import type Game from 'types/game';
@@ -30,8 +29,9 @@ export type ExplorerTemplateProps = {
 };
 
 const fetchGames = async ({ pageParam = 1 }) => {
-  const res = await fetch(`${apiEndPt}/api/games?page=${pageParam}`);
-  const data = await res.json();
+  const data = await (
+    await fetch(`${process.env.NEXT_PUBLIC_API_URL}/game/?page=${pageParam}`)
+  ).json();
 
   return data;
 };
@@ -151,13 +151,13 @@ export const Explorer = ({ filterItems }: ExplorerTemplateProps) => {
                       name={game.name}
                       slug={game.slug}
                       genres={game.genres}
-                      developer={game.developer}
-                      releaseDate={game.releaseDate}
+                      developers={game.developers}
+                      release_date={game.release_date}
                       image={game.image}
                       score={game.score}
                       price={game.price}
-                      platform={game.platform}
-                      primaryColor={game.primaryColor}
+                      platforms={game.platforms}
+                      primary_color={game.primary_color}
                     />
                   )),
                 )}
