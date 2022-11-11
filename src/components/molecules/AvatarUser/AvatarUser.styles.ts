@@ -3,10 +3,14 @@ import * as Popover from '@radix-ui/react-popover';
 
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  width: 3rem;
+  height: 3.3rem;
+`;
 
 export const AvatarImage = styled(Avatar.Image)`
   width: 3rem;
+  object-fit: cover;
   aspect-ratio: 1/1;
   border-radius: 50%;
 `;
