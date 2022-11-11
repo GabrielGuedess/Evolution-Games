@@ -1,35 +1,30 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { useCart } from 'hooks/useCart/useCart';
 import { Trash } from 'phosphor-react';
+import Game from 'types/game';
 
-import {
-  PlatformIcon,
-  Platform,
-} from 'components/atoms/PlatformIcon/PlatformIcon';
+import { useCart } from 'hooks/useCart/useCart';
+
+import { PlatformIcon } from 'components/atoms/PlatformIcon/PlatformIcon';
 
 import * as S from './GameCartDrop.styles';
 
 export type GameCartDropProps = {
-  id: string;
-  src: string;
-  genres: string[];
-  title: string;
-  developer: string;
   quantity: number;
-  platform: Platform;
-  price: number;
-};
+} & Pick<
+  Game,
+  'id' | 'background' | 'genres' | 'name' | 'developers' | 'platforms' | 'price'
+>;
 
 export const GameCartDrop = ({
   id,
-  src,
+  background,
   genres,
-  title,
-  developer,
+  name,
+  developers,
   quantity,
-  platform,
+  platforms,
   price,
 }: GameCartDropProps) => {
   const { removeFromCart, setQuantity } = useCart();
@@ -39,15 +34,30 @@ export const GameCartDrop = ({
       <S.GameInfoWrapper>
         <Link href={`game/${id}`}>
           <S.GameImageWrapper>
-            <Image src={src} layout="fill" alt="Image game" objectFit="cover" />
+            <Image
+              src={background}
+              layout="fill"
+              alt="Image game"
+              objectFit="cover"
+            />
           </S.GameImageWrapper>
         </Link>
 
         <S.InfoWrapper>
-          <S.Genre>{genres.join(', ')}</S.Genre>
-          <S.Title>{title}</S.Title>
-          <S.Developer>{developer}</S.Developer>
-          <PlatformIcon platform={platform} hasTitle size="small" />
+          <S.Genre>{genres.map(genre => genre.name).join(', ')}</S.Genre>
+          <S.Title>{name}</S.Title>
+          <S.Developer>
+            {developers.map(developer => developer.name).join(' | ')}
+          </S.Developer>
+
+          {platforms.map(platform => (
+            <PlatformIcon
+              key={platform.slug}
+              platform={platform.slug}
+              hasTitle
+              size="small"
+            />
+          ))}
 
           <S.BuyInfoWrapper>
             <S.Remove

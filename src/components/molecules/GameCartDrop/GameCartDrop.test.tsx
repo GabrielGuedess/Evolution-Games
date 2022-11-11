@@ -1,8 +1,9 @@
+import { renderWithProviders } from 'utils/tests/helpers';
+
 import {
   CartContextDefaultValues,
   CartContextProps,
 } from 'hooks/useCart/useCart';
-import { renderWithProviders } from 'utils/tests/helpers';
 
 import { fireEvent, screen } from '@testing-library/react';
 
