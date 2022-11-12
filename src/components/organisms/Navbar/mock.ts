@@ -2,33 +2,16 @@ import { GameCartDropProps } from 'components/molecules/GameCartDrop/GameCartDro
 
 export const cartItems: GameCartDropProps[] = [
   {
-    id: 'the-witcher-3',
-    src: '/img/games/theWitcher.jpg',
-    genres: ['Action'],
-    title: 'The Witcher 3',
-    developer: 'CD Projekt',
+    id: '1',
+    name: 'God of War: Ragnarök',
+    genres: [{ name: 'Action-adventure ', id: '1', slug: 'action-adventure' }],
+    developers: [
+      { id: '1', name: 'Santa Monica Games', slug: 'santa-monica-games' },
+    ],
+    background:
+      'https://i.pinimg.com/originals/34/f8/e5/34f8e55845212171e8bb35edc5b08018.jpg',
+    price: 250.0,
+    platforms: [{ name: 'Plastation 5', slug: 'ps5', id: '1' }],
     quantity: 1,
-    platform: 'ps4',
-    price: 100,
-  },
-  {
-    id: 'gta-6',
-    src: 'https://gmedia.playstation.com/is/image/SIEPDC/grand-theft-auto-5-hero-banner-desktop-01-ps5-en-04mar22?$2400px$',
-    genres: ['Action'],
-    title: 'GTA 6',
-    developer: 'CD Projekt',
-    quantity: 1,
-    platform: 'ps4',
-    price: 100,
-  },
-  {
-    id: 'rainbow-six',
-    src: 'https://image.api.playstation.com/vulcan/ap/rnd/202105/1919/6t4GYDWoLSZVeNjAJLTczMg8.jpg?w=1920',
-    genres: ['Action'],
-    title: 'Rainbow Six',
-    developer: 'CD Projekt',
-    quantity: 1,
-    platform: 'ps4',
-    price: 100,
   },
 ];

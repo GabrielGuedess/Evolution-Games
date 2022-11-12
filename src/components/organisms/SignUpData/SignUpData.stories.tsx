@@ -7,7 +7,7 @@ const dataInputs = {
   lastName: '',
   cpf: '',
   cellphone: '',
-  date: '',
+  date: new Date(),
 };
 
 const setDataInputs = () => ({});

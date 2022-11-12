@@ -3,15 +3,16 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import { userInfo } from 'templates/Home/mock';
 
-import { AvatarUserProps } from 'components/molecules/AvatarUser/AvatarUser';
-
-import { UserInfo } from './UserInfo';
+import { UserInfo, UserInfoProps } from './UserInfo';
 
 export default {
   title: 'Molecules/UserInfo',
   component: UserInfo,
   args: userInfo,
   argTypes: {
+    email: {
+      type: 'string',
+    },
     name: {
       type: 'string',
     },
@@ -25,9 +26,9 @@ export default {
       type: 'string',
     },
   },
-} as Meta<AvatarUserProps>;
+} as Meta<UserInfoProps>;
 
-export const Default: Story = args => (
+export const Default: Story<UserInfoProps> = args => (
   <Popover.Root>
     <UserInfo {...args} />
   </Popover.Root>
