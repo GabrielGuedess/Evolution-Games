@@ -35,7 +35,6 @@ export const HighlightGame = ({
         src={img}
         layout="fill"
         objectFit="cover"
-        quality={100}
         alt={alt}
         className="imageBackground"
         loading="lazy"
@@ -49,7 +48,6 @@ export const HighlightGame = ({
           width={768}
           height={296}
           objectFit="contain"
-          quality={100}
           alt={gameLogoAlt}
           loading="lazy"
         />

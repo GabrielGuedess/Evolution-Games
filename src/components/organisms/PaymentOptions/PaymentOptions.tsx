@@ -34,10 +34,10 @@ export const PaymentOptions = () => {
 
   useEffect(() => {
     async function setPaymentMode() {
-      if (items.length) {
+      if (items.length && session?.user) {
         const data = await createPaymentIntent({
           items: items.map(game => game.id),
-          token: session!.user.jwt,
+          token: session.user.jwt,
         });
 
         if (data.error) {

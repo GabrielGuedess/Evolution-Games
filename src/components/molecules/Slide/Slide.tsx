@@ -21,7 +21,6 @@ export const Slide = ({
         src={srcSlideImage}
         layout="fill"
         objectFit="cover"
-        quality={100}
         alt={altSlideImage}
       />
     </S.WrapperSlide>
@@ -31,7 +30,6 @@ export const Slide = ({
         width={768}
         height={296}
         objectFit="contain"
-        quality={100}
         alt={altHighlightImage}
         data-swiper-parallax="-300"
       />

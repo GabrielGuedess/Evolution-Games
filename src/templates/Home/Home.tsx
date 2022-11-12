@@ -8,11 +8,11 @@ import { Navbar } from 'components/organisms/Navbar/Navbar';
 import { Slider } from 'components/organisms/Slider/Slider';
 
 import * as S from './Home.styles';
-import { userInfo, sliderMock } from './mock';
+import { sliderMock } from './mock';
 
 export const Home = ({ gameList }: { gameList: GameCardProps[] }) => (
   <S.Wrapper>
-    <Navbar {...userInfo} />
+    <Navbar />
     <Slider slides={sliderMock} />
     <GameList title="Bestsellers" data={gameList} />
     <HighlightCarousel title="Pre-order" data={highlightMock} />

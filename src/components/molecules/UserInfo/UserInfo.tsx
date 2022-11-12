@@ -8,7 +8,7 @@ import { CloseButton } from 'components/atoms/CloseButton/CloseButton';
 
 import * as S from './UserInfo.styles';
 
-type UserInfoProps = {
+export type UserInfoProps = {
   name: string;
   email: string;
   bio?: string | null;
