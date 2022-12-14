@@ -18,4 +18,4 @@ export default {
   },
 } as Meta;
 
-export const Default: Story = args => <Logo {...args} />;
+export const Default: Story = () => <Logo />;

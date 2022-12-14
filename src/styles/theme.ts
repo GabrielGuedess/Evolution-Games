@@ -23,7 +23,8 @@ export default {
       xxmedium: '2.0rem',
       big: '2.2rem',
       xbig: '2.5rem',
-      xxbig: '3.0rem',
+      xxbig: '2.8rem',
+      xxxbig: '3.0rem',
       large: '3.2rem',
       xlarge: '4.5rem',
       xxlarge: '5.0rem',
@@ -31,8 +32,8 @@ export default {
     },
   },
   colors: {
-    primary: '#764AF1',
-    secondary: '#9772FB',
+    primary: '#7C3AED',
+    secondary: '#717B8A',
     mainBg: '#04040C',
     white: '#FFFFFF',
     whiteText: '#F4F4F5',
@@ -59,5 +60,9 @@ export default {
     overlay: 30,
     modal: 40,
     alwaysOnTop: 50,
+  },
+  shadows: {
+    text: '0 0.8rem 1rem rgba(118, 74, 241, 0.5)',
+    box: '0 0.8rem 2.8rem rgba(118, 74, 241, 0.5)',
   },
 } as const;

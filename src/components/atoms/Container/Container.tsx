@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
-
 import { customMedia } from 'utils/media/customMedia';
+
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   ${({ theme }) => css`

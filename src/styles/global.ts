@@ -41,6 +41,35 @@ const GlobalStyles = createGlobalStyle`
       color: ${theme.colors.whiteText};
     `}
   }
+
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar {
+    ${({ theme }) => css`
+      width: 1rem;
+      background: ${theme.colors.mainBg};
+    `}
+  }
+
+  ::-webkit-scrollbar-thumb {
+    ${({ theme }) => css`
+      border-radius: 1rem;
+      background: linear-gradient(transparent, ${theme.colors.primary});
+      transition: background 0.3 linear;
+    `}
+  }
+
+  button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    font-size: 1.2rem;
+  }
 `;
 
 export default GlobalStyles;

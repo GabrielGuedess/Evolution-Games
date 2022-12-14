@@ -10,6 +10,7 @@ module.exports = {
     '@storybook/addon-toolbars',
     '@storybook/addon-links',
     '@storybook/addon-a11y',
+    '@tomfreudenberg/next-auth-mock/storybook',
     'storybook-addon-pseudo-states',
     'storybook-addon-designs',
     'storybook-addon-next',

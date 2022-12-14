@@ -1,0 +1,585 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Footer /> should render the heading 1'] = `
+.c4 {
+  width: 8.6rem;
+  height: 2rem;
+  color: #FFFFFF;
+}
+
+.c8 {
+  display: none;
+}
+
+.c10 {
+  display: none;
+}
+
+.c2 {
+  max-width: 165.6rem;
+  margin: 0 1.6rem;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 4.0rem;
+  padding-bottom: 4.0rem;
+  gap: 1rem;
+}
+
+.c1 {
+  width: min(40rem,80%);
+  position: absolute;
+  top: -0.1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%,0px);
+  -ms-transform: translate(-50%,0px);
+  transform: translate(-50%,0px);
+}
+
+.c1 #rotate {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation: rotate 9s ease infinite;
+  animation: rotate 9s ease infinite;
+}
+
+.c5 {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 5.8rem;
+  margin-top: 3.2rem;
+  text-align: center;
+}
+
+.c7 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+  color: #FFFFFF;
+  margin-bottom: 1.6rem;
+}
+
+.c6 > img {
+  display: block;
+}
+
+.c6 a {
+  display: block;
+  font-size: 1rem;
+  line-height: 0.8rem;
+  margin-bottom: 1.6rem;
+  color: #717B8A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.c6 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c11 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  color: #717B8A;
+  text-align: center;
+}
+
+@media (min-width:1170px) {
+  .c4 {
+    width: 13.7rem;
+    height: 3.2rem;
+    color: #7C3AED;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+  .c10 {
+    display: block;
+  }
+}
+
+@media (min-width:1170px) {
+  .c2 {
+    margin: 0 3.2rem;
+  }
+}
+
+@media (min-width:1440px) {
+  .c2 {
+    margin: 0 4.8rem;
+  }
+}
+
+@media (min-width:1656px) {
+  .c2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: initial;
+    text-align: left;
+    gap: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c6 a {
+    font-size: 1.2rem;
+    line-height: 3.2rem;
+    margin-bottom: 0;
+  }
+}
+
+<footer
+  class="c0"
+>
+  <svg
+    class="c1"
+    fill="none"
+    viewBox="0 0 400 26"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      clip-path="url(#clip0_1090_1560)"
+    >
+      <path
+        d="M212 13L400 13"
+        stroke="url(#paint0_linear_1090_1560)"
+        stroke-width="0.936488"
+      />
+      <path
+        d="M204.238 8.76217L212 13.0061L204.238 17.2378L199.994 25L195.75 17.2378L188 13.0061L195.75 8.76217L199.994 1L204.238 8.76217Z"
+        id="rotate"
+        stroke="#633BBC"
+        stroke-width="0.936488"
+      />
+      <path
+        d="M188 13L4.76837e-07 13"
+        stroke="url(#paint1_linear_1090_1560)"
+        stroke-width="0.936488"
+      />
+    </g>
+    <defs>
+      <lineargradient
+        gradientUnits="userSpaceOnUse"
+        id="paint0_linear_1090_1560"
+        x1="212"
+        x2="400.099"
+        y1="13.5"
+        y2="13.5"
+      >
+        <stop
+          stop-color="#633BBC"
+        />
+        <stop
+          offset="1"
+          stop-color="#633BBC"
+          stop-opacity="0"
+        />
+      </lineargradient>
+      <lineargradient
+        gradientUnits="userSpaceOnUse"
+        id="paint1_linear_1090_1560"
+        x1="188"
+        x2="-0.0993122"
+        y1="12.5"
+        y2="12.5"
+      >
+        <stop
+          stop-color="#633BBC"
+        />
+        <stop
+          offset="1"
+          stop-color="#633BBC"
+          stop-opacity="0"
+        />
+      </lineargradient>
+      <clippath
+        id="clip0_1090_1560"
+      >
+        <rect
+          fill="white"
+          height="26"
+          width="400"
+        />
+      </clippath>
+    </defs>
+  </svg>
+  <div
+    class="c2 c3"
+  >
+    <div
+      class="c4"
+    >
+      <svg
+        aria-label="Evolution"
+        fill="none"
+        role="img"
+        viewBox="0 0 134 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16.344 18.104V23H0.504V0.919998H16.344V5.816H6.552V9.496H16.28V14.392H6.552V18.104H16.344ZM28.9195 23H24.2795L17.9115 7H24.0875L26.6795 15.704L29.1115 7H35.0955L28.9195 23ZM41.9485 18.36C42.2898 18.936 42.8872 19.224 43.7405 19.224C44.5938 19.224 45.1912 18.936 45.5325 18.36C45.8952 17.784 46.0765 16.696 46.0765 15.096C46.0765 13.4107 45.8952 12.2693 45.5325 11.672C45.1912 11.0747 44.5938 10.776 43.7405 10.776C42.8872 10.776 42.2898 11.0747 41.9485 11.672C41.6072 12.2693 41.4365 13.4107 41.4365 15.096C41.4365 16.696 41.6072 17.784 41.9485 18.36ZM43.7405 6.584C46.5992 6.584 48.6258 7.20267 49.8205 8.44C51.0152 9.656 51.6125 11.8747 51.6125 15.096C51.6125 18.232 51.0045 20.408 49.7885 21.624C48.5938 22.8187 46.5778 23.416 43.7405 23.416C40.9245 23.416 38.9192 22.8187 37.7245 21.624C36.5298 20.408 35.9325 18.232 35.9325 15.096C35.9325 11.8747 36.5298 9.656 37.7245 8.44C38.9192 7.20267 40.9245 6.584 43.7405 6.584Z"
+          fill="currentColor"
+        />
+        <path
+          d="M59.5995 0.919998V23H54.0635V0.919998H59.5995ZM67.6888 7V17.464C67.6888 18.1253 67.8381 18.584 68.1368 18.84C68.4568 19.096 68.9368 19.224 69.5768 19.224C70.9208 19.224 71.5928 18.4987 71.5928 17.048V7H77.1287V23H71.5928V21.112H71.0488C70.1314 22.648 68.7981 23.416 67.0488 23.416C65.5768 23.416 64.3928 23.0427 63.4968 22.296C62.6008 21.528 62.1528 20.28 62.1528 18.552V7H67.6888ZM90.5328 18.392V23H86.8208C82.9808 23 81.0608 21.1333 81.0608 17.4V11.32H78.8528V7H81.0608V2.2H86.5968V7H90.5328V11.32H86.5968V16.856C86.5968 17.4107 86.7248 17.8053 86.9808 18.04C87.2368 18.2747 87.6634 18.392 88.2608 18.392H90.5328ZM92.6908 7H98.1948V23H92.6908V7ZM98.3228 5.016H92.5628V0.952H98.3228V5.016ZM106.792 18.36C107.134 18.936 107.731 19.224 108.584 19.224C109.438 19.224 110.035 18.936 110.376 18.36C110.739 17.784 110.92 16.696 110.92 15.096C110.92 13.4107 110.739 12.2693 110.376 11.672C110.035 11.0747 109.438 10.776 108.584 10.776C107.731 10.776 107.134 11.0747 106.792 11.672C106.451 12.2693 106.28 13.4107 106.28 15.096C106.28 16.696 106.451 17.784 106.792 18.36ZM108.584 6.584C111.443 6.584 113.47 7.20267 114.664 8.44C115.859 9.656 116.456 11.8747 116.456 15.096C116.456 18.232 115.848 20.408 114.632 21.624C113.438 22.8187 111.422 23.416 108.584 23.416C105.768 23.416 103.763 22.8187 102.568 21.624C101.374 20.408 100.776 18.232 100.776 15.096C100.776 11.8747 101.374 9.656 102.568 8.44C103.763 7.20267 105.768 6.584 108.584 6.584ZM128.315 23V12.536C128.315 11.8747 128.155 11.416 127.835 11.16C127.537 10.904 127.057 10.776 126.395 10.776C125.051 10.776 124.379 11.5013 124.379 12.952V23H118.875V7H124.379V8.888H124.923C125.819 7.352 127.217 6.584 129.115 6.584C130.651 6.584 131.814 6.95733 132.603 7.704C133.414 8.45067 133.819 9.69867 133.819 11.448V23H128.315Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+    <div
+      class="c5"
+    >
+      <div
+        class="c6"
+      >
+        <h2
+          class="c7"
+        >
+          Categorias
+        </h2>
+        <nav
+          id="resources"
+        >
+          <a
+            href="/"
+          >
+            Aventura
+          </a>
+          <a
+            href="/"
+          >
+            Jogos em 4k
+          </a>
+          <a
+            href="/"
+          >
+            Terror
+          </a>
+          <a
+            href="/"
+          >
+            Clássicos
+          </a>
+          <a
+            href="/"
+          >
+            Corrida
+          </a>
+          <a
+            href="/"
+          >
+            RPG
+          </a>
+        </nav>
+      </div>
+      <div
+        class="c6"
+      >
+        <h2
+          class="c7"
+        >
+          Sobre
+        </h2>
+        <nav
+          id="resources"
+        >
+          <a
+            href="/"
+          >
+            Privacidade
+          </a>
+          <a
+            href="/"
+          >
+            Termos e Condições
+          </a>
+          <a
+            href="/"
+          >
+            Cookies
+          </a>
+          <a
+            href="/"
+          >
+            Copyright
+          </a>
+        </nav>
+      </div>
+      <div
+        class="c6"
+      >
+        <h2
+          class="c7"
+        >
+          Destaques
+        </h2>
+        <nav
+          id="resources"
+        >
+          <a
+            href="/"
+          >
+            Promoções
+          </a>
+          <a
+            href="/"
+          >
+            FAQ
+          </a>
+          <a
+            href="/"
+          >
+            Pré-venda
+          </a>
+        </nav>
+      </div>
+      <div
+        class="c6"
+      >
+        <h2
+          class="c7"
+        >
+          Siga a Evolution
+        </h2>
+        <nav
+          aria-labelledby="social-media"
+        >
+          <a
+            href="https://www.instagram.com"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.facebook.com"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://www.youtube.com"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            YouTube
+          </a>
+        </nav>
+        <div
+          class="c8"
+        >
+          <h2
+            class="c7"
+          >
+            Meios de Pagamento
+          </h2>
+          <div
+            class="c9"
+          >
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2771%27%20height=%2746%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="Selo do Brasil"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2736%27%20height=%2723%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="Selo do Brasil"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <h2
+        class="c7"
+      >
+        Meios de Pagamento
+      </h2>
+      <div
+        class="c9"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2771%27%20height=%2746%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="Selo do Brasil"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2736%27%20height=%2723%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="Selo do Brasil"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+    <span
+      style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+    >
+      <span
+        style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+      >
+        <img
+          alt=""
+          aria-hidden="true"
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2772%27%20height=%2726%27/%3e"
+          style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+        />
+      </span>
+      <img
+        alt="Bandeira do Brasil"
+        data-nimg="intrinsic"
+        decoding="async"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+      />
+      <noscript />
+    </span>
+  </div>
+  <p
+    class="c11"
+  >
+    Copyright ©
+    2022
+     Evolution. Todos os direitos reservados
+  </p>
+</footer>
+`;

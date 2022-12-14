@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
-
 import media from 'styled-media-query';
+
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     height: 2rem;
     color: ${theme.colors.white};
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan('large')`
       width: 13.7rem;
       height: 3.2rem;
       color: ${theme.colors.primary};

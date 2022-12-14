@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<FilterMobile /> should render the component correctly 1'] = `
+@media (min-width:450px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:1170px) {
+
+}
+
+<button
+  aria-controls="radix-:r0:"
+  aria-expanded="true"
+  aria-haspopup="dialog"
+  aria-hidden="true"
+  data-aria-hidden="true"
+  data-state="open"
+  type="button"
+>
+  Abrir
+</button>
+`;

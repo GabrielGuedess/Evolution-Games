@@ -1,0 +1,2658 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Explorer /> should render the components correctly 1'] = `
+.c25 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  font-size: 1.6rem;
+  padding: 0.8rem 4.8rem;
+  background: #7C3AED;
+  color: #F4F4F5;
+}
+
+.c25:not(:disabled):is(:hover,:focus) {
+  box-shadow: 0 0.8rem 2.8rem rgba(118,74,241,0.5);
+  color: #F4F4F5;
+}
+
+.c25 .effect {
+  fill: #7C3AED;
+}
+
+.c25 span {
+  margin-left: 1.6rem;
+}
+
+.c25:not(:disabled):is(:hover,:focus) {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.c25:not(:disabled):active {
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+}
+
+.c25 span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  z-index: 1;
+}
+
+.c25:not(:disabled):is(:hover,:focus) span {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.c25:not(:disabled):is(:hover,:focus) .icon {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c25:not(:disabled):active span {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.c25 svg {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c25 .effect {
+  position: absolute;
+  top: initial;
+  left: initial;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.c25 .effect path {
+  -webkit-transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c25:not(:disabled):is(:hover,:focus) .effect path {
+  d: path( 'M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0' );
+}
+
+.c25:not(:disabled):active .effect path {
+  d: path( 'M0 5C0 2.23858 2.23858 0 5 0H95C97.7614 0 100 2.23858 100 5V95C100 97.7614 97.7614 100 95 100H5C2.23858 100 0 97.7614 0 95V5Z' );
+}
+
+.c47 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  font-size: 1.4rem;
+  padding: 0.8rem 3.2rem;
+  background: #7C3AED;
+  color: #F4F4F5;
+  background: transparent;
+  color: #717B8A;
+}
+
+.c47:not(:disabled):is(:hover,:focus) {
+  box-shadow: 0 0.8rem 2.8rem rgba(118,74,241,0.5);
+  color: #F4F4F5;
+}
+
+.c47 .effect {
+  fill: #7C3AED;
+}
+
+.c47 span {
+  margin-left: 1.6rem;
+}
+
+.c47:not(:disabled):is(:hover,:focus) {
+  box-shadow: 0 0 0 transparent;
+  color: #F4F4F5;
+}
+
+.c47 .effect {
+  display: none;
+}
+
+.c47:not(:disabled):is(:hover,:focus) {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.c47:not(:disabled):active {
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+}
+
+.c47 span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  z-index: 1;
+}
+
+.c47:not(:disabled):is(:hover,:focus) span {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.c47:not(:disabled):is(:hover,:focus) .icon {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c47:not(:disabled):active span {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.c47 svg {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c47 .effect {
+  position: absolute;
+  top: initial;
+  left: initial;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.c47 .effect path {
+  -webkit-transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c47:not(:disabled):is(:hover,:focus) .effect path {
+  d: path( 'M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0' );
+}
+
+.c47:not(:disabled):active .effect path {
+  d: path( 'M0 5C0 2.23858 2.23858 0 5 0H95C97.7614 0 100 2.23858 100 5V95C100 97.7614 97.7614 100 95 100H5C2.23858 100 0 97.7614 0 95V5Z' );
+}
+
+.c4 {
+  display: none;
+}
+
+.c22 {
+  display: none;
+}
+
+.c44 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c44:hover {
+  cursor: pointer;
+  color: #7C3AED;
+}
+
+.c45 {
+  height: 1.8rem;
+}
+
+.c29 {
+  width: 100%;
+  height: 22rem;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 0.4rem;
+}
+
+.c30 {
+  width: 100%;
+  min-height: 37.8rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
+}
+
+.c33 {
+  display: none;
+  position: absolute;
+  top: -120%;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: linear-gradient(180deg,#9db4d0,rgba(157,180,208,0.2));
+  -webkit-filter: blur(7rem);
+  filter: blur(7rem);
+}
+
+.c32 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2rem;
+  position: absolute;
+  gap: 1.6rem;
+  top: 0;
+  background: linear-gradient(90deg,#010914 12.5%,rgba(4,4,12,0.3) 100%);
+}
+
+.c34 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.c39 {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.c40 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+  color: #F4F4F5;
+  text-shadow: 0 0 1rem rgba(255,255,255,0.5);
+  position: absolute;
+  top: 0.9rem;
+  left: 1.1rem;
+}
+
+.c35 {
+  max-width: calc(100% - 4rem);
+}
+
+.c36 {
+  display: block;
+  font-size: 2.0rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  color: #F4F4F5;
+  font-style: normal;
+  margin-bottom: 2.4rem;
+}
+
+.c37 {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #717B8A;
+}
+
+.c38 {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #717B8A;
+  margin-top: 5px;
+}
+
+.c41 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c42 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  font-style: normal;
+  color: #F4F4F5;
+}
+
+.c43 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.c19 {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.c13 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.375rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 0.2rem;
+}
+
+.c16 {
+  width: 2rem;
+  height: 2rem;
+  background: rgba(113,123,138,0.5);
+  border-radius: 0.2rem;
+}
+
+.c16 rect {
+  stroke: transparent;
+  -webkit-transition: stroke 0.3s;
+  transition: stroke 0.3s;
+}
+
+.c16 .check-worm,
+.c16 .box-worm {
+  stroke: #FFFFFF;
+  -webkit-filter: drop-shadow(0 0 1rem #FFFFFF);
+  filter: drop-shadow(0 0 1rem #FFFFFF);
+  -webkit-transition: stroke 0.3s, stroke-dashoffset 0.6s cubic-bezier(0.42,-0.2,0.58,1.2);
+  transition: stroke 0.3s, stroke-dashoffset 0.6s cubic-bezier(0.42,-0.2,0.58,1.2);
+}
+
+.c18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.c18::after {
+  border-radius: 0.375rem;
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  -webkit-transition: background-color 0.15s linear;
+  transition: background-color 0.15s linear;
+}
+
+.c14 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  margin: 0.375rem;
+}
+
+.c14:checked + .c15 {
+  background-color: #7C3AED;
+  box-shadow: 0 0.5rem 1.5rem rgba(124,58,237,0.25);
+}
+
+.c14:is(:focus,:hover) ~ .c17:after {
+  background-color: rgba(124,58,237,0.15);
+}
+
+.c14:is(:checked,:indeterminate) + .c15 .box-worm {
+  stroke-dashoffset: -91;
+}
+
+.c14:is(:checked,:indeterminate) + .c15 .check-worm {
+  stroke-dashoffset: -6;
+}
+
+.c14:indeterminate + .c15 .box-worm {
+  stroke-dashoffset: -111.38;
+}
+
+.c14:indeterminate + .c15 .check-worm {
+  stroke-dashoffset: -26.38;
+}
+
+.c5 {
+  color: #FFFFFF;
+  padding: 0.5rem;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  right: 0;
+}
+
+.c5 svg {
+  cursor: pointer;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 50;
+  inset: 0;
+  height: 100vh;
+  padding: 3rem 2.4rem;
+  background: #010914;
+  overflow-y: auto;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.c2::-webkit-scrollbar {
+  display: none;
+}
+
+.c3 {
+  position: relative;
+  padding: 1rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2.6rem;
+  background: #010914;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.c7 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.c9 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.c11 {
+  width: 100%;
+  height: 0.3rem;
+  background: #FFFFFF;
+}
+
+.c12 {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px solid #7C3AED;
+  box-shadow: 0px 0px 0.5rem rgba(255,255,255,0.25), 0px 0px 0.8rem #7C3AED;
+}
+
+.c10 {
+  width: 50%;
+  padding: 1rem 0;
+  border: 0.1rem solid #7C3AED;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.c0 {
+  max-width: 165.6rem;
+  margin: 0 1.6rem;
+}
+
+.c1 {
+  margin-top: 4.8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.c20 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.c21 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.c23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-transition: 1s all linear;
+  transition: 1s all linear;
+}
+
+.c24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  color: #717B8A;
+}
+
+.c26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.c46 {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c27 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width:450px) {
+  .c25 .effect {
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+  }
+}
+
+@media (min-width:450px) {
+  .c47 .effect {
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+  }
+}
+
+@media (max-width:768px) {
+  .c4 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c22 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c29 {
+    width: 29.1rem;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c30 {
+    -webkit-filter: none;
+    filter: none;
+    background-color: #010914;
+  }
+}
+
+@media (min-width:768px) {
+  .c33 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c32 {
+    width: auto;
+    min-height: 20.8rem;
+    position: inherit;
+    background-color: #010914;
+    overflow: hidden;
+  }
+}
+
+@media (min-width:768px) {
+  .c36 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c37 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c38 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c42 {
+    font-size: 2.0rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    left: 0.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    position: relative;
+    width: 40rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 4rem 5rem;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0;
+  }
+}
+
+@media (min-width:1170px) {
+  .c0 {
+    margin: 0 3.2rem;
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    margin: 0 4.8rem;
+  }
+}
+
+@media (min-width:1656px) {
+  .c0 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:450px) {
+  .c27 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(29.1rem,1fr));
+    gap: 2.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c27 .c28 {
+    width: 100%;
+  }
+
+  .c27 .c31 {
+    height: auto;
+  }
+}
+
+<div
+  data-testid="Base Mock"
+>
+  <div
+    class="c0 c1"
+  >
+    <section
+      aria-label="ExplorerSidebar Mock"
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <button
+            aria-label="Close Action"
+            class="c5"
+            color="white"
+          >
+            <svg
+              fill="currentColor"
+              height="20"
+              viewBox="0 0 256 256"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <line
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="200"
+                x2="56"
+                y1="56"
+                y2="200"
+              />
+              <line
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="200"
+                x2="56"
+                y1="200"
+                y2="56"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="c6"
+        >
+          <strong
+            class="c7"
+          >
+            Price
+          </strong>
+          <div
+            class="c8"
+          >
+            <div
+              class="c9"
+            >
+              <output
+                class="c10"
+                data-testid="output1"
+                id="output"
+              >
+                R$ 0,00
+              </output>
+              <output
+                class="c10"
+                data-testid="output2"
+                id="output"
+              >
+                R$ 500,00
+              </output>
+            </div>
+            <div
+              class="c11"
+              style="transform: scale(1); cursor: inherit;"
+            >
+              <div
+                aria-label="Price range"
+                aria-valuemax="500"
+                aria-valuemin="0"
+                aria-valuenow="0"
+                class="c12"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
+              />
+              <div
+                aria-label="Price range"
+                aria-valuemax="500"
+                aria-valuemin="0"
+                aria-valuenow="500"
+                class="c12"
+                draggable="false"
+                role="slider"
+                style="position: absolute; z-index: 1; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                tabindex="0"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="c6"
+        >
+          <strong
+            class="c7"
+          >
+            Genre
+          </strong>
+          <section>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Action-adventure"
+              >
+                <input
+                  class="c14"
+                  id="Action-adventure"
+                  name="action-adventure"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Action-adventure
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Adventure"
+              >
+                <input
+                  class="c14"
+                  id="Adventure"
+                  name="adventure"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Adventure
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Sports"
+              >
+                <input
+                  checked=""
+                  class="c14"
+                  id="Sports"
+                  name="sports"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Sports
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Puzzle"
+              >
+                <input
+                  class="c14"
+                  id="Puzzle"
+                  name="puzzle"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Puzzle
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Horror"
+              >
+                <input
+                  class="c14"
+                  id="Horror"
+                  name="horror"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Horror
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Platform"
+              >
+                <input
+                  class="c14"
+                  id="Platform"
+                  name="platform"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Platform
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Fantasy"
+              >
+                <input
+                  class="c14"
+                  id="Fantasy"
+                  name="fantasy"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Fantasy
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="RPG"
+              >
+                <input
+                  class="c14"
+                  id="RPG"
+                  name="role-playing"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    RPG
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="JRPG"
+              >
+                <input
+                  class="c14"
+                  id="JRPG"
+                  name="jrpg"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    JRPG
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Simulation"
+              >
+                <input
+                  class="c14"
+                  id="Simulation"
+                  name="simulation"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Simulation
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Strategy"
+              >
+                <input
+                  class="c14"
+                  id="Strategy"
+                  name="strategy"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Strategy
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Shooter"
+              >
+                <input
+                  class="c14"
+                  id="Shooter"
+                  name="shooter"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Shooter
+                  </span>
+                </div>
+              </label>
+            </div>
+          </section>
+        </div>
+        <div
+          class="c6"
+        >
+          <strong
+            class="c7"
+          >
+            Year
+          </strong>
+          <section>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="1990 - 2000"
+              >
+                <input
+                  class="c14"
+                  id="1990 - 2000"
+                  name="1990-2000"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    1990 - 2000
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="2001 - 2005"
+              >
+                <input
+                  class="c14"
+                  id="2001 - 2005"
+                  name="2001-2005"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    2001 - 2005
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="2006 - 2011"
+              >
+                <input
+                  class="c14"
+                  id="2006 - 2011"
+                  name="2006-2011"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    2006 - 2011
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="2012 - 2017"
+              >
+                <input
+                  class="c14"
+                  id="2012 - 2017"
+                  name="2012-2017"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    2012 - 2017
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="2018 - Now"
+              >
+                <input
+                  class="c14"
+                  id="2018 - Now"
+                  name="2018-now"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    2018 - Now
+                  </span>
+                </div>
+              </label>
+            </div>
+          </section>
+        </div>
+        <div
+          class="c6"
+        >
+          <strong
+            class="c7"
+          >
+            Platforms
+          </strong>
+          <section>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Playstation 4"
+              >
+                <input
+                  class="c14"
+                  id="Playstation 4"
+                  name="ps4"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Playstation 4
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Playstation 5"
+              >
+                <input
+                  class="c14"
+                  id="Playstation 5"
+                  name="ps5"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Playstation 5
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Xbox One"
+              >
+                <input
+                  class="c14"
+                  id="Xbox One"
+                  name="one"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Xbox One
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="Xbox Series X"
+              >
+                <input
+                  class="c14"
+                  id="Xbox Series X"
+                  name="xs"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    Xbox Series X
+                  </span>
+                </div>
+              </label>
+            </div>
+          </section>
+        </div>
+        <div
+          class="c6"
+        >
+          <strong
+            class="c7"
+          >
+            Notas
+          </strong>
+          <section>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="From 5.0"
+              >
+                <input
+                  class="c14"
+                  id="From 5.0"
+                  name="from-5.0"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    From 5.0
+                  </span>
+                </div>
+              </label>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="From 4.0"
+              >
+                <input
+                  class="c14"
+                  id="From 4.0"
+                  name="from-4.0"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  class="c15 c16"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <rect
+                      height="22"
+                      width="22"
+                      x="1"
+                      y="1"
+                    />
+                    <polyline
+                      class="box-worm"
+                      points="23,1 1,1 1,23 23,23 23,4"
+                      stroke-dasharray="30 146"
+                      stroke-dashoffset="30"
+                    />
+                    <polyline
+                      class="check-worm"
+                      points="23,4 10,17 5,12 18,12"
+                      stroke-dasharray="17.38 149.68"
+                      stroke-dashoffset="103.38"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="c17 c18"
+                >
+                  <span
+                    class="c19"
+                  >
+                    From 4.0
+                  </span>
+                </div>
+              </label>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <div
+      class="c20"
+    >
+      <div
+        class="c21"
+      >
+        <div
+          class="c22"
+        >
+          <div
+            class="c23"
+          >
+            <span
+              aria-label="active-filter: sports"
+              class="c24"
+            >
+              Sports
+            </span>
+          </div>
+        </div>
+        <div
+          class="c4"
+        >
+          <button
+            aria-label="Button Action"
+            class="c25"
+          >
+            <svg
+              fill="currentColor"
+              height="20"
+              viewBox="0 0 256 256"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <line
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="64"
+                x2="192"
+                y1="128"
+                y2="128"
+              />
+              <line
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="24"
+                x2="232"
+                y1="80"
+                y2="80"
+              />
+              <line
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+                x1="104"
+                x2="152"
+                y1="176"
+                y2="176"
+              />
+            </svg>
+            <span>
+              Filtrar
+            </span>
+            <svg
+              aria-hidden="true"
+              class="effect"
+              preserveAspectRatio="none"
+              viewBox="-5 -5 110 110"
+            >
+              <path
+                d="M0 8C0 3.58172 3.58172 0 8 0H92C96.4183 0 100 3.58172 100 8V92C100 96.4183 96.4183 100 92 100H8C3.58172 100 0 96.4183 0 92V8Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <button
+          aria-controls="radix-:r0:"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          aria-label="Button Sort"
+          class="c26"
+          data-state="closed"
+          type="button"
+        >
+          Popularity
+          <svg
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 256 256"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="256"
+              width="256"
+            />
+            <line
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+              x1="40"
+              x2="216"
+              y1="128"
+              y2="128"
+            />
+            <line
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+              x1="40"
+              x2="216"
+              y1="64"
+              y2="64"
+            />
+            <line
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+              x1="40"
+              x2="216"
+              y1="192"
+              y2="192"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="c27"
+      >
+        <article
+          class="c28 c29"
+        >
+          <div
+            class="c30"
+            href="/game/god-of-war-ragnarok"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="God of War: Ragnarök"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <div
+            class="c31 c32"
+          >
+            <div
+              class="c33"
+              color="#9db4d0"
+            />
+            <div
+              class="c34"
+              href="/game/god-of-war-ragnarok"
+            >
+              <div
+                class="c35"
+              >
+                <strong
+                  class="c36"
+                >
+                  God of War: Ragnarök
+                </strong>
+                <p
+                  class="c37"
+                >
+                  Action-adventure
+                </p>
+                <p
+                  class="0 c38"
+                >
+                  Santa Monica Games
+                  , 
+                  2021
+                </p>
+              </div>
+              <div
+                class="c39"
+              >
+                <svg
+                  aria-label="Score"
+                  height="42"
+                  role="img"
+                  viewBox="0 0 42 42"
+                  width="42"
+                >
+                  <path
+                    d="M1 21a20 20 0 1 1 40 0 20 20 0 0 1-40 0"
+                    fill="none"
+                    pathLength="100"
+                    stroke="#0FBF00"
+                    stroke-dasharray="100 0"
+                    stroke-dashoffset="-25"
+                    stroke-width="2"
+                  />
+                </svg>
+                <p
+                  class="c40"
+                >
+                  5,0
+                </p>
+              </div>
+            </div>
+            <div
+              class="1 c41"
+            >
+              <p
+                class="2 c42"
+              >
+                R$ 350,00
+              </p>
+              <div
+                class="3 c43"
+              >
+                <div
+                  class="c44"
+                  color="white"
+                >
+                  <svg
+                    aria-label="PlayStation 5 Icon"
+                    class="c45"
+                    fill="none"
+                    role="figure"
+                    viewBox="0 0 89 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="M60.589 3.937a3.272 3.272 0 0 0-3.266 3.277v5.592a1.85 1.85 0 0 1-1.847 1.853H49.19v1.388h7.478a3.272 3.272 0 0 0 3.266-3.277V7.178a1.85 1.85 0 0 1 1.846-1.852h6.404V3.937H60.59ZM32.411 3.937v1.389h13.133c1.047 0 1.895.851 1.895 1.901s-.848 1.902-1.895 1.902h-9.867a3.272 3.272 0 0 0-3.266 3.277v3.641h2.61V12.37a1.85 1.85 0 0 1 1.847-1.853h9.902a3.284 3.284 0 0 0 3.28-3.29 3.284 3.284 0 0 0-3.28-3.29H32.411ZM70.699 3.937V8.46c0 1.137.918 2.058 2.05 2.058h10.93c1.14 0 2.063.927 2.063 2.07a2.068 2.068 0 0 1-2.064 2.072h-12.98v1.388h14.207a3.453 3.453 0 0 0 3.448-3.459c0-1.91-1.544-3.46-3.448-3.46H74.133a.826.826 0 0 1-.824-.826V5.326h14.57V3.937H70.7Z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                    />
+                    <path
+                      d="M9.66 0v18.66L13.868 20V4.348c0-.731.326-1.223.852-1.051.687.19.82.865.82 1.598v6.25c2.625 1.271 4.689 0 4.689-3.354 0-3.443-1.208-4.97-4.771-6.2C14.055 1.122 11.45.332 9.66 0Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="m14.666 17.274 6.769-2.422c.767-.276.886-.667.262-.871-.623-.204-1.752-.145-2.52.13l-4.511 1.595V13.17l.26-.087s1.303-.464 3.135-.668c1.833-.2 4.077.026 5.838.698 1.986.63 2.21 1.556 1.706 2.194-.506.64-1.741 1.096-1.741 1.096l-9.198 3.315v-2.443ZM1.94 17.016C-.098 16.439-.438 15.243.49 14.55c.861-.64 2.32-1.119 2.32-1.119l6.033-2.15v2.451l-4.341 1.56c-.768.276-.884.667-.263.87.625.206 1.753.148 2.522-.13l2.082-.757v2.195c-.133.023-.279.046-.414.068-2.084.341-4.303.2-6.49-.523Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        class="c46"
+      >
+        <button
+          aria-label="Button Action"
+          class="c47"
+        >
+          <svg
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 256 256"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="256"
+              width="256"
+            />
+            <polyline
+              fill="none"
+              points="208 96 128 176 48 96"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            />
+          </svg>
+          <span>
+            Mostrar Mais
+          </span>
+          <svg
+            aria-hidden="true"
+            class="effect"
+            preserveAspectRatio="none"
+            viewBox="-5 -5 110 110"
+          >
+            <path
+              d="M0 8C0 3.58172 3.58172 0 8 0H92C96.4183 0 100 3.58172 100 8V92C100 96.4183 96.4183 100 92 100H8C3.58172 100 0 96.4183 0 92V8Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

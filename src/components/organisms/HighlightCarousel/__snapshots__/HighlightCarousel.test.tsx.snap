@@ -1,0 +1,1229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<HighlightCarousel /> should render the heading 1'] = `
+.c8 {
+  min-width: 6.4rem;
+}
+
+.c9 {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid #717B8A;
+  color: #717B8A;
+  -webkit-transition: color 0.3s linear,border-color 0.3s linear;
+  transition: color 0.3s linear,border-color 0.3s linear;
+  border-radius: 5px 0 0 5px;
+}
+
+.c9 svg {
+  width: 0.7rem;
+  height: 1.2rem;
+}
+
+.c9:hover,
+.c9:focus {
+  cursor: pointer;
+  color: #7C3AED;
+  border-color: #7C3AED;
+}
+
+.c10 {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid #717B8A;
+  color: #717B8A;
+  -webkit-transition: color 0.3s linear,border-color 0.3s linear;
+  transition: color 0.3s linear,border-color 0.3s linear;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  border-radius: 5px 0 0 5px;
+}
+
+.c10 svg {
+  width: 0.7rem;
+  height: 1.2rem;
+}
+
+.c10:hover,
+.c10:focus {
+  cursor: pointer;
+  color: #7C3AED;
+  border-color: #7C3AED;
+}
+
+.c7 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: all 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  font-size: 1.2rem;
+  padding: 0.8rem 2.4rem;
+  background: transparent;
+  color: #717B8A;
+}
+
+.c7 .effect {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #717B8A;
+}
+
+.c7 .effect path {
+  -webkit-transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c7:not(:disabled):is(:hover,:focus) .effect {
+  stroke: #7C3AED;
+}
+
+.c7:not(:disabled):is(:hover,:focus) {
+  color: #7C3AED;
+}
+
+.c7:not(:disabled):is(:hover,:focus) {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.c7:not(:disabled):active {
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+}
+
+.c7 span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  z-index: 1;
+}
+
+.c7:not(:disabled):is(:hover,:focus) span {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.c7:not(:disabled):is(:hover,:focus) .icon {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c7:not(:disabled):active span {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.c7 svg {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  -webkit-transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: transform 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c7 .effect {
+  position: absolute;
+  top: initial;
+  left: initial;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.c7 .effect path {
+  -webkit-transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+  transition: 0.3s cubic-bezier(0.68,-0.6,0.32,1.6);
+}
+
+.c7:not(:disabled):is(:hover,:focus) .effect path {
+  d: path( 'M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0' );
+}
+
+.c7:not(:disabled):active .effect path {
+  d: path( 'M0 5C0 2.23858 2.23858 0 5 0H95C97.7614 0 100 2.23858 100 5V95C100 97.7614 97.7614 100 95 100H5C2.23858 100 0 97.7614 0 95V5Z' );
+}
+
+.c1 {
+  max-width: 165.6rem;
+  margin: 0 1.6rem;
+}
+
+.c5 {
+  display: none;
+}
+
+.c17 {
+  display: none;
+}
+
+.c4 {
+  color: #F4F4F5;
+  font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 500;
+  text-align: center;
+  -webkit-animation: dBlapP 5s 750ms linear infinite;
+  animation: dBlapP 5s 750ms linear infinite;
+  font-size: 1.6rem;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.c19:hover {
+  cursor: pointer;
+  color: #7C3AED;
+}
+
+.c20 {
+  height: 1.4rem;
+}
+
+.c21 {
+  height: 1.8rem;
+}
+
+.c11 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c12 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.c13 {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c14 {
+  width: 60%;
+  height: 100%;
+  padding: 3rem 0;
+  margin: 0 1.6rem 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c15 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  -webkit-letter-spacing: 0.4rem;
+  -moz-letter-spacing: 0.4rem;
+  -ms-letter-spacing: 0.4rem;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  overflow: hidden;
+  background: linear-gradient(90deg,#000,#fff,#fff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-animation: jyhgBN 2.5s linear infinite;
+  animation: jyhgBN 2.5s linear infinite;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255,255,255,0);
+}
+
+.c16 {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  color: #717B8A;
+}
+
+.c18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.c0 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 4.0rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+}
+
+@media (min-width:450px) {
+  .c7 .effect {
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+  }
+}
+
+@media (min-width:1170px) {
+  .c1 {
+    margin: 0 3.2rem;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    margin: 0 4.8rem;
+  }
+}
+
+@media (min-width:1656px) {
+  .c1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+  .c17 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    width: 33%;
+    height: auto;
+    margin: 0 10rem 0 0;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+<section
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <h1
+          class="c4"
+        >
+          Pre-order
+        </h1>
+      </div>
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+        >
+          <button
+            aria-label="Button Action"
+            class="c7"
+          >
+            <span>
+              All
+            </span>
+            <svg
+              aria-hidden="true"
+              class="effect"
+              preserveAspectRatio="none"
+              viewBox="-5 -5 110 110"
+            >
+              <path
+                d="M0 8C0 3.58172 3.58172 0 8 0H92C96.4183 0 100 3.58172 100 8V92C100 96.4183 96.4183 100 92 100H8C3.58172 100 0 96.4183 0 92V8Z"
+              />
+            </svg>
+          </button>
+          <div
+            class="c8"
+          >
+            <button
+              class="c9"
+              direction="left"
+              id="pre-order-game-list-prev-arrow"
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                preserveAspectRatio="none"
+                viewBox="0 0 8 13"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.258 12.466a.937.937 0 0 0 0-1.325L2.618 6.5l4.64-4.64A.937.937 0 0 0 5.933.533L.629 5.837a.938.938 0 0 0 0 1.326l5.304 5.303a.937.937 0 0 0 1.325 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button
+              class="c10"
+              direction="right"
+              id="pre-order-game-list-next-arrow"
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                preserveAspectRatio="none"
+                viewBox="0 0 8 13"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.258 12.466a.937.937 0 0 0 0-1.325L2.618 6.5l4.64-4.64A.937.937 0 0 0 5.933.533L.629 5.837a.938.938 0 0 0 0 1.326l5.304 5.303a.937.937 0 0 0 1.325 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="Swiper"
+  >
+    <div
+      data-testid="Swiper-Slide"
+    >
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <section
+          class="c11"
+        >
+          <div
+            class="c12"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Star Wars"
+                class="imageBackground"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <div
+            class="c13"
+          >
+            <div
+              class="c14"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27768%27%20height=%27296%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="Logo Star Wars"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+              <p
+                class="c15"
+              >
+                10 de novembro de 2019
+              </p>
+              <span
+                class="c16"
+              >
+                Action-adventure
+                , 
+                Respawn Entertainment
+              </span>
+              <div
+                class="c17"
+              >
+                <div
+                  class="c18"
+                >
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PC Icon"
+                      class="c20"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.355 15.5 2.77.955h5.739c1.098 0 2 .21 2.705.632.71.416 1.208.996 1.492 1.74.289.738.355 1.59.199 2.557-.161.97-.511 1.825-1.051 2.563a5.464 5.464 0 0 1-2.088 1.72c-.857.411-1.847.617-2.97.617H3.14l.405-2.464h3.16c.597 0 1.106-.102 1.528-.306a2.581 2.581 0 0 0 1.015-.86 3.09 3.09 0 0 0 .49-1.27c.08-.488.055-.912-.078-1.272a1.559 1.559 0 0 0-.731-.838c-.35-.203-.822-.305-1.414-.305H5.44L3.43 15.5H.355Zm27.338-9.453h-3.068a2.949 2.949 0 0 0-.156-1.08 2.11 2.11 0 0 0-.511-.81 2.146 2.146 0 0 0-.817-.504 3.133 3.133 0 0 0-1.087-.177c-.776 0-1.489.194-2.137.582-.65.389-1.196.952-1.641 1.69-.445.734-.753 1.622-.923 2.664-.166 1.004-.157 1.844.028 2.521.185.677.511 1.189.98 1.534.474.341 1.063.512 1.769.512.435 0 .85-.055 1.242-.164.393-.113.751-.274 1.073-.483.327-.213.61-.47.852-.774.246-.303.438-.646.575-1.03h3.09a7.033 7.033 0 0 1-.91 1.932 7.273 7.273 0 0 1-1.512 1.662 7.3 7.3 0 0 1-2.052 1.15c-.767.285-1.608.427-2.522.427-1.32 0-2.455-.303-3.402-.91-.942-.605-1.621-1.479-2.038-2.62-.417-1.141-.495-2.517-.235-4.126.261-1.558.77-2.88 1.527-3.963.763-1.09 1.688-1.916 2.778-2.48a7.553 7.553 0 0 1 3.508-.844c.867 0 1.65.118 2.35.355.702.237 1.298.582 1.79 1.037.498.45.872 1.001 1.123 1.655.25.653.36 1.401.326 2.244Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PlayStation Icon"
+                      class="c20"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="Xbox Icon"
+                      class="c20"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c5"
+              >
+                <div
+                  class="c18"
+                >
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PC Icon"
+                      class="c21"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.355 15.5 2.77.955h5.739c1.098 0 2 .21 2.705.632.71.416 1.208.996 1.492 1.74.289.738.355 1.59.199 2.557-.161.97-.511 1.825-1.051 2.563a5.464 5.464 0 0 1-2.088 1.72c-.857.411-1.847.617-2.97.617H3.14l.405-2.464h3.16c.597 0 1.106-.102 1.528-.306a2.581 2.581 0 0 0 1.015-.86 3.09 3.09 0 0 0 .49-1.27c.08-.488.055-.912-.078-1.272a1.559 1.559 0 0 0-.731-.838c-.35-.203-.822-.305-1.414-.305H5.44L3.43 15.5H.355Zm27.338-9.453h-3.068a2.949 2.949 0 0 0-.156-1.08 2.11 2.11 0 0 0-.511-.81 2.146 2.146 0 0 0-.817-.504 3.133 3.133 0 0 0-1.087-.177c-.776 0-1.489.194-2.137.582-.65.389-1.196.952-1.641 1.69-.445.734-.753 1.622-.923 2.664-.166 1.004-.157 1.844.028 2.521.185.677.511 1.189.98 1.534.474.341 1.063.512 1.769.512.435 0 .85-.055 1.242-.164.393-.113.751-.274 1.073-.483.327-.213.61-.47.852-.774.246-.303.438-.646.575-1.03h3.09a7.033 7.033 0 0 1-.91 1.932 7.273 7.273 0 0 1-1.512 1.662 7.3 7.3 0 0 1-2.052 1.15c-.767.285-1.608.427-2.522.427-1.32 0-2.455-.303-3.402-.91-.942-.605-1.621-1.479-2.038-2.62-.417-1.141-.495-2.517-.235-4.126.261-1.558.77-2.88 1.527-3.963.763-1.09 1.688-1.916 2.778-2.48a7.553 7.553 0 0 1 3.508-.844c.867 0 1.65.118 2.35.355.702.237 1.298.582 1.79 1.037.498.45.872 1.001 1.123 1.655.25.653.36 1.401.326 2.244Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PlayStation Icon"
+                      class="c21"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="Xbox Icon"
+                      class="c21"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <section
+          class="c11"
+        >
+          <div
+            class="c12"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Resident Evil 8"
+                class="imageBackground"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <div
+            class="c13"
+          >
+            <div
+              class="c14"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27768%27%20height=%27296%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="Logo Star Wars"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+              <p
+                class="c15"
+              >
+                10 de setembro de 2022
+              </p>
+              <span
+                class="c16"
+              >
+                Action-adventure
+                , 
+                Respawn Entertainment
+              </span>
+              <div
+                class="c17"
+              >
+                <div
+                  class="c18"
+                >
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PC Icon"
+                      class="c20"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.355 15.5 2.77.955h5.739c1.098 0 2 .21 2.705.632.71.416 1.208.996 1.492 1.74.289.738.355 1.59.199 2.557-.161.97-.511 1.825-1.051 2.563a5.464 5.464 0 0 1-2.088 1.72c-.857.411-1.847.617-2.97.617H3.14l.405-2.464h3.16c.597 0 1.106-.102 1.528-.306a2.581 2.581 0 0 0 1.015-.86 3.09 3.09 0 0 0 .49-1.27c.08-.488.055-.912-.078-1.272a1.559 1.559 0 0 0-.731-.838c-.35-.203-.822-.305-1.414-.305H5.44L3.43 15.5H.355Zm27.338-9.453h-3.068a2.949 2.949 0 0 0-.156-1.08 2.11 2.11 0 0 0-.511-.81 2.146 2.146 0 0 0-.817-.504 3.133 3.133 0 0 0-1.087-.177c-.776 0-1.489.194-2.137.582-.65.389-1.196.952-1.641 1.69-.445.734-.753 1.622-.923 2.664-.166 1.004-.157 1.844.028 2.521.185.677.511 1.189.98 1.534.474.341 1.063.512 1.769.512.435 0 .85-.055 1.242-.164.393-.113.751-.274 1.073-.483.327-.213.61-.47.852-.774.246-.303.438-.646.575-1.03h3.09a7.033 7.033 0 0 1-.91 1.932 7.273 7.273 0 0 1-1.512 1.662 7.3 7.3 0 0 1-2.052 1.15c-.767.285-1.608.427-2.522.427-1.32 0-2.455-.303-3.402-.91-.942-.605-1.621-1.479-2.038-2.62-.417-1.141-.495-2.517-.235-4.126.261-1.558.77-2.88 1.527-3.963.763-1.09 1.688-1.916 2.778-2.48a7.553 7.553 0 0 1 3.508-.844c.867 0 1.65.118 2.35.355.702.237 1.298.582 1.79 1.037.498.45.872 1.001 1.123 1.655.25.653.36 1.401.326 2.244Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PlayStation Icon"
+                      class="c20"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="Xbox Icon"
+                      class="c20"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c5"
+              >
+                <div
+                  class="c18"
+                >
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PC Icon"
+                      class="c21"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.355 15.5 2.77.955h5.739c1.098 0 2 .21 2.705.632.71.416 1.208.996 1.492 1.74.289.738.355 1.59.199 2.557-.161.97-.511 1.825-1.051 2.563a5.464 5.464 0 0 1-2.088 1.72c-.857.411-1.847.617-2.97.617H3.14l.405-2.464h3.16c.597 0 1.106-.102 1.528-.306a2.581 2.581 0 0 0 1.015-.86 3.09 3.09 0 0 0 .49-1.27c.08-.488.055-.912-.078-1.272a1.559 1.559 0 0 0-.731-.838c-.35-.203-.822-.305-1.414-.305H5.44L3.43 15.5H.355Zm27.338-9.453h-3.068a2.949 2.949 0 0 0-.156-1.08 2.11 2.11 0 0 0-.511-.81 2.146 2.146 0 0 0-.817-.504 3.133 3.133 0 0 0-1.087-.177c-.776 0-1.489.194-2.137.582-.65.389-1.196.952-1.641 1.69-.445.734-.753 1.622-.923 2.664-.166 1.004-.157 1.844.028 2.521.185.677.511 1.189.98 1.534.474.341 1.063.512 1.769.512.435 0 .85-.055 1.242-.164.393-.113.751-.274 1.073-.483.327-.213.61-.47.852-.774.246-.303.438-.646.575-1.03h3.09a7.033 7.033 0 0 1-.91 1.932 7.273 7.273 0 0 1-1.512 1.662 7.3 7.3 0 0 1-2.052 1.15c-.767.285-1.608.427-2.522.427-1.32 0-2.455-.303-3.402-.91-.942-.605-1.621-1.479-2.038-2.62-.417-1.141-.495-2.517-.235-4.126.261-1.558.77-2.88 1.527-3.963.763-1.09 1.688-1.916 2.778-2.48a7.553 7.553 0 0 1 3.508-.844c.867 0 1.65.118 2.35.355.702.237 1.298.582 1.79 1.037.498.45.872 1.001 1.123 1.655.25.653.36 1.401.326 2.244Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PlayStation Icon"
+                      class="c21"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="Xbox Icon"
+                      class="c21"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <section
+          class="c11"
+        >
+          <div
+            class="c12"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Star Wars 2"
+                class="imageBackground"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <div
+            class="c13"
+          >
+            <div
+              class="c14"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27768%27%20height=%27296%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="Logo Star Wars 2"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+              <p
+                class="c15"
+              >
+                10 de setembro de 2022
+              </p>
+              <span
+                class="c16"
+              >
+                Action-adventure
+                , 
+                Respawn Entertainment
+              </span>
+              <div
+                class="c17"
+              >
+                <div
+                  class="c18"
+                >
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PC Icon"
+                      class="c20"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.355 15.5 2.77.955h5.739c1.098 0 2 .21 2.705.632.71.416 1.208.996 1.492 1.74.289.738.355 1.59.199 2.557-.161.97-.511 1.825-1.051 2.563a5.464 5.464 0 0 1-2.088 1.72c-.857.411-1.847.617-2.97.617H3.14l.405-2.464h3.16c.597 0 1.106-.102 1.528-.306a2.581 2.581 0 0 0 1.015-.86 3.09 3.09 0 0 0 .49-1.27c.08-.488.055-.912-.078-1.272a1.559 1.559 0 0 0-.731-.838c-.35-.203-.822-.305-1.414-.305H5.44L3.43 15.5H.355Zm27.338-9.453h-3.068a2.949 2.949 0 0 0-.156-1.08 2.11 2.11 0 0 0-.511-.81 2.146 2.146 0 0 0-.817-.504 3.133 3.133 0 0 0-1.087-.177c-.776 0-1.489.194-2.137.582-.65.389-1.196.952-1.641 1.69-.445.734-.753 1.622-.923 2.664-.166 1.004-.157 1.844.028 2.521.185.677.511 1.189.98 1.534.474.341 1.063.512 1.769.512.435 0 .85-.055 1.242-.164.393-.113.751-.274 1.073-.483.327-.213.61-.47.852-.774.246-.303.438-.646.575-1.03h3.09a7.033 7.033 0 0 1-.91 1.932 7.273 7.273 0 0 1-1.512 1.662 7.3 7.3 0 0 1-2.052 1.15c-.767.285-1.608.427-2.522.427-1.32 0-2.455-.303-3.402-.91-.942-.605-1.621-1.479-2.038-2.62-.417-1.141-.495-2.517-.235-4.126.261-1.558.77-2.88 1.527-3.963.763-1.09 1.688-1.916 2.778-2.48a7.553 7.553 0 0 1 3.508-.844c.867 0 1.65.118 2.35.355.702.237 1.298.582 1.79 1.037.498.45.872 1.001 1.123 1.655.25.653.36 1.401.326 2.244Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PlayStation Icon"
+                      class="c20"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="Xbox Icon"
+                      class="c20"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c5"
+              >
+                <div
+                  class="c18"
+                >
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PC Icon"
+                      class="c21"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.355 15.5 2.77.955h5.739c1.098 0 2 .21 2.705.632.71.416 1.208.996 1.492 1.74.289.738.355 1.59.199 2.557-.161.97-.511 1.825-1.051 2.563a5.464 5.464 0 0 1-2.088 1.72c-.857.411-1.847.617-2.97.617H3.14l.405-2.464h3.16c.597 0 1.106-.102 1.528-.306a2.581 2.581 0 0 0 1.015-.86 3.09 3.09 0 0 0 .49-1.27c.08-.488.055-.912-.078-1.272a1.559 1.559 0 0 0-.731-.838c-.35-.203-.822-.305-1.414-.305H5.44L3.43 15.5H.355Zm27.338-9.453h-3.068a2.949 2.949 0 0 0-.156-1.08 2.11 2.11 0 0 0-.511-.81 2.146 2.146 0 0 0-.817-.504 3.133 3.133 0 0 0-1.087-.177c-.776 0-1.489.194-2.137.582-.65.389-1.196.952-1.641 1.69-.445.734-.753 1.622-.923 2.664-.166 1.004-.157 1.844.028 2.521.185.677.511 1.189.98 1.534.474.341 1.063.512 1.769.512.435 0 .85-.055 1.242-.164.393-.113.751-.274 1.073-.483.327-.213.61-.47.852-.774.246-.303.438-.646.575-1.03h3.09a7.033 7.033 0 0 1-.91 1.932 7.273 7.273 0 0 1-1.512 1.662 7.3 7.3 0 0 1-2.052 1.15c-.767.285-1.608.427-2.522.427-1.32 0-2.455-.303-3.402-.91-.942-.605-1.621-1.479-2.038-2.62-.417-1.141-.495-2.517-.235-4.126.261-1.558.77-2.88 1.527-3.963.763-1.09 1.688-1.916 2.778-2.48a7.553 7.553 0 0 1 3.508-.844c.867 0 1.65.118 2.35.355.702.237 1.298.582 1.79 1.037.498.45.872 1.001 1.123 1.655.25.653.36 1.401.326 2.244Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PlayStation Icon"
+                      class="c21"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="Xbox Icon"
+                      class="c21"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.348 9.664c1.736-2.564 3.408-4.06 3.408-4.06s-1.842-2.14-4.06-2.948l-.144-.036A9.786 9.786 0 0 0 .2 10c0 2.218.74 4.266 1.978 5.906 0-.192.026-3.076 2.17-6.242ZM19.8 10c0-2.944-1.3-5.582-3.352-7.38l-.14.04c-2.218.81-4.064 2.948-4.064 2.948s1.672 1.496 3.408 4.06c2.144 3.168 2.17 6.05 2.166 6.244A9.747 9.747 0 0 0 19.8 10ZM7.602 2.34c1.282.574 2.388 1.514 2.388 1.514s1.116-.936 2.398-1.514c1.61-.722 2.84-.494 3.164-.416A9.77 9.77 0 0 0 10 .2a9.77 9.77 0 0 0-5.552 1.724c.316-.078 1.54-.31 3.154.416ZM14.494 11.614c-2.026-2.488-4.502-4.108-4.502-4.108s-2.464 1.618-4.494 4.108c-1.742 2.14-2.388 3.71-2.738 4.716l-.056.21A9.769 9.769 0 0 0 10 19.8c2.9 0 5.504-1.26 7.298-3.26l-.062-.21c-.35-1.006-1.002-2.576-2.742-4.716Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        data-testid="Swiper-Slide"
+      >
+        <section
+          class="c11"
+        >
+          <div
+            class="c12"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="The last Of Us"
+                class="imageBackground"
+                data-nimg="fill"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <div
+            class="c13"
+          >
+            <div
+              class="c14"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27768%27%20height=%27296%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="Logo The last Of Us"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+              <p
+                class="c15"
+              >
+                10 de setembro de 2022
+              </p>
+              <span
+                class="c16"
+              >
+                Action-adventure
+                , 
+                Respawn Entertainment
+              </span>
+              <div
+                class="c17"
+              >
+                <div
+                  class="c18"
+                >
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PlayStation Icon"
+                      class="c20"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c5"
+              >
+                <div
+                  class="c18"
+                >
+                  <div
+                    class="c19"
+                    color="white"
+                  >
+                    <svg
+                      aria-label="PlayStation Icon"
+                      class="c21"
+                      fill="none"
+                      role="figure"
+                      viewBox="0 0 28 22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M.567 16.039c-1.05.71-.7 2.057 1.538 2.697 2.309.781 4.826.994 7.276.569.139 0 .28-.072.35-.072v-2.415l-2.378.781c-.91.284-1.818.356-2.727.141-.7-.213-.561-.638.28-.994l4.826-1.703v-2.624l-6.717 2.342c-.839.284-1.68.71-2.448 1.278ZM16.796 5.393v6.883c2.868 1.42 5.106 0 5.106-3.69 0-3.76-1.329-5.463-5.177-6.81C14.697 1.062 12.598.425 10.5 0v20.51L15.396 22V4.755c0-.782 0-1.348.561-1.135.77.212.839.994.839 1.773Zm9.096 9.012c-2.028-.71-4.197-.994-6.296-.781-1.119.071-2.17.355-3.149.71l-.21.07v2.77l4.549-1.704c.909-.284 1.818-.356 2.727-.14.7.212.56.637-.28.993l-6.996 2.626v2.697l9.655-3.62c.7-.284 1.328-.637 1.889-1.206.49-.712.28-1.706-1.89-2.415Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+`;

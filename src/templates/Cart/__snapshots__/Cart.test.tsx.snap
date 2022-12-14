@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Cart /> should render <Cart /> without any items 1'] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.c4 {
+  max-width: 100%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.c6 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 34px;
+  text-align: center;
+  color: #7C3AED;
+  text-shadow: 0px 0.8rem 2.4rem rgba(118,74,241,0.25);
+}
+
+.c7 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #717B8A;
+}
+
+.c0 {
+  max-width: 165.6rem;
+  margin: 0 1.6rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4.6rem;
+  margin-top: 4.0rem;
+}
+
+.c2 {
+  width: 100%;
+  height: 70vh;
+  margin-top: 9rem;
+}
+
+@media (min-width:1170px) {
+  .c0 {
+    margin: 0 3.2rem;
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    margin: 0 4.8rem;
+  }
+}
+
+@media (min-width:1656px) {
+  .c0 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:1170px) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: 70vh;
+  }
+}
+
+<div
+  data-testid="Base Mock"
+>
+  <div
+    class="c0 c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        <img
+          alt="two gamers in a couch playing videogame"
+          class="c4"
+          src="/img/svg/Empty.svg"
+        />
+        <div
+          class="c5"
+        >
+          <strong
+            class="c6"
+          >
+            Nenhum jogo encontrado
+          </strong>
+          <span
+            class="c7"
+          >
+            Você não adicionou nenhum jogo a sua bolsa de compras.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="HighlightCarousel"
+  />
+</div>
+`;
