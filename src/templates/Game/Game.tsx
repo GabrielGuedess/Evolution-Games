@@ -1,5 +1,7 @@
+import { useSession } from 'next-auth/react';
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 import { useState } from 'react';
 
@@ -65,6 +67,9 @@ export const Game = ({
 }: GameProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
+
+  const { status } = useSession();
+  const { push, asPath } = useRouter();
 
   const { isInFavorite, addToFavorite, removeFromFavorite } = useFavorite();
   const { addToCart, isInCart, removeFromCart } = useCart();
@@ -230,17 +235,25 @@ export const Game = ({
 
             <S.InfoGame>
               <S.Controls>
-                <S.HeartIcon
-                  weight={isInFavorite(id) ? 'fill' : 'regular'}
-                  color={
-                    isInFavorite(id) ? theme.colors.primary : theme.colors.white
-                  }
-                  onClick={() =>
-                    isInFavorite(id)
-                      ? removeFromFavorite(id)
-                      : addToFavorite(id)
-                  }
-                />
+                {status === 'authenticated' ? (
+                  <S.HeartIcon
+                    weight={isInFavorite(id) ? 'fill' : 'regular'}
+                    color={
+                      isInFavorite(id)
+                        ? theme.colors.primary
+                        : theme.colors.white
+                    }
+                    onClick={() =>
+                      isInFavorite(id)
+                        ? removeFromFavorite(id)
+                        : addToFavorite(id)
+                    }
+                  />
+                ) : (
+                  <S.HeartIcon
+                    onClick={() => push(`/sign-in?callbackUrl=${asPath}`)}
+                  />
+                )}
 
                 <S.WrapperHandbag
                   onClick={() =>

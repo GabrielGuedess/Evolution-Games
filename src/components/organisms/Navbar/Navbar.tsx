@@ -1,3 +1,4 @@
+import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -21,8 +22,10 @@ export type MenuProps = {
 };
 
 export const Navbar = ({ loading = false, ...props }: MenuProps) => {
-  const { asPath } = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+
+  const { data: session } = useSession();
+  const { asPath } = useRouter();
 
   return (
     <S.Wrapper>
@@ -67,7 +70,12 @@ export const Navbar = ({ loading = false, ...props }: MenuProps) => {
       {!loading && (
         <>
           <S.WrapperIcons>
-            <Link href="/favorites" passHref>
+            <Link
+              href={
+                session?.user ? '/favorites' : '/sign-in?callbackUrl=/favorites'
+              }
+              passHref
+            >
               <S.HeartLink aria-label="Link Favorites">
                 <Heart size={24} />
               </S.HeartLink>

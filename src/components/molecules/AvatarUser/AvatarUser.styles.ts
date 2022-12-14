@@ -6,6 +6,8 @@ import styled, { css } from 'styled-components';
 export const Wrapper = styled.div`
   width: 3rem;
   height: 3.3rem;
+  display: flex;
+  align-items: center;
 `;
 
 export const AvatarImage = styled(Avatar.Image)`
